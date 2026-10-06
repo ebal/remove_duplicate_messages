@@ -1,0 +1,951 @@
+<!ENTITY removeduplicates.title "Удалить Повторяющиеся Сообщения">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Благодарность">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Удалить Повторяющиеся Сообщения…">
+<!ENTITY removeduplicates.description "Удаляет повторные сообщения через контекстное меню папки.">
+<!ENTITY removeduplicatesPrefs.title "Настройки "Удалить Повторяющиеся Сообщения"">
+<!ENTITY removeduplicatesPrefs.captionsettings "Настройки">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Список обновлений">
+<!ENTITY removeduplicatesPrefs.captionhelp "Помощь">
+<!ENTITY removeduplicatesPrefs.captionabout "Про программу">
+<!ENTITY removeduplicatesPrefs.descsettings "Выбрать как сравниваются сообщения">
+<!ENTITY removeduplicatesPrefs.compmessageid "Сравнивать ID сообщений">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Сравнивать время (в секундах)">
+<!ENTITY removeduplicatesPrefs.compsubject "Сравнивать тему">
+<!ENTITY removeduplicatesPrefs.compauthor "Сравнивать "От"">
+<!ENTITY removeduplicatesPrefs.complinecount "Сравнивать число строк">
+<!ENTITY removeduplicatesPrefs.compbody "Сравнивать текст сообщений (медленно)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Сравнивать "Кому"">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Предпочтение к удалению">
+<!ENTITY removeduplicatesPrefs.firstfound "первого найденного">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитанного">
+<!ENTITY removeduplicatesPrefs.smallmail "меньшего">
+<!ENTITY removeduplicatesPrefs.largemail "большего">
+<!ENTITY removeduplicatesPrefs.unansweredmail ""без ответа"">
+<!ENTITY removeduplicatesPrefs.email "сообщение">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Искать сперва в подпапках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто удаление">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При поиске игнорировать сообщения уделенные в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При поиске игнорировать отправленные сообщения">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Распечатывать информацию для исправления неполадок (debug)">
+<!ENTITY showduplicatemessages.title "Повторяющиеся Сообщения">
+<!ENTITY showduplicatemessages.caption "Выбрать сообщения которые нужно удалить">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Отметка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "От">
+<!ENTITY showduplicatemessages.recipient "Кому">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Отправлено">
+<!ENTITY showduplicatemessages.hint "Левая кнопка мыши: Показать сообщение. Правая кнопка мыши: Показать дополнительную информацию. Двойной щелчок: переключать 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все по умолчанию">
+<!ENTITY showduplicatemessages.buttonSelDel "Все удалять">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не удалять">
+<!ENTITY showduplicatemessages.buttonErase "Стереть выбранное">
+<!ENTITY showduplicatemessages.buttonDel "Удалить выбранное">
+<!ENTITY showduplicatemessages.buttonCancel "Отменить">
+<!ENTITY tooltip.buttonDefault "Восстанавливает все метки по умолчанию. Один дубликат сообщений для хранения, а все остальные копии к удалению.">
+<!ENTITY tooltip.buttonSelDel "Отмечает все сообщения меткой для удаления (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Отмечает все сообщения меткой для хранения (KEEP)">
+<!ENTITY tooltip.buttonErase "Стирает все сообщения с меткой "DEL". Восстановление не возможно.">
+<!ENTITY tooltip.buttonDelete "Удаляет все сообщения с меткой "DEL". Сообщения перемещаются в корзину на всякий случай.">
+<!ENTITY tooltip.buttonCancel "Отменить. Не одно сообщение не будет удалено или перемещено.">
+<!ENTITY removeduplicates.title "Удалить Повторяющиеся Сообщения">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Благодарность">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Удалить Повторяющиеся Сообщения…">
+<!ENTITY removeduplicates.description "Удаляет повторные сообщения через контекстное меню папки.">
+<!ENTITY removeduplicatesPrefs.title "Настройки "Удалить Повторяющиеся Сообщения"">
+<!ENTITY removeduplicatesPrefs.captionsettings "Настройки">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Список обновлений">
+<!ENTITY removeduplicatesPrefs.captionhelp "Помощь">
+<!ENTITY removeduplicatesPrefs.captionabout "Про программу">
+<!ENTITY removeduplicatesPrefs.descsettings "Выбрать как сравниваются сообщения">
+<!ENTITY removeduplicatesPrefs.compmessageid "Сравнивать ID сообщений">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Сравнивать время (в секундах)">
+<!ENTITY removeduplicatesPrefs.compsubject "Сравнивать тему">
+<!ENTITY removeduplicatesPrefs.compauthor "Сравнивать "От"">
+<!ENTITY removeduplicatesPrefs.complinecount "Сравнивать число строк">
+<!ENTITY removeduplicatesPrefs.compbody "Сравнивать текст сообщений (медленно)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Сравнивать "Кому"">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Предпочтение к удалению">
+<!ENTITY removeduplicatesPrefs.firstfound "первого найденного">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитанного">
+<!ENTITY removeduplicatesPrefs.smallmail "меньшего">
+<!ENTITY removeduplicatesPrefs.largemail "большего">
+<!ENTITY removeduplicatesPrefs.unansweredmail ""без ответа"">
+<!ENTITY removeduplicatesPrefs.email "сообщение">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Искать сперва в подпапках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто удаление">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При поиске игнорировать сообщения уделенные в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При поиске игнорировать отправленные сообщения">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Распечатывать информацию для исправления неполадок (debug)">
+<!ENTITY showduplicatemessages.title "Повторяющиеся Сообщения">
+<!ENTITY showduplicatemessages.caption "Выбрать сообщения которые нужно удалить">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Отметка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "От">
+<!ENTITY showduplicatemessages.recipient "Кому">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Отправлено">
+<!ENTITY showduplicatemessages.hint "Левая кнопка мыши: Показать сообщение. Правая кнопка мыши: Показать дополнительную информацию. Двойной щелчок: переключать 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все по умолчанию">
+<!ENTITY showduplicatemessages.buttonSelDel "Все удалять">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не удалять">
+<!ENTITY showduplicatemessages.buttonErase "Стереть выбранное">
+<!ENTITY showduplicatemessages.buttonDel "Удалить выбранное">
+<!ENTITY showduplicatemessages.buttonCancel "Отменить">
+<!ENTITY tooltip.buttonDefault "Восстанавливает все метки по умолчанию. Один дубликат сообщений для хранения, а все остальные копии к удалению.">
+<!ENTITY tooltip.buttonSelDel "Отмечает все сообщения меткой для удаления (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Отмечает все сообщения меткой для хранения (KEEP)">
+<!ENTITY tooltip.buttonErase "Стирает все сообщения с меткой "DEL". Восстановление не возможно.">
+<!ENTITY tooltip.buttonDelete "Удаляет все сообщения с меткой "DEL". Сообщения перемещаются в корзину на всякий случай.">
+<!ENTITY tooltip.buttonCancel "Отменить. Не одно сообщение не будет удалено или перемещено.">
+<!ENTITY removeduplicates.title "Удалить Повторяющиеся Сообщения">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Благодарность">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Удалить Повторяющиеся Сообщения…">
+<!ENTITY removeduplicates.description "Удаляет повторные сообщения через контекстное меню папки.">
+<!ENTITY removeduplicatesPrefs.title "Настройки "Удалить Повторяющиеся Сообщения"">
+<!ENTITY removeduplicatesPrefs.captionsettings "Настройки">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Список обновлений">
+<!ENTITY removeduplicatesPrefs.captionhelp "Помощь">
+<!ENTITY removeduplicatesPrefs.captionabout "Про программу">
+<!ENTITY removeduplicatesPrefs.descsettings "Выбрать как сравниваются сообщения">
+<!ENTITY removeduplicatesPrefs.compmessageid "Сравнивать ID сообщений">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Сравнивать время (в секундах)">
+<!ENTITY removeduplicatesPrefs.compsubject "Сравнивать тему">
+<!ENTITY removeduplicatesPrefs.compauthor "Сравнивать "От"">
+<!ENTITY removeduplicatesPrefs.complinecount "Сравнивать число строк">
+<!ENTITY removeduplicatesPrefs.compbody "Сравнивать текст сообщений (медленно)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Сравнивать "Кому"">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Предпочтение к удалению">
+<!ENTITY removeduplicatesPrefs.firstfound "первого найденного">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитанного">
+<!ENTITY removeduplicatesPrefs.smallmail "меньшего">
+<!ENTITY removeduplicatesPrefs.largemail "большего">
+<!ENTITY removeduplicatesPrefs.unansweredmail ""без ответа"">
+<!ENTITY removeduplicatesPrefs.email "сообщение">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Искать сперва в подпапках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто удаление">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При поиске игнорировать сообщения уделенные в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При поиске игнорировать отправленные сообщения">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Распечатывать информацию для исправления неполадок (debug)">
+<!ENTITY showduplicatemessages.title "Повторяющиеся Сообщения">
+<!ENTITY showduplicatemessages.caption "Выбрать сообщения которые нужно удалить">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Отметка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "От">
+<!ENTITY showduplicatemessages.recipient "Кому">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Отправлено">
+<!ENTITY showduplicatemessages.hint "Левая кнопка мыши: Показать сообщение. Правая кнопка мыши: Показать дополнительную информацию. Двойной щелчок: переключать 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все по умолчанию">
+<!ENTITY showduplicatemessages.buttonSelDel "Все удалять">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не удалять">
+<!ENTITY showduplicatemessages.buttonErase "Стереть выбранное">
+<!ENTITY showduplicatemessages.buttonDel "Удалить выбранное">
+<!ENTITY showduplicatemessages.buttonCancel "Отменить">
+<!ENTITY tooltip.buttonDefault "Восстанавливает все метки по умолчанию. Один дубликат сообщений для хранения, а все остальные копии к удалению.">
+<!ENTITY tooltip.buttonSelDel "Отмечает все сообщения меткой для удаления (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Отмечает все сообщения меткой для хранения (KEEP)">
+<!ENTITY tooltip.buttonErase "Стирает все сообщения с меткой "DEL". Восстановление не возможно.">
+<!ENTITY tooltip.buttonDelete "Удаляет все сообщения с меткой "DEL". Сообщения перемещаются в корзину на всякий случай.">
+<!ENTITY tooltip.buttonCancel "Отменить. Не одно сообщение не будет удалено или перемещено.">
+<!ENTITY removeduplicates.title "Удалить Повторяющиеся Сообщения">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Благодарность">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Удалить Повторяющиеся Сообщения…">
+<!ENTITY removeduplicates.description "Удаляет повторные сообщения через контекстное меню папки.">
+<!ENTITY removeduplicatesPrefs.title "Настройки "Удалить Повторяющиеся Сообщения"">
+<!ENTITY removeduplicatesPrefs.captionsettings "Настройки">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Список обновлений">
+<!ENTITY removeduplicatesPrefs.captionhelp "Помощь">
+<!ENTITY removeduplicatesPrefs.captionabout "Про программу">
+<!ENTITY removeduplicatesPrefs.descsettings "Выбрать как сравниваются сообщения">
+<!ENTITY removeduplicatesPrefs.compmessageid "Сравнивать ID сообщений">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Сравнивать время (в секундах)">
+<!ENTITY removeduplicatesPrefs.compsubject "Сравнивать тему">
+<!ENTITY removeduplicatesPrefs.compauthor "Сравнивать "От"">
+<!ENTITY removeduplicatesPrefs.complinecount "Сравнивать число строк">
+<!ENTITY removeduplicatesPrefs.compbody "Сравнивать текст сообщений (медленно)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Сравнивать "Кому"">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Предпочтение к удалению">
+<!ENTITY removeduplicatesPrefs.firstfound "первого найденного">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитанного">
+<!ENTITY removeduplicatesPrefs.smallmail "меньшего">
+<!ENTITY removeduplicatesPrefs.largemail "большего">
+<!ENTITY removeduplicatesPrefs.unansweredmail ""без ответа"">
+<!ENTITY removeduplicatesPrefs.email "сообщение">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Искать сперва в подпапках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто удаление">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При поиске игнорировать сообщения уделенные в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При поиске игнорировать отправленные сообщения">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Распечатывать информацию для исправления неполадок (debug)">
+<!ENTITY showduplicatemessages.title "Повторяющиеся Сообщения">
+<!ENTITY showduplicatemessages.caption "Выбрать сообщения которые нужно удалить">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Отметка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "От">
+<!ENTITY showduplicatemessages.recipient "Кому">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Отправлено">
+<!ENTITY showduplicatemessages.hint "Левая кнопка мыши: Показать сообщение. Правая кнопка мыши: Показать дополнительную информацию. Двойной щелчок: переключать 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все по умолчанию">
+<!ENTITY showduplicatemessages.buttonSelDel "Все удалять">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не удалять">
+<!ENTITY showduplicatemessages.buttonErase "Стереть выбранное">
+<!ENTITY showduplicatemessages.buttonDel "Удалить выбранное">
+<!ENTITY showduplicatemessages.buttonCancel "Отменить">
+<!ENTITY tooltip.buttonDefault "Восстанавливает все метки по умолчанию. Один дубликат сообщений для хранения, а все остальные копии к удалению.">
+<!ENTITY tooltip.buttonSelDel "Отмечает все сообщения меткой для удаления (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Отмечает все сообщения меткой для хранения (KEEP)">
+<!ENTITY tooltip.buttonErase "Стирает все сообщения с меткой "DEL". Восстановление не возможно.">
+<!ENTITY tooltip.buttonDelete "Удаляет все сообщения с меткой "DEL". Сообщения перемещаются в корзину на всякий случай.">
+<!ENTITY tooltip.buttonCancel "Отменить. Не одно сообщение не будет удалено или перемещено.">
+<!ENTITY removeduplicates.title "Удалить Повторяющиеся Сообщения">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Благодарность">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Удалить Повторяющиеся Сообщения…">
+<!ENTITY removeduplicates.description "Удаляет повторные сообщения через контекстное меню папки.">
+<!ENTITY removeduplicatesPrefs.title "Настройки "Удалить Повторяющиеся Сообщения"">
+<!ENTITY removeduplicatesPrefs.captionsettings "Настройки">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Список обновлений">
+<!ENTITY removeduplicatesPrefs.captionhelp "Помощь">
+<!ENTITY removeduplicatesPrefs.captionabout "Про программу">
+<!ENTITY removeduplicatesPrefs.descsettings "Выбрать как сравниваются сообщения">
+<!ENTITY removeduplicatesPrefs.compmessageid "Сравнивать ID сообщений">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Сравнивать время (в секундах)">
+<!ENTITY removeduplicatesPrefs.compsubject "Сравнивать тему">
+<!ENTITY removeduplicatesPrefs.compauthor "Сравнивать "От"">
+<!ENTITY removeduplicatesPrefs.complinecount "Сравнивать число строк">
+<!ENTITY removeduplicatesPrefs.compbody "Сравнивать текст сообщений (медленно)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Сравнивать "Кому"">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Предпочтение к удалению">
+<!ENTITY removeduplicatesPrefs.firstfound "первого найденного">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитанного">
+<!ENTITY removeduplicatesPrefs.smallmail "меньшего">
+<!ENTITY removeduplicatesPrefs.largemail "большего">
+<!ENTITY removeduplicatesPrefs.unansweredmail ""без ответа"">
+<!ENTITY removeduplicatesPrefs.email "сообщение">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Искать сперва в подпапках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто удаление">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При поиске игнорировать сообщения уделенные в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При поиске игнорировать отправленные сообщения">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Распечатывать информацию для исправления неполадок (debug)">
+<!ENTITY showduplicatemessages.title "Повторяющиеся Сообщения">
+<!ENTITY showduplicatemessages.caption "Выбрать сообщения которые нужно удалить">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Отметка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "От">
+<!ENTITY showduplicatemessages.recipient "Кому">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Отправлено">
+<!ENTITY showduplicatemessages.hint "Левая кнопка мыши: Показать сообщение. Правая кнопка мыши: Показать дополнительную информацию. Двойной щелчок: переключать 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все по умолчанию">
+<!ENTITY showduplicatemessages.buttonSelDel "Все удалять">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не удалять">
+<!ENTITY showduplicatemessages.buttonErase "Стереть выбранное">
+<!ENTITY showduplicatemessages.buttonDel "Удалить выбранное">
+<!ENTITY showduplicatemessages.buttonCancel "Отменить">
+<!ENTITY tooltip.buttonDefault "Восстанавливает все метки по умолчанию. Один дубликат сообщений для хранения, а все остальные копии к удалению.">
+<!ENTITY tooltip.buttonSelDel "Отмечает все сообщения меткой для удаления (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Отмечает все сообщения меткой для хранения (KEEP)">
+<!ENTITY tooltip.buttonErase "Стирает все сообщения с меткой "DEL". Восстановление не возможно.">
+<!ENTITY tooltip.buttonDelete "Удаляет все сообщения с меткой "DEL". Сообщения перемещаются в корзину на всякий случай.">
+<!ENTITY tooltip.buttonCancel "Отменить. Не одно сообщение не будет удалено или перемещено.">
+<!ENTITY removeduplicates.title "Удалить Повторяющиеся Сообщения">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Благодарность">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Удалить Повторяющиеся Сообщения…">
+<!ENTITY removeduplicates.description "Удаляет повторные сообщения через контекстное меню папки.">
+<!ENTITY removeduplicatesPrefs.title "Настройки "Удалить Повторяющиеся Сообщения"">
+<!ENTITY removeduplicatesPrefs.captionsettings "Настройки">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Список обновлений">
+<!ENTITY removeduplicatesPrefs.captionhelp "Помощь">
+<!ENTITY removeduplicatesPrefs.captionabout "Про программу">
+<!ENTITY removeduplicatesPrefs.descsettings "Выбрать как сравниваются сообщения">
+<!ENTITY removeduplicatesPrefs.compmessageid "Сравнивать ID сообщений">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Сравнивать время (в секундах)">
+<!ENTITY removeduplicatesPrefs.compsubject "Сравнивать тему">
+<!ENTITY removeduplicatesPrefs.compauthor "Сравнивать "От"">
+<!ENTITY removeduplicatesPrefs.complinecount "Сравнивать число строк">
+<!ENTITY removeduplicatesPrefs.compbody "Сравнивать текст сообщений (медленно)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Сравнивать "Кому"">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Предпочтение к удалению">
+<!ENTITY removeduplicatesPrefs.firstfound "первого найденного">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитанного">
+<!ENTITY removeduplicatesPrefs.smallmail "меньшего">
+<!ENTITY removeduplicatesPrefs.largemail "большего">
+<!ENTITY removeduplicatesPrefs.unansweredmail ""без ответа"">
+<!ENTITY removeduplicatesPrefs.email "сообщение">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Искать сперва в подпапках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто удаление">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При поиске игнорировать сообщения уделенные в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При поиске игнорировать отправленные сообщения">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Распечатывать информацию для исправления неполадок (debug)">
+<!ENTITY showduplicatemessages.title "Повторяющиеся Сообщения">
+<!ENTITY showduplicatemessages.caption "Выбрать сообщения которые нужно удалить">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Отметка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "От">
+<!ENTITY showduplicatemessages.recipient "Кому">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Отправлено">
+<!ENTITY showduplicatemessages.hint "Левая кнопка мыши: Показать сообщение. Правая кнопка мыши: Показать дополнительную информацию. Двойной щелчок: переключать 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все по умолчанию">
+<!ENTITY showduplicatemessages.buttonSelDel "Все удалять">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не удалять">
+<!ENTITY showduplicatemessages.buttonErase "Стереть выбранное">
+<!ENTITY showduplicatemessages.buttonDel "Удалить выбранное">
+<!ENTITY showduplicatemessages.buttonCancel "Отменить">
+<!ENTITY tooltip.buttonDefault "Восстанавливает все метки по умолчанию. Один дубликат сообщений для хранения, а все остальные копии к удалению.">
+<!ENTITY tooltip.buttonSelDel "Отмечает все сообщения меткой для удаления (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Отмечает все сообщения меткой для хранения (KEEP)">
+<!ENTITY tooltip.buttonErase "Стирает все сообщения с меткой "DEL". Восстановление не возможно.">
+<!ENTITY tooltip.buttonDelete "Удаляет все сообщения с меткой "DEL". Сообщения перемещаются в корзину на всякий случай.">
+<!ENTITY tooltip.buttonCancel "Отменить. Не одно сообщение не будет удалено или перемещено.">
+<!ENTITY removeduplicates.title "Удалить Повторяющиеся Сообщения">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Благодарность">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Удалить Повторяющиеся Сообщения…">
+<!ENTITY removeduplicates.description "Удаляет повторные сообщения через контекстное меню папки.">
+<!ENTITY removeduplicatesPrefs.title "Настройки "Удалить Повторяющиеся Сообщения"">
+<!ENTITY removeduplicatesPrefs.captionsettings "Настройки">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Список обновлений">
+<!ENTITY removeduplicatesPrefs.captionhelp "Помощь">
+<!ENTITY removeduplicatesPrefs.captionabout "Про программу">
+<!ENTITY removeduplicatesPrefs.descsettings "Выбрать как сравниваются сообщения">
+<!ENTITY removeduplicatesPrefs.compmessageid "Сравнивать ID сообщений">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Сравнивать время (в секундах)">
+<!ENTITY removeduplicatesPrefs.compdate "Отправлено">
+<!ENTITY removeduplicatesPrefs.compsubject "Сравнивать тему">
+<!ENTITY removeduplicatesPrefs.compauthor "Сравнивать "От"">
+<!ENTITY removeduplicatesPrefs.complinecount "Сравнивать число строк">
+<!ENTITY removeduplicatesPrefs.compbody "Сравнивать текст сообщений (медленно)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Сравнивать "Кому"">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Предпочтение к удалению">
+<!ENTITY removeduplicatesPrefs.firstfound "первого найденного">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитанного">
+<!ENTITY removeduplicatesPrefs.smallmail "меньшего">
+<!ENTITY removeduplicatesPrefs.largemail "большего">
+<!ENTITY removeduplicatesPrefs.unansweredmail ""без ответа"">
+<!ENTITY removeduplicatesPrefs.email "сообщение">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Искать сперва в подпапках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто удаление">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При поиске игнорировать сообщения уделенные в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При поиске игнорировать отправленные сообщения">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Распечатывать информацию для исправления неполадок (debug)">
+<!ENTITY showduplicatemessages.title "Повторяющиеся Сообщения">
+<!ENTITY showduplicatemessages.caption "Выбрать сообщения которые нужно удалить">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Отметка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "От">
+<!ENTITY showduplicatemessages.recipient "Кому">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Отправлено">
+<!ENTITY showduplicatemessages.hint "Левая кнопка мыши: Показать сообщение. Правая кнопка мыши: Показать дополнительную информацию. Двойной щелчок: переключать 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все по умолчанию">
+<!ENTITY showduplicatemessages.buttonSelDel "Все удалять">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не удалять">
+<!ENTITY showduplicatemessages.buttonErase "Стереть выбранное">
+<!ENTITY showduplicatemessages.buttonDel "Удалить выбранное">
+<!ENTITY showduplicatemessages.buttonCancel "Отменить">
+<!ENTITY tooltip.buttonDefault "Восстанавливает все метки по умолчанию. Один дубликат сообщений для хранения, а все остальные копии к удалению.">
+<!ENTITY tooltip.buttonSelDel "Отмечает все сообщения меткой для удаления (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Отмечает все сообщения меткой для хранения (KEEP)">
+<!ENTITY tooltip.buttonErase "Стирает все сообщения с меткой "DEL". Восстановление не возможно.">
+<!ENTITY tooltip.buttonDelete "Удаляет все сообщения с меткой "DEL". Сообщения перемещаются в корзину на всякий случай.">
+<!ENTITY tooltip.buttonCancel "Отменить. Не одно сообщение не будет удалено или перемещено.">
+<!ENTITY removeduplicates.title "Удалить Повторяющиеся Сообщения">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Благодарность">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Удалить Повторяющиеся Сообщения…">
+<!ENTITY removeduplicates.description "Удаляет повторные сообщения через контекстное меню папки.">
+<!ENTITY removeduplicatesPrefs.title "Настройки "Удалить Повторяющиеся Сообщения"">
+<!ENTITY removeduplicatesPrefs.captionsettings "Настройки">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Список обновлений">
+<!ENTITY removeduplicatesPrefs.captionhelp "Помощь">
+<!ENTITY removeduplicatesPrefs.captionabout "Про программу">
+<!ENTITY removeduplicatesPrefs.descsettings "Выбрать как сравниваются сообщения">
+<!ENTITY removeduplicatesPrefs.compmessageid "Сравнивать ID сообщений">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Сравнивать время (в секундах)">
+<!ENTITY removeduplicatesPrefs.compdate "Отправлено">
+<!ENTITY removeduplicatesPrefs.compsubject "Сравнивать тему">
+<!ENTITY removeduplicatesPrefs.compauthor "Сравнивать "От"">
+<!ENTITY removeduplicatesPrefs.complinecount "Сравнивать число строк">
+<!ENTITY removeduplicatesPrefs.compbody "Сравнивать текст сообщений (медленно)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Сравнивать "Кому"">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Предпочтение к удалению">
+<!ENTITY removeduplicatesPrefs.firstfound "первого найденного">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитанного">
+<!ENTITY removeduplicatesPrefs.smallmail "меньшего">
+<!ENTITY removeduplicatesPrefs.largemail "большего">
+<!ENTITY removeduplicatesPrefs.unansweredmail ""без ответа"">
+<!ENTITY removeduplicatesPrefs.email "сообщение">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Искать сперва в подпапках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто удаление">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При поиске игнорировать сообщения уделенные в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При поиске игнорировать отправленные сообщения">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Распечатывать информацию для исправления неполадок (debug)">
+<!ENTITY showduplicatemessages.title "Повторяющиеся Сообщения">
+<!ENTITY showduplicatemessages.caption "Выбрать сообщения которые нужно удалить">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Отметка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "От">
+<!ENTITY showduplicatemessages.recipient "Кому">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Отправлено">
+<!ENTITY showduplicatemessages.hint "Левая кнопка мыши: Показать сообщение. Правая кнопка мыши: Показать дополнительную информацию. Двойной щелчок: переключать 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все по умолчанию">
+<!ENTITY showduplicatemessages.buttonSelDel "Все удалять">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не удалять">
+<!ENTITY showduplicatemessages.buttonErase "Стереть выбранное">
+<!ENTITY showduplicatemessages.buttonDel "Удалить выбранное">
+<!ENTITY showduplicatemessages.buttonCancel "Отменить">
+<!ENTITY tooltip.buttonDefault "Восстанавливает все метки по умолчанию. Один дубликат сообщений для хранения, а все остальные копии к удалению.">
+<!ENTITY tooltip.buttonSelDel "Отмечает все сообщения меткой для удаления (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Отмечает все сообщения меткой для хранения (KEEP)">
+<!ENTITY tooltip.buttonErase "Стирает все сообщения с меткой "DEL". Восстановление не возможно.">
+<!ENTITY tooltip.buttonDelete "Удаляет все сообщения с меткой "DEL". Сообщения перемещаются в корзину на всякий случай.">
+<!ENTITY tooltip.buttonCancel "Отменить. Не одно сообщение не будет удалено или перемещено.">
+<!ENTITY removeduplicates.title "Удалить Повторяющиеся Сообщения">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Благодарность">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Удалить Повторяющиеся Сообщения…">
+<!ENTITY removeduplicates.description "Удаляет повторные сообщения через контекстное меню папки.">
+<!ENTITY removeduplicatesPrefs.title "Настройки "Удалить Повторяющиеся Сообщения"">
+<!ENTITY removeduplicatesPrefs.captionsettings "Настройки">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Список обновлений">
+<!ENTITY removeduplicatesPrefs.captionhelp "Помощь">
+<!ENTITY removeduplicatesPrefs.captionabout "Про программу">
+<!ENTITY removeduplicatesPrefs.descsettings "Выбрать как сравниваются сообщения">
+<!ENTITY removeduplicatesPrefs.compmessageid "Сравнивать ID сообщений">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Сравнивать время (в секундах)">
+<!ENTITY removeduplicatesPrefs.compdate "Отправлено">
+<!ENTITY removeduplicatesPrefs.compsubject "Сравнивать тему">
+<!ENTITY removeduplicatesPrefs.compauthor "Сравнивать "От"">
+<!ENTITY removeduplicatesPrefs.complinecount "Сравнивать число строк">
+<!ENTITY removeduplicatesPrefs.compbody "Сравнивать текст сообщений (медленно)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Сравнивать "Кому"">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Предпочтение к удалению">
+<!ENTITY removeduplicatesPrefs.firstfound "первого найденного">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитанного">
+<!ENTITY removeduplicatesPrefs.smallmail "меньшего">
+<!ENTITY removeduplicatesPrefs.largemail "большего">
+<!ENTITY removeduplicatesPrefs.unansweredmail ""без ответа"">
+<!ENTITY removeduplicatesPrefs.email "сообщение">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Искать сперва в подпапках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто удаление">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При поиске игнорировать сообщения уделенные в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При поиске игнорировать отправленные сообщения">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Распечатывать информацию для исправления неполадок (debug)">
+<!ENTITY showduplicatemessages.title "Повторяющиеся Сообщения">
+<!ENTITY showduplicatemessages.caption "Выбрать сообщения которые нужно удалить">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Отметка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "От">
+<!ENTITY showduplicatemessages.recipient "Кому">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Отправлено">
+<!ENTITY showduplicatemessages.hint "Левая кнопка мыши: Показать сообщение. Правая кнопка мыши: Показать дополнительную информацию. Двойной щелчок: переключать 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все по умолчанию">
+<!ENTITY showduplicatemessages.buttonSelDel "Все удалять">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не удалять">
+<!ENTITY showduplicatemessages.buttonErase "Стереть выбранное">
+<!ENTITY showduplicatemessages.buttonDel "Удалить выбранное">
+<!ENTITY showduplicatemessages.buttonCancel "Отменить">
+<!ENTITY tooltip.buttonDefault "Восстанавливает все метки по умолчанию. Один дубликат сообщений для хранения, а все остальные копии к удалению.">
+<!ENTITY tooltip.buttonSelDel "Отмечает все сообщения меткой для удаления (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Отмечает все сообщения меткой для хранения (KEEP)">
+<!ENTITY tooltip.buttonErase "Стирает все сообщения с меткой "DEL". Восстановление не возможно.">
+<!ENTITY tooltip.buttonDelete "Удаляет все сообщения с меткой "DEL". Сообщения перемещаются в корзину на всякий случай.">
+<!ENTITY tooltip.buttonCancel "Отменить. Не одно сообщение не будет удалено или перемещено.">
+<!ENTITY removeduplicates.title "Удалить Повторяющиеся Сообщения">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Благодарность">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Удалить Повторяющиеся Сообщения…">
+<!ENTITY removeduplicates.description "Удаляет повторные сообщения через контекстное меню папки.">
+<!ENTITY removeduplicatesPrefs.title "Настройки "Удалить Повторяющиеся Сообщения"">
+<!ENTITY removeduplicatesPrefs.captionsettings "Настройки">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Список обновлений">
+<!ENTITY removeduplicatesPrefs.captionhelp "Помощь">
+<!ENTITY removeduplicatesPrefs.captionabout "Про программу">
+<!ENTITY removeduplicatesPrefs.descsettings "Выбрать как сравниваются сообщения">
+<!ENTITY removeduplicatesPrefs.compmessageid "Сравнивать ID сообщений">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Сравнивать время (в секундах)">
+<!ENTITY removeduplicatesPrefs.compdate "Отправлено">
+<!ENTITY removeduplicatesPrefs.compsubject "Сравнивать тему">
+<!ENTITY removeduplicatesPrefs.compauthor "Сравнивать "От"">
+<!ENTITY removeduplicatesPrefs.complinecount "Сравнивать число строк">
+<!ENTITY removeduplicatesPrefs.compbody "Сравнивать текст сообщений (медленно)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Сравнивать "Кому"">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Предпочтение к удалению">
+<!ENTITY removeduplicatesPrefs.firstfound "первого найденного">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитанного">
+<!ENTITY removeduplicatesPrefs.smallmail "меньшего">
+<!ENTITY removeduplicatesPrefs.largemail "большего">
+<!ENTITY removeduplicatesPrefs.unansweredmail ""без ответа"">
+<!ENTITY removeduplicatesPrefs.email "сообщение">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Искать сперва в подпапках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто удаление">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При поиске игнорировать сообщения уделенные в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При поиске игнорировать отправленные сообщения">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Распечатывать информацию для исправления неполадок (debug)">
+<!ENTITY showduplicatemessages.title "Повторяющиеся Сообщения">
+<!ENTITY showduplicatemessages.caption "Выбрать сообщения которые нужно удалить">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Отметка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "От">
+<!ENTITY showduplicatemessages.recipient "Кому">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Отправлено">
+<!ENTITY showduplicatemessages.hint "Левая кнопка мыши: Показать сообщение. Правая кнопка мыши: Показать дополнительную информацию. Двойной щелчок: переключать 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все по умолчанию">
+<!ENTITY showduplicatemessages.buttonSelDel "Все удалять">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не удалять">
+<!ENTITY showduplicatemessages.buttonErase "Стереть выбранное">
+<!ENTITY showduplicatemessages.buttonDel "Удалить выбранное">
+<!ENTITY showduplicatemessages.buttonCancel "Отменить">
+<!ENTITY tooltip.buttonDefault "Восстанавливает все метки по умолчанию. Один дубликат сообщений для хранения, а все остальные копии к удалению.">
+<!ENTITY tooltip.buttonSelDel "Отмечает все сообщения меткой для удаления (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Отмечает все сообщения меткой для хранения (KEEP)">
+<!ENTITY tooltip.buttonErase "Стирает все сообщения с меткой "DEL". Восстановление не возможно.">
+<!ENTITY tooltip.buttonDelete "Удаляет все сообщения с меткой "DEL". Сообщения перемещаются в корзину на всякий случай.">
+<!ENTITY tooltip.buttonCancel "Отменить. Не одно сообщение не будет удалено или перемещено.">
+<!ENTITY removeduplicates.title "Удалить Повторяющиеся Сообщения">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Благодарность">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Удалить Повторяющиеся Сообщения…">
+<!ENTITY removeduplicates.description "Удаляет повторные сообщения через контекстное меню папки.">
+<!ENTITY removeduplicatesPrefs.title "Настройки "Удалить Повторяющиеся Сообщения"">
+<!ENTITY removeduplicatesPrefs.captionsettings "Настройки">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Список обновлений">
+<!ENTITY removeduplicatesPrefs.captionhelp "Помощь">
+<!ENTITY removeduplicatesPrefs.captionabout "Про программу">
+<!ENTITY removeduplicatesPrefs.descsettings "Выбрать как сравниваются сообщения">
+<!ENTITY removeduplicatesPrefs.compmessageid "Сравнивать ID сообщений">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Сравнивать время (в секундах)">
+<!ENTITY removeduplicatesPrefs.compdate "Отправлено">
+<!ENTITY removeduplicatesPrefs.compsubject "Сравнивать тему">
+<!ENTITY removeduplicatesPrefs.compauthor "Сравнивать "От"">
+<!ENTITY removeduplicatesPrefs.complinecount "Сравнивать число строк">
+<!ENTITY removeduplicatesPrefs.compbody "Сравнивать текст сообщений (медленно)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Сравнивать "Кому"">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Предпочтение к удалению">
+<!ENTITY removeduplicatesPrefs.firstfound "первого найденного">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитанного">
+<!ENTITY removeduplicatesPrefs.smallmail "меньшего">
+<!ENTITY removeduplicatesPrefs.largemail "большего">
+<!ENTITY removeduplicatesPrefs.unansweredmail ""без ответа"">
+<!ENTITY removeduplicatesPrefs.email "сообщение">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Искать сперва в подпапках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто удаление">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При поиске игнорировать сообщения уделенные в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При поиске игнорировать отправленные сообщения">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Распечатывать информацию для исправления неполадок (debug)">
+<!ENTITY showduplicatemessages.title "Повторяющиеся Сообщения">
+<!ENTITY showduplicatemessages.caption "Выбрать сообщения которые нужно удалить">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Отметка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "От">
+<!ENTITY showduplicatemessages.recipient "Кому">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Отправлено">
+<!ENTITY showduplicatemessages.hint "Левая кнопка мыши: Показать сообщение. Правая кнопка мыши: Показать дополнительную информацию. Двойной щелчок: переключать 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все по умолчанию">
+<!ENTITY showduplicatemessages.buttonSelDel "Все удалять">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не удалять">
+<!ENTITY showduplicatemessages.buttonErase "Стереть выбранное">
+<!ENTITY showduplicatemessages.buttonDel "Удалить выбранное">
+<!ENTITY showduplicatemessages.buttonCancel "Отменить">
+<!ENTITY tooltip.buttonDefault "Восстанавливает все метки по умолчанию. Один дубликат сообщений для хранения, а все остальные копии к удалению.">
+<!ENTITY tooltip.buttonSelDel "Отмечает все сообщения меткой для удаления (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Отмечает все сообщения меткой для хранения (KEEP)">
+<!ENTITY tooltip.buttonErase "Стирает все сообщения с меткой "DEL". Восстановление не возможно.">
+<!ENTITY tooltip.buttonDelete "Удаляет все сообщения с меткой "DEL". Сообщения перемещаются в корзину на всякий случай.">
+<!ENTITY tooltip.buttonCancel "Отменить. Не одно сообщение не будет удалено или перемещено.">
+<!ENTITY removeduplicates.title "Удалить Повторяющиеся Сообщения">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Благодарность">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Удалить Повторяющиеся Сообщения…">
+<!ENTITY removeduplicates.description "Удаляет повторные сообщения через контекстное меню папки.">
+<!ENTITY removeduplicatesPrefs.title "Настройки "Удалить Повторяющиеся Сообщения"">
+<!ENTITY removeduplicatesPrefs.captionsettings "Настройки">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Список обновлений">
+<!ENTITY removeduplicatesPrefs.captionhelp "Помощь">
+<!ENTITY removeduplicatesPrefs.captionabout "Про программу">
+<!ENTITY removeduplicatesPrefs.descsettings "Выбрать как сравниваются сообщения">
+<!ENTITY removeduplicatesPrefs.compmessageid "Сравнивать ID сообщений">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Сравнивать время (в секундах)">
+<!ENTITY removeduplicatesPrefs.compdate "Отправлено">
+<!ENTITY removeduplicatesPrefs.compsubject "Сравнивать тему">
+<!ENTITY removeduplicatesPrefs.compauthor "Сравнивать "От"">
+<!ENTITY removeduplicatesPrefs.complinecount "Сравнивать число строк">
+<!ENTITY removeduplicatesPrefs.compbody "Сравнивать текст сообщений (медленно)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Сравнивать "Кому"">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Предпочтение к удалению">
+<!ENTITY removeduplicatesPrefs.firstfound "первого найденного">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитанного">
+<!ENTITY removeduplicatesPrefs.smallmail "меньшего">
+<!ENTITY removeduplicatesPrefs.largemail "большего">
+<!ENTITY removeduplicatesPrefs.unansweredmail ""без ответа"">
+<!ENTITY removeduplicatesPrefs.email "сообщение">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Искать сперва в подпапках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто удаление">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При поиске игнорировать сообщения уделенные в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При поиске игнорировать отправленные сообщения">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Распечатывать информацию для исправления неполадок (debug)">
+<!ENTITY showduplicatemessages.title "Повторяющиеся Сообщения">
+<!ENTITY showduplicatemessages.caption "Выбрать сообщения которые нужно удалить">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Отметка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "От">
+<!ENTITY showduplicatemessages.recipient "Кому">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Отправлено">
+<!ENTITY showduplicatemessages.hint "Левая кнопка мыши: Показать сообщение. Правая кнопка мыши: Показать дополнительную информацию. Двойной щелчок: переключать 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все по умолчанию">
+<!ENTITY showduplicatemessages.buttonSelDel "Все удалять">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не удалять">
+<!ENTITY showduplicatemessages.buttonErase "Стереть выбранное">
+<!ENTITY showduplicatemessages.buttonDel "Удалить выбранное">
+<!ENTITY showduplicatemessages.buttonCancel "Отменить">
+<!ENTITY tooltip.buttonDefault "Восстанавливает все метки по умолчанию. Один дубликат сообщений для хранения, а все остальные копии к удалению.">
+<!ENTITY tooltip.buttonSelDel "Отмечает все сообщения меткой для удаления (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Отмечает все сообщения меткой для хранения (KEEP)">
+<!ENTITY tooltip.buttonErase "Стирает все сообщения с меткой "DEL". Восстановление не возможно.">
+<!ENTITY tooltip.buttonDelete "Удаляет все сообщения с меткой "DEL". Сообщения перемещаются в корзину на всякий случай.">
+<!ENTITY tooltip.buttonCancel "Отменить. Не одно сообщение не будет удалено или перемещено.">
+<!ENTITY removeduplicates.title "Удалить Повторяющиеся Сообщения">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Благодарность">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Удалить Повторяющиеся Сообщения…">
+<!ENTITY removeduplicates.description "Удаляет повторные сообщения через контекстное меню папки.">
+<!ENTITY removeduplicatesPrefs.title "Настройки "Удалить Повторяющиеся Сообщения"">
+<!ENTITY removeduplicatesPrefs.captionsettings "Настройки">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Список обновлений">
+<!ENTITY removeduplicatesPrefs.captionhelp "Помощь">
+<!ENTITY removeduplicatesPrefs.captionabout "Про программу">
+<!ENTITY removeduplicatesPrefs.descsettings "Выбрать как сравниваются сообщения">
+<!ENTITY removeduplicatesPrefs.compmessageid "Сравнивать ID сообщений">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Сравнивать время (в секундах)">
+<!ENTITY removeduplicatesPrefs.compdate "Отправлено">
+<!ENTITY removeduplicatesPrefs.compsubject "Сравнивать тему">
+<!ENTITY removeduplicatesPrefs.compauthor "Сравнивать "От"">
+<!ENTITY removeduplicatesPrefs.complinecount "Сравнивать число строк">
+<!ENTITY removeduplicatesPrefs.compbody "Сравнивать текст сообщений (медленно)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Сравнивать "Кому"">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Предпочтение к удалению">
+<!ENTITY removeduplicatesPrefs.firstfound "первого найденного">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитанного">
+<!ENTITY removeduplicatesPrefs.smallmail "меньшего">
+<!ENTITY removeduplicatesPrefs.largemail "большего">
+<!ENTITY removeduplicatesPrefs.unansweredmail ""без ответа"">
+<!ENTITY removeduplicatesPrefs.email "сообщение">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Искать сперва в подпапках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто удаление">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При поиске игнорировать сообщения уделенные в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При поиске игнорировать отправленные сообщения">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Распечатывать информацию для исправления неполадок (debug)">
+<!ENTITY showduplicatemessages.title "Повторяющиеся Сообщения">
+<!ENTITY showduplicatemessages.caption "Выбрать сообщения которые нужно удалить">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Отметка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "От">
+<!ENTITY showduplicatemessages.recipient "Кому">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Отправлено">
+<!ENTITY showduplicatemessages.hint "Левая кнопка мыши: Показать сообщение. Правая кнопка мыши: Показать дополнительную информацию. Двойной щелчок: переключать 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все по умолчанию">
+<!ENTITY showduplicatemessages.buttonSelDel "Все удалять">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не удалять">
+<!ENTITY showduplicatemessages.buttonErase "Стереть выбранное">
+<!ENTITY showduplicatemessages.buttonDel "Удалить выбранное">
+<!ENTITY showduplicatemessages.buttonCancel "Отменить">
+<!ENTITY tooltip.buttonDefault "Восстанавливает все метки по умолчанию. Один дубликат сообщений для хранения, а все остальные копии к удалению.">
+<!ENTITY tooltip.buttonSelDel "Отмечает все сообщения меткой для удаления (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Отмечает все сообщения меткой для хранения (KEEP)">
+<!ENTITY tooltip.buttonErase "Стирает все сообщения с меткой "DEL". Восстановление не возможно.">
+<!ENTITY tooltip.buttonDelete "Удаляет все сообщения с меткой "DEL". Сообщения перемещаются в корзину на всякий случай.">
+<!ENTITY tooltip.buttonCancel "Отменить. Не одно сообщение не будет удалено или перемещено.">
+<!ENTITY removeduplicates.title "Удалить Повторяющиеся Сообщения">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Благодарность">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Удалить Повторяющиеся Сообщения…">
+<!ENTITY removeduplicates.description "Удаляет повторные сообщения через контекстное меню папки.">
+<!ENTITY removeduplicatesPrefs.title ""Настройки ""Удалить Повторяющиеся Сообщения"""">
+<!ENTITY removeduplicatesPrefs.captionsettings "Настройки">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Список обновлений">
+<!ENTITY removeduplicatesPrefs.captionhelp "Помощь">
+<!ENTITY removeduplicatesPrefs.captionabout "Про программу">
+<!ENTITY removeduplicatesPrefs.descsettings "Выбрать как сравниваются сообщения">
+<!ENTITY removeduplicatesPrefs.compmessageid "Сравнивать ID сообщений">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Сравнивать время (в секундах)">
+<!ENTITY removeduplicatesPrefs.compdate "Отправлено">
+<!ENTITY removeduplicatesPrefs.compsubject "Сравнивать тему">
+<!ENTITY removeduplicatesPrefs.compauthor ""Сравнивать ""От"""">
+<!ENTITY removeduplicatesPrefs.complinecount "Сравнивать число строк">
+<!ENTITY removeduplicatesPrefs.compbody "Сравнивать текст сообщений (медленно)">
+<!ENTITY removeduplicatesPrefs.comprecipient ""Сравнивать ""Кому"""">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Предпочтение к удалению">
+<!ENTITY removeduplicatesPrefs.firstfound "первого найденного">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитанного">
+<!ENTITY removeduplicatesPrefs.smallmail "меньшего">
+<!ENTITY removeduplicatesPrefs.largemail "большего">
+<!ENTITY removeduplicatesPrefs.unansweredmail """"без ответа"""">
+<!ENTITY removeduplicatesPrefs.email "сообщение">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Искать сперва в подпапках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто удаление">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При поиске игнорировать сообщения уделенные в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При поиске игнорировать отправленные сообщения">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Распечатывать информацию для исправления неполадок (debug)">
+<!ENTITY removeduplicatesPrefs.reversesearch "Reverse folder search">
+<!ENTITY showduplicatemessages.title "Повторяющиеся Сообщения">
+<!ENTITY showduplicatemessages.caption "Выбрать сообщения которые нужно удалить">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Отметка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "От">
+<!ENTITY showduplicatemessages.recipient "Кому">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Отправлено">
+<!ENTITY showduplicatemessages.hint "Левая кнопка мыши: Показать сообщение. Правая кнопка мыши: Показать дополнительную информацию. Двойной щелчок: переключать 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все по умолчанию">
+<!ENTITY showduplicatemessages.buttonSelDel "Все удалять">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не удалять">
+<!ENTITY showduplicatemessages.buttonErase "Стереть выбранное">
+<!ENTITY showduplicatemessages.buttonDel "Удалить выбранное">
+<!ENTITY showduplicatemessages.buttonCancel "Отменить">
+<!ENTITY tooltip.buttonDefault "Восстанавливает все метки по умолчанию. Один дубликат сообщений для хранения, а все остальные копии к удалению.">
+<!ENTITY tooltip.buttonSelDel "Отмечает все сообщения меткой для удаления (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Отмечает все сообщения меткой для хранения (KEEP)">
+<!ENTITY tooltip.buttonErase ""Стирает все сообщения с меткой ""DEL"". Восстановление не возможно. "">
+<!ENTITY tooltip.buttonDelete ""Удаляет все сообщения с меткой ""DEL"". Сообщения перемещаются в корзину на всякий случай."">
+<!ENTITY tooltip.buttonCancel "Отменить. Не одно сообщение не будет удалено или перемещено.">
+<!ENTITY removeduplicates.title "Удалить Повторяющиеся Сообщения">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Благодарность">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Удалить Повторяющиеся Сообщения…">
+<!ENTITY removeduplicates.description "Удаляет повторные сообщения через контекстное меню папки.">
+<!ENTITY removeduplicatesPrefs.title ""Настройки ""Удалить Повторяющиеся Сообщения"""">
+<!ENTITY removeduplicatesPrefs.captionsettings "Настройки">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Список обновлений">
+<!ENTITY removeduplicatesPrefs.captionhelp "Помощь">
+<!ENTITY removeduplicatesPrefs.captionabout "Про программу">
+<!ENTITY removeduplicatesPrefs.descsettings "Выбрать как сравниваются сообщения">
+<!ENTITY removeduplicatesPrefs.compmessageid "Сравнивать ID сообщений">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Сравнивать время (в секундах)">
+<!ENTITY removeduplicatesPrefs.compdate "Отправлено">
+<!ENTITY removeduplicatesPrefs.compsubject "Сравнивать тему">
+<!ENTITY removeduplicatesPrefs.compauthor ""Сравнивать ""От"""">
+<!ENTITY removeduplicatesPrefs.complinecount "Сравнивать число строк">
+<!ENTITY removeduplicatesPrefs.compbody "Сравнивать текст сообщений (медленно)">
+<!ENTITY removeduplicatesPrefs.comprecipient ""Сравнивать ""Кому"""">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Предпочтение к удалению">
+<!ENTITY removeduplicatesPrefs.firstfound "первого найденного">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитанного">
+<!ENTITY removeduplicatesPrefs.smallmail "меньшего">
+<!ENTITY removeduplicatesPrefs.largemail "большего">
+<!ENTITY removeduplicatesPrefs.unansweredmail """"без ответа"""">
+<!ENTITY removeduplicatesPrefs.email "сообщение">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Искать сперва в подпапках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто удаление">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При поиске игнорировать сообщения уделенные в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При поиске игнорировать отправленные сообщения">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Распечатывать информацию для исправления неполадок (debug)">
+<!ENTITY removeduplicatesPrefs.reversesearch "Reverse folder search">
+<!ENTITY showduplicatemessages.title "Повторяющиеся Сообщения">
+<!ENTITY showduplicatemessages.caption "Выбрать сообщения которые нужно удалить">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Отметка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "От">
+<!ENTITY showduplicatemessages.recipient "Кому">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Отправлено">
+<!ENTITY showduplicatemessages.hint "Левая кнопка мыши: Показать сообщение. Правая кнопка мыши: Показать дополнительную информацию. Двойной щелчок: переключать 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все по умолчанию">
+<!ENTITY showduplicatemessages.buttonSelDel "Все удалять">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не удалять">
+<!ENTITY showduplicatemessages.buttonErase "Стереть выбранное">
+<!ENTITY showduplicatemessages.buttonDel "Удалить выбранное">
+<!ENTITY showduplicatemessages.buttonCancel "Отменить">
+<!ENTITY tooltip.buttonDefault "Восстанавливает все метки по умолчанию. Один дубликат сообщений для хранения, а все остальные копии к удалению.">
+<!ENTITY tooltip.buttonSelDel "Отмечает все сообщения меткой для удаления (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Отмечает все сообщения меткой для хранения (KEEP)">
+<!ENTITY tooltip.buttonErase ""Стирает все сообщения с меткой ""DEL"". Восстановление не возможно. "">
+<!ENTITY tooltip.buttonDelete ""Удаляет все сообщения с меткой ""DEL"". Сообщения перемещаются в корзину на всякий случай."">
+<!ENTITY tooltip.buttonCancel "Отменить. Не одно сообщение не будет удалено или перемещено.">

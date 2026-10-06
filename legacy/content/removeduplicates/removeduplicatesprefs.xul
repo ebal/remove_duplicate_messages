@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://communicator/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://messenger/skin/prefPanels.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://removeduplicates/locale/removeduplicates.dtd">
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        onload="com.twsrdm.PrefDialog.init();"
+        buttons="accept, cancel"
+        ondialogaccept="com.twsrdm.PrefDialog.save();"
+        id="removeduplicatesPrefsDialog"
+        title="&removeduplicatesPrefs.title;"
+        width="600" height="500">
+
+  <script type="application/x-javascript" src="chrome://removeduplicates/content/removeduplicatesprefs.js"/>
+  <script type="application/x-javascript" src="chrome://removeduplicates/content/removeduplicates.js"/>
+
+
+  <tabbox flex="1">
+    <tabs id="prefTabBox">
+      <tab id="settings1" label="&removeduplicatesPrefs.captionsettings;"/>
+      <tab id="settings2" label="&removeduplicatesPrefs.captionsettings;"/>
+      <tab id="changelog" label="&removeduplicatesPrefs.captionchangelog;"/>
+      <tab id="help"      label="&removeduplicatesPrefs.captionhelp;"/>
+      <tab id="about"     label="&removeduplicatesPrefs.captionabout;"/>
+    </tabs>
+
+    <tabpanels flex="1">
+      <tabpanel id="settings1">
+        <vbox flex="1">
+          <description>&removeduplicatesPrefs.descsettings;</description>
+          <groupbox>
+            <vbox>
+              <checkbox id="removeduplicatesMessageIdPref"        label="&removeduplicatesPrefs.compmessageid;"/>
+              <checkbox id="removeduplicatesDateInSecondsPref"    label="&removeduplicatesPrefs.compdateinseconds;"/>
+              <checkbox id="removeduplicatesDatePref"             label="&removeduplicatesPrefs.compdate;"/>
+              <checkbox id="removeduplicatesSubjectPref"          label="&removeduplicatesPrefs.compsubject;"/>
+              <checkbox id="removeduplicatesAuthorPref"           label="&removeduplicatesPrefs.compauthor;"/>
+              <checkbox id="removeduplicatesLinecountPref"        label="&removeduplicatesPrefs.complinecount;"/>
+              <checkbox id="removeduplicatesBodyPref"             label="&removeduplicatesPrefs.compbody;"/>
+              <checkbox id="removeduplicatesRecipientPref"        label="&removeduplicatesPrefs.comprecipient;"/>
+              <checkbox id="removeduplicatesReverseSearchPref"    label="&removeduplicatesPrefs.reversesearch;"/>
+            </vbox>
+          </groupbox>
+        </vbox>
+      </tabpanel>
+
+      <tabpanel id="settings2">
+        <vbox flex="1">
+          <description>&removeduplicatesPrefs.descsettings;</description>
+          <groupbox>
+            <vbox>
+              <hbox align="center">
+                <label value="&removeduplicatesPrefs.preferetodelete;" />
+                <menulist id="removeduplicatesPreferedDeletePref">
+                  <menupopup>
+                    <menuitem value="0" label="&removeduplicatesPrefs.firstfound;" selected="true"/>
+                    <menuitem value="1" label="&removeduplicatesPrefs.unreadmail;"/>
+                    <menuitem value="2" label="&removeduplicatesPrefs.smallmail;"/>
+                    <menuitem value="3" label="&removeduplicatesPrefs.largemail;"/>
+                    <menuitem value="4" label="&removeduplicatesPrefs.unansweredmail;"/>
+                  </menupopup>
+                </menulist>
+                <label value="&removeduplicatesPrefs.email;" />
+              </hbox>
+              <checkbox id="removeduplicatesSubFolderFirstPref"       label="&removeduplicatesPrefs.checksubfolderfirst;"/>
+              <checkbox id="removeduplicatesExcludeTrashcanPref"      label="&removeduplicatesPrefs.excludeTrashcan;"/>
+              <checkbox id="removeduplicatesExcludeSentfolderPref"    label="&removeduplicatesPrefs.excludeSentfolder;"/>
+              <checkbox id="removeduplicatesShowDuplicatesDialogPref" label="&removeduplicatesPrefs.showDuplicateDialog;"/>
+              <checkbox id="removeduplicatesAutodeletePref"           label="&removeduplicatesPrefs.autodelete;"/>
+              <checkbox id="removeduplicatesDebugInfoPref"            label="&removeduplicatesPrefs.printdebuginfo;"/>
+            </vbox>
+          </groupbox>
+        </vbox>
+      </tabpanel>
+
+      <tabpanel id="changelog">
+          <groupbox flex="1">
+            <caption label="&removeduplicatesPrefs.captionchangelog;"/>
+			<iframe type="content" src="chrome://removeduplicates/locale/changelog.html" flex="1"/>
+          </groupbox>
+      </tabpanel>
+
+      <tabpanel id="help">
+        <groupbox flex="1">
+          <caption label="&removeduplicatesPrefs.captionhelp;"/>
+           <iframe type="content" src="chrome://removeduplicates/locale/help.html" flex="1"/>
+          </groupbox>
+      </tabpanel>
+
+      <tabpanel id="about">
+        <vbox flex="1">
+          <groupbox flex="1">
+            <caption label="&removeduplicatesPrefs.captionabout;"/>
+            <vbox>
+              <hbox>
+                <image src="chrome://removeduplicates/content/removeduplicates.png"/>
+                <spacer width="20"/>
+                <vbox>
+                  <label value="&removeduplicates.title;"/>
+                  <label value="&removeduplicates.version;"/>
+                </vbox>
+              </hbox>
+              <spacer height="20"/>
+              <label value="&removeduplicates.copyright;"/>
+              <spacer height="20"/>
+              <label value="&removeduplicates.creditstitle;"/>
+              <hbox>
+                <spacer width="20"/>
+                <vbox>
+                  <label value="&removeduplicates.credits1;"/>
+                  <label value="&removeduplicates.credits2;"/>
+                  <label value="&removeduplicates.credits3;"/>
+                  <label value="&removeduplicates.credits4;"/>
+                  <label value="&removeduplicates.credits5;"/>
+                  <label value="&removeduplicates.credits6;"/>
+                  <label value="&removeduplicates.credits7;"/>
+                  <label value="&removeduplicates.credits8;"/>
+                  <label value="&removeduplicates.credits9;"/>
+                </vbox>
+              </hbox>
+            </vbox>
+          </groupbox>
+        </vbox>
+      </tabpanel>
+
+    </tabpanels>
+  </tabbox>
+
+</dialog>

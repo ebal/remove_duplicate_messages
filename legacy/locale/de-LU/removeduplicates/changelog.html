@@ -1,0 +1,274 @@
+<html>
+  <head>
+    <link rel="stylesheet" media="screen" href="style.css">
+  </head>
+<body>
+
+
+
+<h1>ToDo</h1>
+<ul>
+  <li>Aufforderung zum Mitmachen bei Übersetzungen hinzufügen: Review bei
+  vorhandenen, neuübersetzung bei nicht vorhandenen.
+  <li>Dialog mit doppelten Nachrichten: Echtes l&ouml;schen. Nachrichten nicht in den M&uuml;lleimer schieben.</li>
+  <li>Wenn eine Nachricht keine Message ID hat, dann berechnet Thunderbird einen MD5 Hash, der mit Sicherheit nicht zu einer richtigen Message ID passt. L&ouml;sung?<li>
+  <li>Doppelte E-Mail Adressen suchen und entfernen bzw. bei gleichem Namen und unterschiedlicher E-Mail, diese zusammenfassen.</li>
+</ul>
+
+
+
+<h1>&Auml;nderungen</h1>
+
+<p>
+<h2>25.09.2012: Version 0.1.14</h2>
+<ul>
+  <li>Feature: Neue option um die Verzeichnissuche zu invertieren. Dies
+  erm&ouml;glicht, dass zuerst gefundene Nachrichten in verschiedenen Ordnern
+  nicht behalten werden.</li>
+  <li>Bugfix: Auf Wunsch vieler wurde der Rechts- mit dem Mittelklick
+  vertauscht.</li>
+  <li>Bugfix: Im Doppelte Nachrichten Dialog wird MIME kodierter Betreff und
+  Absender jetzt korrekt angezeigt.</li>
+  <li>Bugfix: Ab Thunderbird 31 werden nun der Papierkorb und die Inbox
+  wieder korrekt anhand ihrer Einstellungen (ignorieren order nicht)
+  beachtet.</li>
+  <li>Bugfix: Anzahl der angezeigten zu durchsuchenden Nachrichten war
+  manchmal falsch, da z.B. Virtuelle (Such) Ordner auch gezählt wurden.</li>
+  
+</ul>
+</p>
+
+<p>
+<h2>22.05.2012: Version 0.1.13</h2>
+<ul>
+  <li>Bugfix: Doppelklick funktionierte mit neueren Thunderbird Versionen nicht
+  immer. Alternativ kann jetzt auch ein Mittelklick genutzt werden um den
+  Zusand von Nachrichten zwischen DEL und KEEP zu wechseln.</li>
+</ul>
+</p>
+
+<p>
+<h2>20.03.2012: Version 0.1.12</h2>
+<ul>
+  <li>Bugfix: Code aufger&auml;umt und kompatibel zu Thunderbird 13 API.</li>
+</ul>
+</p>
+
+<p>
+<h2>07.03.2012: Version 0.1.11</h2>
+<ul>
+  <li>Bugfix: Nachrichten werden wieder mit einem Linksklick auf ein Element
+  in der Nachrichtenliste angezeigt.</li>
+  <li>Bugfix: Vergleiche mit Nachrichten Body funktionieren wieder. Jetzt
+  aber richtig und besser denn je. Beim Vergleich werden auch Attachements
+  miteinander verglichen. Diese Option kostet leider sehr viel Zeit.</li> 
+  <li>Bugfix: Es werden nun etwas mehr doppelte Nachrichten gefunden.</li>
+  <li>Feature: Vergleiche die Empf&auml;ngerliste. Dies ist sinnvoll, um
+  doppelte gesendete Nachrichten zu l&ouml;schen.</li>
+  <li>Feature: Options hinzugefügt, um den Nachrichtendialog auch dann
+  anzuzeigen, wenn es keine doppelten Nachrichten gibt.</li>  
+  <li>Feature: Options hinzugefügt, um Nachrichten anhand des Datums (nicht
+  Uhrzeit) zu vergleichen).</li>  
+  <li>Feature: Basilianisches Sprachpaket: pt-BR.</li>
+</ul>
+</p>
+
+<p>
+<h2>06.05.2010: Version 0.1.10</h2>
+<ul>
+  <li>Bugfix: In Thunderbird 2.0 schlug die Suche fehl, wenn Unterordner existierten.</li>
+</ul>
+</p>
+
+<p>
+<h2>04.05.2010: Version 0.1.09</h2>
+<ul>
+  <li>Feature: Nutze md5 hash. Dieser spart Speicher, so dass mehr Nachrichten, schneller miteinander verglichen werden können.</li>
+  <li>Other: Stelle auf objekt orientiertes JavaScript um, damit es nicht zu Kollisionen mit anderen AddOns kommt.</li>
+  <li>Other: Füge chrome.manifest hinzu (Installation für TB3.0+</li>
+</ul>
+</p>
+
+<p>
+<h2>30.03.2010: Version 0.1.08</h2>
+<ul>
+  <li>Entferne "-" in Dateinamen.</li>
+  <li>Wenn keine doppelten Nachrichten gefunden werden, erscheint nur eine kleine Information, nicht das Auswahlfenster.</li>
+  <li>Kompatibel mit Thunderbird 2.0+ und 3.0+</li>
+</ul>
+</p>
+
+<p>
+<h2>29.01.2010: Version 0.1.07</h2>
+<ul>
+  <li>Anpassungen an die Thunderbird 3.0 API.</li>
+  <li>Wenn schon ein Prozess l&auml;uft, dann kann dieser beim Starten eines neuen Prozesses beendet werden.</li>
+</ul>
+</p>
+
+<p>
+<h2>29.12.2008: Version 0.1.06</h2>
+<ul>
+  <li>Weitere Versionsanpassungen im Installer. Keine Code&auml;nderung.</li>
+</ul>
+</p>
+
+<p>
+<h2>09.07.2007: Version 0.1.05</h2>
+<ul>
+  <li>Addon l&auml;uft jetzt auch unter Windows in Thunderbird 2.0+</li>
+</ul>
+</p>
+
+
+<p>
+<h2>08.07.2007: Version 0.1.04</h2>
+<ul>
+  <li>Update auf Version 2 von Thunderbird</li>
+</ul>
+</p>
+
+
+<p>
+<h2>31.03.2006: Version 0.1.03</h2>
+<ul>
+  <li>Kleiner Verbesserungen</li>
+</ul>
+</p>
+
+
+<p>
+<h2>29.01.2006: Version 0.1.02</h2>
+<ul>
+  <li>Bugfixes in Sprachdateien</li>
+  <li>Japanisches Sprachpaket: ja-JP</li>
+</ul>
+</p>
+
+
+<p>
+<h2>08.12.2005: Version 0.1.01</h2>
+<ul>
+  <li>Bugfixes</li>
+</ul>
+</p>
+
+
+
+<p>
+<h2>18.09.2005: Version 0.0.11</h2>
+<ul>
+  <li>Und wieder eine &Auml;nderung in der Thunderbird API, welche verhinderte, dass das Plugin ab Version 1.5 l&auml;uft.</li>
+</ul>
+</p>
+
+
+
+<p>
+<h2>12.09.2005: Version 0.0.10</h2>
+<ul>
+  <li>Eine &Auml;nderung in der Thunderbird API verhinderte, dass das Plugin ab Version 1.5 l&auml;uft.</li>
+</ul>
+</p>
+
+
+
+<p>
+<h2>23.08.2005: Version 0.0.9</h2>
+<ul>
+  <li>Bugfix bei: ungelesene Nachrichten bevorzugt zu l&ouml;schen mit RSS.</li>
+  <li>Option um gesendete E-Mails bei der Suche zu ignorieren.</li>
+  <li>Holl&auml;ndisches Sprachpaket: nl-NL</li>
+</ul>
+</p> 
+
+
+
+<p>
+<h2>15.08.2005: Version 0.0.8</h2>
+<ul>
+  <li>Kleinere Bugfixes</li>
+  <li>Standard wieder herstellen (eine Nachricht behalten, restliche Duplikate l&ouml;schen).</li>
+  <li>Wenn zwei Nachrichten identisch sind, dann behalte die gr&ouml;ßere, kleinere, ungelesene oder die, welche je nach Einstellung zuerst oder zuletzt gefunden wurde.</li>
+</ul>
+</p> 
+
+
+
+<p>
+<h2>29.07.2005: Version 0.0.7</h2>
+<ul>
+  <li>Automatisches l&ouml;schen (keinen Dialog mit doppelten Nachrichten anzeigen)</li>
+  <li>Bug beim Anzeigen von doppelten imap Nachrichten ("Unknown message format: image-message") behoben.</li>
+  <li>Alle Nachrichten markieren als l&ouml;schen (DEL) oder behalten (KEEP). Dies ist von Vorteil, wenn man nur einzelne Nachrichten l&ouml;schen oder nur einzelne Nachrichten behalten m&ouml;chte.</li>
+  <li>Spanisches (es-ES) und franz&ouml;sisches (fr-FR) Sprachpaket</li> 
+</ul>
+</p> 
+
+
+<p>
+<h2>26.07.2005: Version 0.0.6</h2>
+<ul>
+  <li>Ab sofort k&ouml;nnen Verzeichniss mit mehr als 149000 Nachrichten durchsucht werden. Dies wurde durch eine eigens implementierte Speicherverwaltung erreicht. Die Grenze liegt jetzt bei ca. 400.000 Nachrichten.</li>
+  <li>Dialog friert nicht mehr ein und es erscheint nicht mehr die Nachricht "Script Warning", dass ein Script zu viel Rechenzeit beansprucht und nicht mehr reagiert. Dies wurde mit einem Quick-Sort Algorithmus erreicht der any-time f&auml;hig gemacht wurde.</li>
+  <li>Weiteres Sprachpaket: it-IT</li>
+</ul>
+</p> 
+
+
+
+<p>
+<h2>17.07.2005: Version 0.0.5</h2>
+<ul>
+  <li>Beschleunigung der Suchfunktion</li>
+  <li>Wenn viele doppelte Nachrichten gefunden werden, friert Thunderbird w&auml;hrend dem Aufbauen  des Dialoges nicht mehr ein.</li>
+  <li>Nachrichten ID wurde nicht zum Vergleichen verwendet.</li>
+  <li>Suchen und l&ouml;schen bei IMAP nun m&ouml;glich.</li>
+</ul>
+</p> 
+
+
+
+<p>
+<h2>17.07.2005: Version 0.0.4</h2>
+<ul>
+  <li>Bugfixes in den deutschen Sprachpaketen (verhinderte das L&ouml;schen)</li>
+</ul>
+</p> 
+
+
+
+<p>
+<h2>14.07.2005: Version 0.0.3</h2>
+<ul>
+  <li>Deutliche Geschwindigkeitserh�hung. Eine Suche bei 20000 Nachrichten dauerte eine ganze Stunde - jetzt nur noch 20 Sekunden.</li>
+  <li>&Auml;hnliche Nachrichten werden nun gruppiert angezeigt, so dass die zu l&ouml;schende ausgew�hlt werden kann.</li>
+  <li>Anzeige der Nachrichten im Hauptfenster durch anklicken in der Doppelte Nachrichten Ansicht</li>
+</ul>
+</p> 
+
+  
+
+<p>
+<h2>10.07.2005: Version 0.0.2</h2>
+<ul>
+  <li>Anzeige von doppelten Nachrichten: Spalten verschiebar, Spaltenbreite ver�nderbar, Datum in lesbarem Format</li>
+  <li>Weitere Sprachpakete: de-CH, de-LI, de-LU, de-CH.</li>
+  <li>Papierkorb kann per Einstellung bei der Suche ignoriert werden. Dies ist die Standardeinstellung.</li>
+  <li>Anleitung</li>
+</ul>
+</p>
+
+
+
+<p>
+<h2>08.07.2005: Version 0.0.1</h2>
+<ul>
+  <li>Erste Ver�ffentlichung.</li>
+</ul>
+</p>
+
+
+
+</body>
+</html>

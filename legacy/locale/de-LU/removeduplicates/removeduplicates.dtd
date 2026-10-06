@@ -1,0 +1,1013 @@
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Remerciementen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Iwwersetzung op Lëtzebuergesch)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Iwwersetzung op Italienesch)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Iwwersetzung op Spanisch)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Iwwersetzung op Französisch)">
+<!ENTITY removeduplicates.credits6 "David Balder (Iwwersetzung op Nedderländisch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Iwwersetzung op Japanisch)">
+<!ENTITY removeduplicates.credits8 "">
+<!ENTITY removeduplicates.credits9 "">
+<!ENTITY removeduplicates.popupmenuname "Duebel Noriichten läschen...">
+<!ENTITY removeduplicates.description "Läscht duebel Noriichten duerch Verzeechniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optiounen vir Duebel Noriichte läschen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Astellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Ännerungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hëllef">
+<!ENTITY removeduplicatesPrefs.captionabout "Iwwer">
+<!ENTITY removeduplicatesPrefs.descsettings "Choix, wéi d'E-Mailen verglach gin.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Verglaich d'Noriichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Verglaich den Datum a Sekonnen">
+<!ENTITY removeduplicatesPrefs.compsubject "Verglaich de Subject">
+<!ENTITY removeduplicatesPrefs.compauthor "Verglaich den Absender">
+<!ENTITY removeduplicatesPrefs.complinecount "Verglaich d'Unzuel vun Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Verglaich den Inhalt vun de Noriichten (lues)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Verglaich die Empfängerliste">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Ënnersich vir d'éischt Ënnerverzeechnisser">
+<!ENTITY removeduplicatesPrefs.autodelete "Ignoréier den Drecksback bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoréier den Sentfolder bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Auto läschen">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Bréng Debuginformatiounen">
+<!ENTITY showduplicatemessages.title "Duebel Noriichten">
+<!ENTITY showduplicatemessages.caption "Noriichten vir ze läschen auswielen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Subject">
+<!ENTITY showduplicatemessages.sender "Absender">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Verzeechnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Lénksklick: Noriicht weisen. Rietsklick: Méi Informatiounen. Duebelklick: Wiessel vun 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Remerciementen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Iwwersetzung op Lëtzebuergesch)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Iwwersetzung op Italienesch)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Iwwersetzung op Spanisch)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Iwwersetzung op Französisch)">
+<!ENTITY removeduplicates.credits6 "David Balder (Iwwersetzung op Nedderländisch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Iwwersetzung op Japanisch)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Duebel Noriichten läschen...">
+<!ENTITY removeduplicates.description "Läscht duebel Noriichten duerch Verzeechniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optiounen vir Duebel Noriichte läschen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Astellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Ännerungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hëllef">
+<!ENTITY removeduplicatesPrefs.captionabout "Iwwer">
+<!ENTITY removeduplicatesPrefs.descsettings "Choix, wéi d'E-Mailen verglach gin.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Verglaich d'Noriichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Verglaich den Datum a Sekonnen">
+<!ENTITY removeduplicatesPrefs.compsubject "Verglaich de Subject">
+<!ENTITY removeduplicatesPrefs.compauthor "Verglaich den Absender">
+<!ENTITY removeduplicatesPrefs.complinecount "Verglaich d'Unzuel vun Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Verglaich den Inhalt vun de Noriichten (lues)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Verglaich die Empfängerliste">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Ënnersich vir d'éischt Ënnerverzeechnisser">
+<!ENTITY removeduplicatesPrefs.autodelete "Ignoréier den Drecksback bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoréier den Sentfolder bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Auto läschen">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Bréng Debuginformatiounen">
+<!ENTITY showduplicatemessages.title "Duebel Noriichten">
+<!ENTITY showduplicatemessages.caption "Noriichten vir ze läschen auswielen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Subject">
+<!ENTITY showduplicatemessages.sender "Absender">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Verzeechnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Lénksklick: Noriicht weisen. Rietsklick: Méi Informatiounen. Duebelklick: Wiessel vun 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Remerciementen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Iwwersetzung op Lëtzebuergesch)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Iwwersetzung op Italienesch)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Iwwersetzung op Spanisch)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Iwwersetzung op Französisch)">
+<!ENTITY removeduplicates.credits6 "David Balder (Iwwersetzung op Nedderländisch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Iwwersetzung op Japanisch)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Duebel Noriichten läschen...">
+<!ENTITY removeduplicates.description "Läscht duebel Noriichten duerch Verzeechniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optiounen vir Duebel Noriichte läschen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Astellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Ännerungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hëllef">
+<!ENTITY removeduplicatesPrefs.captionabout "Iwwer">
+<!ENTITY removeduplicatesPrefs.descsettings "Choix, wéi d'E-Mailen verglach gin.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Verglaich d'Noriichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Verglaich den Datum a Sekonnen">
+<!ENTITY removeduplicatesPrefs.compsubject "Verglaich de Subject">
+<!ENTITY removeduplicatesPrefs.compauthor "Verglaich den Absender">
+<!ENTITY removeduplicatesPrefs.complinecount "Verglaich d'Unzuel vun Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Verglaich den Inhalt vun de Noriichten (lues)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Verglaich die Empfängerliste">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Ënnersich vir d'éischt Ënnerverzeechnisser">
+<!ENTITY removeduplicatesPrefs.autodelete "Ignoréier den Drecksback bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoréier den Sentfolder bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Auto läschen">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Bréng Debuginformatiounen">
+<!ENTITY showduplicatemessages.title "Duebel Noriichten">
+<!ENTITY showduplicatemessages.caption "Noriichten vir ze läschen auswielen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Subject">
+<!ENTITY showduplicatemessages.sender "Absender">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Verzeechnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Lénksklick: Noriicht weisen. Rietsklick: Méi Informatiounen. Duebelklick: Wiessel vun 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Remerciementen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Iwwersetzung op Lëtzebuergesch)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Iwwersetzung op Italienesch)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Iwwersetzung op Spanisch)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Iwwersetzung op Französisch)">
+<!ENTITY removeduplicates.credits6 "David Balder (Iwwersetzung op Nedderländisch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Iwwersetzung op Japanisch)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Duebel Noriichten läschen...">
+<!ENTITY removeduplicates.description "Läscht duebel Noriichten duerch Verzeechniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optiounen vir Duebel Noriichte läschen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Astellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Ännerungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hëllef">
+<!ENTITY removeduplicatesPrefs.captionabout "Iwwer">
+<!ENTITY removeduplicatesPrefs.descsettings "Choix, wéi d'E-Mailen verglach gin.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Verglaich d'Noriichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Verglaich den Datum a Sekonnen">
+<!ENTITY removeduplicatesPrefs.compsubject "Verglaich de Subject">
+<!ENTITY removeduplicatesPrefs.compauthor "Verglaich den Absender">
+<!ENTITY removeduplicatesPrefs.complinecount "Verglaich d'Unzuel vun Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Verglaich den Inhalt vun de Noriichten (lues)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Verglaich die Empfängerliste">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Ënnersich vir d'éischt Ënnerverzeechnisser">
+<!ENTITY removeduplicatesPrefs.autodelete "Ignoréier den Drecksback bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoréier den Sentfolder bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Auto läschen">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Bréng Debuginformatiounen">
+<!ENTITY showduplicatemessages.title "Duebel Noriichten">
+<!ENTITY showduplicatemessages.caption "Noriichten vir ze läschen auswielen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Subject">
+<!ENTITY showduplicatemessages.sender "Absender">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Verzeechnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Lénksklick: Noriicht weisen. Rietsklick: Méi Informatiounen. Duebelklick: Wiessel vun 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Remerciementen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Iwwersetzung op Lëtzebuergesch)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Iwwersetzung op Italienesch)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Iwwersetzung op Spanisch)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Iwwersetzung op Französisch)">
+<!ENTITY removeduplicates.credits6 "David Balder (Iwwersetzung op Nedderländisch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Iwwersetzung op Japanisch)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Duebel Noriichten läschen...">
+<!ENTITY removeduplicates.description "Läscht duebel Noriichten duerch Verzeechniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optiounen vir Duebel Noriichte läschen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Astellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Ännerungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hëllef">
+<!ENTITY removeduplicatesPrefs.captionabout "Iwwer">
+<!ENTITY removeduplicatesPrefs.descsettings "Choix, wéi d'E-Mailen verglach gin.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Verglaich d'Noriichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Verglaich den Datum a Sekonnen">
+<!ENTITY removeduplicatesPrefs.compsubject "Verglaich de Subject">
+<!ENTITY removeduplicatesPrefs.compauthor "Verglaich den Absender">
+<!ENTITY removeduplicatesPrefs.complinecount "Verglaich d'Unzuel vun Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Verglaich den Inhalt vun de Noriichten (lues)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Verglaich die Empfängerliste">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Ënnersich vir d'éischt Ënnerverzeechnisser">
+<!ENTITY removeduplicatesPrefs.autodelete "Ignoréier den Drecksback bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoréier den Sentfolder bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Auto läschen">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Bréng Debuginformatiounen">
+<!ENTITY showduplicatemessages.title "Duebel Noriichten">
+<!ENTITY showduplicatemessages.caption "Noriichten vir ze läschen auswielen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Subject">
+<!ENTITY showduplicatemessages.sender "Absender">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Verzeechnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Lénksklick: Noriicht weisen. Rietsklick: Méi Informatiounen. Duebelklick: Wiessel vun 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Remerciementen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Iwwersetzung op Lëtzebuergesch)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Iwwersetzung op Italienesch)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Iwwersetzung op Spanisch)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Iwwersetzung op Französisch)">
+<!ENTITY removeduplicates.credits6 "David Balder (Iwwersetzung op Nedderländisch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Iwwersetzung op Japanisch)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Duebel Noriichten läschen...">
+<!ENTITY removeduplicates.description "Läscht duebel Noriichten duerch Verzeechniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optiounen vir Duebel Noriichte läschen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Astellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Ännerungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hëllef">
+<!ENTITY removeduplicatesPrefs.captionabout "Iwwer">
+<!ENTITY removeduplicatesPrefs.descsettings "Choix, wéi d'E-Mailen verglach gin.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Verglaich d'Noriichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Verglaich den Datum a Sekonnen">
+<!ENTITY removeduplicatesPrefs.compsubject "Verglaich de Subject">
+<!ENTITY removeduplicatesPrefs.compauthor "Verglaich den Absender">
+<!ENTITY removeduplicatesPrefs.complinecount "Verglaich d'Unzuel vun Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Verglaich den Inhalt vun de Noriichten (lues)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Verglaich die Empfängerliste">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Ënnersich vir d'éischt Ënnerverzeechnisser">
+<!ENTITY removeduplicatesPrefs.autodelete "Ignoréier den Drecksback bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoréier den Sentfolder bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Auto läschen">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Bréng Debuginformatiounen">
+<!ENTITY showduplicatemessages.title "Duebel Noriichten">
+<!ENTITY showduplicatemessages.caption "Noriichten vir ze läschen auswielen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Subject">
+<!ENTITY showduplicatemessages.sender "Absender">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Verzeechnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Lénksklick: Noriicht weisen. Rietsklick: Méi Informatiounen. Duebelklick: Wiessel vun 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Remerciementen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Iwwersetzung op Lëtzebuergesch)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Iwwersetzung op Italienesch)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Iwwersetzung op Spanisch)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Iwwersetzung op Französisch)">
+<!ENTITY removeduplicates.credits6 "David Balder (Iwwersetzung op Nedderländisch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Iwwersetzung op Japanisch)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Duebel Noriichten läschen...">
+<!ENTITY removeduplicates.description "Läscht duebel Noriichten duerch Verzeechniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optiounen vir Duebel Noriichte läschen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Astellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Ännerungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hëllef">
+<!ENTITY removeduplicatesPrefs.captionabout "Iwwer">
+<!ENTITY removeduplicatesPrefs.descsettings "Choix, wéi d'E-Mailen verglach gin.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Verglaich d'Noriichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Verglaich den Datum a Sekonnen">
+<!ENTITY removeduplicatesPrefs.compsubject "Verglaich de Subject">
+<!ENTITY removeduplicatesPrefs.compauthor "Verglaich den Absender">
+<!ENTITY removeduplicatesPrefs.complinecount "Verglaich d'Unzuel vun Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Verglaich den Inhalt vun de Noriichten (lues)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Verglaich die Empfängerliste">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Ënnersich vir d'éischt Ënnerverzeechnisser">
+<!ENTITY removeduplicatesPrefs.autodelete "Ignoréier den Drecksback bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoréier den Sentfolder bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Auto läschen">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Doppelte Nachrichten Dialog immer anzeigen">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Bréng Debuginformatiounen">
+<!ENTITY showduplicatemessages.title "Duebel Noriichten">
+<!ENTITY showduplicatemessages.caption "Noriichten vir ze läschen auswielen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Subject">
+<!ENTITY showduplicatemessages.sender "Absender">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Verzeechnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Lénksklick: Noriicht weisen. Rietsklick: Méi Informatiounen. Duebelklick: Wiessel vun 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Remerciementen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Iwwersetzung op Lëtzebuergesch)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Iwwersetzung op Italienesch)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Iwwersetzung op Spanisch)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Iwwersetzung op Französisch)">
+<!ENTITY removeduplicates.credits6 "David Balder (Iwwersetzung op Nedderländisch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Iwwersetzung op Japanisch)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Duebel Noriichten läschen...">
+<!ENTITY removeduplicates.description "Läscht duebel Noriichten duerch Verzeechniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optiounen vir Duebel Noriichte läschen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Astellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Ännerungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hëllef">
+<!ENTITY removeduplicatesPrefs.captionabout "Iwwer">
+<!ENTITY removeduplicatesPrefs.descsettings "Choix, wéi d'E-Mailen verglach gin.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Verglaich d'Noriichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Verglaich den Datum a Sekonnen">
+<!ENTITY removeduplicatesPrefs.compdate "Vergleiche das Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Verglaich de Subject">
+<!ENTITY removeduplicatesPrefs.compauthor "Verglaich den Absender">
+<!ENTITY removeduplicatesPrefs.complinecount "Verglaich d'Unzuel vun Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Verglaich den Inhalt vun de Noriichten (lues)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Verglaich die Empfängerliste">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Ënnersich vir d'éischt Ënnerverzeechnisser">
+<!ENTITY removeduplicatesPrefs.autodelete "Ignoréier den Drecksback bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoréier den Sentfolder bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Auto läschen">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Doppelte Nachrichten Dialog immer anzeigen">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Bréng Debuginformatiounen">
+<!ENTITY showduplicatemessages.title "Duebel Noriichten">
+<!ENTITY showduplicatemessages.caption "Noriichten vir ze läschen auswielen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Subject">
+<!ENTITY showduplicatemessages.sender "Absender">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Verzeechnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Lénksklick: Noriicht weisen. Rietsklick: Méi Informatiounen. Duebelklick: Wiessel vun 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Remerciementen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Iwwersetzung op Lëtzebuergesch)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Iwwersetzung op Italienesch)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Iwwersetzung op Spanisch)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Iwwersetzung op Französisch)">
+<!ENTITY removeduplicates.credits6 "David Balder (Iwwersetzung op Nedderländisch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Iwwersetzung op Japanisch)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Duebel Noriichten läschen...">
+<!ENTITY removeduplicates.description "Läscht duebel Noriichten duerch Verzeechniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optiounen vir Duebel Noriichte läschen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Astellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Ännerungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hëllef">
+<!ENTITY removeduplicatesPrefs.captionabout "Iwwer">
+<!ENTITY removeduplicatesPrefs.descsettings "Choix, wéi d'E-Mailen verglach gin.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Verglaich d'Noriichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Verglaich den Datum a Sekonnen">
+<!ENTITY removeduplicatesPrefs.compdate "Vergleiche das Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Verglaich de Subject">
+<!ENTITY removeduplicatesPrefs.compauthor "Verglaich den Absender">
+<!ENTITY removeduplicatesPrefs.complinecount "Verglaich d'Unzuel vun Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Verglaich den Inhalt vun de Noriichten (lues)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Verglaich die Empfängerliste">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Ënnersich vir d'éischt Ënnerverzeechnisser">
+<!ENTITY removeduplicatesPrefs.autodelete "Ignoréier den Drecksback bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoréier den Sentfolder bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Auto läschen">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Doppelte Nachrichten Dialog immer anzeigen">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Bréng Debuginformatiounen">
+<!ENTITY showduplicatemessages.title "Duebel Noriichten">
+<!ENTITY showduplicatemessages.caption "Noriichten vir ze läschen auswielen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Subject">
+<!ENTITY showduplicatemessages.sender "Absender">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Verzeechnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Lénksklick: Noriicht weisen. Rietsklick: Méi Informatiounen. Duebelklick: Wiessel vun 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Remerciementen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Iwwersetzung op Lëtzebuergesch)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Iwwersetzung op Italienesch)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Iwwersetzung op Spanisch)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Iwwersetzung op Französisch)">
+<!ENTITY removeduplicates.credits6 "David Balder (Iwwersetzung op Nedderländisch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Iwwersetzung op Japanisch)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Duebel Noriichten läschen...">
+<!ENTITY removeduplicates.description "Läscht duebel Noriichten duerch Verzeechniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optiounen vir Duebel Noriichte läschen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Astellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Ännerungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hëllef">
+<!ENTITY removeduplicatesPrefs.captionabout "Iwwer">
+<!ENTITY removeduplicatesPrefs.descsettings "Choix, wéi d'E-Mailen verglach gin.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Verglaich d'Noriichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Verglaich den Datum a Sekonnen">
+<!ENTITY removeduplicatesPrefs.compdate "Vergleiche das Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Verglaich de Subject">
+<!ENTITY removeduplicatesPrefs.compauthor "Verglaich den Absender">
+<!ENTITY removeduplicatesPrefs.complinecount "Verglaich d'Unzuel vun Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Verglaich den Inhalt vun de Noriichten (lues)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Verglaich die Empfängerliste">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Ënnersich vir d'éischt Ënnerverzeechnisser">
+<!ENTITY removeduplicatesPrefs.autodelete "Ignoréier den Drecksback bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoréier den Sentfolder bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Auto läschen">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Doppelte Nachrichten Dialog immer anzeigen">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Bréng Debuginformatiounen">
+<!ENTITY showduplicatemessages.title "Duebel Noriichten">
+<!ENTITY showduplicatemessages.caption "Noriichten vir ze läschen auswielen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Subject">
+<!ENTITY showduplicatemessages.sender "Absender">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Verzeechnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Lénksklick: Noriicht weisen. Rietsklick: Méi Informatiounen. Duebelklick: Wiessel vun 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Remerciementen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Iwwersetzung op Lëtzebuergesch)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Iwwersetzung op Italienesch)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Iwwersetzung op Spanisch)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Iwwersetzung op Französisch)">
+<!ENTITY removeduplicates.credits6 "David Balder (Iwwersetzung op Nedderländisch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Iwwersetzung op Japanisch)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Duebel Noriichten läschen...">
+<!ENTITY removeduplicates.description "Läscht duebel Noriichten duerch Verzeechniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optiounen vir Duebel Noriichte läschen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Astellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Ännerungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hëllef">
+<!ENTITY removeduplicatesPrefs.captionabout "Iwwer">
+<!ENTITY removeduplicatesPrefs.descsettings "Choix, wéi d'E-Mailen verglach gin.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Verglaich d'Noriichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Verglaich den Datum a Sekonnen">
+<!ENTITY removeduplicatesPrefs.compdate "Vergleiche das Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Verglaich de Subject">
+<!ENTITY removeduplicatesPrefs.compauthor "Verglaich den Absender">
+<!ENTITY removeduplicatesPrefs.complinecount "Verglaich d'Unzuel vun Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Verglaich den Inhalt vun de Noriichten (lues)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Verglaich die Empfängerliste">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Ënnersich vir d'éischt Ënnerverzeechnisser">
+<!ENTITY removeduplicatesPrefs.autodelete "Ignoréier den Drecksback bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoréier den Sentfolder bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Auto läschen">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Doppelte Nachrichten Dialog immer anzeigen">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Bréng Debuginformatiounen">
+<!ENTITY showduplicatemessages.title "Duebel Noriichten">
+<!ENTITY showduplicatemessages.caption "Noriichten vir ze läschen auswielen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Subject">
+<!ENTITY showduplicatemessages.sender "Absender">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Verzeechnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Lénksklick: Noriicht weisen. Rietsklick: Méi Informatiounen. Duebelklick: Wiessel vun 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Remerciementen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Iwwersetzung op Lëtzebuergesch)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Iwwersetzung op Italienesch)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Iwwersetzung op Spanisch)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Iwwersetzung op Französisch)">
+<!ENTITY removeduplicates.credits6 "David Balder (Iwwersetzung op Nedderländisch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Iwwersetzung op Japanisch)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Duebel Noriichten läschen...">
+<!ENTITY removeduplicates.description "Läscht duebel Noriichten duerch Verzeechniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optiounen vir Duebel Noriichte läschen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Astellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Ännerungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hëllef">
+<!ENTITY removeduplicatesPrefs.captionabout "Iwwer">
+<!ENTITY removeduplicatesPrefs.descsettings "Choix, wéi d'E-Mailen verglach gin.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Verglaich d'Noriichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Verglaich den Datum a Sekonnen">
+<!ENTITY removeduplicatesPrefs.compdate "Vergleiche das Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Verglaich de Subject">
+<!ENTITY removeduplicatesPrefs.compauthor "Verglaich den Absender">
+<!ENTITY removeduplicatesPrefs.complinecount "Verglaich d'Unzuel vun Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Verglaich den Inhalt vun de Noriichten (lues)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Verglaich die Empfängerliste">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Ënnersich vir d'éischt Ënnerverzeechnisser">
+<!ENTITY removeduplicatesPrefs.autodelete "Ignoréier den Drecksback bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoréier den Sentfolder bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Auto läschen">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Doppelte Nachrichten Dialog immer anzeigen">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Bréng Debuginformatiounen">
+<!ENTITY showduplicatemessages.title "Duebel Noriichten">
+<!ENTITY showduplicatemessages.caption "Noriichten vir ze läschen auswielen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Subject">
+<!ENTITY showduplicatemessages.sender "Absender">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Verzeechnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Lénksklick: Noriicht weisen. Rietsklick: Méi Informatiounen. Duebelklick: Wiessel vun 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Remerciementen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Iwwersetzung op Lëtzebuergesch)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Iwwersetzung op Italienesch)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Iwwersetzung op Spanisch)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Iwwersetzung op Französisch)">
+<!ENTITY removeduplicates.credits6 "David Balder (Iwwersetzung op Nedderländisch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Iwwersetzung op Japanisch)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Duebel Noriichten läschen...">
+<!ENTITY removeduplicates.description "Läscht duebel Noriichten duerch Verzeechniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optiounen vir Duebel Noriichte läschen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Astellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Ännerungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hëllef">
+<!ENTITY removeduplicatesPrefs.captionabout "Iwwer">
+<!ENTITY removeduplicatesPrefs.descsettings "Choix, wéi d'E-Mailen verglach gin.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Verglaich d'Noriichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Verglaich den Datum a Sekonnen">
+<!ENTITY removeduplicatesPrefs.compdate "Vergleiche das Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Verglaich de Subject">
+<!ENTITY removeduplicatesPrefs.compauthor "Verglaich den Absender">
+<!ENTITY removeduplicatesPrefs.complinecount "Verglaich d'Unzuel vun Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Verglaich den Inhalt vun de Noriichten (lues)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Verglaich die Empfängerliste">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Ënnersich vir d'éischt Ënnerverzeechnisser">
+<!ENTITY removeduplicatesPrefs.autodelete "Ignoréier den Drecksback bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoréier den Sentfolder bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Auto läschen">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Doppelte Nachrichten Dialog immer anzeigen">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Bréng Debuginformatiounen">
+<!ENTITY showduplicatemessages.title "Duebel Noriichten">
+<!ENTITY showduplicatemessages.caption "Noriichten vir ze läschen auswielen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Subject">
+<!ENTITY showduplicatemessages.sender "Absender">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Verzeechnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Lénksklick: Noriicht weisen. Rietsklick: Méi Informatiounen. Duebelklick: Wiessel vun 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Remerciementen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Iwwersetzung op Lëtzebuergesch)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Iwwersetzung op Italienesch)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Iwwersetzung op Spanisch)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Iwwersetzung op Französisch)">
+<!ENTITY removeduplicates.credits6 "David Balder (Iwwersetzung op Nedderländisch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Iwwersetzung op Japanisch)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Duebel Noriichten läschen...">
+<!ENTITY removeduplicates.description "Läscht duebel Noriichten duerch Verzeechniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optiounen vir Duebel Noriichte läschen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Astellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Ännerungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hëllef">
+<!ENTITY removeduplicatesPrefs.captionabout "Iwwer">
+<!ENTITY removeduplicatesPrefs.descsettings "Choix, wéi d'E-Mailen verglach gin.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Verglaich d'Noriichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Verglaich den Datum a Sekonnen">
+<!ENTITY removeduplicatesPrefs.compdate "Vergleiche das Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Verglaich de Subject">
+<!ENTITY removeduplicatesPrefs.compauthor "Verglaich den Absender">
+<!ENTITY removeduplicatesPrefs.complinecount "Verglaich d'Unzuel vun Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Verglaich den Inhalt vun de Noriichten (lues)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Verglaich die Empfängerliste">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Ënnersich vir d'éischt Ënnerverzeechnisser">
+<!ENTITY removeduplicatesPrefs.autodelete "Ignoréier den Drecksback bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoréier den Sentfolder bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Auto läschen">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Doppelte Nachrichten Dialog immer anzeigen">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Bréng Debuginformatiounen">
+<!ENTITY showduplicatemessages.title "Duebel Noriichten">
+<!ENTITY showduplicatemessages.caption "Noriichten vir ze läschen auswielen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Subject">
+<!ENTITY showduplicatemessages.sender "Absender">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Verzeechnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Lénksklick: Noriicht weisen. Rietsklick: Méi Informatiounen. Duebelklick: Wiessel vun 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Remerciementen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Iwwersetzung op Lëtzebuergesch)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Iwwersetzung op Italienesch)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Iwwersetzung op Spanisch)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Iwwersetzung op Französisch)">
+<!ENTITY removeduplicates.credits6 "David Balder (Iwwersetzung op Nedderländisch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Iwwersetzung op Japanisch)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Duebel Noriichten läschen...">
+<!ENTITY removeduplicates.description "Läscht duebel Noriichten duerch Verzeechniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optiounen vir Duebel Noriichte läschen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Astellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Ännerungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hëllef">
+<!ENTITY removeduplicatesPrefs.captionabout "Iwwer">
+<!ENTITY removeduplicatesPrefs.descsettings "Choix, wéi d'E-Mailen verglach gin.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Verglaich d'Noriichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Verglaich den Datum a Sekonnen">
+<!ENTITY removeduplicatesPrefs.compdate "Vergleiche das Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Verglaich de Subject">
+<!ENTITY removeduplicatesPrefs.compauthor "Verglaich den Absender">
+<!ENTITY removeduplicatesPrefs.complinecount "Verglaich d'Unzuel vun Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Verglaich den Inhalt vun de Noriichten (lues)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Verglaich die Empfängerliste">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Ënnersich vir d'éischt Ënnerverzeechnisser">
+<!ENTITY removeduplicatesPrefs.autodelete "Ignoréier den Drecksback bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoréier den Sentfolder bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Auto läschen">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Doppelte Nachrichten Dialog immer anzeigen">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Bréng Debuginformatiounen">
+<!ENTITY removeduplicatesPrefs.reversesearch "Invertiere Verzeichnissuche">
+<!ENTITY showduplicatemessages.title "Duebel Noriichten">
+<!ENTITY showduplicatemessages.caption "Noriichten vir ze läschen auswielen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Subject">
+<!ENTITY showduplicatemessages.sender "Absender">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Verzeechnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Lénksklick: Noriicht weisen. Rietsklick: Méi Informatiounen. Duebelklick: Wiessel vun 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Remerciementen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Iwwersetzung op Lëtzebuergesch)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Iwwersetzung op Italienesch)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Iwwersetzung op Spanisch)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Iwwersetzung op Französisch)">
+<!ENTITY removeduplicates.credits6 "David Balder (Iwwersetzung op Nedderländisch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Iwwersetzung op Japanisch)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Duebel Noriichten läschen...">
+<!ENTITY removeduplicates.description "Läscht duebel Noriichten duerch Verzeechniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optiounen vir Duebel Noriichte läschen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Astellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Ännerungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hëllef">
+<!ENTITY removeduplicatesPrefs.captionabout "Iwwer">
+<!ENTITY removeduplicatesPrefs.descsettings "Choix, wéi d'E-Mailen verglach gin.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Verglaich d'Noriichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Verglaich den Datum a Sekonnen">
+<!ENTITY removeduplicatesPrefs.compdate "Vergleiche das Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Verglaich de Subject">
+<!ENTITY removeduplicatesPrefs.compauthor "Verglaich den Absender">
+<!ENTITY removeduplicatesPrefs.complinecount "Verglaich d'Unzuel vun Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Verglaich den Inhalt vun de Noriichten (lues)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Verglaich die Empfängerliste">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Ënnersich vir d'éischt Ënnerverzeechnisser">
+<!ENTITY removeduplicatesPrefs.autodelete "Ignoréier den Drecksback bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoréier den Sentfolder bei der Sich">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Auto läschen">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Doppelte Nachrichten Dialog immer anzeigen">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Bréng Debuginformatiounen">
+<!ENTITY removeduplicatesPrefs.reversesearch "Invertiere Verzeichnissuche">
+<!ENTITY showduplicatemessages.title "Duebel Noriichten">
+<!ENTITY showduplicatemessages.caption "Noriichten vir ze läschen auswielen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Subject">
+<!ENTITY showduplicatemessages.sender "Absender">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Verzeechnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Lénksklick: Noriicht weisen. Rietsklick: Méi Informatiounen. Duebelklick: Wiessel vun 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">

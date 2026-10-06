@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <!-- Target Application this extension can install into, 
+        with minimum and maximum supported versions. --> 
+    <em:targetApplication>
+      <Description>
+        <em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id>
+        <em:minVersion>5.0</em:minVersion>
+        <em:maxVersion>31.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+    <em:type>2</em:type>
+
+    <!-- Front End MetaData -->
+    <em:id>{12345678-1234-1234-1234-123456789abc}</em:id>
+    <em:name>Remove Duplicate Messages</em:name>
+    <em:version>0.1.14</em:version>
+    <em:description>Removes duplicate messages by folder context menu.</em:description>
+    <em:creator>Thorsten W. Schmidt</em:creator>
+    <em:homepageURL>http://addons.mozilla.org</em:homepageURL>
+
+    <!-- Front End Integration Hooks (used by Extension Manager)-->
+    <em:optionsURL>chrome://removeduplicates/content/removeduplicatesprefs.xul</em:optionsURL>
+    <em:iconURL>chrome://removeduplicates/content/removeduplicates.png</em:iconURL>
+
+    <!-- Packages, Skins and Locales that this extension registers -->
+    <!--em:file>
+      <Description about="urn:mozilla:extension:file:removeduplicates.jar">
+        <em:package>content/removeduplicates/</em:package>
+        <em:locale>locale/en-US/removeduplicates/</em:locale>
+        <em:locale>locale/de-AT/removeduplicates/</em:locale>
+        <em:locale>locale/de-CH/removeduplicates/</em:locale>
+        <em:locale>locale/de-DE/removeduplicates/</em:locale>
+        <em:locale>locale/de-LI/removeduplicates/</em:locale>
+        <em:locale>locale/de-LU/removeduplicates/</em:locale>
+        <em:locale>locale/ja-JP/removeduplicates/</em:locale>
+        <em:locale>locale/fr-FR/removeduplicates/</em:locale>
+        <em:locale>locale/es-ES/removeduplicates/</em:locale>
+        <em:locale>locale/it-IT/removeduplicates/</em:locale>
+        <em:locale>locale/nl-NL/removeduplicates/</em:locale>
+        <em:locale>locale/pt-BR/removeduplicates/</em:locale>
+      </Description>
+    </em:file-->
+  </Description>      
+  
+</RDF>

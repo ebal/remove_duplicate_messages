@@ -1,0 +1,1013 @@
+<!ENTITY removeduplicates.title "Borrador de Mensajes duplicados">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Creditos">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Traducción luxemburgish)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (prueba del software)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Traducción italiana)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Traducción française)">
+<!ENTITY removeduplicates.credits6 "David Balder (Traducción holandés)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Traducción japanese)">
+<!ENTITY removeduplicates.credits8 "">
+<!ENTITY removeduplicates.credits9 "">
+<!ENTITY removeduplicates.popupmenuname "Borrar mensajes duplicados...">
+<!ENTITY removeduplicates.description "Menu de contexto de Borrar mensajes duplicados por carpeta.">
+<!ENTITY removeduplicatesPrefs.title "Opciones del Borrador de Mensajes Duplicados">
+<!ENTITY removeduplicatesPrefs.captionsettings "Configuración">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Ayuda">
+<!ENTITY removeduplicatesPrefs.captionabout "Acerca de">
+<!ENTITY removeduplicatesPrefs.descsettings "Elija como los correos electrónicos son comparados.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Comparar el ID del mensaje">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Comparar la fecha en segundos">
+<!ENTITY removeduplicatesPrefs.compsubject "Comparar asunto">
+<!ENTITY removeduplicatesPrefs.compauthor "Comparar autor">
+<!ENTITY removeduplicatesPrefs.complinecount "Comparar cuenta de lineas">
+<!ENTITY removeduplicatesPrefs.compbody "Comparar cuerpo del mensaje (lento)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Prefere to delete">
+<!ENTITY removeduplicatesPrefs.firstfound "first found">
+<!ENTITY removeduplicatesPrefs.unreadmail "unread">
+<!ENTITY removeduplicatesPrefs.smallmail "smaller">
+<!ENTITY removeduplicatesPrefs.largemail "larger">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Buscar primero en subcarpeta">
+<!ENTITY removeduplicatesPrefs.autodelete "Cancelación automática">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignorar papelera en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignorar enviados en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Imprimir información de depuración">
+<!ENTITY showduplicatemessages.title "Mensajes Duplicados">
+<!ENTITY showduplicatemessages.caption "Elija los mensajes que deben ser borrados.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Flag">
+<!ENTITY showduplicatemessages.subject "Asunto">
+<!ENTITY showduplicatemessages.sender "Emisor">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "Carpeta">
+<!ENTITY showduplicatemessages.date "Fecha">
+<!ENTITY showduplicatemessages.hint "Click boton izquierdo: Muestra mensaje. Click botón derecho: Muestra información extra. Doble click: Conmuta 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "All default">
+<!ENTITY showduplicatemessages.buttonSelDel "All delete">
+<!ENTITY showduplicatemessages.buttonSelNoDel "All no delete">
+<!ENTITY showduplicatemessages.buttonErase "Erase Selected">
+<!ENTITY showduplicatemessages.buttonDel "Delete Selected">
+<!ENTITY showduplicatemessages.buttonCancel "Cancel">
+<!ENTITY tooltip.buttonDefault "Restores the original selection. One duplicate of an e-mail is selected for keeping and all other instances are selected for deletion.">
+<!ENTITY tooltip.buttonSelDel "Sets the flag of all messages to delete (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Sets the flag of all messages to keep (KEEP)">
+<!ENTITY tooltip.buttonErase "Erases all with DEL marked messages. There is no way to restore them.">
+<!ENTITY tooltip.buttonDelete "Deletes all with DEL marked messaged. They are moved to the trashcan for backup.">
+<!ENTITY tooltip.buttonCancel "Cancel. No message is being deleted or moved.">
+<!ENTITY removeduplicates.title "Borrador de Mensajes duplicados">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Creditos">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Traducción luxemburgish)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (prueba del software)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Traducción italiana)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Traducción française)">
+<!ENTITY removeduplicates.credits6 "David Balder (Traducción holandés)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Traducción japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Borrar mensajes duplicados...">
+<!ENTITY removeduplicates.description "Menu de contexto de Borrar mensajes duplicados por carpeta.">
+<!ENTITY removeduplicatesPrefs.title "Opciones del Borrador de Mensajes Duplicados">
+<!ENTITY removeduplicatesPrefs.captionsettings "Configuración">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Ayuda">
+<!ENTITY removeduplicatesPrefs.captionabout "Acerca de">
+<!ENTITY removeduplicatesPrefs.descsettings "Elija como los correos electrónicos son comparados.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Comparar el ID del mensaje">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Comparar la fecha en segundos">
+<!ENTITY removeduplicatesPrefs.compsubject "Comparar asunto">
+<!ENTITY removeduplicatesPrefs.compauthor "Comparar autor">
+<!ENTITY removeduplicatesPrefs.complinecount "Comparar cuenta de lineas">
+<!ENTITY removeduplicatesPrefs.compbody "Comparar cuerpo del mensaje (lento)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Prefer to delete">
+<!ENTITY removeduplicatesPrefs.firstfound "first found">
+<!ENTITY removeduplicatesPrefs.unreadmail "unread">
+<!ENTITY removeduplicatesPrefs.smallmail "smaller">
+<!ENTITY removeduplicatesPrefs.largemail "larger">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Buscar primero en subcarpeta">
+<!ENTITY removeduplicatesPrefs.autodelete "Cancelación automática">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignorar papelera en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignorar enviados en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Imprimir información de depuración">
+<!ENTITY showduplicatemessages.title "Mensajes Duplicados">
+<!ENTITY showduplicatemessages.caption "Elija los mensajes que deben ser borrados.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Flag">
+<!ENTITY showduplicatemessages.subject "Asunto">
+<!ENTITY showduplicatemessages.sender "Emisor">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "Carpeta">
+<!ENTITY showduplicatemessages.date "Fecha">
+<!ENTITY showduplicatemessages.hint "Click boton izquierdo: Muestra mensaje. Click botón derecho: Muestra información extra. Doble click: Conmuta 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "All default">
+<!ENTITY showduplicatemessages.buttonSelDel "All delete">
+<!ENTITY showduplicatemessages.buttonSelNoDel "All no delete">
+<!ENTITY showduplicatemessages.buttonErase "Erase Selected">
+<!ENTITY showduplicatemessages.buttonDel "Delete Selected">
+<!ENTITY showduplicatemessages.buttonCancel "Cancel">
+<!ENTITY tooltip.buttonDefault "Restores the original selection. One duplicate of an e-mail is selected for keeping and all other instances are selected for deletion.">
+<!ENTITY tooltip.buttonSelDel "Sets the flag of all messages to delete (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Sets the flag of all messages to keep (KEEP)">
+<!ENTITY tooltip.buttonErase "Erases all with DEL marked messages. There is no way to restore them.">
+<!ENTITY tooltip.buttonDelete "Deletes all with DEL marked messaged. They are moved to the trashcan for backup.">
+<!ENTITY tooltip.buttonCancel "Cancel. No message is being deleted or moved.">
+<!ENTITY removeduplicates.title "Borrador de Mensajes duplicados">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Creditos">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Traducción luxemburgish)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (prueba del software)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Traducción italiana)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Traducción française)">
+<!ENTITY removeduplicates.credits6 "David Balder (Traducción holandés)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Traducción japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Borrar mensajes duplicados...">
+<!ENTITY removeduplicates.description "Menu de contexto de Borrar mensajes duplicados por carpeta.">
+<!ENTITY removeduplicatesPrefs.title "Opciones del Borrador de Mensajes Duplicados">
+<!ENTITY removeduplicatesPrefs.captionsettings "Configuración">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Ayuda">
+<!ENTITY removeduplicatesPrefs.captionabout "Acerca de">
+<!ENTITY removeduplicatesPrefs.descsettings "Elija como los correos electrónicos son comparados.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Comparar el ID del mensaje">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Comparar la fecha en segundos">
+<!ENTITY removeduplicatesPrefs.compsubject "Comparar asunto">
+<!ENTITY removeduplicatesPrefs.compauthor "Comparar autor">
+<!ENTITY removeduplicatesPrefs.complinecount "Comparar cuenta de lineas">
+<!ENTITY removeduplicatesPrefs.compbody "Comparar cuerpo del mensaje (lento)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Prefer to delete">
+<!ENTITY removeduplicatesPrefs.firstfound "first found">
+<!ENTITY removeduplicatesPrefs.unreadmail "unread">
+<!ENTITY removeduplicatesPrefs.smallmail "smaller">
+<!ENTITY removeduplicatesPrefs.largemail "larger">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Buscar primero en subcarpeta">
+<!ENTITY removeduplicatesPrefs.autodelete "Cancelación automática">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignorar papelera en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignorar enviados en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Imprimir información de depuración">
+<!ENTITY showduplicatemessages.title "Mensajes Duplicados">
+<!ENTITY showduplicatemessages.caption "Elija los mensajes que deben ser borrados.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Flag">
+<!ENTITY showduplicatemessages.subject "Asunto">
+<!ENTITY showduplicatemessages.sender "Emisor">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "Carpeta">
+<!ENTITY showduplicatemessages.date "Fecha">
+<!ENTITY showduplicatemessages.hint "Click boton izquierdo: Muestra mensaje. Click botón derecho: Muestra información extra. Doble click: Conmuta 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "All default">
+<!ENTITY showduplicatemessages.buttonSelDel "All delete">
+<!ENTITY showduplicatemessages.buttonSelNoDel "All no delete">
+<!ENTITY showduplicatemessages.buttonErase "Erase Selected">
+<!ENTITY showduplicatemessages.buttonDel "Delete Selected">
+<!ENTITY showduplicatemessages.buttonCancel "Cancel">
+<!ENTITY tooltip.buttonDefault "Restores the original selection. One duplicate of an e-mail is selected for keeping and all other instances are selected for deletion.">
+<!ENTITY tooltip.buttonSelDel "Sets the flag of all messages to delete (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Sets the flag of all messages to keep (KEEP)">
+<!ENTITY tooltip.buttonErase "Erases all with DEL marked messages. There is no way to restore them.">
+<!ENTITY tooltip.buttonDelete "Deletes all with DEL marked messaged. They are moved to the trashcan for backup.">
+<!ENTITY tooltip.buttonCancel "Cancel. No message is being deleted or moved.">
+<!ENTITY removeduplicates.title "Borrador de Mensajes duplicados">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Creditos">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Traducción luxemburgish)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (prueba del software)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Traducción italiana)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Traducción française)">
+<!ENTITY removeduplicates.credits6 "David Balder (Traducción holandés)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Traducción japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Borrar mensajes duplicados...">
+<!ENTITY removeduplicates.description "Menu de contexto de Borrar mensajes duplicados por carpeta.">
+<!ENTITY removeduplicatesPrefs.title "Opciones del Borrador de Mensajes Duplicados">
+<!ENTITY removeduplicatesPrefs.captionsettings "Configuración">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Ayuda">
+<!ENTITY removeduplicatesPrefs.captionabout "Acerca de">
+<!ENTITY removeduplicatesPrefs.descsettings "Elija como los correos electrónicos son comparados.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Comparar el ID del mensaje">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Comparar la fecha en segundos">
+<!ENTITY removeduplicatesPrefs.compsubject "Comparar asunto">
+<!ENTITY removeduplicatesPrefs.compauthor "Comparar autor">
+<!ENTITY removeduplicatesPrefs.complinecount "Comparar cuenta de lineas">
+<!ENTITY removeduplicatesPrefs.compbody "Comparar cuerpo del mensaje (lento)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Prefer to delete">
+<!ENTITY removeduplicatesPrefs.firstfound "first found">
+<!ENTITY removeduplicatesPrefs.unreadmail "unread">
+<!ENTITY removeduplicatesPrefs.smallmail "smaller">
+<!ENTITY removeduplicatesPrefs.largemail "larger">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Buscar primero en subcarpeta">
+<!ENTITY removeduplicatesPrefs.autodelete "Cancelación automática">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignorar papelera en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignorar enviados en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Imprimir información de depuración">
+<!ENTITY showduplicatemessages.title "Mensajes Duplicados">
+<!ENTITY showduplicatemessages.caption "Elija los mensajes que deben ser borrados.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Flag">
+<!ENTITY showduplicatemessages.subject "Asunto">
+<!ENTITY showduplicatemessages.sender "Emisor">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "Carpeta">
+<!ENTITY showduplicatemessages.date "Fecha">
+<!ENTITY showduplicatemessages.hint "Click boton izquierdo: Muestra mensaje. Click botón derecho: Muestra información extra. Doble click: Conmuta 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "All default">
+<!ENTITY showduplicatemessages.buttonSelDel "All delete">
+<!ENTITY showduplicatemessages.buttonSelNoDel "All no delete">
+<!ENTITY showduplicatemessages.buttonErase "Erase Selected">
+<!ENTITY showduplicatemessages.buttonDel "Delete Selected">
+<!ENTITY showduplicatemessages.buttonCancel "Cancel">
+<!ENTITY tooltip.buttonDefault "Restores the original selection. One duplicate of an e-mail is selected for keeping and all other instances are selected for deletion.">
+<!ENTITY tooltip.buttonSelDel "Sets the flag of all messages to delete (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Sets the flag of all messages to keep (KEEP)">
+<!ENTITY tooltip.buttonErase "Erases all with DEL marked messages. There is no way to restore them.">
+<!ENTITY tooltip.buttonDelete "Deletes all with DEL marked messaged. They are moved to the trashcan for backup.">
+<!ENTITY tooltip.buttonCancel "Cancel. No message is being deleted or moved.">
+<!ENTITY removeduplicates.title "Borrador de Mensajes duplicados">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Creditos">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Traducción luxemburgish)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (prueba del software)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Traducción italiana)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Traducción française)">
+<!ENTITY removeduplicates.credits6 "David Balder (Traducción holandés)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Traducción japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Borrar mensajes duplicados...">
+<!ENTITY removeduplicates.description "Menu de contexto de Borrar mensajes duplicados por carpeta.">
+<!ENTITY removeduplicatesPrefs.title "Opciones del Borrador de Mensajes Duplicados">
+<!ENTITY removeduplicatesPrefs.captionsettings "Configuración">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Ayuda">
+<!ENTITY removeduplicatesPrefs.captionabout "Acerca de">
+<!ENTITY removeduplicatesPrefs.descsettings "Elija como los correos electrónicos son comparados.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Comparar el ID del mensaje">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Comparar la fecha en segundos">
+<!ENTITY removeduplicatesPrefs.compsubject "Comparar asunto">
+<!ENTITY removeduplicatesPrefs.compauthor "Comparar autor">
+<!ENTITY removeduplicatesPrefs.complinecount "Comparar cuenta de lineas">
+<!ENTITY removeduplicatesPrefs.compbody "Comparar cuerpo del mensaje (lento)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Prefer to delete">
+<!ENTITY removeduplicatesPrefs.firstfound "first found">
+<!ENTITY removeduplicatesPrefs.unreadmail "unread">
+<!ENTITY removeduplicatesPrefs.smallmail "smaller">
+<!ENTITY removeduplicatesPrefs.largemail "larger">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Buscar primero en subcarpeta">
+<!ENTITY removeduplicatesPrefs.autodelete "Cancelación automática">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignorar papelera en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignorar enviados en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Imprimir información de depuración">
+<!ENTITY showduplicatemessages.title "Mensajes Duplicados">
+<!ENTITY showduplicatemessages.caption "Elija los mensajes que deben ser borrados.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Flag">
+<!ENTITY showduplicatemessages.subject "Asunto">
+<!ENTITY showduplicatemessages.sender "Emisor">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "Carpeta">
+<!ENTITY showduplicatemessages.date "Fecha">
+<!ENTITY showduplicatemessages.hint "Click boton izquierdo: Muestra mensaje. Click botón derecho: Muestra información extra. Doble click: Conmuta 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "All default">
+<!ENTITY showduplicatemessages.buttonSelDel "All delete">
+<!ENTITY showduplicatemessages.buttonSelNoDel "All no delete">
+<!ENTITY showduplicatemessages.buttonErase "Erase Selected">
+<!ENTITY showduplicatemessages.buttonDel "Delete Selected">
+<!ENTITY showduplicatemessages.buttonCancel "Cancel">
+<!ENTITY tooltip.buttonDefault "Restores the original selection. One duplicate of an e-mail is selected for keeping and all other instances are selected for deletion.">
+<!ENTITY tooltip.buttonSelDel "Sets the flag of all messages to delete (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Sets the flag of all messages to keep (KEEP)">
+<!ENTITY tooltip.buttonErase "Erases all with DEL marked messages. There is no way to restore them.">
+<!ENTITY tooltip.buttonDelete "Deletes all with DEL marked messaged. They are moved to the trashcan for backup.">
+<!ENTITY tooltip.buttonCancel "Cancel. No message is being deleted or moved.">
+<!ENTITY removeduplicates.title "Borrador de Mensajes duplicados">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Creditos">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Traducción luxemburgish)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (prueba del software)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Traducción italiana)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Traducción française)">
+<!ENTITY removeduplicates.credits6 "David Balder (Traducción holandés)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Traducción japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Borrar mensajes duplicados...">
+<!ENTITY removeduplicates.description "Menu de contexto de Borrar mensajes duplicados por carpeta.">
+<!ENTITY removeduplicatesPrefs.title "Opciones del Borrador de Mensajes Duplicados">
+<!ENTITY removeduplicatesPrefs.captionsettings "Configuración">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Ayuda">
+<!ENTITY removeduplicatesPrefs.captionabout "Acerca de">
+<!ENTITY removeduplicatesPrefs.descsettings "Elija como los correos electrónicos son comparados.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Comparar el ID del mensaje">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Comparar la fecha en segundos">
+<!ENTITY removeduplicatesPrefs.compsubject "Comparar asunto">
+<!ENTITY removeduplicatesPrefs.compauthor "Comparar autor">
+<!ENTITY removeduplicatesPrefs.complinecount "Comparar cuenta de lineas">
+<!ENTITY removeduplicatesPrefs.compbody "Comparar cuerpo del mensaje (lento)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Prefer to delete">
+<!ENTITY removeduplicatesPrefs.firstfound "first found">
+<!ENTITY removeduplicatesPrefs.unreadmail "unread">
+<!ENTITY removeduplicatesPrefs.smallmail "smaller">
+<!ENTITY removeduplicatesPrefs.largemail "larger">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Buscar primero en subcarpeta">
+<!ENTITY removeduplicatesPrefs.autodelete "Cancelación automática">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignorar papelera en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignorar enviados en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Imprimir información de depuración">
+<!ENTITY showduplicatemessages.title "Mensajes Duplicados">
+<!ENTITY showduplicatemessages.caption "Elija los mensajes que deben ser borrados.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Flag">
+<!ENTITY showduplicatemessages.subject "Asunto">
+<!ENTITY showduplicatemessages.sender "Emisor">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "Carpeta">
+<!ENTITY showduplicatemessages.date "Fecha">
+<!ENTITY showduplicatemessages.hint "Click boton izquierdo: Muestra mensaje. Click botón derecho: Muestra información extra. Doble click: Conmuta 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "All default">
+<!ENTITY showduplicatemessages.buttonSelDel "All delete">
+<!ENTITY showduplicatemessages.buttonSelNoDel "All no delete">
+<!ENTITY showduplicatemessages.buttonErase "Erase Selected">
+<!ENTITY showduplicatemessages.buttonDel "Delete Selected">
+<!ENTITY showduplicatemessages.buttonCancel "Cancel">
+<!ENTITY tooltip.buttonDefault "Restores the original selection. One duplicate of an e-mail is selected for keeping and all other instances are selected for deletion.">
+<!ENTITY tooltip.buttonSelDel "Sets the flag of all messages to delete (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Sets the flag of all messages to keep (KEEP)">
+<!ENTITY tooltip.buttonErase "Erases all with DEL marked messages. There is no way to restore them.">
+<!ENTITY tooltip.buttonDelete "Deletes all with DEL marked messaged. They are moved to the trashcan for backup.">
+<!ENTITY tooltip.buttonCancel "Cancel. No message is being deleted or moved.">
+<!ENTITY removeduplicates.title "Borrador de Mensajes duplicados">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Creditos">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Traducción luxemburgish)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (prueba del software)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Traducción italiana)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Traducción française)">
+<!ENTITY removeduplicates.credits6 "David Balder (Traducción holandés)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Traducción japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Borrar mensajes duplicados...">
+<!ENTITY removeduplicates.description "Menu de contexto de Borrar mensajes duplicados por carpeta.">
+<!ENTITY removeduplicatesPrefs.title "Opciones del Borrador de Mensajes Duplicados">
+<!ENTITY removeduplicatesPrefs.captionsettings "Configuración">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Ayuda">
+<!ENTITY removeduplicatesPrefs.captionabout "Acerca de">
+<!ENTITY removeduplicatesPrefs.descsettings "Elija como los correos electrónicos son comparados.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Comparar el ID del mensaje">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Comparar la fecha en segundos">
+<!ENTITY removeduplicatesPrefs.compsubject "Comparar asunto">
+<!ENTITY removeduplicatesPrefs.compauthor "Comparar autor">
+<!ENTITY removeduplicatesPrefs.complinecount "Comparar cuenta de lineas">
+<!ENTITY removeduplicatesPrefs.compbody "Comparar cuerpo del mensaje (lento)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Prefer to delete">
+<!ENTITY removeduplicatesPrefs.firstfound "first found">
+<!ENTITY removeduplicatesPrefs.unreadmail "unread">
+<!ENTITY removeduplicatesPrefs.smallmail "smaller">
+<!ENTITY removeduplicatesPrefs.largemail "larger">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Buscar primero en subcarpeta">
+<!ENTITY removeduplicatesPrefs.autodelete "Cancelación automática">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignorar papelera en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignorar enviados en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Imprimir información de depuración">
+<!ENTITY showduplicatemessages.title "Mensajes Duplicados">
+<!ENTITY showduplicatemessages.caption "Elija los mensajes que deben ser borrados.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Flag">
+<!ENTITY showduplicatemessages.subject "Asunto">
+<!ENTITY showduplicatemessages.sender "Emisor">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "Carpeta">
+<!ENTITY showduplicatemessages.date "Fecha">
+<!ENTITY showduplicatemessages.hint "Click boton izquierdo: Muestra mensaje. Click botón derecho: Muestra información extra. Doble click: Conmuta 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "All default">
+<!ENTITY showduplicatemessages.buttonSelDel "All delete">
+<!ENTITY showduplicatemessages.buttonSelNoDel "All no delete">
+<!ENTITY showduplicatemessages.buttonErase "Erase Selected">
+<!ENTITY showduplicatemessages.buttonDel "Delete Selected">
+<!ENTITY showduplicatemessages.buttonCancel "Cancel">
+<!ENTITY tooltip.buttonDefault "Restores the original selection. One duplicate of an e-mail is selected for keeping and all other instances are selected for deletion.">
+<!ENTITY tooltip.buttonSelDel "Sets the flag of all messages to delete (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Sets the flag of all messages to keep (KEEP)">
+<!ENTITY tooltip.buttonErase "Erases all with DEL marked messages. There is no way to restore them.">
+<!ENTITY tooltip.buttonDelete "Deletes all with DEL marked messaged. They are moved to the trashcan for backup.">
+<!ENTITY tooltip.buttonCancel "Cancel. No message is being deleted or moved.">
+<!ENTITY removeduplicates.title "Borrador de Mensajes duplicados">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Creditos">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Traducción luxemburgish)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (prueba del software)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Traducción italiana)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Traducción française)">
+<!ENTITY removeduplicates.credits6 "David Balder (Traducción holandés)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Traducción japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Borrar mensajes duplicados...">
+<!ENTITY removeduplicates.description "Menu de contexto de Borrar mensajes duplicados por carpeta.">
+<!ENTITY removeduplicatesPrefs.title "Opciones del Borrador de Mensajes Duplicados">
+<!ENTITY removeduplicatesPrefs.captionsettings "Configuración">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Ayuda">
+<!ENTITY removeduplicatesPrefs.captionabout "Acerca de">
+<!ENTITY removeduplicatesPrefs.descsettings "Elija como los correos electrónicos son comparados.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Comparar el ID del mensaje">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Comparar la fecha en segundos">
+<!ENTITY removeduplicatesPrefs.compdate "Fecha">
+<!ENTITY removeduplicatesPrefs.compsubject "Comparar asunto">
+<!ENTITY removeduplicatesPrefs.compauthor "Comparar autor">
+<!ENTITY removeduplicatesPrefs.complinecount "Comparar cuenta de lineas">
+<!ENTITY removeduplicatesPrefs.compbody "Comparar cuerpo del mensaje (lento)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Prefer to delete">
+<!ENTITY removeduplicatesPrefs.firstfound "first found">
+<!ENTITY removeduplicatesPrefs.unreadmail "unread">
+<!ENTITY removeduplicatesPrefs.smallmail "smaller">
+<!ENTITY removeduplicatesPrefs.largemail "larger">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Buscar primero en subcarpeta">
+<!ENTITY removeduplicatesPrefs.autodelete "Cancelación automática">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignorar papelera en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignorar enviados en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Imprimir información de depuración">
+<!ENTITY showduplicatemessages.title "Mensajes Duplicados">
+<!ENTITY showduplicatemessages.caption "Elija los mensajes que deben ser borrados.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Flag">
+<!ENTITY showduplicatemessages.subject "Asunto">
+<!ENTITY showduplicatemessages.sender "Emisor">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "Carpeta">
+<!ENTITY showduplicatemessages.date "Fecha">
+<!ENTITY showduplicatemessages.hint "Click boton izquierdo: Muestra mensaje. Click botón derecho: Muestra información extra. Doble click: Conmuta 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "All default">
+<!ENTITY showduplicatemessages.buttonSelDel "All delete">
+<!ENTITY showduplicatemessages.buttonSelNoDel "All no delete">
+<!ENTITY showduplicatemessages.buttonErase "Erase Selected">
+<!ENTITY showduplicatemessages.buttonDel "Delete Selected">
+<!ENTITY showduplicatemessages.buttonCancel "Cancel">
+<!ENTITY tooltip.buttonDefault "Restores the original selection. One duplicate of an e-mail is selected for keeping and all other instances are selected for deletion.">
+<!ENTITY tooltip.buttonSelDel "Sets the flag of all messages to delete (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Sets the flag of all messages to keep (KEEP)">
+<!ENTITY tooltip.buttonErase "Erases all with DEL marked messages. There is no way to restore them.">
+<!ENTITY tooltip.buttonDelete "Deletes all with DEL marked messaged. They are moved to the trashcan for backup.">
+<!ENTITY tooltip.buttonCancel "Cancel. No message is being deleted or moved.">
+<!ENTITY removeduplicates.title "Borrador de Mensajes duplicados">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Creditos">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Traducción luxemburgish)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (prueba del software)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Traducción italiana)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Traducción française)">
+<!ENTITY removeduplicates.credits6 "David Balder (Traducción holandés)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Traducción japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Borrar mensajes duplicados...">
+<!ENTITY removeduplicates.description "Menu de contexto de Borrar mensajes duplicados por carpeta.">
+<!ENTITY removeduplicatesPrefs.title "Opciones del Borrador de Mensajes Duplicados">
+<!ENTITY removeduplicatesPrefs.captionsettings "Configuración">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Ayuda">
+<!ENTITY removeduplicatesPrefs.captionabout "Acerca de">
+<!ENTITY removeduplicatesPrefs.descsettings "Elija como los correos electrónicos son comparados.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Comparar el ID del mensaje">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Comparar la fecha en segundos">
+<!ENTITY removeduplicatesPrefs.compdate "Fecha">
+<!ENTITY removeduplicatesPrefs.compsubject "Comparar asunto">
+<!ENTITY removeduplicatesPrefs.compauthor "Comparar autor">
+<!ENTITY removeduplicatesPrefs.complinecount "Comparar cuenta de lineas">
+<!ENTITY removeduplicatesPrefs.compbody "Comparar cuerpo del mensaje (lento)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Prefer to delete">
+<!ENTITY removeduplicatesPrefs.firstfound "first found">
+<!ENTITY removeduplicatesPrefs.unreadmail "unread">
+<!ENTITY removeduplicatesPrefs.smallmail "smaller">
+<!ENTITY removeduplicatesPrefs.largemail "larger">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Buscar primero en subcarpeta">
+<!ENTITY removeduplicatesPrefs.autodelete "Cancelación automática">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignorar papelera en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignorar enviados en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Imprimir información de depuración">
+<!ENTITY showduplicatemessages.title "Mensajes Duplicados">
+<!ENTITY showduplicatemessages.caption "Elija los mensajes que deben ser borrados.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Flag">
+<!ENTITY showduplicatemessages.subject "Asunto">
+<!ENTITY showduplicatemessages.sender "Emisor">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "Carpeta">
+<!ENTITY showduplicatemessages.date "Fecha">
+<!ENTITY showduplicatemessages.hint "Click boton izquierdo: Muestra mensaje. Click botón derecho: Muestra información extra. Doble click: Conmuta 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "All default">
+<!ENTITY showduplicatemessages.buttonSelDel "All delete">
+<!ENTITY showduplicatemessages.buttonSelNoDel "All no delete">
+<!ENTITY showduplicatemessages.buttonErase "Erase Selected">
+<!ENTITY showduplicatemessages.buttonDel "Delete Selected">
+<!ENTITY showduplicatemessages.buttonCancel "Cancel">
+<!ENTITY tooltip.buttonDefault "Restores the original selection. One duplicate of an e-mail is selected for keeping and all other instances are selected for deletion.">
+<!ENTITY tooltip.buttonSelDel "Sets the flag of all messages to delete (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Sets the flag of all messages to keep (KEEP)">
+<!ENTITY tooltip.buttonErase "Erases all with DEL marked messages. There is no way to restore them.">
+<!ENTITY tooltip.buttonDelete "Deletes all with DEL marked messaged. They are moved to the trashcan for backup.">
+<!ENTITY tooltip.buttonCancel "Cancel. No message is being deleted or moved.">
+<!ENTITY removeduplicates.title "Borrador de Mensajes duplicados">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Creditos">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Traducción luxemburgish)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (prueba del software)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Traducción italiana)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Traducción française)">
+<!ENTITY removeduplicates.credits6 "David Balder (Traducción holandés)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Traducción japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Borrar mensajes duplicados...">
+<!ENTITY removeduplicates.description "Menu de contexto de Borrar mensajes duplicados por carpeta.">
+<!ENTITY removeduplicatesPrefs.title "Opciones del Borrador de Mensajes Duplicados">
+<!ENTITY removeduplicatesPrefs.captionsettings "Configuración">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Ayuda">
+<!ENTITY removeduplicatesPrefs.captionabout "Acerca de">
+<!ENTITY removeduplicatesPrefs.descsettings "Elija como los correos electrónicos son comparados.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Comparar el ID del mensaje">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Comparar la fecha en segundos">
+<!ENTITY removeduplicatesPrefs.compdate "Fecha">
+<!ENTITY removeduplicatesPrefs.compsubject "Comparar asunto">
+<!ENTITY removeduplicatesPrefs.compauthor "Comparar autor">
+<!ENTITY removeduplicatesPrefs.complinecount "Comparar cuenta de lineas">
+<!ENTITY removeduplicatesPrefs.compbody "Comparar cuerpo del mensaje (lento)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Prefer to delete">
+<!ENTITY removeduplicatesPrefs.firstfound "first found">
+<!ENTITY removeduplicatesPrefs.unreadmail "unread">
+<!ENTITY removeduplicatesPrefs.smallmail "smaller">
+<!ENTITY removeduplicatesPrefs.largemail "larger">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Buscar primero en subcarpeta">
+<!ENTITY removeduplicatesPrefs.autodelete "Cancelación automática">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignorar papelera en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignorar enviados en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Imprimir información de depuración">
+<!ENTITY showduplicatemessages.title "Mensajes Duplicados">
+<!ENTITY showduplicatemessages.caption "Elija los mensajes que deben ser borrados.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Flag">
+<!ENTITY showduplicatemessages.subject "Asunto">
+<!ENTITY showduplicatemessages.sender "Emisor">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "Carpeta">
+<!ENTITY showduplicatemessages.date "Fecha">
+<!ENTITY showduplicatemessages.hint "Click boton izquierdo: Muestra mensaje. Click botón derecho: Muestra información extra. Doble click: Conmuta 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "All default">
+<!ENTITY showduplicatemessages.buttonSelDel "All delete">
+<!ENTITY showduplicatemessages.buttonSelNoDel "All no delete">
+<!ENTITY showduplicatemessages.buttonErase "Erase Selected">
+<!ENTITY showduplicatemessages.buttonDel "Delete Selected">
+<!ENTITY showduplicatemessages.buttonCancel "Cancel">
+<!ENTITY tooltip.buttonDefault "Restores the original selection. One duplicate of an e-mail is selected for keeping and all other instances are selected for deletion.">
+<!ENTITY tooltip.buttonSelDel "Sets the flag of all messages to delete (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Sets the flag of all messages to keep (KEEP)">
+<!ENTITY tooltip.buttonErase "Erases all with DEL marked messages. There is no way to restore them.">
+<!ENTITY tooltip.buttonDelete "Deletes all with DEL marked messaged. They are moved to the trashcan for backup.">
+<!ENTITY tooltip.buttonCancel "Cancel. No message is being deleted or moved.">
+<!ENTITY removeduplicates.title "Borrador de Mensajes duplicados">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Creditos">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Traducción luxemburgish)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (prueba del software)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Traducción italiana)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Traducción française)">
+<!ENTITY removeduplicates.credits6 "David Balder (Traducción holandés)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Traducción japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Borrar mensajes duplicados...">
+<!ENTITY removeduplicates.description "Menu de contexto de Borrar mensajes duplicados por carpeta.">
+<!ENTITY removeduplicatesPrefs.title "Opciones del Borrador de Mensajes Duplicados">
+<!ENTITY removeduplicatesPrefs.captionsettings "Configuración">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Ayuda">
+<!ENTITY removeduplicatesPrefs.captionabout "Acerca de">
+<!ENTITY removeduplicatesPrefs.descsettings "Elija como los correos electrónicos son comparados.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Comparar el ID del mensaje">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Comparar la fecha en segundos">
+<!ENTITY removeduplicatesPrefs.compdate "Fecha">
+<!ENTITY removeduplicatesPrefs.compsubject "Comparar asunto">
+<!ENTITY removeduplicatesPrefs.compauthor "Comparar autor">
+<!ENTITY removeduplicatesPrefs.complinecount "Comparar cuenta de lineas">
+<!ENTITY removeduplicatesPrefs.compbody "Comparar cuerpo del mensaje (lento)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Eliminar preferido">
+<!ENTITY removeduplicatesPrefs.firstfound "encontró por primera vez">
+<!ENTITY removeduplicatesPrefs.unreadmail "no leído">
+<!ENTITY removeduplicatesPrefs.smallmail "pequeño">
+<!ENTITY removeduplicatesPrefs.largemail "más">
+<!ENTITY removeduplicatesPrefs.unansweredmail "sin respuesta">
+<!ENTITY removeduplicatesPrefs.email "e-mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Buscar primero en subcarpeta">
+<!ENTITY removeduplicatesPrefs.autodelete "Cancelación automática">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignorar papelera en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignorar enviados en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Mostrar siempre el diálogo de mensajes duplicados">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Imprimir información de depuración">
+<!ENTITY showduplicatemessages.title "Mensajes Duplicados">
+<!ENTITY showduplicatemessages.caption "Elija los mensajes que deben ser borrados.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Flag">
+<!ENTITY showduplicatemessages.subject "Asunto">
+<!ENTITY showduplicatemessages.sender "Emisor">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "Carpeta">
+<!ENTITY showduplicatemessages.date "Fecha">
+<!ENTITY showduplicatemessages.hint "Click boton izquierdo: Muestra mensaje. Click botón derecho: Muestra información extra. Doble click: Conmuta 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Todo el estándar">
+<!ENTITY showduplicatemessages.buttonSelDel "Borrar todos">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Reservados todos los">
+<!ENTITY showduplicatemessages.buttonErase "Selección de destruir">
+<!ENTITY showduplicatemessages.buttonDel "Borrar selección">
+<!ENTITY showduplicatemessages.buttonCancel "Cancelar">
+<!ENTITY tooltip.buttonDefault "Restaura la selección original. Un duplicado de un correo electrónico se ha seleccionado para la conservación y todos los demás casos se seleccionan para su eliminación.">
+<!ENTITY tooltip.buttonSelDel "Establece el indicador de todos los mensajes que desea eliminar (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Establece el indicador de todos los mensajes para mantener (KEEP)">
+<!ENTITY tooltip.buttonErase "Borra todos con mensajes DEL marcados. No hay forma alguna de recuperarlo.">
+<!ENTITY tooltip.buttonDelete "Borra todos con mensajes DEL marcados. Ellos se mueven a la papelera de copia de seguridad.">
+<!ENTITY tooltip.buttonCancel "Cancelar. No hay ningún mensaje está siendo eliminado o movido.">
+<!ENTITY removeduplicates.title "Borrador de Mensajes duplicados">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Creditos">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Traducción luxemburgish)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (prueba del software)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Traducción italiana)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Traducción française)">
+<!ENTITY removeduplicates.credits6 "David Balder (Traducción holandés)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Traducción japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Borrar mensajes duplicados...">
+<!ENTITY removeduplicates.description "Menu de contexto de Borrar mensajes duplicados por carpeta.">
+<!ENTITY removeduplicatesPrefs.title "Opciones del Borrador de Mensajes Duplicados">
+<!ENTITY removeduplicatesPrefs.captionsettings "Configuración">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Ayuda">
+<!ENTITY removeduplicatesPrefs.captionabout "Acerca de">
+<!ENTITY removeduplicatesPrefs.descsettings "Elija como los correos electrónicos son comparados.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Comparar el ID del mensaje">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Comparar la fecha en segundos">
+<!ENTITY removeduplicatesPrefs.compdate "Fecha">
+<!ENTITY removeduplicatesPrefs.compsubject "Comparar asunto">
+<!ENTITY removeduplicatesPrefs.compauthor "Comparar autor">
+<!ENTITY removeduplicatesPrefs.complinecount "Comparar cuenta de lineas">
+<!ENTITY removeduplicatesPrefs.compbody "Comparar cuerpo del mensaje (lento)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Eliminar preferido">
+<!ENTITY removeduplicatesPrefs.firstfound "encontró por primera vez">
+<!ENTITY removeduplicatesPrefs.unreadmail "no leído">
+<!ENTITY removeduplicatesPrefs.smallmail "pequeño">
+<!ENTITY removeduplicatesPrefs.largemail "más">
+<!ENTITY removeduplicatesPrefs.unansweredmail "sin respuesta">
+<!ENTITY removeduplicatesPrefs.email "e-mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Buscar primero en subcarpeta">
+<!ENTITY removeduplicatesPrefs.autodelete "Cancelación automática">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignorar papelera en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignorar enviados en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Mostrar siempre el diálogo de mensajes duplicados">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Imprimir información de depuración">
+<!ENTITY showduplicatemessages.title "Mensajes Duplicados">
+<!ENTITY showduplicatemessages.caption "Elija los mensajes que deben ser borrados.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Flag">
+<!ENTITY showduplicatemessages.subject "Asunto">
+<!ENTITY showduplicatemessages.sender "Emisor">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "Carpeta">
+<!ENTITY showduplicatemessages.date "Fecha">
+<!ENTITY showduplicatemessages.hint "Click boton izquierdo: Muestra mensaje. Click botón derecho: Muestra información extra. Doble click: Conmuta 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Todo el estándar">
+<!ENTITY showduplicatemessages.buttonSelDel "Borrar todos">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Reservados todos los">
+<!ENTITY showduplicatemessages.buttonErase "Selección de destruir">
+<!ENTITY showduplicatemessages.buttonDel "Borrar selección">
+<!ENTITY showduplicatemessages.buttonCancel "Cancelar">
+<!ENTITY tooltip.buttonDefault "Restaura la selección original. Un duplicado de un correo electrónico se ha seleccionado para la conservación y todos los demás casos se seleccionan para su eliminación.">
+<!ENTITY tooltip.buttonSelDel "Establece el indicador de todos los mensajes que desea eliminar (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Establece el indicador de todos los mensajes para mantener (KEEP)">
+<!ENTITY tooltip.buttonErase "Borra todos con mensajes DEL marcados. No hay forma alguna de recuperarlo.">
+<!ENTITY tooltip.buttonDelete "Borra todos con mensajes DEL marcados. Ellos se mueven a la papelera de copia de seguridad.">
+<!ENTITY tooltip.buttonCancel "Cancelar. No hay ningún mensaje está siendo eliminado o movido.">
+<!ENTITY removeduplicates.title "Borrador de Mensajes duplicados">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Creditos">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Traducción luxemburgish)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (prueba del software)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Traducción italiana)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Traducción française)">
+<!ENTITY removeduplicates.credits6 "David Balder (Traducción holandés)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Traducción japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Borrar mensajes duplicados...">
+<!ENTITY removeduplicates.description "Menu de contexto de Borrar mensajes duplicados por carpeta.">
+<!ENTITY removeduplicatesPrefs.title "Opciones del Borrador de Mensajes Duplicados">
+<!ENTITY removeduplicatesPrefs.captionsettings "Configuración">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Ayuda">
+<!ENTITY removeduplicatesPrefs.captionabout "Acerca de">
+<!ENTITY removeduplicatesPrefs.descsettings "Elija como los correos electrónicos son comparados.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Comparar el ID del mensaje">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Comparar la fecha en segundos">
+<!ENTITY removeduplicatesPrefs.compdate "Fecha">
+<!ENTITY removeduplicatesPrefs.compsubject "Comparar asunto">
+<!ENTITY removeduplicatesPrefs.compauthor "Comparar autor">
+<!ENTITY removeduplicatesPrefs.complinecount "Comparar cuenta de lineas">
+<!ENTITY removeduplicatesPrefs.compbody "Comparar cuerpo del mensaje (lento)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Eliminar preferido">
+<!ENTITY removeduplicatesPrefs.firstfound "encontró por primera vez">
+<!ENTITY removeduplicatesPrefs.unreadmail "no leído">
+<!ENTITY removeduplicatesPrefs.smallmail "pequeño">
+<!ENTITY removeduplicatesPrefs.largemail "más">
+<!ENTITY removeduplicatesPrefs.unansweredmail "sin respuesta">
+<!ENTITY removeduplicatesPrefs.email "e-mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Buscar primero en subcarpeta">
+<!ENTITY removeduplicatesPrefs.autodelete "Cancelación automática">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignorar papelera en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignorar enviados en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Mostrar siempre el diálogo de mensajes duplicados">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Imprimir información de depuración">
+<!ENTITY showduplicatemessages.title "Mensajes Duplicados">
+<!ENTITY showduplicatemessages.caption "Elija los mensajes que deben ser borrados.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Flag">
+<!ENTITY showduplicatemessages.subject "Asunto">
+<!ENTITY showduplicatemessages.sender "Emisor">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "Carpeta">
+<!ENTITY showduplicatemessages.date "Fecha">
+<!ENTITY showduplicatemessages.hint "Click boton izquierdo: Muestra mensaje. Click botón derecho: Muestra información extra. Doble click: Conmuta 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Todo el estándar">
+<!ENTITY showduplicatemessages.buttonSelDel "Borrar todos">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Reservados todos los">
+<!ENTITY showduplicatemessages.buttonErase "Selección de destruir">
+<!ENTITY showduplicatemessages.buttonDel "Borrar selección">
+<!ENTITY showduplicatemessages.buttonCancel "Cancelar">
+<!ENTITY tooltip.buttonDefault "Restaura la selección original. Un duplicado de un correo electrónico se ha seleccionado para la conservación y todos los demás casos se seleccionan para su eliminación.">
+<!ENTITY tooltip.buttonSelDel "Establece el indicador de todos los mensajes que desea eliminar (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Establece el indicador de todos los mensajes para mantener (KEEP)">
+<!ENTITY tooltip.buttonErase "Borra todos con mensajes DEL marcados. No hay forma alguna de recuperarlo.">
+<!ENTITY tooltip.buttonDelete "Borra todos con mensajes DEL marcados. Ellos se mueven a la papelera de copia de seguridad.">
+<!ENTITY tooltip.buttonCancel "Cancelar. No hay ningún mensaje está siendo eliminado o movido.">
+<!ENTITY removeduplicates.title "Borrador de Mensajes duplicados">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Creditos">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Traducción luxemburgish)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (prueba del software)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Traducción italiana)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Traducción française)">
+<!ENTITY removeduplicates.credits6 "David Balder (Traducción holandés)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Traducción japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Borrar mensajes duplicados...">
+<!ENTITY removeduplicates.description "Menu de contexto de Borrar mensajes duplicados por carpeta.">
+<!ENTITY removeduplicatesPrefs.title "Opciones del Borrador de Mensajes Duplicados">
+<!ENTITY removeduplicatesPrefs.captionsettings "Configuración">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Ayuda">
+<!ENTITY removeduplicatesPrefs.captionabout "Acerca de">
+<!ENTITY removeduplicatesPrefs.descsettings "Elija como los correos electrónicos son comparados.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Comparar el ID del mensaje">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Comparar la fecha en segundos">
+<!ENTITY removeduplicatesPrefs.compdate "Fecha">
+<!ENTITY removeduplicatesPrefs.compsubject "Comparar asunto">
+<!ENTITY removeduplicatesPrefs.compauthor "Comparar autor">
+<!ENTITY removeduplicatesPrefs.complinecount "Comparar cuenta de lineas">
+<!ENTITY removeduplicatesPrefs.compbody "Comparar cuerpo del mensaje (lento)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Eliminar preferido">
+<!ENTITY removeduplicatesPrefs.firstfound "encontró por primera vez">
+<!ENTITY removeduplicatesPrefs.unreadmail "no leído">
+<!ENTITY removeduplicatesPrefs.smallmail "pequeño">
+<!ENTITY removeduplicatesPrefs.largemail "más">
+<!ENTITY removeduplicatesPrefs.unansweredmail "sin respuesta">
+<!ENTITY removeduplicatesPrefs.email "e-mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Buscar primero en subcarpeta">
+<!ENTITY removeduplicatesPrefs.autodelete "Cancelación automática">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignorar papelera en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignorar enviados en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Mostrar siempre el diálogo de mensajes duplicados">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Imprimir información de depuración">
+<!ENTITY showduplicatemessages.title "Mensajes Duplicados">
+<!ENTITY showduplicatemessages.caption "Elija los mensajes que deben ser borrados.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Flag">
+<!ENTITY showduplicatemessages.subject "Asunto">
+<!ENTITY showduplicatemessages.sender "Emisor">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "Carpeta">
+<!ENTITY showduplicatemessages.date "Fecha">
+<!ENTITY showduplicatemessages.hint "Click boton izquierdo: Muestra mensaje. Click botón derecho: Muestra información extra. Doble click: Conmuta 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Todo el estándar">
+<!ENTITY showduplicatemessages.buttonSelDel "Borrar todos">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Reservados todos los">
+<!ENTITY showduplicatemessages.buttonErase "Selección de destruir">
+<!ENTITY showduplicatemessages.buttonDel "Borrar selección">
+<!ENTITY showduplicatemessages.buttonCancel "Cancelar">
+<!ENTITY tooltip.buttonDefault "Restaura la selección original. Un duplicado de un correo electrónico se ha seleccionado para la conservación y todos los demás casos se seleccionan para su eliminación.">
+<!ENTITY tooltip.buttonSelDel "Establece el indicador de todos los mensajes que desea eliminar (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Establece el indicador de todos los mensajes para mantener (KEEP)">
+<!ENTITY tooltip.buttonErase "Borra todos con mensajes DEL marcados. No hay forma alguna de recuperarlo.">
+<!ENTITY tooltip.buttonDelete "Borra todos con mensajes DEL marcados. Ellos se mueven a la papelera de copia de seguridad.">
+<!ENTITY tooltip.buttonCancel "Cancelar. No hay ningún mensaje está siendo eliminado o movido.">
+<!ENTITY removeduplicates.title "Borrador de Mensajes duplicados">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Creditos">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Traducción luxemburgish)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (prueba del software)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Traducción italiana)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Traducción française)">
+<!ENTITY removeduplicates.credits6 "David Balder (Traducción holandés)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Traducción japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Borrar mensajes duplicados...">
+<!ENTITY removeduplicates.description "Menu de contexto de Borrar mensajes duplicados por carpeta.">
+<!ENTITY removeduplicatesPrefs.title "Opciones del Borrador de Mensajes Duplicados">
+<!ENTITY removeduplicatesPrefs.captionsettings "Configuración">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Ayuda">
+<!ENTITY removeduplicatesPrefs.captionabout "Acerca de">
+<!ENTITY removeduplicatesPrefs.descsettings "Elija como los correos electrónicos son comparados.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Comparar el ID del mensaje">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Comparar la fecha en segundos">
+<!ENTITY removeduplicatesPrefs.compdate "Fecha">
+<!ENTITY removeduplicatesPrefs.compsubject "Comparar asunto">
+<!ENTITY removeduplicatesPrefs.compauthor "Comparar autor">
+<!ENTITY removeduplicatesPrefs.complinecount "Comparar cuenta de lineas">
+<!ENTITY removeduplicatesPrefs.compbody "Comparar cuerpo del mensaje (lento)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Eliminar preferido">
+<!ENTITY removeduplicatesPrefs.firstfound "encontró por primera vez">
+<!ENTITY removeduplicatesPrefs.unreadmail "no leído">
+<!ENTITY removeduplicatesPrefs.smallmail "pequeño">
+<!ENTITY removeduplicatesPrefs.largemail "más">
+<!ENTITY removeduplicatesPrefs.unansweredmail "sin respuesta">
+<!ENTITY removeduplicatesPrefs.email "e-mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Buscar primero en subcarpeta">
+<!ENTITY removeduplicatesPrefs.autodelete "Cancelación automática">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignorar papelera en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignorar enviados en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Mostrar siempre el diálogo de mensajes duplicados">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Imprimir información de depuración">
+<!ENTITY removeduplicatesPrefs.reversesearch "Reverse folder search">
+<!ENTITY showduplicatemessages.title "Mensajes Duplicados">
+<!ENTITY showduplicatemessages.caption "Elija los mensajes que deben ser borrados.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Flag">
+<!ENTITY showduplicatemessages.subject "Asunto">
+<!ENTITY showduplicatemessages.sender "Emisor">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "Carpeta">
+<!ENTITY showduplicatemessages.date "Fecha">
+<!ENTITY showduplicatemessages.hint "Click boton izquierdo: Muestra mensaje. Click botón derecho: Muestra información extra. Doble click: Conmuta 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Todo el estándar">
+<!ENTITY showduplicatemessages.buttonSelDel "Borrar todos">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Reservados todos los">
+<!ENTITY showduplicatemessages.buttonErase "Selección de destruir">
+<!ENTITY showduplicatemessages.buttonDel "Borrar selección">
+<!ENTITY showduplicatemessages.buttonCancel "Cancelar">
+<!ENTITY tooltip.buttonDefault "Restaura la selección original. Un duplicado de un correo electrónico se ha seleccionado para la conservación y todos los demás casos se seleccionan para su eliminación.">
+<!ENTITY tooltip.buttonSelDel "Establece el indicador de todos los mensajes que desea eliminar (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Establece el indicador de todos los mensajes para mantener (KEEP)">
+<!ENTITY tooltip.buttonErase "Borra todos con mensajes DEL marcados. No hay forma alguna de recuperarlo.">
+<!ENTITY tooltip.buttonDelete "Borra todos con mensajes DEL marcados. Ellos se mueven a la papelera de copia de seguridad.">
+<!ENTITY tooltip.buttonCancel "Cancelar. No hay ningún mensaje está siendo eliminado o movido.">
+<!ENTITY removeduplicates.title "Borrador de Mensajes duplicados">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Creditos">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Traducción luxemburgish)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (prueba del software)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Traducción italiana)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Traducción française)">
+<!ENTITY removeduplicates.credits6 "David Balder (Traducción holandés)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Traducción japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Borrar mensajes duplicados...">
+<!ENTITY removeduplicates.description "Menu de contexto de Borrar mensajes duplicados por carpeta.">
+<!ENTITY removeduplicatesPrefs.title "Opciones del Borrador de Mensajes Duplicados">
+<!ENTITY removeduplicatesPrefs.captionsettings "Configuración">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Ayuda">
+<!ENTITY removeduplicatesPrefs.captionabout "Acerca de">
+<!ENTITY removeduplicatesPrefs.descsettings "Elija como los correos electrónicos son comparados.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Comparar el ID del mensaje">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Comparar la fecha en segundos">
+<!ENTITY removeduplicatesPrefs.compdate "Fecha">
+<!ENTITY removeduplicatesPrefs.compsubject "Comparar asunto">
+<!ENTITY removeduplicatesPrefs.compauthor "Comparar autor">
+<!ENTITY removeduplicatesPrefs.complinecount "Comparar cuenta de lineas">
+<!ENTITY removeduplicatesPrefs.compbody "Comparar cuerpo del mensaje (lento)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Eliminar preferido">
+<!ENTITY removeduplicatesPrefs.firstfound "encontró por primera vez">
+<!ENTITY removeduplicatesPrefs.unreadmail "no leído">
+<!ENTITY removeduplicatesPrefs.smallmail "pequeño">
+<!ENTITY removeduplicatesPrefs.largemail "más">
+<!ENTITY removeduplicatesPrefs.unansweredmail "sin respuesta">
+<!ENTITY removeduplicatesPrefs.email "e-mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Buscar primero en subcarpeta">
+<!ENTITY removeduplicatesPrefs.autodelete "Cancelación automática">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignorar papelera en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignorar enviados en la busqueda de mensajes">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Mostrar siempre el diálogo de mensajes duplicados">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Imprimir información de depuración">
+<!ENTITY removeduplicatesPrefs.reversesearch "Reverse folder search">
+<!ENTITY showduplicatemessages.title "Mensajes Duplicados">
+<!ENTITY showduplicatemessages.caption "Elija los mensajes que deben ser borrados.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Flag">
+<!ENTITY showduplicatemessages.subject "Asunto">
+<!ENTITY showduplicatemessages.sender "Emisor">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "Carpeta">
+<!ENTITY showduplicatemessages.date "Fecha">
+<!ENTITY showduplicatemessages.hint "Click boton izquierdo: Muestra mensaje. Click botón derecho: Muestra información extra. Doble click: Conmuta 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Todo el estándar">
+<!ENTITY showduplicatemessages.buttonSelDel "Borrar todos">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Reservados todos los">
+<!ENTITY showduplicatemessages.buttonErase "Selección de destruir">
+<!ENTITY showduplicatemessages.buttonDel "Borrar selección">
+<!ENTITY showduplicatemessages.buttonCancel "Cancelar">
+<!ENTITY tooltip.buttonDefault "Restaura la selección original. Un duplicado de un correo electrónico se ha seleccionado para la conservación y todos los demás casos se seleccionan para su eliminación.">
+<!ENTITY tooltip.buttonSelDel "Establece el indicador de todos los mensajes que desea eliminar (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Establece el indicador de todos los mensajes para mantener (KEEP)">
+<!ENTITY tooltip.buttonErase "Borra todos con mensajes DEL marcados. No hay forma alguna de recuperarlo.">
+<!ENTITY tooltip.buttonDelete "Borra todos con mensajes DEL marcados. Ellos se mueven a la papelera de copia de seguridad.">
+<!ENTITY tooltip.buttonCancel "Cancelar. No hay ningún mensaje está siendo eliminado o movido.">

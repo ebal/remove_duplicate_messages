@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://removeduplicates/locale/removeduplicates.dtd">
+
+<overlay id="removeduplicatesOverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+ <script type="application/x-javascript" src="chrome://removeduplicates/content/removeduplicates.js"/>
+ <script type="application/x-javascript" src="chrome://removeduplicates/content/removeduplicatesprefs.js"/>
+ <script type="application/x-javascript" src="chrome://removeduplicates/content/md5.js"/>
+ <script type="application/x-javascript" src="chrome://removeduplicates/content/quicksort.js"/>
+
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="bundle_removeduplicates" src="chrome://removeduplicates/locale/removeduplicates.properties"/>
+  </stringbundleset>
+
+
+ <popup id="folderPaneContext">
+  <menuitem id="folderPaneContext-removeDuplicateMessages" 
+   label="&removeduplicates.popupmenuname;"
+   insertafter="folderPaneContext-compact"
+   oncommand="com.twsrdm.Rdm.removeDuplicateMessages();"/> 
+ </popup> 
+
+</overlay>

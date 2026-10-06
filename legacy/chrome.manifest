@@ -1,0 +1,16 @@
+overlay	chrome://messenger/content/mailWindowOverlay.xul	chrome://removeduplicates/content/removeduplicates.xul
+
+content	removeduplicates	jar:chrome/removeduplicates.jar!/content/removeduplicates/
+
+locale	removeduplicates	en-US	jar:chrome/removeduplicates.jar!/locale/en-US/removeduplicates/
+locale	removeduplicates	de-DE	jar:chrome/removeduplicates.jar!/locale/de-AT/removeduplicates/
+locale	removeduplicates	de-DE	jar:chrome/removeduplicates.jar!/locale/de-CH/removeduplicates/
+locale	removeduplicates	de-DE	jar:chrome/removeduplicates.jar!/locale/de-DE/removeduplicates/
+locale	removeduplicates	de-DE	jar:chrome/removeduplicates.jar!/locale/de-LI/removeduplicates/
+locale	removeduplicates	de-LU	jar:chrome/removeduplicates.jar!/locale/de-LU/removeduplicates/
+locale	removeduplicates	ja-JP	jar:chrome/removeduplicates.jar!/locale/ja-JP/removeduplicates/
+locale	removeduplicates	fr-FR	jar:chrome/removeduplicates.jar!/locale/fr-FR/removeduplicates/
+locale	removeduplicates	es-ES	jar:chrome/removeduplicates.jar!/locale/es-ES/removeduplicates/
+locale	removeduplicates	it-IT	jar:chrome/removeduplicates.jar!/locale/it-IT/removeduplicates/
+locale	removeduplicates	nl-NL	jar:chrome/removeduplicates.jar!/locale/nl-NL/removeduplicates/
+locale	removeduplicates	pt-BR	jar:chrome/removeduplicates.jar!/locale/pt-BR/removeduplicates/

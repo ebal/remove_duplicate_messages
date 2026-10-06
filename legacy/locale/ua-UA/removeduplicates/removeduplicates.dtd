@@ -1,0 +1,951 @@
+<!ENTITY removeduplicates.title "Видалити Повторні Повідомлення">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Подяка">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Видалити Повторні Повідомлення…">
+<!ENTITY removeduplicates.description "Видаляє повторні повідомлення через контекстне меню папки.">
+<!ENTITY removeduplicatesPrefs.title "Налаштування "Видалити Повторні Повідомлення"">
+<!ENTITY removeduplicatesPrefs.captionsettings "Налаштування">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Реєстр оновлень">
+<!ENTITY removeduplicatesPrefs.captionhelp "Допомога">
+<!ENTITY removeduplicatesPrefs.captionabout "Про програму">
+<!ENTITY removeduplicatesPrefs.descsettings "Вибрати як порівнюються повідомлення">
+<!ENTITY removeduplicatesPrefs.compmessageid "Порівнювати ID повідомлень">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Порівнювати час (в секундах)">
+<!ENTITY removeduplicatesPrefs.compsubject "Порівнювати тему">
+<!ENTITY removeduplicatesPrefs.compauthor "Порівнювати "Від"">
+<!ENTITY removeduplicatesPrefs.complinecount "Порівнювати кількість рядків">
+<!ENTITY removeduplicatesPrefs.compbody "Порівнювати текст повідомлень (повільно)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Порівнювати "До"">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Віддавати перевагу до видалення">
+<!ENTITY removeduplicatesPrefs.firstfound "першого знайденого">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитаного">
+<!ENTITY removeduplicatesPrefs.smallmail "меншого">
+<!ENTITY removeduplicatesPrefs.largemail "більшого">
+<!ENTITY removeduplicatesPrefs.unansweredmail "залишеного без відповіді">
+<!ENTITY removeduplicatesPrefs.email "повідомлення">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Шукати спершу в під-папках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто видалення">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При пошуку нехтувати повідомленнями видаленими в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При пошуку нехтувати відісланими повідомленнями">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Роздруковувати інформацію для виправлення помилок (debug)">
+<!ENTITY showduplicatemessages.title "Повторні Повідомлення">
+<!ENTITY showduplicatemessages.caption "Виберіть повідомлення які потрібно видалити.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Позначка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "Від">
+<!ENTITY showduplicatemessages.recipient "До">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Надіслано">
+<!ENTITY showduplicatemessages.hint "Ліва кнопка миші: Показати повідомлення. Права кнопка миші: Показати розширену інформацію. Клацніть двічі: перемкнути 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все за промвчанням">
+<!ENTITY showduplicatemessages.buttonSelDel "Все видалити">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не видаляти">
+<!ENTITY showduplicatemessages.buttonErase "Стерти вибране">
+<!ENTITY showduplicatemessages.buttonDel "Видалити вибране">
+<!ENTITY showduplicatemessages.buttonCancel "Відмінити">
+<!ENTITY tooltip.buttonDefault "Відновлює всі помітки за промочанням. Один дублікат для збереження, а всі інші копії до видалення.">
+<!ENTITY tooltip.buttonSelDel "Відмічає вісі повідомлення поміткою для видалення (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Відмічає вісі повідомлення поміткою для збереження (KEEP)">
+<!ENTITY tooltip.buttonErase "Стирає всі повідомлення відмічені поміткою "DEL". Можливості для їх відновлення не залишається.">
+<!ENTITY tooltip.buttonDelete "Видаляє всі повідомлення відмічені поміткою "DEL" . Повідомлення пересуваються в козину на вся випадок.">
+<!ENTITY tooltip.buttonCancel "Відмінити. Жодне повідомлення не буде видалене чи переміщене.">
+<!ENTITY removeduplicates.title "Видалити Повторні Повідомлення">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Подяка">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Видалити Повторні Повідомлення…">
+<!ENTITY removeduplicates.description "Видаляє повторні повідомлення через контекстне меню папки.">
+<!ENTITY removeduplicatesPrefs.title "Налаштування "Видалити Повторні Повідомлення"">
+<!ENTITY removeduplicatesPrefs.captionsettings "Налаштування">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Реєстр оновлень">
+<!ENTITY removeduplicatesPrefs.captionhelp "Допомога">
+<!ENTITY removeduplicatesPrefs.captionabout "Про програму">
+<!ENTITY removeduplicatesPrefs.descsettings "Вибрати як порівнюються повідомлення">
+<!ENTITY removeduplicatesPrefs.compmessageid "Порівнювати ID повідомлень">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Порівнювати час (в секундах)">
+<!ENTITY removeduplicatesPrefs.compsubject "Порівнювати тему">
+<!ENTITY removeduplicatesPrefs.compauthor "Порівнювати "Від"">
+<!ENTITY removeduplicatesPrefs.complinecount "Порівнювати кількість рядків">
+<!ENTITY removeduplicatesPrefs.compbody "Порівнювати текст повідомлень (повільно)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Порівнювати "До"">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Віддавати перевагу до видалення">
+<!ENTITY removeduplicatesPrefs.firstfound "першого знайденого">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитаного">
+<!ENTITY removeduplicatesPrefs.smallmail "меншого">
+<!ENTITY removeduplicatesPrefs.largemail "більшого">
+<!ENTITY removeduplicatesPrefs.unansweredmail "залишеного без відповіді">
+<!ENTITY removeduplicatesPrefs.email "повідомлення">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Шукати спершу в під-папках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто видалення">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При пошуку нехтувати повідомленнями видаленими в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При пошуку нехтувати відісланими повідомленнями">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Роздруковувати інформацію для виправлення помилок (debug)">
+<!ENTITY showduplicatemessages.title "Повторні Повідомлення">
+<!ENTITY showduplicatemessages.caption "Виберіть повідомлення які потрібно видалити.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Позначка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "Від">
+<!ENTITY showduplicatemessages.recipient "До">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Надіслано">
+<!ENTITY showduplicatemessages.hint "Ліва кнопка миші: Показати повідомлення. Права кнопка миші: Показати розширену інформацію. Клацніть двічі: перемкнути 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все за промвчанням">
+<!ENTITY showduplicatemessages.buttonSelDel "Все видалити">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не видаляти">
+<!ENTITY showduplicatemessages.buttonErase "Стерти вибране">
+<!ENTITY showduplicatemessages.buttonDel "Видалити вибране">
+<!ENTITY showduplicatemessages.buttonCancel "Відмінити">
+<!ENTITY tooltip.buttonDefault "Відновлює всі помітки за промочанням. Один дублікат для збереження, а всі інші копії до видалення.">
+<!ENTITY tooltip.buttonSelDel "Відмічає вісі повідомлення поміткою для видалення (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Відмічає вісі повідомлення поміткою для збереження (KEEP)">
+<!ENTITY tooltip.buttonErase "Стирає всі повідомлення відмічені поміткою "DEL". Можливості для їх відновлення не залишається.">
+<!ENTITY tooltip.buttonDelete "Видаляє всі повідомлення відмічені поміткою "DEL" . Повідомлення пересуваються в козину на вся випадок.">
+<!ENTITY tooltip.buttonCancel "Відмінити. Жодне повідомлення не буде видалене чи переміщене.">
+<!ENTITY removeduplicates.title "Видалити Повторні Повідомлення">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Подяка">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Видалити Повторні Повідомлення…">
+<!ENTITY removeduplicates.description "Видаляє повторні повідомлення через контекстне меню папки.">
+<!ENTITY removeduplicatesPrefs.title "Налаштування "Видалити Повторні Повідомлення"">
+<!ENTITY removeduplicatesPrefs.captionsettings "Налаштування">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Реєстр оновлень">
+<!ENTITY removeduplicatesPrefs.captionhelp "Допомога">
+<!ENTITY removeduplicatesPrefs.captionabout "Про програму">
+<!ENTITY removeduplicatesPrefs.descsettings "Вибрати як порівнюються повідомлення">
+<!ENTITY removeduplicatesPrefs.compmessageid "Порівнювати ID повідомлень">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Порівнювати час (в секундах)">
+<!ENTITY removeduplicatesPrefs.compsubject "Порівнювати тему">
+<!ENTITY removeduplicatesPrefs.compauthor "Порівнювати "Від"">
+<!ENTITY removeduplicatesPrefs.complinecount "Порівнювати кількість рядків">
+<!ENTITY removeduplicatesPrefs.compbody "Порівнювати текст повідомлень (повільно)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Порівнювати "До"">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Віддавати перевагу до видалення">
+<!ENTITY removeduplicatesPrefs.firstfound "першого знайденого">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитаного">
+<!ENTITY removeduplicatesPrefs.smallmail "меншого">
+<!ENTITY removeduplicatesPrefs.largemail "більшого">
+<!ENTITY removeduplicatesPrefs.unansweredmail "залишеного без відповіді">
+<!ENTITY removeduplicatesPrefs.email "повідомлення">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Шукати спершу в під-папках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто видалення">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При пошуку нехтувати повідомленнями видаленими в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При пошуку нехтувати відісланими повідомленнями">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Роздруковувати інформацію для виправлення помилок (debug)">
+<!ENTITY showduplicatemessages.title "Повторні Повідомлення">
+<!ENTITY showduplicatemessages.caption "Виберіть повідомлення які потрібно видалити.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Позначка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "Від">
+<!ENTITY showduplicatemessages.recipient "До">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Надіслано">
+<!ENTITY showduplicatemessages.hint "Ліва кнопка миші: Показати повідомлення. Права кнопка миші: Показати розширену інформацію. Клацніть двічі: перемкнути 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все за промвчанням">
+<!ENTITY showduplicatemessages.buttonSelDel "Все видалити">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не видаляти">
+<!ENTITY showduplicatemessages.buttonErase "Стерти вибране">
+<!ENTITY showduplicatemessages.buttonDel "Видалити вибране">
+<!ENTITY showduplicatemessages.buttonCancel "Відмінити">
+<!ENTITY tooltip.buttonDefault "Відновлює всі помітки за промочанням. Один дублікат для збереження, а всі інші копії до видалення.">
+<!ENTITY tooltip.buttonSelDel "Відмічає вісі повідомлення поміткою для видалення (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Відмічає вісі повідомлення поміткою для збереження (KEEP)">
+<!ENTITY tooltip.buttonErase "Стирає всі повідомлення відмічені поміткою "DEL". Можливості для їх відновлення не залишається.">
+<!ENTITY tooltip.buttonDelete "Видаляє всі повідомлення відмічені поміткою "DEL" . Повідомлення пересуваються в козину на вся випадок.">
+<!ENTITY tooltip.buttonCancel "Відмінити. Жодне повідомлення не буде видалене чи переміщене.">
+<!ENTITY removeduplicates.title "Видалити Повторні Повідомлення">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Подяка">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Видалити Повторні Повідомлення…">
+<!ENTITY removeduplicates.description "Видаляє повторні повідомлення через контекстне меню папки.">
+<!ENTITY removeduplicatesPrefs.title "Налаштування "Видалити Повторні Повідомлення"">
+<!ENTITY removeduplicatesPrefs.captionsettings "Налаштування">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Реєстр оновлень">
+<!ENTITY removeduplicatesPrefs.captionhelp "Допомога">
+<!ENTITY removeduplicatesPrefs.captionabout "Про програму">
+<!ENTITY removeduplicatesPrefs.descsettings "Вибрати як порівнюються повідомлення">
+<!ENTITY removeduplicatesPrefs.compmessageid "Порівнювати ID повідомлень">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Порівнювати час (в секундах)">
+<!ENTITY removeduplicatesPrefs.compsubject "Порівнювати тему">
+<!ENTITY removeduplicatesPrefs.compauthor "Порівнювати "Від"">
+<!ENTITY removeduplicatesPrefs.complinecount "Порівнювати кількість рядків">
+<!ENTITY removeduplicatesPrefs.compbody "Порівнювати текст повідомлень (повільно)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Порівнювати "До"">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Віддавати перевагу до видалення">
+<!ENTITY removeduplicatesPrefs.firstfound "першого знайденого">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитаного">
+<!ENTITY removeduplicatesPrefs.smallmail "меншого">
+<!ENTITY removeduplicatesPrefs.largemail "більшого">
+<!ENTITY removeduplicatesPrefs.unansweredmail "залишеного без відповіді">
+<!ENTITY removeduplicatesPrefs.email "повідомлення">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Шукати спершу в під-папках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто видалення">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При пошуку нехтувати повідомленнями видаленими в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При пошуку нехтувати відісланими повідомленнями">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Роздруковувати інформацію для виправлення помилок (debug)">
+<!ENTITY showduplicatemessages.title "Повторні Повідомлення">
+<!ENTITY showduplicatemessages.caption "Виберіть повідомлення які потрібно видалити.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Позначка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "Від">
+<!ENTITY showduplicatemessages.recipient "До">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Надіслано">
+<!ENTITY showduplicatemessages.hint "Ліва кнопка миші: Показати повідомлення. Права кнопка миші: Показати розширену інформацію. Клацніть двічі: перемкнути 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все за промвчанням">
+<!ENTITY showduplicatemessages.buttonSelDel "Все видалити">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не видаляти">
+<!ENTITY showduplicatemessages.buttonErase "Стерти вибране">
+<!ENTITY showduplicatemessages.buttonDel "Видалити вибране">
+<!ENTITY showduplicatemessages.buttonCancel "Відмінити">
+<!ENTITY tooltip.buttonDefault "Відновлює всі помітки за промочанням. Один дублікат для збереження, а всі інші копії до видалення.">
+<!ENTITY tooltip.buttonSelDel "Відмічає вісі повідомлення поміткою для видалення (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Відмічає вісі повідомлення поміткою для збереження (KEEP)">
+<!ENTITY tooltip.buttonErase "Стирає всі повідомлення відмічені поміткою "DEL". Можливості для їх відновлення не залишається.">
+<!ENTITY tooltip.buttonDelete "Видаляє всі повідомлення відмічені поміткою "DEL" . Повідомлення пересуваються в козину на вся випадок.">
+<!ENTITY tooltip.buttonCancel "Відмінити. Жодне повідомлення не буде видалене чи переміщене.">
+<!ENTITY removeduplicates.title "Видалити Повторні Повідомлення">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Подяка">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Видалити Повторні Повідомлення…">
+<!ENTITY removeduplicates.description "Видаляє повторні повідомлення через контекстне меню папки.">
+<!ENTITY removeduplicatesPrefs.title "Налаштування "Видалити Повторні Повідомлення"">
+<!ENTITY removeduplicatesPrefs.captionsettings "Налаштування">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Реєстр оновлень">
+<!ENTITY removeduplicatesPrefs.captionhelp "Допомога">
+<!ENTITY removeduplicatesPrefs.captionabout "Про програму">
+<!ENTITY removeduplicatesPrefs.descsettings "Вибрати як порівнюються повідомлення">
+<!ENTITY removeduplicatesPrefs.compmessageid "Порівнювати ID повідомлень">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Порівнювати час (в секундах)">
+<!ENTITY removeduplicatesPrefs.compsubject "Порівнювати тему">
+<!ENTITY removeduplicatesPrefs.compauthor "Порівнювати "Від"">
+<!ENTITY removeduplicatesPrefs.complinecount "Порівнювати кількість рядків">
+<!ENTITY removeduplicatesPrefs.compbody "Порівнювати текст повідомлень (повільно)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Порівнювати "До"">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Віддавати перевагу до видалення">
+<!ENTITY removeduplicatesPrefs.firstfound "першого знайденого">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитаного">
+<!ENTITY removeduplicatesPrefs.smallmail "меншого">
+<!ENTITY removeduplicatesPrefs.largemail "більшого">
+<!ENTITY removeduplicatesPrefs.unansweredmail "залишеного без відповіді">
+<!ENTITY removeduplicatesPrefs.email "повідомлення">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Шукати спершу в під-папках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто видалення">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При пошуку нехтувати повідомленнями видаленими в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При пошуку нехтувати відісланими повідомленнями">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Роздруковувати інформацію для виправлення помилок (debug)">
+<!ENTITY showduplicatemessages.title "Повторні Повідомлення">
+<!ENTITY showduplicatemessages.caption "Виберіть повідомлення які потрібно видалити.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Позначка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "Від">
+<!ENTITY showduplicatemessages.recipient "До">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Надіслано">
+<!ENTITY showduplicatemessages.hint "Ліва кнопка миші: Показати повідомлення. Права кнопка миші: Показати розширену інформацію. Клацніть двічі: перемкнути 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все за промвчанням">
+<!ENTITY showduplicatemessages.buttonSelDel "Все видалити">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не видаляти">
+<!ENTITY showduplicatemessages.buttonErase "Стерти вибране">
+<!ENTITY showduplicatemessages.buttonDel "Видалити вибране">
+<!ENTITY showduplicatemessages.buttonCancel "Відмінити">
+<!ENTITY tooltip.buttonDefault "Відновлює всі помітки за промочанням. Один дублікат для збереження, а всі інші копії до видалення.">
+<!ENTITY tooltip.buttonSelDel "Відмічає вісі повідомлення поміткою для видалення (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Відмічає вісі повідомлення поміткою для збереження (KEEP)">
+<!ENTITY tooltip.buttonErase "Стирає всі повідомлення відмічені поміткою "DEL". Можливості для їх відновлення не залишається.">
+<!ENTITY tooltip.buttonDelete "Видаляє всі повідомлення відмічені поміткою "DEL" . Повідомлення пересуваються в козину на вся випадок.">
+<!ENTITY tooltip.buttonCancel "Відмінити. Жодне повідомлення не буде видалене чи переміщене.">
+<!ENTITY removeduplicates.title "Видалити Повторні Повідомлення">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Подяка">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Видалити Повторні Повідомлення…">
+<!ENTITY removeduplicates.description "Видаляє повторні повідомлення через контекстне меню папки.">
+<!ENTITY removeduplicatesPrefs.title "Налаштування "Видалити Повторні Повідомлення"">
+<!ENTITY removeduplicatesPrefs.captionsettings "Налаштування">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Реєстр оновлень">
+<!ENTITY removeduplicatesPrefs.captionhelp "Допомога">
+<!ENTITY removeduplicatesPrefs.captionabout "Про програму">
+<!ENTITY removeduplicatesPrefs.descsettings "Вибрати як порівнюються повідомлення">
+<!ENTITY removeduplicatesPrefs.compmessageid "Порівнювати ID повідомлень">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Порівнювати час (в секундах)">
+<!ENTITY removeduplicatesPrefs.compsubject "Порівнювати тему">
+<!ENTITY removeduplicatesPrefs.compauthor "Порівнювати "Від"">
+<!ENTITY removeduplicatesPrefs.complinecount "Порівнювати кількість рядків">
+<!ENTITY removeduplicatesPrefs.compbody "Порівнювати текст повідомлень (повільно)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Порівнювати "До"">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Віддавати перевагу до видалення">
+<!ENTITY removeduplicatesPrefs.firstfound "першого знайденого">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитаного">
+<!ENTITY removeduplicatesPrefs.smallmail "меншого">
+<!ENTITY removeduplicatesPrefs.largemail "більшого">
+<!ENTITY removeduplicatesPrefs.unansweredmail "залишеного без відповіді">
+<!ENTITY removeduplicatesPrefs.email "повідомлення">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Шукати спершу в під-папках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто видалення">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При пошуку нехтувати повідомленнями видаленими в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При пошуку нехтувати відісланими повідомленнями">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Роздруковувати інформацію для виправлення помилок (debug)">
+<!ENTITY showduplicatemessages.title "Повторні Повідомлення">
+<!ENTITY showduplicatemessages.caption "Виберіть повідомлення які потрібно видалити.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Позначка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "Від">
+<!ENTITY showduplicatemessages.recipient "До">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Надіслано">
+<!ENTITY showduplicatemessages.hint "Ліва кнопка миші: Показати повідомлення. Права кнопка миші: Показати розширену інформацію. Клацніть двічі: перемкнути 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все за промвчанням">
+<!ENTITY showduplicatemessages.buttonSelDel "Все видалити">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не видаляти">
+<!ENTITY showduplicatemessages.buttonErase "Стерти вибране">
+<!ENTITY showduplicatemessages.buttonDel "Видалити вибране">
+<!ENTITY showduplicatemessages.buttonCancel "Відмінити">
+<!ENTITY tooltip.buttonDefault "Відновлює всі помітки за промочанням. Один дублікат для збереження, а всі інші копії до видалення.">
+<!ENTITY tooltip.buttonSelDel "Відмічає вісі повідомлення поміткою для видалення (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Відмічає вісі повідомлення поміткою для збереження (KEEP)">
+<!ENTITY tooltip.buttonErase "Стирає всі повідомлення відмічені поміткою "DEL". Можливості для їх відновлення не залишається.">
+<!ENTITY tooltip.buttonDelete "Видаляє всі повідомлення відмічені поміткою "DEL" . Повідомлення пересуваються в козину на вся випадок.">
+<!ENTITY tooltip.buttonCancel "Відмінити. Жодне повідомлення не буде видалене чи переміщене.">
+<!ENTITY removeduplicates.title "Видалити Повторні Повідомлення">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Подяка">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Видалити Повторні Повідомлення…">
+<!ENTITY removeduplicates.description "Видаляє повторні повідомлення через контекстне меню папки.">
+<!ENTITY removeduplicatesPrefs.title "Налаштування "Видалити Повторні Повідомлення"">
+<!ENTITY removeduplicatesPrefs.captionsettings "Налаштування">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Реєстр оновлень">
+<!ENTITY removeduplicatesPrefs.captionhelp "Допомога">
+<!ENTITY removeduplicatesPrefs.captionabout "Про програму">
+<!ENTITY removeduplicatesPrefs.descsettings "Вибрати як порівнюються повідомлення">
+<!ENTITY removeduplicatesPrefs.compmessageid "Порівнювати ID повідомлень">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Порівнювати час (в секундах)">
+<!ENTITY removeduplicatesPrefs.compdate "Надіслано">
+<!ENTITY removeduplicatesPrefs.compsubject "Порівнювати тему">
+<!ENTITY removeduplicatesPrefs.compauthor "Порівнювати "Від"">
+<!ENTITY removeduplicatesPrefs.complinecount "Порівнювати кількість рядків">
+<!ENTITY removeduplicatesPrefs.compbody "Порівнювати текст повідомлень (повільно)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Порівнювати "До"">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Віддавати перевагу до видалення">
+<!ENTITY removeduplicatesPrefs.firstfound "першого знайденого">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитаного">
+<!ENTITY removeduplicatesPrefs.smallmail "меншого">
+<!ENTITY removeduplicatesPrefs.largemail "більшого">
+<!ENTITY removeduplicatesPrefs.unansweredmail "залишеного без відповіді">
+<!ENTITY removeduplicatesPrefs.email "повідомлення">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Шукати спершу в під-папках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто видалення">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При пошуку нехтувати повідомленнями видаленими в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При пошуку нехтувати відісланими повідомленнями">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Роздруковувати інформацію для виправлення помилок (debug)">
+<!ENTITY showduplicatemessages.title "Повторні Повідомлення">
+<!ENTITY showduplicatemessages.caption "Виберіть повідомлення які потрібно видалити.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Позначка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "Від">
+<!ENTITY showduplicatemessages.recipient "До">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Надіслано">
+<!ENTITY showduplicatemessages.hint "Ліва кнопка миші: Показати повідомлення. Права кнопка миші: Показати розширену інформацію. Клацніть двічі: перемкнути 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все за промвчанням">
+<!ENTITY showduplicatemessages.buttonSelDel "Все видалити">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не видаляти">
+<!ENTITY showduplicatemessages.buttonErase "Стерти вибране">
+<!ENTITY showduplicatemessages.buttonDel "Видалити вибране">
+<!ENTITY showduplicatemessages.buttonCancel "Відмінити">
+<!ENTITY tooltip.buttonDefault "Відновлює всі помітки за промочанням. Один дублікат для збереження, а всі інші копії до видалення.">
+<!ENTITY tooltip.buttonSelDel "Відмічає вісі повідомлення поміткою для видалення (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Відмічає вісі повідомлення поміткою для збереження (KEEP)">
+<!ENTITY tooltip.buttonErase "Стирає всі повідомлення відмічені поміткою "DEL". Можливості для їх відновлення не залишається.">
+<!ENTITY tooltip.buttonDelete "Видаляє всі повідомлення відмічені поміткою "DEL" . Повідомлення пересуваються в козину на вся випадок.">
+<!ENTITY tooltip.buttonCancel "Відмінити. Жодне повідомлення не буде видалене чи переміщене.">
+<!ENTITY removeduplicates.title "Видалити Повторні Повідомлення">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Подяка">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Видалити Повторні Повідомлення…">
+<!ENTITY removeduplicates.description "Видаляє повторні повідомлення через контекстне меню папки.">
+<!ENTITY removeduplicatesPrefs.title "Налаштування "Видалити Повторні Повідомлення"">
+<!ENTITY removeduplicatesPrefs.captionsettings "Налаштування">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Реєстр оновлень">
+<!ENTITY removeduplicatesPrefs.captionhelp "Допомога">
+<!ENTITY removeduplicatesPrefs.captionabout "Про програму">
+<!ENTITY removeduplicatesPrefs.descsettings "Вибрати як порівнюються повідомлення">
+<!ENTITY removeduplicatesPrefs.compmessageid "Порівнювати ID повідомлень">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Порівнювати час (в секундах)">
+<!ENTITY removeduplicatesPrefs.compdate "Надіслано">
+<!ENTITY removeduplicatesPrefs.compsubject "Порівнювати тему">
+<!ENTITY removeduplicatesPrefs.compauthor "Порівнювати "Від"">
+<!ENTITY removeduplicatesPrefs.complinecount "Порівнювати кількість рядків">
+<!ENTITY removeduplicatesPrefs.compbody "Порівнювати текст повідомлень (повільно)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Порівнювати "До"">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Віддавати перевагу до видалення">
+<!ENTITY removeduplicatesPrefs.firstfound "першого знайденого">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитаного">
+<!ENTITY removeduplicatesPrefs.smallmail "меншого">
+<!ENTITY removeduplicatesPrefs.largemail "більшого">
+<!ENTITY removeduplicatesPrefs.unansweredmail "залишеного без відповіді">
+<!ENTITY removeduplicatesPrefs.email "повідомлення">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Шукати спершу в під-папках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто видалення">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При пошуку нехтувати повідомленнями видаленими в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При пошуку нехтувати відісланими повідомленнями">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Роздруковувати інформацію для виправлення помилок (debug)">
+<!ENTITY showduplicatemessages.title "Повторні Повідомлення">
+<!ENTITY showduplicatemessages.caption "Виберіть повідомлення які потрібно видалити.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Позначка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "Від">
+<!ENTITY showduplicatemessages.recipient "До">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Надіслано">
+<!ENTITY showduplicatemessages.hint "Ліва кнопка миші: Показати повідомлення. Права кнопка миші: Показати розширену інформацію. Клацніть двічі: перемкнути 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все за промвчанням">
+<!ENTITY showduplicatemessages.buttonSelDel "Все видалити">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не видаляти">
+<!ENTITY showduplicatemessages.buttonErase "Стерти вибране">
+<!ENTITY showduplicatemessages.buttonDel "Видалити вибране">
+<!ENTITY showduplicatemessages.buttonCancel "Відмінити">
+<!ENTITY tooltip.buttonDefault "Відновлює всі помітки за промочанням. Один дублікат для збереження, а всі інші копії до видалення.">
+<!ENTITY tooltip.buttonSelDel "Відмічає вісі повідомлення поміткою для видалення (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Відмічає вісі повідомлення поміткою для збереження (KEEP)">
+<!ENTITY tooltip.buttonErase "Стирає всі повідомлення відмічені поміткою "DEL". Можливості для їх відновлення не залишається.">
+<!ENTITY tooltip.buttonDelete "Видаляє всі повідомлення відмічені поміткою "DEL" . Повідомлення пересуваються в козину на вся випадок.">
+<!ENTITY tooltip.buttonCancel "Відмінити. Жодне повідомлення не буде видалене чи переміщене.">
+<!ENTITY removeduplicates.title "Видалити Повторні Повідомлення">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Подяка">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Видалити Повторні Повідомлення…">
+<!ENTITY removeduplicates.description "Видаляє повторні повідомлення через контекстне меню папки.">
+<!ENTITY removeduplicatesPrefs.title "Налаштування "Видалити Повторні Повідомлення"">
+<!ENTITY removeduplicatesPrefs.captionsettings "Налаштування">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Реєстр оновлень">
+<!ENTITY removeduplicatesPrefs.captionhelp "Допомога">
+<!ENTITY removeduplicatesPrefs.captionabout "Про програму">
+<!ENTITY removeduplicatesPrefs.descsettings "Вибрати як порівнюються повідомлення">
+<!ENTITY removeduplicatesPrefs.compmessageid "Порівнювати ID повідомлень">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Порівнювати час (в секундах)">
+<!ENTITY removeduplicatesPrefs.compdate "Надіслано">
+<!ENTITY removeduplicatesPrefs.compsubject "Порівнювати тему">
+<!ENTITY removeduplicatesPrefs.compauthor "Порівнювати "Від"">
+<!ENTITY removeduplicatesPrefs.complinecount "Порівнювати кількість рядків">
+<!ENTITY removeduplicatesPrefs.compbody "Порівнювати текст повідомлень (повільно)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Порівнювати "До"">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Віддавати перевагу до видалення">
+<!ENTITY removeduplicatesPrefs.firstfound "першого знайденого">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитаного">
+<!ENTITY removeduplicatesPrefs.smallmail "меншого">
+<!ENTITY removeduplicatesPrefs.largemail "більшого">
+<!ENTITY removeduplicatesPrefs.unansweredmail "залишеного без відповіді">
+<!ENTITY removeduplicatesPrefs.email "повідомлення">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Шукати спершу в під-папках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто видалення">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При пошуку нехтувати повідомленнями видаленими в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При пошуку нехтувати відісланими повідомленнями">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Роздруковувати інформацію для виправлення помилок (debug)">
+<!ENTITY showduplicatemessages.title "Повторні Повідомлення">
+<!ENTITY showduplicatemessages.caption "Виберіть повідомлення які потрібно видалити.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Позначка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "Від">
+<!ENTITY showduplicatemessages.recipient "До">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Надіслано">
+<!ENTITY showduplicatemessages.hint "Ліва кнопка миші: Показати повідомлення. Права кнопка миші: Показати розширену інформацію. Клацніть двічі: перемкнути 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все за промвчанням">
+<!ENTITY showduplicatemessages.buttonSelDel "Все видалити">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не видаляти">
+<!ENTITY showduplicatemessages.buttonErase "Стерти вибране">
+<!ENTITY showduplicatemessages.buttonDel "Видалити вибране">
+<!ENTITY showduplicatemessages.buttonCancel "Відмінити">
+<!ENTITY tooltip.buttonDefault "Відновлює всі помітки за промочанням. Один дублікат для збереження, а всі інші копії до видалення.">
+<!ENTITY tooltip.buttonSelDel "Відмічає вісі повідомлення поміткою для видалення (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Відмічає вісі повідомлення поміткою для збереження (KEEP)">
+<!ENTITY tooltip.buttonErase "Стирає всі повідомлення відмічені поміткою "DEL". Можливості для їх відновлення не залишається.">
+<!ENTITY tooltip.buttonDelete "Видаляє всі повідомлення відмічені поміткою "DEL" . Повідомлення пересуваються в козину на вся випадок.">
+<!ENTITY tooltip.buttonCancel "Відмінити. Жодне повідомлення не буде видалене чи переміщене.">
+<!ENTITY removeduplicates.title "Видалити Повторні Повідомлення">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Подяка">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Видалити Повторні Повідомлення…">
+<!ENTITY removeduplicates.description "Видаляє повторні повідомлення через контекстне меню папки.">
+<!ENTITY removeduplicatesPrefs.title "Налаштування "Видалити Повторні Повідомлення"">
+<!ENTITY removeduplicatesPrefs.captionsettings "Налаштування">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Реєстр оновлень">
+<!ENTITY removeduplicatesPrefs.captionhelp "Допомога">
+<!ENTITY removeduplicatesPrefs.captionabout "Про програму">
+<!ENTITY removeduplicatesPrefs.descsettings "Вибрати як порівнюються повідомлення">
+<!ENTITY removeduplicatesPrefs.compmessageid "Порівнювати ID повідомлень">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Порівнювати час (в секундах)">
+<!ENTITY removeduplicatesPrefs.compdate "Надіслано">
+<!ENTITY removeduplicatesPrefs.compsubject "Порівнювати тему">
+<!ENTITY removeduplicatesPrefs.compauthor "Порівнювати "Від"">
+<!ENTITY removeduplicatesPrefs.complinecount "Порівнювати кількість рядків">
+<!ENTITY removeduplicatesPrefs.compbody "Порівнювати текст повідомлень (повільно)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Порівнювати "До"">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Віддавати перевагу до видалення">
+<!ENTITY removeduplicatesPrefs.firstfound "першого знайденого">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитаного">
+<!ENTITY removeduplicatesPrefs.smallmail "меншого">
+<!ENTITY removeduplicatesPrefs.largemail "більшого">
+<!ENTITY removeduplicatesPrefs.unansweredmail "залишеного без відповіді">
+<!ENTITY removeduplicatesPrefs.email "повідомлення">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Шукати спершу в під-папках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто видалення">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При пошуку нехтувати повідомленнями видаленими в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При пошуку нехтувати відісланими повідомленнями">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Роздруковувати інформацію для виправлення помилок (debug)">
+<!ENTITY showduplicatemessages.title "Повторні Повідомлення">
+<!ENTITY showduplicatemessages.caption "Виберіть повідомлення які потрібно видалити.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Позначка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "Від">
+<!ENTITY showduplicatemessages.recipient "До">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Надіслано">
+<!ENTITY showduplicatemessages.hint "Ліва кнопка миші: Показати повідомлення. Права кнопка миші: Показати розширену інформацію. Клацніть двічі: перемкнути 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все за промвчанням">
+<!ENTITY showduplicatemessages.buttonSelDel "Все видалити">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не видаляти">
+<!ENTITY showduplicatemessages.buttonErase "Стерти вибране">
+<!ENTITY showduplicatemessages.buttonDel "Видалити вибране">
+<!ENTITY showduplicatemessages.buttonCancel "Відмінити">
+<!ENTITY tooltip.buttonDefault "Відновлює всі помітки за промочанням. Один дублікат для збереження, а всі інші копії до видалення.">
+<!ENTITY tooltip.buttonSelDel "Відмічає вісі повідомлення поміткою для видалення (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Відмічає вісі повідомлення поміткою для збереження (KEEP)">
+<!ENTITY tooltip.buttonErase "Стирає всі повідомлення відмічені поміткою "DEL". Можливості для їх відновлення не залишається.">
+<!ENTITY tooltip.buttonDelete "Видаляє всі повідомлення відмічені поміткою "DEL" . Повідомлення пересуваються в козину на вся випадок.">
+<!ENTITY tooltip.buttonCancel "Відмінити. Жодне повідомлення не буде видалене чи переміщене.">
+<!ENTITY removeduplicates.title "Видалити Повторні Повідомлення">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Подяка">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Видалити Повторні Повідомлення…">
+<!ENTITY removeduplicates.description "Видаляє повторні повідомлення через контекстне меню папки.">
+<!ENTITY removeduplicatesPrefs.title "Налаштування "Видалити Повторні Повідомлення"">
+<!ENTITY removeduplicatesPrefs.captionsettings "Налаштування">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Реєстр оновлень">
+<!ENTITY removeduplicatesPrefs.captionhelp "Допомога">
+<!ENTITY removeduplicatesPrefs.captionabout "Про програму">
+<!ENTITY removeduplicatesPrefs.descsettings "Вибрати як порівнюються повідомлення">
+<!ENTITY removeduplicatesPrefs.compmessageid "Порівнювати ID повідомлень">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Порівнювати час (в секундах)">
+<!ENTITY removeduplicatesPrefs.compdate "Надіслано">
+<!ENTITY removeduplicatesPrefs.compsubject "Порівнювати тему">
+<!ENTITY removeduplicatesPrefs.compauthor "Порівнювати "Від"">
+<!ENTITY removeduplicatesPrefs.complinecount "Порівнювати кількість рядків">
+<!ENTITY removeduplicatesPrefs.compbody "Порівнювати текст повідомлень (повільно)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Порівнювати "До"">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Віддавати перевагу до видалення">
+<!ENTITY removeduplicatesPrefs.firstfound "першого знайденого">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитаного">
+<!ENTITY removeduplicatesPrefs.smallmail "меншого">
+<!ENTITY removeduplicatesPrefs.largemail "більшого">
+<!ENTITY removeduplicatesPrefs.unansweredmail "залишеного без відповіді">
+<!ENTITY removeduplicatesPrefs.email "повідомлення">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Шукати спершу в під-папках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто видалення">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При пошуку нехтувати повідомленнями видаленими в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При пошуку нехтувати відісланими повідомленнями">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Роздруковувати інформацію для виправлення помилок (debug)">
+<!ENTITY showduplicatemessages.title "Повторні Повідомлення">
+<!ENTITY showduplicatemessages.caption "Виберіть повідомлення які потрібно видалити.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Позначка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "Від">
+<!ENTITY showduplicatemessages.recipient "До">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Надіслано">
+<!ENTITY showduplicatemessages.hint "Ліва кнопка миші: Показати повідомлення. Права кнопка миші: Показати розширену інформацію. Клацніть двічі: перемкнути 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все за промвчанням">
+<!ENTITY showduplicatemessages.buttonSelDel "Все видалити">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не видаляти">
+<!ENTITY showduplicatemessages.buttonErase "Стерти вибране">
+<!ENTITY showduplicatemessages.buttonDel "Видалити вибране">
+<!ENTITY showduplicatemessages.buttonCancel "Відмінити">
+<!ENTITY tooltip.buttonDefault "Відновлює всі помітки за промочанням. Один дублікат для збереження, а всі інші копії до видалення.">
+<!ENTITY tooltip.buttonSelDel "Відмічає вісі повідомлення поміткою для видалення (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Відмічає вісі повідомлення поміткою для збереження (KEEP)">
+<!ENTITY tooltip.buttonErase "Стирає всі повідомлення відмічені поміткою "DEL". Можливості для їх відновлення не залишається.">
+<!ENTITY tooltip.buttonDelete "Видаляє всі повідомлення відмічені поміткою "DEL" . Повідомлення пересуваються в козину на вся випадок.">
+<!ENTITY tooltip.buttonCancel "Відмінити. Жодне повідомлення не буде видалене чи переміщене.">
+<!ENTITY removeduplicates.title "Видалити Повторні Повідомлення">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Подяка">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Видалити Повторні Повідомлення…">
+<!ENTITY removeduplicates.description "Видаляє повторні повідомлення через контекстне меню папки.">
+<!ENTITY removeduplicatesPrefs.title "Налаштування "Видалити Повторні Повідомлення"">
+<!ENTITY removeduplicatesPrefs.captionsettings "Налаштування">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Реєстр оновлень">
+<!ENTITY removeduplicatesPrefs.captionhelp "Допомога">
+<!ENTITY removeduplicatesPrefs.captionabout "Про програму">
+<!ENTITY removeduplicatesPrefs.descsettings "Вибрати як порівнюються повідомлення">
+<!ENTITY removeduplicatesPrefs.compmessageid "Порівнювати ID повідомлень">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Порівнювати час (в секундах)">
+<!ENTITY removeduplicatesPrefs.compdate "Надіслано">
+<!ENTITY removeduplicatesPrefs.compsubject "Порівнювати тему">
+<!ENTITY removeduplicatesPrefs.compauthor "Порівнювати "Від"">
+<!ENTITY removeduplicatesPrefs.complinecount "Порівнювати кількість рядків">
+<!ENTITY removeduplicatesPrefs.compbody "Порівнювати текст повідомлень (повільно)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Порівнювати "До"">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Віддавати перевагу до видалення">
+<!ENTITY removeduplicatesPrefs.firstfound "першого знайденого">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитаного">
+<!ENTITY removeduplicatesPrefs.smallmail "меншого">
+<!ENTITY removeduplicatesPrefs.largemail "більшого">
+<!ENTITY removeduplicatesPrefs.unansweredmail "залишеного без відповіді">
+<!ENTITY removeduplicatesPrefs.email "повідомлення">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Шукати спершу в під-папках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто видалення">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При пошуку нехтувати повідомленнями видаленими в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При пошуку нехтувати відісланими повідомленнями">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Роздруковувати інформацію для виправлення помилок (debug)">
+<!ENTITY showduplicatemessages.title "Повторні Повідомлення">
+<!ENTITY showduplicatemessages.caption "Виберіть повідомлення які потрібно видалити.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Позначка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "Від">
+<!ENTITY showduplicatemessages.recipient "До">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Надіслано">
+<!ENTITY showduplicatemessages.hint "Ліва кнопка миші: Показати повідомлення. Права кнопка миші: Показати розширену інформацію. Клацніть двічі: перемкнути 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все за промвчанням">
+<!ENTITY showduplicatemessages.buttonSelDel "Все видалити">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не видаляти">
+<!ENTITY showduplicatemessages.buttonErase "Стерти вибране">
+<!ENTITY showduplicatemessages.buttonDel "Видалити вибране">
+<!ENTITY showduplicatemessages.buttonCancel "Відмінити">
+<!ENTITY tooltip.buttonDefault "Відновлює всі помітки за промочанням. Один дублікат для збереження, а всі інші копії до видалення.">
+<!ENTITY tooltip.buttonSelDel "Відмічає вісі повідомлення поміткою для видалення (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Відмічає вісі повідомлення поміткою для збереження (KEEP)">
+<!ENTITY tooltip.buttonErase "Стирає всі повідомлення відмічені поміткою "DEL". Можливості для їх відновлення не залишається.">
+<!ENTITY tooltip.buttonDelete "Видаляє всі повідомлення відмічені поміткою "DEL" . Повідомлення пересуваються в козину на вся випадок.">
+<!ENTITY tooltip.buttonCancel "Відмінити. Жодне повідомлення не буде видалене чи переміщене.">
+<!ENTITY removeduplicates.title "Видалити Повторні Повідомлення">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Подяка">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Видалити Повторні Повідомлення…">
+<!ENTITY removeduplicates.description "Видаляє повторні повідомлення через контекстне меню папки.">
+<!ENTITY removeduplicatesPrefs.title "Налаштування "Видалити Повторні Повідомлення"">
+<!ENTITY removeduplicatesPrefs.captionsettings "Налаштування">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Реєстр оновлень">
+<!ENTITY removeduplicatesPrefs.captionhelp "Допомога">
+<!ENTITY removeduplicatesPrefs.captionabout "Про програму">
+<!ENTITY removeduplicatesPrefs.descsettings "Вибрати як порівнюються повідомлення">
+<!ENTITY removeduplicatesPrefs.compmessageid "Порівнювати ID повідомлень">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Порівнювати час (в секундах)">
+<!ENTITY removeduplicatesPrefs.compdate "Надіслано">
+<!ENTITY removeduplicatesPrefs.compsubject "Порівнювати тему">
+<!ENTITY removeduplicatesPrefs.compauthor "Порівнювати "Від"">
+<!ENTITY removeduplicatesPrefs.complinecount "Порівнювати кількість рядків">
+<!ENTITY removeduplicatesPrefs.compbody "Порівнювати текст повідомлень (повільно)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Порівнювати "До"">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Віддавати перевагу до видалення">
+<!ENTITY removeduplicatesPrefs.firstfound "першого знайденого">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитаного">
+<!ENTITY removeduplicatesPrefs.smallmail "меншого">
+<!ENTITY removeduplicatesPrefs.largemail "більшого">
+<!ENTITY removeduplicatesPrefs.unansweredmail "залишеного без відповіді">
+<!ENTITY removeduplicatesPrefs.email "повідомлення">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Шукати спершу в під-папках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто видалення">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При пошуку нехтувати повідомленнями видаленими в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При пошуку нехтувати відісланими повідомленнями">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Роздруковувати інформацію для виправлення помилок (debug)">
+<!ENTITY showduplicatemessages.title "Повторні Повідомлення">
+<!ENTITY showduplicatemessages.caption "Виберіть повідомлення які потрібно видалити.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Позначка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "Від">
+<!ENTITY showduplicatemessages.recipient "До">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Надіслано">
+<!ENTITY showduplicatemessages.hint "Ліва кнопка миші: Показати повідомлення. Права кнопка миші: Показати розширену інформацію. Клацніть двічі: перемкнути 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все за промвчанням">
+<!ENTITY showduplicatemessages.buttonSelDel "Все видалити">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не видаляти">
+<!ENTITY showduplicatemessages.buttonErase "Стерти вибране">
+<!ENTITY showduplicatemessages.buttonDel "Видалити вибране">
+<!ENTITY showduplicatemessages.buttonCancel "Відмінити">
+<!ENTITY tooltip.buttonDefault "Відновлює всі помітки за промочанням. Один дублікат для збереження, а всі інші копії до видалення.">
+<!ENTITY tooltip.buttonSelDel "Відмічає вісі повідомлення поміткою для видалення (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Відмічає вісі повідомлення поміткою для збереження (KEEP)">
+<!ENTITY tooltip.buttonErase "Стирає всі повідомлення відмічені поміткою "DEL". Можливості для їх відновлення не залишається.">
+<!ENTITY tooltip.buttonDelete "Видаляє всі повідомлення відмічені поміткою "DEL" . Повідомлення пересуваються в козину на вся випадок.">
+<!ENTITY tooltip.buttonCancel "Відмінити. Жодне повідомлення не буде видалене чи переміщене.">
+<!ENTITY removeduplicates.title "Видалити Повторні Повідомлення">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Подяка">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Видалити Повторні Повідомлення…">
+<!ENTITY removeduplicates.description "Видаляє повторні повідомлення через контекстне меню папки.">
+<!ENTITY removeduplicatesPrefs.title ""Налаштування ""Видалити Повторні Повідомлення"""">
+<!ENTITY removeduplicatesPrefs.captionsettings "Налаштування">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Реєстр оновлень">
+<!ENTITY removeduplicatesPrefs.captionhelp "Допомога">
+<!ENTITY removeduplicatesPrefs.captionabout "Про програму">
+<!ENTITY removeduplicatesPrefs.descsettings "Вибрати як порівнюються повідомлення">
+<!ENTITY removeduplicatesPrefs.compmessageid "Порівнювати ID повідомлень">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Порівнювати час (в секундах)">
+<!ENTITY removeduplicatesPrefs.compdate "Надіслано">
+<!ENTITY removeduplicatesPrefs.compsubject "Порівнювати тему">
+<!ENTITY removeduplicatesPrefs.compauthor ""Порівнювати ""Від"""">
+<!ENTITY removeduplicatesPrefs.complinecount "Порівнювати кількість рядків">
+<!ENTITY removeduplicatesPrefs.compbody "Порівнювати текст повідомлень (повільно)">
+<!ENTITY removeduplicatesPrefs.comprecipient ""Порівнювати ""До"""">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Віддавати перевагу до видалення">
+<!ENTITY removeduplicatesPrefs.firstfound "першого знайденого">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитаного">
+<!ENTITY removeduplicatesPrefs.smallmail "меншого">
+<!ENTITY removeduplicatesPrefs.largemail "більшого">
+<!ENTITY removeduplicatesPrefs.unansweredmail "залишеного без відповіді">
+<!ENTITY removeduplicatesPrefs.email "повідомлення">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Шукати спершу в під-папках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто видалення">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При пошуку нехтувати повідомленнями видаленими в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При пошуку нехтувати відісланими повідомленнями">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Роздруковувати інформацію для виправлення помилок (debug)">
+<!ENTITY removeduplicatesPrefs.reversesearch "Reverse folder search">
+<!ENTITY showduplicatemessages.title "Повторні Повідомлення">
+<!ENTITY showduplicatemessages.caption "Виберіть повідомлення які потрібно видалити.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Позначка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "Від">
+<!ENTITY showduplicatemessages.recipient "До">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Надіслано">
+<!ENTITY showduplicatemessages.hint "Ліва кнопка миші: Показати повідомлення. Права кнопка миші: Показати розширену інформацію. Клацніть двічі: перемкнути 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все за промвчанням">
+<!ENTITY showduplicatemessages.buttonSelDel "Все видалити">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не видаляти">
+<!ENTITY showduplicatemessages.buttonErase "Стерти вибране">
+<!ENTITY showduplicatemessages.buttonDel "Видалити вибране">
+<!ENTITY showduplicatemessages.buttonCancel "Відмінити">
+<!ENTITY tooltip.buttonDefault "Відновлює всі помітки за промочанням. Один дублікат для збереження, а всі інші копії до видалення.">
+<!ENTITY tooltip.buttonSelDel "Відмічає вісі повідомлення поміткою для видалення (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Відмічає вісі повідомлення поміткою для збереження (KEEP)">
+<!ENTITY tooltip.buttonErase ""Стирає всі повідомлення відмічені поміткою ""DEL"". Можливості для їх відновлення не залишається. "">
+<!ENTITY tooltip.buttonDelete ""Видаляє всі повідомлення відмічені поміткою ""DEL"" . Повідомлення пересуваються в козину на вся випадок. "">
+<!ENTITY tooltip.buttonCancel "Відмінити. Жодне повідомлення не буде видалене чи переміщене.">
+<!ENTITY removeduplicates.title "Видалити Повторні Повідомлення">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Подяка">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Translated to spanish)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Видалити Повторні Повідомлення…">
+<!ENTITY removeduplicates.description "Видаляє повторні повідомлення через контекстне меню папки.">
+<!ENTITY removeduplicatesPrefs.title ""Налаштування ""Видалити Повторні Повідомлення"""">
+<!ENTITY removeduplicatesPrefs.captionsettings "Налаштування">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Реєстр оновлень">
+<!ENTITY removeduplicatesPrefs.captionhelp "Допомога">
+<!ENTITY removeduplicatesPrefs.captionabout "Про програму">
+<!ENTITY removeduplicatesPrefs.descsettings "Вибрати як порівнюються повідомлення">
+<!ENTITY removeduplicatesPrefs.compmessageid "Порівнювати ID повідомлень">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Порівнювати час (в секундах)">
+<!ENTITY removeduplicatesPrefs.compdate "Надіслано">
+<!ENTITY removeduplicatesPrefs.compsubject "Порівнювати тему">
+<!ENTITY removeduplicatesPrefs.compauthor ""Порівнювати ""Від"""">
+<!ENTITY removeduplicatesPrefs.complinecount "Порівнювати кількість рядків">
+<!ENTITY removeduplicatesPrefs.compbody "Порівнювати текст повідомлень (повільно)">
+<!ENTITY removeduplicatesPrefs.comprecipient ""Порівнювати ""До"""">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Віддавати перевагу до видалення">
+<!ENTITY removeduplicatesPrefs.firstfound "першого знайденого">
+<!ENTITY removeduplicatesPrefs.unreadmail "непрочитаного">
+<!ENTITY removeduplicatesPrefs.smallmail "меншого">
+<!ENTITY removeduplicatesPrefs.largemail "більшого">
+<!ENTITY removeduplicatesPrefs.unansweredmail "залишеного без відповіді">
+<!ENTITY removeduplicatesPrefs.email "повідомлення">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Шукати спершу в під-папках">
+<!ENTITY removeduplicatesPrefs.autodelete "Авто видалення">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "При пошуку нехтувати повідомленнями видаленими в корзину">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "При пошуку нехтувати відісланими повідомленнями">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Роздруковувати інформацію для виправлення помилок (debug)">
+<!ENTITY removeduplicatesPrefs.reversesearch "Reverse folder search">
+<!ENTITY showduplicatemessages.title "Повторні Повідомлення">
+<!ENTITY showduplicatemessages.caption "Виберіть повідомлення які потрібно видалити.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Позначка">
+<!ENTITY showduplicatemessages.subject "Тема">
+<!ENTITY showduplicatemessages.sender "Від">
+<!ENTITY showduplicatemessages.recipient "До">
+<!ENTITY showduplicatemessages.folder "Папка">
+<!ENTITY showduplicatemessages.date "Надіслано">
+<!ENTITY showduplicatemessages.hint "Ліва кнопка миші: Показати повідомлення. Права кнопка миші: Показати розширену інформацію. Клацніть двічі: перемкнути 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Все за промвчанням">
+<!ENTITY showduplicatemessages.buttonSelDel "Все видалити">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Все не видаляти">
+<!ENTITY showduplicatemessages.buttonErase "Стерти вибране">
+<!ENTITY showduplicatemessages.buttonDel "Видалити вибране">
+<!ENTITY showduplicatemessages.buttonCancel "Відмінити">
+<!ENTITY tooltip.buttonDefault "Відновлює всі помітки за промочанням. Один дублікат для збереження, а всі інші копії до видалення.">
+<!ENTITY tooltip.buttonSelDel "Відмічає вісі повідомлення поміткою для видалення (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Відмічає вісі повідомлення поміткою для збереження (KEEP)">
+<!ENTITY tooltip.buttonErase ""Стирає всі повідомлення відмічені поміткою ""DEL"". Можливості для їх відновлення не залишається. "">
+<!ENTITY tooltip.buttonDelete ""Видаляє всі повідомлення відмічені поміткою ""DEL"" . Повідомлення пересуваються в козину на вся випадок. "">
+<!ENTITY tooltip.buttonCancel "Відмінити. Жодне повідомлення не буде видалене чи переміщене.">

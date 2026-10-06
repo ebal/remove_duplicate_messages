@@ -1,0 +1,981 @@
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Vertaald naar Luxemburgs)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Vertaald naar Italiaans)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Vertaald naar Spaans)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Vertaald naar Frans)">
+<!ENTITY removeduplicates.credits6 "David Balder (Vertaald naar Nederlands)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Vertaald naar Japanese)">
+<!ENTITY removeduplicates.credits8 "">
+<!ENTITY removeduplicates.credits9 "">
+<!ENTITY removeduplicates.popupmenuname "Verwijder Dubbele Berichten...">
+<!ENTITY removeduplicates.description "Verwijdert dubbele berichten via mappen context menu.">
+<!ENTITY removeduplicatesPrefs.title "Verwijder Dubbele Berichten Opties">
+<!ENTITY removeduplicatesPrefs.captionsettings "Instellingen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Help">
+<!ENTITY removeduplicatesPrefs.captionabout "Over">
+<!ENTITY removeduplicatesPrefs.descsettings "Stel in hoe E-mails worden vergeleken.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergelijk message ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergelijk datum in seconden">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergelijk onderwerp">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergelijk auteur">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergelijk aantal berichtregels">
+<!ENTITY removeduplicatesPrefs.compbody "Vergelijk berichtkern (langzaam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Verwijder de">
+<!ENTITY removeduplicatesPrefs.firstfound "eerst gevonden">
+<!ENTITY removeduplicatesPrefs.unreadmail "ongelezen">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "grotere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Zoek eerst in onderliggende mappen">
+<!ENTITY removeduplicatesPrefs.autodelete "Verwijder automatisch">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Negeer berichten in de Prullenbak">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Negeer berichten in de Verzonden berichten">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Laat debug informatie zien">
+<!ENTITY showduplicatemessages.title "Dubbele Berichten">
+<!ENTITY showduplicatemessages.caption "Kies de berichten die verwijderd moeten worden.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Optie">
+<!ENTITY showduplicatemessages.subject "Onderwerp">
+<!ENTITY showduplicatemessages.sender "Auteur">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Map">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Links-klik: Bericht lezen. Rechts-klik: Laat uitgebreide informatie zien. Dubbelklik: Verwissel 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alles standaard">
+<!ENTITY showduplicatemessages.buttonSelDel "Verwijder alles">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Behoud alles">
+<!ENTITY showduplicatemessages.buttonErase "Verwijder permanent">
+<!ENTITY showduplicatemessages.buttonDel "Verwijder selectie">
+<!ENTITY showduplicatemessages.buttonCancel "Annuleren">
+<!ENTITY tooltip.buttonDefault "Ga terug naar de standaard selectie. Een van de berichten wordt behouden, de resterende berichten worden gemarkeerd voor verwijdering.">
+<!ENTITY tooltip.buttonSelDel "Markeer bij alle berichten de optie verwijderen (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Markeer bij alle berichten de optie behouden (KEEP)">
+<!ENTITY tooltip.buttonErase "Verwijder alle met DEL gemarkeerde berichten permanent. Ze kunnen niet worden teruggehaald.">
+<!ENTITY tooltip.buttonDelete "Verwijder alle met DEL gemarkeerde berichten. Ze worden naar de prullenbak verplaatst.">
+<!ENTITY tooltip.buttonCancel "Annuleren. Er worden geen berichten verwijderd of verplaatst.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Vertaald naar Luxemburgs)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Vertaald naar Italiaans)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Vertaald naar Spaans)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Vertaald naar Frans)">
+<!ENTITY removeduplicates.credits6 "David Balder (Vertaald naar Nederlands)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Vertaald naar Japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Verwijder Dubbele Berichten...">
+<!ENTITY removeduplicates.description "Verwijdert dubbele berichten via mappen context menu.">
+<!ENTITY removeduplicatesPrefs.title "Verwijder Dubbele Berichten Opties">
+<!ENTITY removeduplicatesPrefs.captionsettings "Instellingen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Help">
+<!ENTITY removeduplicatesPrefs.captionabout "Over">
+<!ENTITY removeduplicatesPrefs.descsettings "Stel in hoe E-mails worden vergeleken.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergelijk message ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergelijk datum in seconden">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergelijk onderwerp">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergelijk auteur">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergelijk aantal berichtregels">
+<!ENTITY removeduplicatesPrefs.compbody "Vergelijk berichtkern (langzaam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Verwijder de">
+<!ENTITY removeduplicatesPrefs.firstfound "eerst gevonden">
+<!ENTITY removeduplicatesPrefs.unreadmail "ongelezen">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "grotere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Zoek eerst in onderliggende mappen">
+<!ENTITY removeduplicatesPrefs.autodelete "Verwijder automatisch">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Negeer berichten in de Prullenbak">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Negeer berichten in de Verzonden berichten">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Laat debug informatie zien">
+<!ENTITY showduplicatemessages.title "Dubbele Berichten">
+<!ENTITY showduplicatemessages.caption "Kies de berichten die verwijderd moeten worden.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Optie">
+<!ENTITY showduplicatemessages.subject "Onderwerp">
+<!ENTITY showduplicatemessages.sender "Auteur">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Map">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Links-klik: Bericht lezen. Rechts-klik: Laat uitgebreide informatie zien. Dubbelklik: Verwissel 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alles standaard">
+<!ENTITY showduplicatemessages.buttonSelDel "Verwijder alles">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Behoud alles">
+<!ENTITY showduplicatemessages.buttonErase "Verwijder permanent">
+<!ENTITY showduplicatemessages.buttonDel "Verwijder selectie">
+<!ENTITY showduplicatemessages.buttonCancel "Annuleren">
+<!ENTITY tooltip.buttonDefault "Ga terug naar de standaard selectie. Een van de berichten wordt behouden, de resterende berichten worden gemarkeerd voor verwijdering.">
+<!ENTITY tooltip.buttonSelDel "Markeer bij alle berichten de optie verwijderen (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Markeer bij alle berichten de optie behouden (KEEP)">
+<!ENTITY tooltip.buttonErase "Verwijder alle met DEL gemarkeerde berichten permanent. Ze kunnen niet worden teruggehaald.">
+<!ENTITY tooltip.buttonDelete "Verwijder alle met DEL gemarkeerde berichten. Ze worden naar de prullenbak verplaatst.">
+<!ENTITY tooltip.buttonCancel "Annuleren. Er worden geen berichten verwijderd of verplaatst.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Vertaald naar Luxemburgs)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Vertaald naar Italiaans)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Vertaald naar Spaans)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Vertaald naar Frans)">
+<!ENTITY removeduplicates.credits6 "David Balder (Vertaald naar Nederlands)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Vertaald naar Japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Verwijder Dubbele Berichten...">
+<!ENTITY removeduplicates.description "Verwijdert dubbele berichten via mappen context menu.">
+<!ENTITY removeduplicatesPrefs.title "Verwijder Dubbele Berichten Opties">
+<!ENTITY removeduplicatesPrefs.captionsettings "Instellingen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Help">
+<!ENTITY removeduplicatesPrefs.captionabout "Over">
+<!ENTITY removeduplicatesPrefs.descsettings "Stel in hoe E-mails worden vergeleken.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergelijk message ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergelijk datum in seconden">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergelijk onderwerp">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergelijk auteur">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergelijk aantal berichtregels">
+<!ENTITY removeduplicatesPrefs.compbody "Vergelijk berichtkern (langzaam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Verwijder de">
+<!ENTITY removeduplicatesPrefs.firstfound "eerst gevonden">
+<!ENTITY removeduplicatesPrefs.unreadmail "ongelezen">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "grotere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Zoek eerst in onderliggende mappen">
+<!ENTITY removeduplicatesPrefs.autodelete "Verwijder automatisch">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Negeer berichten in de Prullenbak">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Negeer berichten in de Verzonden berichten">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Laat debug informatie zien">
+<!ENTITY showduplicatemessages.title "Dubbele Berichten">
+<!ENTITY showduplicatemessages.caption "Kies de berichten die verwijderd moeten worden.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Optie">
+<!ENTITY showduplicatemessages.subject "Onderwerp">
+<!ENTITY showduplicatemessages.sender "Auteur">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Map">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Links-klik: Bericht lezen. Rechts-klik: Laat uitgebreide informatie zien. Dubbelklik: Verwissel 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alles standaard">
+<!ENTITY showduplicatemessages.buttonSelDel "Verwijder alles">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Behoud alles">
+<!ENTITY showduplicatemessages.buttonErase "Verwijder permanent">
+<!ENTITY showduplicatemessages.buttonDel "Verwijder selectie">
+<!ENTITY showduplicatemessages.buttonCancel "Annuleren">
+<!ENTITY tooltip.buttonDefault "Ga terug naar de standaard selectie. Een van de berichten wordt behouden, de resterende berichten worden gemarkeerd voor verwijdering.">
+<!ENTITY tooltip.buttonSelDel "Markeer bij alle berichten de optie verwijderen (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Markeer bij alle berichten de optie behouden (KEEP)">
+<!ENTITY tooltip.buttonErase "Verwijder alle met DEL gemarkeerde berichten permanent. Ze kunnen niet worden teruggehaald.">
+<!ENTITY tooltip.buttonDelete "Verwijder alle met DEL gemarkeerde berichten. Ze worden naar de prullenbak verplaatst.">
+<!ENTITY tooltip.buttonCancel "Annuleren. Er worden geen berichten verwijderd of verplaatst.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Vertaald naar Luxemburgs)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Vertaald naar Italiaans)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Vertaald naar Spaans)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Vertaald naar Frans)">
+<!ENTITY removeduplicates.credits6 "David Balder (Vertaald naar Nederlands)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Vertaald naar Japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Verwijder Dubbele Berichten...">
+<!ENTITY removeduplicates.description "Verwijdert dubbele berichten via mappen context menu.">
+<!ENTITY removeduplicatesPrefs.title "Verwijder Dubbele Berichten Opties">
+<!ENTITY removeduplicatesPrefs.captionsettings "Instellingen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Help">
+<!ENTITY removeduplicatesPrefs.captionabout "Over">
+<!ENTITY removeduplicatesPrefs.descsettings "Stel in hoe E-mails worden vergeleken.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergelijk message ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergelijk datum in seconden">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergelijk onderwerp">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergelijk auteur">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergelijk aantal berichtregels">
+<!ENTITY removeduplicatesPrefs.compbody "Vergelijk berichtkern (langzaam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Verwijder de">
+<!ENTITY removeduplicatesPrefs.firstfound "eerst gevonden">
+<!ENTITY removeduplicatesPrefs.unreadmail "ongelezen">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "grotere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Zoek eerst in onderliggende mappen">
+<!ENTITY removeduplicatesPrefs.autodelete "Verwijder automatisch">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Negeer berichten in de Prullenbak">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Negeer berichten in de Verzonden berichten">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Laat debug informatie zien">
+<!ENTITY showduplicatemessages.title "Dubbele Berichten">
+<!ENTITY showduplicatemessages.caption "Kies de berichten die verwijderd moeten worden.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Optie">
+<!ENTITY showduplicatemessages.subject "Onderwerp">
+<!ENTITY showduplicatemessages.sender "Auteur">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Map">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Links-klik: Bericht lezen. Rechts-klik: Laat uitgebreide informatie zien. Dubbelklik: Verwissel 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alles standaard">
+<!ENTITY showduplicatemessages.buttonSelDel "Verwijder alles">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Behoud alles">
+<!ENTITY showduplicatemessages.buttonErase "Verwijder permanent">
+<!ENTITY showduplicatemessages.buttonDel "Verwijder selectie">
+<!ENTITY showduplicatemessages.buttonCancel "Annuleren">
+<!ENTITY tooltip.buttonDefault "Ga terug naar de standaard selectie. Een van de berichten wordt behouden, de resterende berichten worden gemarkeerd voor verwijdering.">
+<!ENTITY tooltip.buttonSelDel "Markeer bij alle berichten de optie verwijderen (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Markeer bij alle berichten de optie behouden (KEEP)">
+<!ENTITY tooltip.buttonErase "Verwijder alle met DEL gemarkeerde berichten permanent. Ze kunnen niet worden teruggehaald.">
+<!ENTITY tooltip.buttonDelete "Verwijder alle met DEL gemarkeerde berichten. Ze worden naar de prullenbak verplaatst.">
+<!ENTITY tooltip.buttonCancel "Annuleren. Er worden geen berichten verwijderd of verplaatst.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Vertaald naar Luxemburgs)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Vertaald naar Italiaans)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Vertaald naar Spaans)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Vertaald naar Frans)">
+<!ENTITY removeduplicates.credits6 "David Balder (Vertaald naar Nederlands)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Vertaald naar Japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Verwijder Dubbele Berichten...">
+<!ENTITY removeduplicates.description "Verwijdert dubbele berichten via mappen context menu.">
+<!ENTITY removeduplicatesPrefs.title "Verwijder Dubbele Berichten Opties">
+<!ENTITY removeduplicatesPrefs.captionsettings "Instellingen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Help">
+<!ENTITY removeduplicatesPrefs.captionabout "Over">
+<!ENTITY removeduplicatesPrefs.descsettings "Stel in hoe E-mails worden vergeleken.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergelijk message ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergelijk datum in seconden">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergelijk onderwerp">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergelijk auteur">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergelijk aantal berichtregels">
+<!ENTITY removeduplicatesPrefs.compbody "Vergelijk berichtkern (langzaam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Verwijder de">
+<!ENTITY removeduplicatesPrefs.firstfound "eerst gevonden">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Vertaald naar Luxemburgs)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Vertaald naar Italiaans)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Vertaald naar Spaans)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Vertaald naar Frans)">
+<!ENTITY removeduplicates.credits6 "David Balder (Vertaald naar Nederlands)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Vertaald naar Japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Verwijder Dubbele Berichten...">
+<!ENTITY removeduplicates.description "Verwijdert dubbele berichten via mappen context menu.">
+<!ENTITY removeduplicatesPrefs.title "Verwijder Dubbele Berichten Opties">
+<!ENTITY removeduplicatesPrefs.captionsettings "Instellingen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Help">
+<!ENTITY removeduplicatesPrefs.captionabout "Over">
+<!ENTITY removeduplicatesPrefs.descsettings "Stel in hoe E-mails worden vergeleken.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergelijk message ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergelijk datum in seconden">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergelijk onderwerp">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergelijk auteur">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergelijk aantal berichtregels">
+<!ENTITY removeduplicatesPrefs.compbody "Vergelijk berichtkern (langzaam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Verwijder de">
+<!ENTITY removeduplicatesPrefs.firstfound "eerst gevonden">
+<!ENTITY removeduplicatesPrefs.unreadmail "ongelezen">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "grotere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Zoek eerst in onderliggende mappen">
+<!ENTITY removeduplicatesPrefs.autodelete "Verwijder automatisch">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Negeer berichten in de Prullenbak">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Negeer berichten in de Verzonden berichten">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Laat debug informatie zien">
+<!ENTITY showduplicatemessages.title "Dubbele Berichten">
+<!ENTITY showduplicatemessages.caption "Kies de berichten die verwijderd moeten worden.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Optie">
+<!ENTITY showduplicatemessages.subject "Onderwerp">
+<!ENTITY showduplicatemessages.sender "Auteur">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Map">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Links-klik: Bericht lezen. Rechts-klik: Laat uitgebreide informatie zien. Dubbelklik: Verwissel 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alles standaard">
+<!ENTITY showduplicatemessages.buttonSelDel "Verwijder alles">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Behoud alles">
+<!ENTITY showduplicatemessages.buttonErase "Verwijder permanent">
+<!ENTITY showduplicatemessages.buttonDel "Verwijder selectie">
+<!ENTITY showduplicatemessages.buttonCancel "Annuleren">
+<!ENTITY tooltip.buttonDefault "Ga terug naar de standaard selectie. Een van de berichten wordt behouden, de resterende berichten worden gemarkeerd voor verwijdering.">
+<!ENTITY tooltip.buttonSelDel "Markeer bij alle berichten de optie verwijderen (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Markeer bij alle berichten de optie behouden (KEEP)">
+<!ENTITY tooltip.buttonErase "Verwijder alle met DEL gemarkeerde berichten permanent. Ze kunnen niet worden teruggehaald.">
+<!ENTITY tooltip.buttonDelete "Verwijder alle met DEL gemarkeerde berichten. Ze worden naar de prullenbak verplaatst.">
+<!ENTITY tooltip.buttonCancel "Annuleren. Er worden geen berichten verwijderd of verplaatst.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Vertaald naar Luxemburgs)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Vertaald naar Italiaans)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Vertaald naar Spaans)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Vertaald naar Frans)">
+<!ENTITY removeduplicates.credits6 "David Balder (Vertaald naar Nederlands)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Vertaald naar Japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Verwijder Dubbele Berichten...">
+<!ENTITY removeduplicates.description "Verwijdert dubbele berichten via mappen context menu.">
+<!ENTITY removeduplicatesPrefs.title "Verwijder Dubbele Berichten Opties">
+<!ENTITY removeduplicatesPrefs.captionsettings "Instellingen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Help">
+<!ENTITY removeduplicatesPrefs.captionabout "Over">
+<!ENTITY removeduplicatesPrefs.descsettings "Stel in hoe E-mails worden vergeleken.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergelijk message ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergelijk datum in seconden">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergelijk onderwerp">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergelijk auteur">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergelijk aantal berichtregels">
+<!ENTITY removeduplicatesPrefs.compbody "Vergelijk berichtkern (langzaam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Verwijder de">
+<!ENTITY removeduplicatesPrefs.firstfound "eerst gevonden">
+<!ENTITY removeduplicatesPrefs.unreadmail "ongelezen">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "grotere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Zoek eerst in onderliggende mappen">
+<!ENTITY removeduplicatesPrefs.autodelete "Verwijder automatisch">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Negeer berichten in de Prullenbak">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Negeer berichten in de Verzonden berichten">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Laat debug informatie zien">
+<!ENTITY showduplicatemessages.title "Dubbele Berichten">
+<!ENTITY showduplicatemessages.caption "Kies de berichten die verwijderd moeten worden.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Optie">
+<!ENTITY showduplicatemessages.subject "Onderwerp">
+<!ENTITY showduplicatemessages.sender "Auteur">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Map">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Links-klik: Bericht lezen. Rechts-klik: Laat uitgebreide informatie zien. Dubbelklik: Verwissel 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alles standaard">
+<!ENTITY showduplicatemessages.buttonSelDel "Verwijder alles">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Behoud alles">
+<!ENTITY showduplicatemessages.buttonErase "Verwijder permanent">
+<!ENTITY showduplicatemessages.buttonDel "Verwijder selectie">
+<!ENTITY showduplicatemessages.buttonCancel "Annuleren">
+<!ENTITY tooltip.buttonDefault "Ga terug naar de standaard selectie. Een van de berichten wordt behouden, de resterende berichten worden gemarkeerd voor verwijdering.">
+<!ENTITY tooltip.buttonSelDel "Markeer bij alle berichten de optie verwijderen (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Markeer bij alle berichten de optie behouden (KEEP)">
+<!ENTITY tooltip.buttonErase "Verwijder alle met DEL gemarkeerde berichten permanent. Ze kunnen niet worden teruggehaald.">
+<!ENTITY tooltip.buttonDelete "Verwijder alle met DEL gemarkeerde berichten. Ze worden naar de prullenbak verplaatst.">
+<!ENTITY tooltip.buttonCancel "Annuleren. Er worden geen berichten verwijderd of verplaatst.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Vertaald naar Luxemburgs)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Vertaald naar Italiaans)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Vertaald naar Spaans)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Vertaald naar Frans)">
+<!ENTITY removeduplicates.credits6 "David Balder (Vertaald naar Nederlands)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Vertaald naar Japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Verwijder Dubbele Berichten...">
+<!ENTITY removeduplicates.description "Verwijdert dubbele berichten via mappen context menu.">
+<!ENTITY removeduplicatesPrefs.title "Verwijder Dubbele Berichten Opties">
+<!ENTITY removeduplicatesPrefs.captionsettings "Instellingen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Help">
+<!ENTITY removeduplicatesPrefs.captionabout "Over">
+<!ENTITY removeduplicatesPrefs.descsettings "Stel in hoe E-mails worden vergeleken.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergelijk message ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergelijk datum in seconden">
+<!ENTITY removeduplicatesPrefs.compdate "Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergelijk onderwerp">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergelijk auteur">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergelijk aantal berichtregels">
+<!ENTITY removeduplicatesPrefs.compbody "Vergelijk berichtkern (langzaam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Verwijder de">
+<!ENTITY removeduplicatesPrefs.firstfound "eerst gevonden">
+<!ENTITY removeduplicatesPrefs.unreadmail "ongelezen">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "grotere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Zoek eerst in onderliggende mappen">
+<!ENTITY removeduplicatesPrefs.autodelete "Verwijder automatisch">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Negeer berichten in de Prullenbak">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Negeer berichten in de Verzonden berichten">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Laat debug informatie zien">
+<!ENTITY showduplicatemessages.title "Dubbele Berichten">
+<!ENTITY showduplicatemessages.caption "Kies de berichten die verwijderd moeten worden.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Optie">
+<!ENTITY showduplicatemessages.subject "Onderwerp">
+<!ENTITY showduplicatemessages.sender "Auteur">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Map">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Links-klik: Bericht lezen. Rechts-klik: Laat uitgebreide informatie zien. Dubbelklik: Verwissel 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alles standaard">
+<!ENTITY showduplicatemessages.buttonSelDel "Verwijder alles">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Behoud alles">
+<!ENTITY showduplicatemessages.buttonErase "Verwijder permanent">
+<!ENTITY showduplicatemessages.buttonDel "Verwijder selectie">
+<!ENTITY showduplicatemessages.buttonCancel "Annuleren">
+<!ENTITY tooltip.buttonDefault "Ga terug naar de standaard selectie. Een van de berichten wordt behouden, de resterende berichten worden gemarkeerd voor verwijdering.">
+<!ENTITY tooltip.buttonSelDel "Markeer bij alle berichten de optie verwijderen (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Markeer bij alle berichten de optie behouden (KEEP)">
+<!ENTITY tooltip.buttonErase "Verwijder alle met DEL gemarkeerde berichten permanent. Ze kunnen niet worden teruggehaald.">
+<!ENTITY tooltip.buttonDelete "Verwijder alle met DEL gemarkeerde berichten. Ze worden naar de prullenbak verplaatst.">
+<!ENTITY tooltip.buttonCancel "Annuleren. Er worden geen berichten verwijderd of verplaatst.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Vertaald naar Luxemburgs)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Vertaald naar Italiaans)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Vertaald naar Spaans)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Vertaald naar Frans)">
+<!ENTITY removeduplicates.credits6 "David Balder (Vertaald naar Nederlands)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Vertaald naar Japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Verwijder Dubbele Berichten...">
+<!ENTITY removeduplicates.description "Verwijdert dubbele berichten via mappen context menu.">
+<!ENTITY removeduplicatesPrefs.title "Verwijder Dubbele Berichten Opties">
+<!ENTITY removeduplicatesPrefs.captionsettings "Instellingen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Help">
+<!ENTITY removeduplicatesPrefs.captionabout "Over">
+<!ENTITY removeduplicatesPrefs.descsettings "Stel in hoe E-mails worden vergeleken.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergelijk message ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergelijk datum in seconden">
+<!ENTITY removeduplicatesPrefs.compdate "Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergelijk onderwerp">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergelijk auteur">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergelijk aantal berichtregels">
+<!ENTITY removeduplicatesPrefs.compbody "Vergelijk berichtkern (langzaam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Verwijder de">
+<!ENTITY removeduplicatesPrefs.firstfound "eerst gevonden">
+<!ENTITY removeduplicatesPrefs.unreadmail "ongelezen">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "grotere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Zoek eerst in onderliggende mappen">
+<!ENTITY removeduplicatesPrefs.autodelete "Verwijder automatisch">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Negeer berichten in de Prullenbak">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Negeer berichten in de Verzonden berichten">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Laat debug informatie zien">
+<!ENTITY showduplicatemessages.title "Dubbele Berichten">
+<!ENTITY showduplicatemessages.caption "Kies de berichten die verwijderd moeten worden.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Optie">
+<!ENTITY showduplicatemessages.subject "Onderwerp">
+<!ENTITY showduplicatemessages.sender "Auteur">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Map">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Links-klik: Bericht lezen. Rechts-klik: Laat uitgebreide informatie zien. Dubbelklik: Verwissel 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alles standaard">
+<!ENTITY showduplicatemessages.buttonSelDel "Verwijder alles">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Behoud alles">
+<!ENTITY showduplicatemessages.buttonErase "Verwijder permanent">
+<!ENTITY showduplicatemessages.buttonDel "Verwijder selectie">
+<!ENTITY showduplicatemessages.buttonCancel "Annuleren">
+<!ENTITY tooltip.buttonDefault "Ga terug naar de standaard selectie. Een van de berichten wordt behouden, de resterende berichten worden gemarkeerd voor verwijdering.">
+<!ENTITY tooltip.buttonSelDel "Markeer bij alle berichten de optie verwijderen (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Markeer bij alle berichten de optie behouden (KEEP)">
+<!ENTITY tooltip.buttonErase "Verwijder alle met DEL gemarkeerde berichten permanent. Ze kunnen niet worden teruggehaald.">
+<!ENTITY tooltip.buttonDelete "Verwijder alle met DEL gemarkeerde berichten. Ze worden naar de prullenbak verplaatst.">
+<!ENTITY tooltip.buttonCancel "Annuleren. Er worden geen berichten verwijderd of verplaatst.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Vertaald naar Luxemburgs)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Vertaald naar Italiaans)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Vertaald naar Spaans)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Vertaald naar Frans)">
+<!ENTITY removeduplicates.credits6 "David Balder (Vertaald naar Nederlands)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Vertaald naar Japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Verwijder Dubbele Berichten...">
+<!ENTITY removeduplicates.description "Verwijdert dubbele berichten via mappen context menu.">
+<!ENTITY removeduplicatesPrefs.title "Verwijder Dubbele Berichten Opties">
+<!ENTITY removeduplicatesPrefs.captionsettings "Instellingen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Help">
+<!ENTITY removeduplicatesPrefs.captionabout "Over">
+<!ENTITY removeduplicatesPrefs.descsettings "Stel in hoe E-mails worden vergeleken.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergelijk message ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergelijk datum in seconden">
+<!ENTITY removeduplicatesPrefs.compdate "Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergelijk onderwerp">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergelijk auteur">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergelijk aantal berichtregels">
+<!ENTITY removeduplicatesPrefs.compbody "Vergelijk berichtkern (langzaam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Verwijder de">
+<!ENTITY removeduplicatesPrefs.firstfound "eerst gevonden">
+<!ENTITY removeduplicatesPrefs.unreadmail "ongelezen">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "grotere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Zoek eerst in onderliggende mappen">
+<!ENTITY removeduplicatesPrefs.autodelete "Verwijder automatisch">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Negeer berichten in de Prullenbak">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Negeer berichten in de Verzonden berichten">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Laat debug informatie zien">
+<!ENTITY showduplicatemessages.title "Dubbele Berichten">
+<!ENTITY showduplicatemessages.caption "Kies de berichten die verwijderd moeten worden.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Optie">
+<!ENTITY showduplicatemessages.subject "Onderwerp">
+<!ENTITY showduplicatemessages.sender "Auteur">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Map">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Links-klik: Bericht lezen. Rechts-klik: Laat uitgebreide informatie zien. Dubbelklik: Verwissel 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alles standaard">
+<!ENTITY showduplicatemessages.buttonSelDel "Verwijder alles">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Behoud alles">
+<!ENTITY showduplicatemessages.buttonErase "Verwijder permanent">
+<!ENTITY showduplicatemessages.buttonDel "Verwijder selectie">
+<!ENTITY showduplicatemessages.buttonCancel "Annuleren">
+<!ENTITY tooltip.buttonDefault "Ga terug naar de standaard selectie. Een van de berichten wordt behouden, de resterende berichten worden gemarkeerd voor verwijdering.">
+<!ENTITY tooltip.buttonSelDel "Markeer bij alle berichten de optie verwijderen (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Markeer bij alle berichten de optie behouden (KEEP)">
+<!ENTITY tooltip.buttonErase "Verwijder alle met DEL gemarkeerde berichten permanent. Ze kunnen niet worden teruggehaald.">
+<!ENTITY tooltip.buttonDelete "Verwijder alle met DEL gemarkeerde berichten. Ze worden naar de prullenbak verplaatst.">
+<!ENTITY tooltip.buttonCancel "Annuleren. Er worden geen berichten verwijderd of verplaatst.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Vertaald naar Luxemburgs)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Vertaald naar Italiaans)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Vertaald naar Spaans)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Vertaald naar Frans)">
+<!ENTITY removeduplicates.credits6 "David Balder (Vertaald naar Nederlands)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Vertaald naar Japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Verwijder Dubbele Berichten...">
+<!ENTITY removeduplicates.description "Verwijdert dubbele berichten via mappen context menu.">
+<!ENTITY removeduplicatesPrefs.title "Verwijder Dubbele Berichten Opties">
+<!ENTITY removeduplicatesPrefs.captionsettings "Instellingen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Help">
+<!ENTITY removeduplicatesPrefs.captionabout "Over">
+<!ENTITY removeduplicatesPrefs.descsettings "Stel in hoe E-mails worden vergeleken.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergelijk message ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergelijk datum in seconden">
+<!ENTITY removeduplicatesPrefs.compdate "Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergelijk onderwerp">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergelijk auteur">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergelijk aantal berichtregels">
+<!ENTITY removeduplicatesPrefs.compbody "Vergelijk berichtkern (langzaam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Verwijder de">
+<!ENTITY removeduplicatesPrefs.firstfound "eerst gevonden">
+<!ENTITY removeduplicatesPrefs.unreadmail "ongelezen">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "grotere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Zoek eerst in onderliggende mappen">
+<!ENTITY removeduplicatesPrefs.autodelete "Verwijder automatisch">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Negeer berichten in de Prullenbak">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Negeer berichten in de Verzonden berichten">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Laat debug informatie zien">
+<!ENTITY showduplicatemessages.title "Dubbele Berichten">
+<!ENTITY showduplicatemessages.caption "Kies de berichten die verwijderd moeten worden.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Optie">
+<!ENTITY showduplicatemessages.subject "Onderwerp">
+<!ENTITY showduplicatemessages.sender "Auteur">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Map">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Links-klik: Bericht lezen. Rechts-klik: Laat uitgebreide informatie zien. Dubbelklik: Verwissel 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alles standaard">
+<!ENTITY showduplicatemessages.buttonSelDel "Verwijder alles">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Behoud alles">
+<!ENTITY showduplicatemessages.buttonErase "Verwijder permanent">
+<!ENTITY showduplicatemessages.buttonDel "Verwijder selectie">
+<!ENTITY showduplicatemessages.buttonCancel "Annuleren">
+<!ENTITY tooltip.buttonDefault "Ga terug naar de standaard selectie. Een van de berichten wordt behouden, de resterende berichten worden gemarkeerd voor verwijdering.">
+<!ENTITY tooltip.buttonSelDel "Markeer bij alle berichten de optie verwijderen (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Markeer bij alle berichten de optie behouden (KEEP)">
+<!ENTITY tooltip.buttonErase "Verwijder alle met DEL gemarkeerde berichten permanent. Ze kunnen niet worden teruggehaald.">
+<!ENTITY tooltip.buttonDelete "Verwijder alle met DEL gemarkeerde berichten. Ze worden naar de prullenbak verplaatst.">
+<!ENTITY tooltip.buttonCancel "Annuleren. Er worden geen berichten verwijderd of verplaatst.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Vertaald naar Luxemburgs)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Vertaald naar Italiaans)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Vertaald naar Spaans)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Vertaald naar Frans)">
+<!ENTITY removeduplicates.credits6 "David Balder (Vertaald naar Nederlands)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Vertaald naar Japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Verwijder Dubbele Berichten...">
+<!ENTITY removeduplicates.description "Verwijdert dubbele berichten via mappen context menu.">
+<!ENTITY removeduplicatesPrefs.title "Verwijder Dubbele Berichten Opties">
+<!ENTITY removeduplicatesPrefs.captionsettings "Instellingen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Help">
+<!ENTITY removeduplicatesPrefs.captionabout "Over">
+<!ENTITY removeduplicatesPrefs.descsettings "Stel in hoe E-mails worden vergeleken.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergelijk message ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergelijk datum in seconden">
+<!ENTITY removeduplicatesPrefs.compdate "Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergelijk onderwerp">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergelijk auteur">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergelijk aantal berichtregels">
+<!ENTITY removeduplicatesPrefs.compbody "Vergelijk berichtkern (langzaam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Verwijder de">
+<!ENTITY removeduplicatesPrefs.firstfound "eerst gevonden">
+<!ENTITY removeduplicatesPrefs.unreadmail "ongelezen">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "grotere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Zoek eerst in onderliggende mappen">
+<!ENTITY removeduplicatesPrefs.autodelete "Verwijder automatisch">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Negeer berichten in de Prullenbak">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Negeer berichten in de Verzonden berichten">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Laat debug informatie zien">
+<!ENTITY showduplicatemessages.title "Dubbele Berichten">
+<!ENTITY showduplicatemessages.caption "Kies de berichten die verwijderd moeten worden.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Optie">
+<!ENTITY showduplicatemessages.subject "Onderwerp">
+<!ENTITY showduplicatemessages.sender "Auteur">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Map">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Links-klik: Bericht lezen. Rechts-klik: Laat uitgebreide informatie zien. Dubbelklik: Verwissel 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alles standaard">
+<!ENTITY showduplicatemessages.buttonSelDel "Verwijder alles">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Behoud alles">
+<!ENTITY showduplicatemessages.buttonErase "Verwijder permanent">
+<!ENTITY showduplicatemessages.buttonDel "Verwijder selectie">
+<!ENTITY showduplicatemessages.buttonCancel "Annuleren">
+<!ENTITY tooltip.buttonDefault "Ga terug naar de standaard selectie. Een van de berichten wordt behouden, de resterende berichten worden gemarkeerd voor verwijdering.">
+<!ENTITY tooltip.buttonSelDel "Markeer bij alle berichten de optie verwijderen (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Markeer bij alle berichten de optie behouden (KEEP)">
+<!ENTITY tooltip.buttonErase "Verwijder alle met DEL gemarkeerde berichten permanent. Ze kunnen niet worden teruggehaald.">
+<!ENTITY tooltip.buttonDelete "Verwijder alle met DEL gemarkeerde berichten. Ze worden naar de prullenbak verplaatst.">
+<!ENTITY tooltip.buttonCancel "Annuleren. Er worden geen berichten verwijderd of verplaatst.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Vertaald naar Luxemburgs)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Vertaald naar Italiaans)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Vertaald naar Spaans)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Vertaald naar Frans)">
+<!ENTITY removeduplicates.credits6 "David Balder (Vertaald naar Nederlands)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Vertaald naar Japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Verwijder Dubbele Berichten...">
+<!ENTITY removeduplicates.description "Verwijdert dubbele berichten via mappen context menu.">
+<!ENTITY removeduplicatesPrefs.title "Verwijder Dubbele Berichten Opties">
+<!ENTITY removeduplicatesPrefs.captionsettings "Instellingen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Help">
+<!ENTITY removeduplicatesPrefs.captionabout "Over">
+<!ENTITY removeduplicatesPrefs.descsettings "Stel in hoe E-mails worden vergeleken.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergelijk message ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergelijk datum in seconden">
+<!ENTITY removeduplicatesPrefs.compdate "Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergelijk onderwerp">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergelijk auteur">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergelijk aantal berichtregels">
+<!ENTITY removeduplicatesPrefs.compbody "Vergelijk berichtkern (langzaam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Verwijder de">
+<!ENTITY removeduplicatesPrefs.firstfound "eerst gevonden">
+<!ENTITY removeduplicatesPrefs.unreadmail "ongelezen">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "grotere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Zoek eerst in onderliggende mappen">
+<!ENTITY removeduplicatesPrefs.autodelete "Verwijder automatisch">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Negeer berichten in de Prullenbak">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Negeer berichten in de Verzonden berichten">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Laat debug informatie zien">
+<!ENTITY showduplicatemessages.title "Dubbele Berichten">
+<!ENTITY showduplicatemessages.caption "Kies de berichten die verwijderd moeten worden.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Optie">
+<!ENTITY showduplicatemessages.subject "Onderwerp">
+<!ENTITY showduplicatemessages.sender "Auteur">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Map">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Links-klik: Bericht lezen. Rechts-klik: Laat uitgebreide informatie zien. Dubbelklik: Verwissel 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alles standaard">
+<!ENTITY showduplicatemessages.buttonSelDel "Verwijder alles">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Behoud alles">
+<!ENTITY showduplicatemessages.buttonErase "Verwijder permanent">
+<!ENTITY showduplicatemessages.buttonDel "Verwijder selectie">
+<!ENTITY showduplicatemessages.buttonCancel "Annuleren">
+<!ENTITY tooltip.buttonDefault "Ga terug naar de standaard selectie. Een van de berichten wordt behouden, de resterende berichten worden gemarkeerd voor verwijdering.">
+<!ENTITY tooltip.buttonSelDel "Markeer bij alle berichten de optie verwijderen (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Markeer bij alle berichten de optie behouden (KEEP)">
+<!ENTITY tooltip.buttonErase "Verwijder alle met DEL gemarkeerde berichten permanent. Ze kunnen niet worden teruggehaald.">
+<!ENTITY tooltip.buttonDelete "Verwijder alle met DEL gemarkeerde berichten. Ze worden naar de prullenbak verplaatst.">
+<!ENTITY tooltip.buttonCancel "Annuleren. Er worden geen berichten verwijderd of verplaatst.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Vertaald naar Luxemburgs)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Vertaald naar Italiaans)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Vertaald naar Spaans)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Vertaald naar Frans)">
+<!ENTITY removeduplicates.credits6 "David Balder (Vertaald naar Nederlands)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Vertaald naar Japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Verwijder Dubbele Berichten...">
+<!ENTITY removeduplicates.description "Verwijdert dubbele berichten via mappen context menu.">
+<!ENTITY removeduplicatesPrefs.title "Verwijder Dubbele Berichten Opties">
+<!ENTITY removeduplicatesPrefs.captionsettings "Instellingen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Help">
+<!ENTITY removeduplicatesPrefs.captionabout "Over">
+<!ENTITY removeduplicatesPrefs.descsettings "Stel in hoe E-mails worden vergeleken.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergelijk message ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergelijk datum in seconden">
+<!ENTITY removeduplicatesPrefs.compdate "Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergelijk onderwerp">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergelijk auteur">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergelijk aantal berichtregels">
+<!ENTITY removeduplicatesPrefs.compbody "Vergelijk berichtkern (langzaam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Verwijder de">
+<!ENTITY removeduplicatesPrefs.firstfound "eerst gevonden">
+<!ENTITY removeduplicatesPrefs.unreadmail "ongelezen">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "grotere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Zoek eerst in onderliggende mappen">
+<!ENTITY removeduplicatesPrefs.autodelete "Verwijder automatisch">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Negeer berichten in de Prullenbak">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Negeer berichten in de Verzonden berichten">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Laat debug informatie zien">
+<!ENTITY showduplicatemessages.title "Dubbele Berichten">
+<!ENTITY showduplicatemessages.caption "Kies de berichten die verwijderd moeten worden.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Optie">
+<!ENTITY showduplicatemessages.subject "Onderwerp">
+<!ENTITY showduplicatemessages.sender "Auteur">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Map">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Links-klik: Bericht lezen. Rechts-klik: Laat uitgebreide informatie zien. Dubbelklik: Verwissel 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alles standaard">
+<!ENTITY showduplicatemessages.buttonSelDel "Verwijder alles">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Behoud alles">
+<!ENTITY showduplicatemessages.buttonErase "Verwijder permanent">
+<!ENTITY showduplicatemessages.buttonDel "Verwijder selectie">
+<!ENTITY showduplicatemessages.buttonCancel "Annuleren">
+<!ENTITY tooltip.buttonDefault "Ga terug naar de standaard selectie. Een van de berichten wordt behouden, de resterende berichten worden gemarkeerd voor verwijdering.">
+<!ENTITY tooltip.buttonSelDel "Markeer bij alle berichten de optie verwijderen (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Markeer bij alle berichten de optie behouden (KEEP)">
+<!ENTITY tooltip.buttonErase "Verwijder alle met DEL gemarkeerde berichten permanent. Ze kunnen niet worden teruggehaald.">
+<!ENTITY tooltip.buttonDelete "Verwijder alle met DEL gemarkeerde berichten. Ze worden naar de prullenbak verplaatst.">
+<!ENTITY tooltip.buttonCancel "Annuleren. Er worden geen berichten verwijderd of verplaatst.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Vertaald naar Luxemburgs)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Vertaald naar Italiaans)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Vertaald naar Spaans)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Vertaald naar Frans)">
+<!ENTITY removeduplicates.credits6 "David Balder (Vertaald naar Nederlands)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Vertaald naar Japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Verwijder Dubbele Berichten...">
+<!ENTITY removeduplicates.description "Verwijdert dubbele berichten via mappen context menu.">
+<!ENTITY removeduplicatesPrefs.title "Verwijder Dubbele Berichten Opties">
+<!ENTITY removeduplicatesPrefs.captionsettings "Instellingen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Help">
+<!ENTITY removeduplicatesPrefs.captionabout "Over">
+<!ENTITY removeduplicatesPrefs.descsettings "Stel in hoe E-mails worden vergeleken.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergelijk message ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergelijk datum in seconden">
+<!ENTITY removeduplicatesPrefs.compdate "Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergelijk onderwerp">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergelijk auteur">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergelijk aantal berichtregels">
+<!ENTITY removeduplicatesPrefs.compbody "Vergelijk berichtkern (langzaam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Verwijder de">
+<!ENTITY removeduplicatesPrefs.firstfound "eerst gevonden">
+<!ENTITY removeduplicatesPrefs.unreadmail "ongelezen">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "grotere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Zoek eerst in onderliggende mappen">
+<!ENTITY removeduplicatesPrefs.autodelete "Verwijder automatisch">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Negeer berichten in de Prullenbak">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Negeer berichten in de Verzonden berichten">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Laat debug informatie zien">
+<!ENTITY removeduplicatesPrefs.reversesearch "Reverse folder search">
+<!ENTITY showduplicatemessages.title "Dubbele Berichten">
+<!ENTITY showduplicatemessages.caption "Kies de berichten die verwijderd moeten worden.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Optie">
+<!ENTITY showduplicatemessages.subject "Onderwerp">
+<!ENTITY showduplicatemessages.sender "Auteur">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Map">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Links-klik: Bericht lezen. Rechts-klik: Laat uitgebreide informatie zien. Dubbelklik: Verwissel 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alles standaard">
+<!ENTITY showduplicatemessages.buttonSelDel "Verwijder alles">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Behoud alles">
+<!ENTITY showduplicatemessages.buttonErase "Verwijder permanent">
+<!ENTITY showduplicatemessages.buttonDel "Verwijder selectie">
+<!ENTITY showduplicatemessages.buttonCancel "Annuleren">
+<!ENTITY tooltip.buttonDefault "Ga terug naar de standaard selectie. Een van de berichten wordt behouden, de resterende berichten worden gemarkeerd voor verwijdering.">
+<!ENTITY tooltip.buttonSelDel "Markeer bij alle berichten de optie verwijderen (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Markeer bij alle berichten de optie behouden (KEEP)">
+<!ENTITY tooltip.buttonErase "Verwijder alle met DEL gemarkeerde berichten permanent. Ze kunnen niet worden teruggehaald.">
+<!ENTITY tooltip.buttonDelete "Verwijder alle met DEL gemarkeerde berichten. Ze worden naar de prullenbak verplaatst.">
+<!ENTITY tooltip.buttonCancel "Annuleren. Er worden geen berichten verwijderd of verplaatst.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Vertaald naar Luxemburgs)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Vertaald naar Italiaans)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Vertaald naar Spaans)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Vertaald naar Frans)">
+<!ENTITY removeduplicates.credits6 "David Balder (Vertaald naar Nederlands)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Vertaald naar Japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Verwijder Dubbele Berichten...">
+<!ENTITY removeduplicates.description "Verwijdert dubbele berichten via mappen context menu.">
+<!ENTITY removeduplicatesPrefs.title "Verwijder Dubbele Berichten Opties">
+<!ENTITY removeduplicatesPrefs.captionsettings "Instellingen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Changelog">
+<!ENTITY removeduplicatesPrefs.captionhelp "Help">
+<!ENTITY removeduplicatesPrefs.captionabout "Over">
+<!ENTITY removeduplicatesPrefs.descsettings "Stel in hoe E-mails worden vergeleken.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergelijk message ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergelijk datum in seconden">
+<!ENTITY removeduplicatesPrefs.compdate "Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergelijk onderwerp">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergelijk auteur">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergelijk aantal berichtregels">
+<!ENTITY removeduplicatesPrefs.compbody "Vergelijk berichtkern (langzaam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Verwijder de">
+<!ENTITY removeduplicatesPrefs.firstfound "eerst gevonden">
+<!ENTITY removeduplicatesPrefs.unreadmail "ongelezen">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "grotere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unanswered">
+<!ENTITY removeduplicatesPrefs.email "E-mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Zoek eerst in onderliggende mappen">
+<!ENTITY removeduplicatesPrefs.autodelete "Verwijder automatisch">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Negeer berichten in de Prullenbak">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Negeer berichten in de Verzonden berichten">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Laat debug informatie zien">
+<!ENTITY removeduplicatesPrefs.reversesearch "Reverse folder search">
+<!ENTITY showduplicatemessages.title "Dubbele Berichten">
+<!ENTITY showduplicatemessages.caption "Kies de berichten die verwijderd moeten worden.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Optie">
+<!ENTITY showduplicatemessages.subject "Onderwerp">
+<!ENTITY showduplicatemessages.sender "Auteur">
+<!ENTITY showduplicatemessages.recipient "Empfänger">
+<!ENTITY showduplicatemessages.folder "Map">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Links-klik: Bericht lezen. Rechts-klik: Laat uitgebreide informatie zien. Dubbelklik: Verwissel 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alles standaard">
+<!ENTITY showduplicatemessages.buttonSelDel "Verwijder alles">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Behoud alles">
+<!ENTITY showduplicatemessages.buttonErase "Verwijder permanent">
+<!ENTITY showduplicatemessages.buttonDel "Verwijder selectie">
+<!ENTITY showduplicatemessages.buttonCancel "Annuleren">
+<!ENTITY tooltip.buttonDefault "Ga terug naar de standaard selectie. Een van de berichten wordt behouden, de resterende berichten worden gemarkeerd voor verwijdering.">
+<!ENTITY tooltip.buttonSelDel "Markeer bij alle berichten de optie verwijderen (DEL)">
+<!ENTITY tooltip.buttonSelKeep "Markeer bij alle berichten de optie behouden (KEEP)">
+<!ENTITY tooltip.buttonErase "Verwijder alle met DEL gemarkeerde berichten permanent. Ze kunnen niet worden teruggehaald.">
+<!ENTITY tooltip.buttonDelete "Verwijder alle met DEL gemarkeerde berichten. Ze worden naar de prullenbak verplaatst.">
+<!ENTITY tooltip.buttonCancel "Annuleren. Er worden geen berichten verwijderd of verplaatst.">

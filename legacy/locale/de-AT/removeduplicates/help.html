@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <link rel="stylesheet" media="screen" href="style.css">
+  </head>
+<body>
+
+<h1>Hilfe</h1>
+
+<h2>Benutzung</h2>
+<p>
+Mit einem <i>Rechtsklick auf das Verzeichnis</i>, welches durchsucht werden soll,
+erhält man dessen Kontextmenü. In diesem Menü wählt man <i>Doppelte
+Nachrichten enfernen</i> aus. Nun werden informationen über die E-Mails
+zusammengetragen. Der Suchvorgang hat eine lineare Komplexität! Dies
+bedeutet, dass er für zehn mal so viele Nachrichten etwa zehn mal so viel
+Rechenzeit benötigt. Die meisten Vergleicher werden einhundert mal so lange brauchen
+(quadratische komplexität).<br>
+Nach der Suche werden allen doppelten Nachrichten in einer Liste angezeigt.
+Es werden dabei alle Exemplare einer doppelten Nachricht angezeigt. Die
+erste Nachricht ist Standardmäßig mit "KEEP" (behalten) bezeichnet während
+alle anderen Duplikate dieser Nachricht mit "DEL" (löschen) bezeichnet
+werden. Wird der Dialog nun mit Ok beendet, so wird von allen Duplikaten
+jeweils eins behalten.<br>
+Ein <i>Doppelklick (oder Mittelklick)</i> auf eine Nachricht ändert deren Status von "DEL" nach
+"KEEP" beziehungsweise von "KEEP" nach "DEL". Mit einem <i>Linksklick</i>
+wird die Nachricht im Hauptfenster angezeigt und das Verzeichnis, in welchem
+die Nachricht liegt ausgewählt. Ein <i>Rechtsklick</i> zeigt weitere
+Informationen zu einer Nachricht an. Alle Nachrichten in der Liste, welche
+mit einem "DEL" markiert sind, werden beim <i>Klick auf Ok</i> in den
+Papierkorb geschoben.
+</p>
+
+<h2>Einstellungen</h2>
+<p>
+<u>Vergleiche die Nachrichten ID:</u> Die Nachrichten ID sollte für jede
+Nachricht eindeutig sein. Dies ist aber nicht immer der Fall. Vor allem dann
+nicht, wenn man Nachrichten aus anderer Software importiert. Bei einem Test
+wurden so 50% der Nachrichten als doppelt erkannt. Deshalb sollte man sich
+nicht allein auf die Nachrichten ID verlassen.
+<br>
+<u>Vergleiche das Datum in Sekunden:</u> Je nachdem wie viele Nachrichten
+mal erhält, kann dieses Suchkriterium alleine auch schon eindeutig sein.
+Aber es gibt auch Absender, welche kein Datum eintragen, so dass alle
+Nachrichten vom 1.1.1970 sind und somit identisch wären.
+<br>
+
+<u>Vergleiche das Subject:</u> Ein Vergleich nach dem Subject kann nie
+eindeutig sein, da oftmals das ein und selbe Subject verwendet wird. Z.B.
+Newsletter ..." oder "Hallo". Deshalb wird das Subject nur als zusätliches
+Merkmal verwendet.
+<br>
+
+<u>Vergleiche den Absender:</u> 
+Siehe Subject.
+<br>
+
+<u>Vergleiche die Anzahl der Zeilen:</u> 
+Die Anzahl der Zeilen in einer Nachricht sind in soweit sinn voll, da allen
+anderen vorangegangen Methoden nur den Nachrichtenkopf und nicht deren
+Inhalt zum Vergleich heran gezogen haben. In Tests hat sich jedoch ergeben,
+dass ein und die selbe Nachricht, welche von verschiedenen Programmen
+abgerufen wurde, eine unterschiedlichche Zeilenlänge haben kann. So sind
+identische E-Mails vermeindlich unterschiedlich. Die liegt daran, dass die
+Programme im E-Mail header ablegen, ob diese gelesen wurden oder neu sind.
+Manche rogramme schreiben diese Information in eine Zeile, andere in zwei
+oder mehr.
+<br>
+
+<u>Vergleiche den Nachrichtenkörper (langsam):</u>
+Vergleicht den Inhalt der Nachrichten miteinander. Diese Einstellung ist
+deutlich langsamer als alle anderen, aber da sehr schnelle Algorithmen
+implementiert wurden, ist diese Operation immer noch schnell.
+<br>
+
+<u>Durchsuche zuerst Unterverzeichnise:</u> 
+Wird diese Option gewählt, dann werden zuerst die Unterverzeichinsse eines
+Verzeichnisses nach Nachrichten durchsucht. Das hat zur Folge, dass im Falle
+doppelt vorkommender Nachrichten, diese auch zuerst gelöscht
+werden.<br>Möchte man also eine Nachricht im Unterverzeichnis behalten und
+ihr doppeltes Vorkommen in einem übergeordneten Verzeichnis löschen, dass
+muß diese Option aus geschaltet werden. Soll jedoch bevorzugt eine doppelte
+Nachricht aus einem Unterverzeichnis gelöscht werden, dann ist diese Option
+an zu schalten.
+<br>
+
+<u>Ignoriere den Papierkorb bei der Suche:</u> 
+Wird nach doppelten Nachrichten gesucht, dann werden diese doppelten
+Nachrichten in den Papierkorb geschoben. Wird eine erneute Suche ohne
+vorheriges leeren des Papierkorbes gestartet, so liegt eine Nachricht im
+Papierkorb und eine andere in einem anderen Verzeichnis. Die erneute Suche ergibt
+aber, dass die Nachricht im Papierkorb und an einer anderen stelle liegt -
+also doppelt vorkommt. Dann wird (je nach Suchreihenfolge) entweder die
+bereits gelöschte Nachricht nochmals gelöscht (nichts passiert) oder die
+andere Nachricht wird auch in den Papierkorb geschoben. Jetzt liegt das
+Original und die Kopie im Papierkorb. Um dieses Verhalten zu unterbinden,
+wird der Inhalt des Papierkorbes standardmäßig ignoriert.
+<br>
+
+
+<u>Gib Debuginformationen aus:</u> 
+Sollte nur verwendet werden, wenn wenig Nachrichten durchsucht werden.
+<br>
+</p>
+
+</body>
+</html>

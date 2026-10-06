@@ -1,0 +1,983 @@
+<!ENTITY removeduplicates.title "Remove Duplicate Messages (重複メッセージを削除)">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Casteñor (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "">
+<!ENTITY removeduplicates.credits9 "">
+<!ENTITY removeduplicates.popupmenuname "重複メッセージを削除">
+<!ENTITY removeduplicates.description "フォルダーのコンテキストメニューから重複メッセージを削除する">
+<!ENTITY removeduplicatesPrefs.title "オプション">
+<!ENTITY removeduplicatesPrefs.captionsettings "設定">
+<!ENTITY removeduplicatesPrefs.captionchangelog "変更履歴">
+<!ENTITY removeduplicatesPrefs.captionhelp "ヘルプ">
+<!ENTITY removeduplicatesPrefs.captionabout "この拡張について">
+<!ENTITY removeduplicatesPrefs.descsettings "メッセージの比較方法">
+<!ENTITY removeduplicatesPrefs.compmessageid "メッセージIDで比較する">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "日付と時刻で比較する">
+<!ENTITY removeduplicatesPrefs.compsubject "表題で比較する">
+<!ENTITY removeduplicatesPrefs.compauthor "送信者で比較する">
+<!ENTITY removeduplicatesPrefs.complinecount "行数で比較する">
+<!ENTITY removeduplicatesPrefs.compbody "本文で比較する (処理速度:遅い)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Prefere to delete">
+<!ENTITY removeduplicatesPrefs.firstfound "最初に見つかった">
+<!ENTITY removeduplicatesPrefs.unreadmail "未読の">
+<!ENTITY removeduplicatesPrefs.smallmail "unanswered">
+<!ENTITY removeduplicatesPrefs.largemail "IDの小さい">
+<!ENTITY removeduplicatesPrefs.unansweredmail "IDの大きい">
+<!ENTITY removeduplicatesPrefs.email "メッセージを残す">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "サブフォルダーを優先する">
+<!ENTITY removeduplicatesPrefs.autodelete "自動的に削除する">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "ゴミ箱内を検索しない">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "送信メッセージを検索しない">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "デバッグ情報を表示">
+<!ENTITY showduplicatemessages.title "重複メッセージ">
+<!ENTITY showduplicatemessages.caption "削除するメッセージを選択">
+<!ENTITY showduplicatemessages.id "メッセージID">
+<!ENTITY showduplicatemessages.flag "フラグ">
+<!ENTITY showduplicatemessages.subject "表題">
+<!ENTITY showduplicatemessages.sender "送信者">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "フォルダー">
+<!ENTITY showduplicatemessages.date "日付">
+<!ENTITY showduplicatemessages.hint "左クリック: メッセージを表示　右クリック: メッセージの詳細を表示　ダブルクリック: フラグを変更する 'DEL' - 'KEEP'">
+<!ENTITY showduplicatemessages.buttonDefault "デフォルトに戻す">
+<!ENTITY showduplicatemessages.buttonSelDel "すべてに'DEL'マーク">
+<!ENTITY showduplicatemessages.buttonSelNoDel "すべてに'KEEP'マーク">
+<!ENTITY showduplicatemessages.buttonErase "選択したメッセージを削除">
+<!ENTITY showduplicatemessages.buttonDel "選択したメッセージをゴミ箱へ移動">
+<!ENTITY showduplicatemessages.buttonCancel "キャンセル">
+<!ENTITY tooltip.buttonDefault "1つのメッセージに残して、重複した他のメッセージには'DEL'フラグをつける。">
+<!ENTITY tooltip.buttonSelDel "すべてのメッセージに削除フラグをつける (フラグ:DEL)">
+<!ENTITY tooltip.buttonSelKeep "すべてのメッセージに残すフラグをつける (フラグ:KEEP)">
+<!ENTITY tooltip.buttonErase "削除マークのついたものを削除する. 実行すると回復できません。">
+<!ENTITY tooltip.buttonDelete "削除マークのついたものをゴミ箱へ移す。 バックアップのためにメッセージをゴミ箱へ移動します。">
+<!ENTITY tooltip.buttonCancel "キャンセル。どのメッセージも処理されません。">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages (重複メッセージを削除)">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Casteñor (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "重複メッセージを削除">
+<!ENTITY removeduplicates.description "フォルダーのコンテキストメニューから重複メッセージを削除する">
+<!ENTITY removeduplicatesPrefs.title "オプション">
+<!ENTITY removeduplicatesPrefs.captionsettings "設定">
+<!ENTITY removeduplicatesPrefs.captionchangelog "変更履歴">
+<!ENTITY removeduplicatesPrefs.captionhelp "ヘルプ">
+<!ENTITY removeduplicatesPrefs.captionabout "この拡張について">
+<!ENTITY removeduplicatesPrefs.descsettings "メッセージの比較方法">
+<!ENTITY removeduplicatesPrefs.compmessageid "メッセージIDで比較する">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "日付と時刻で比較する">
+<!ENTITY removeduplicatesPrefs.compsubject "表題で比較する">
+<!ENTITY removeduplicatesPrefs.compauthor "送信者で比較する">
+<!ENTITY removeduplicatesPrefs.complinecount "行数で比較する">
+<!ENTITY removeduplicatesPrefs.compbody "本文で比較する (処理速度:遅い)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Prefer to delete">
+<!ENTITY removeduplicatesPrefs.firstfound "最初に見つかった">
+<!ENTITY removeduplicatesPrefs.unreadmail "未読の">
+<!ENTITY removeduplicatesPrefs.smallmail "unanswered">
+<!ENTITY removeduplicatesPrefs.largemail "IDの小さい">
+<!ENTITY removeduplicatesPrefs.unansweredmail "IDの大きい">
+<!ENTITY removeduplicatesPrefs.email "メッセージを残す">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "サブフォルダーを優先する">
+<!ENTITY removeduplicatesPrefs.autodelete "自動的に削除する">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "ゴミ箱内を検索しない">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "送信メッセージを検索しない">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "デバッグ情報を表示">
+<!ENTITY showduplicatemessages.title "重複メッセージ">
+<!ENTITY showduplicatemessages.caption "削除するメッセージを選択">
+<!ENTITY showduplicatemessages.id "メッセージID">
+<!ENTITY showduplicatemessages.flag "フラグ">
+<!ENTITY showduplicatemessages.subject "表題">
+<!ENTITY showduplicatemessages.sender "送信者">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "フォルダー">
+<!ENTITY showduplicatemessages.date "日付">
+<!ENTITY showduplicatemessages.hint "左クリック: メッセージを表示　右クリック: メッセージの詳細を表示　ダブルクリック: フラグを変更する 'DEL' - 'KEEP'">
+<!ENTITY showduplicatemessages.buttonDefault "デフォルトに戻す">
+<!ENTITY showduplicatemessages.buttonSelDel "すべてに'DEL'マーク">
+<!ENTITY showduplicatemessages.buttonSelNoDel "すべてに'KEEP'マーク">
+<!ENTITY showduplicatemessages.buttonErase "選択したメッセージを削除">
+<!ENTITY showduplicatemessages.buttonDel "選択したメッセージをゴミ箱へ移動">
+<!ENTITY showduplicatemessages.buttonCancel "キャンセル">
+<!ENTITY tooltip.buttonDefault "1つのメッセージに残して、重複した他のメッセージには'DEL'フラグをつける。">
+<!ENTITY tooltip.buttonSelDel "すべてのメッセージに削除フラグをつける (フラグ:DEL)">
+<!ENTITY tooltip.buttonSelKeep "すべてのメッセージに残すフラグをつける (フラグ:KEEP)">
+<!ENTITY tooltip.buttonErase "削除マークのついたものを削除する. 実行すると回復できません。">
+<!ENTITY tooltip.buttonDelete "削除マークのついたものをゴミ箱へ移す。 バックアップのためにメッセージをゴミ箱へ移動します。">
+<!ENTITY tooltip.buttonCancel "キャンセル。どのメッセージも処理されません。">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages (重複メッセージを削除)">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Casteñor (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "重複メッセージを削除">
+<!ENTITY removeduplicates.description "フォルダーのコンテキストメニューから重複メッセージを削除する">
+<!ENTITY removeduplicatesPrefs.title "オプション">
+<!ENTITY removeduplicatesPrefs.captionsettings "設定">
+<!ENTITY removeduplicatesPrefs.captionchangelog "変更履歴">
+<!ENTITY removeduplicatesPrefs.captionhelp "ヘルプ">
+<!ENTITY removeduplicatesPrefs.captionabout "この拡張について">
+<!ENTITY removeduplicatesPrefs.descsettings "メッセージの比較方法">
+<!ENTITY removeduplicatesPrefs.compmessageid "メッセージIDで比較する">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "日付と時刻で比較する">
+<!ENTITY removeduplicatesPrefs.compsubject "表題で比較する">
+<!ENTITY removeduplicatesPrefs.compauthor "送信者で比較する">
+<!ENTITY removeduplicatesPrefs.complinecount "行数で比較する">
+<!ENTITY removeduplicatesPrefs.compbody "本文で比較する (処理速度:遅い)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Prefer to delete">
+<!ENTITY removeduplicatesPrefs.firstfound "最初に見つかった">
+<!ENTITY removeduplicatesPrefs.unreadmail "未読の">
+<!ENTITY removeduplicatesPrefs.smallmail "unanswered">
+<!ENTITY removeduplicatesPrefs.largemail "IDの小さい">
+<!ENTITY removeduplicatesPrefs.unansweredmail "IDの大きい">
+<!ENTITY removeduplicatesPrefs.email "メッセージを残す">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "サブフォルダーを優先する">
+<!ENTITY removeduplicatesPrefs.autodelete "自動的に削除する">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "ゴミ箱内を検索しない">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "送信メッセージを検索しない">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "デバッグ情報を表示">
+<!ENTITY showduplicatemessages.title "重複メッセージ">
+<!ENTITY showduplicatemessages.caption "削除するメッセージを選択">
+<!ENTITY showduplicatemessages.id "メッセージID">
+<!ENTITY showduplicatemessages.flag "フラグ">
+<!ENTITY showduplicatemessages.subject "表題">
+<!ENTITY showduplicatemessages.sender "送信者">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "フォルダー">
+<!ENTITY showduplicatemessages.date "日付">
+<!ENTITY showduplicatemessages.hint "左クリック: メッセージを表示　右クリック: メッセージの詳細を表示　ダブルクリック: フラグを変更する 'DEL' - 'KEEP'">
+<!ENTITY showduplicatemessages.buttonDefault "デフォルトに戻す">
+<!ENTITY showduplicatemessages.buttonSelDel "すべてに'DEL'マーク">
+<!ENTITY showduplicatemessages.buttonSelNoDel "すべてに'KEEP'マーク">
+<!ENTITY showduplicatemessages.buttonErase "選択したメッセージを削除">
+<!ENTITY showduplicatemessages.buttonDel "選択したメッセージをゴミ箱へ移動">
+<!ENTITY showduplicatemessages.buttonCancel "キャンセル">
+<!ENTITY tooltip.buttonDefault "1つのメッセージに残して、重複した他のメッセージには'DEL'フラグをつける。">
+<!ENTITY tooltip.buttonSelDel "すべてのメッセージに削除フラグをつける (フラグ:DEL)">
+<!ENTITY tooltip.buttonSelKeep "すべてのメッセージに残すフラグをつける (フラグ:KEEP)">
+<!ENTITY tooltip.buttonErase "削除マークのついたものを削除する. 実行すると回復できません。">
+<!ENTITY tooltip.buttonDelete "削除マークのついたものをゴミ箱へ移す。 バックアップのためにメッセージをゴミ箱へ移動します。">
+<!ENTITY tooltip.buttonCancel "キャンセル。どのメッセージも処理されません。">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages (重複メッセージを削除)">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Casteñor (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "重複メッセージを削除">
+<!ENTITY removeduplicates.description "フォルダーのコンテキストメニューから重複メッセージを削除する">
+<!ENTITY removeduplicatesPrefs.title "オプション">
+<!ENTITY removeduplicatesPrefs.captionsettings "設定">
+<!ENTITY removeduplicatesPrefs.captionchangelog "変更履歴">
+<!ENTITY removeduplicatesPrefs.captionhelp "ヘルプ">
+<!ENTITY removeduplicatesPrefs.captionabout "この拡張について">
+<!ENTITY removeduplicatesPrefs.descsettings "メッセージの比較方法">
+<!ENTITY removeduplicatesPrefs.compmessageid "メッセージIDで比較する">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "日付と時刻で比較する">
+<!ENTITY removeduplicatesPrefs.compsubject "表題で比較する">
+<!ENTITY removeduplicatesPrefs.compauthor "送信者で比較する">
+<!ENTITY removeduplicatesPrefs.complinecount "行数で比較する">
+<!ENTITY removeduplicatesPrefs.compbody "本文で比較する (処理速度:遅い)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Prefer to delete">
+<!ENTITY removeduplicatesPrefs.firstfound "最初に見つかった">
+<!ENTITY removeduplicatesPrefs.unreadmail "未読の">
+<!ENTITY removeduplicatesPrefs.smallmail "unanswered">
+<!ENTITY removeduplicatesPrefs.largemail "IDの小さい">
+<!ENTITY removeduplicatesPrefs.unansweredmail "IDの大きい">
+<!ENTITY removeduplicatesPrefs.email "メッセージを残す">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "サブフォルダーを優先する">
+<!ENTITY removeduplicatesPrefs.autodelete "自動的に削除する">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "ゴミ箱内を検索しない">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "送信メッセージを検索しない">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "デバッグ情報を表示">
+<!ENTITY showduplicatemessages.title "重複メッセージ">
+<!ENTITY showduplicatemessages.caption "削除するメッセージを選択">
+<!ENTITY showduplicatemessages.id "メッセージID">
+<!ENTITY showduplicatemessages.flag "フラグ">
+<!ENTITY showduplicatemessages.subject "表題">
+<!ENTITY showduplicatemessages.sender "送信者">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "フォルダー">
+<!ENTITY showduplicatemessages.date "日付">
+<!ENTITY showduplicatemessages.hint "左クリック: メッセージを表示　右クリック: メッセージの詳細を表示　ダブルクリック: フラグを変更する 'DEL' - 'KEEP'">
+<!ENTITY showduplicatemessages.buttonDefault "デフォルトに戻す">
+<!ENTITY showduplicatemessages.buttonSelDel "すべてに'DEL'マーク">
+<!ENTITY showduplicatemessages.buttonSelNoDel "すべてに'KEEP'マーク">
+<!ENTITY showduplicatemessages.buttonErase "選択したメッセージを削除">
+<!ENTITY showduplicatemessages.buttonDel "選択したメッセージをゴミ箱へ移動">
+<!ENTITY showduplicatemessages.buttonCancel "キャンセル">
+<!ENTITY tooltip.buttonDefault "1つのメッセージに残して、重複した他のメッセージには'DEL'フラグをつける。">
+<!ENTITY tooltip.buttonSelDel "すべてのメッセージに削除フラグをつける (フラグ:DEL)">
+<!ENTITY tooltip.buttonSelKeep "すべてのメッセージに残すフラグをつける (フラグ:KEEP)">
+<!ENTITY tooltip.buttonErase "削除マークのついたものを削除する. 実行すると回復できません。">
+<!ENTITY tooltip.buttonDelete "削除マークのついたものをゴミ箱へ移す。 バックアップのためにメッセージをゴミ箱へ移動します。">
+<!ENTITY tooltip.buttonCancel "キャンセル。どのメッセージも処理されません。">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages (重複メッセージを削除)">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Casteñor (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "重複メッセージを削除">
+<!ENTITY removeduplicates.description "フォルダーのコンテキストメニューから重複メッセージを削除する">
+<!ENTITY removeduplicatesPrefs.title "オプション">
+<!ENTITY removeduplicatesPrefs.captionsettings "設定">
+<!ENTITY removeduplicatesPrefs.captionchangelog "変更履歴">
+<!ENTITY removeduplicatesPrefs.captionhelp "ヘルプ">
+<!ENTITY removeduplicatesPrefs.captionabout "この拡張について">
+<!ENTITY removeduplicatesPrefs.descsettings "メッセージの比較方法">
+<!ENTITY removeduplicatesPrefs.compmessageid "メッセージIDで比較する">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "日付と時刻で比較する">
+<!ENTITY removeduplicatesPrefs.compsubject "表題で比較する">
+<!ENTITY removeduplicatesPrefs.compauthor "送信者で比較する">
+<!ENTITY removeduplicatesPrefs.complinecount "行数で比較する">
+<!ENTITY removeduplicatesPrefs.compbody "本文で比較する (処理速度:遅い)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Prefer to delete">
+<!ENTITY removeduplicatesPrefs.firstfound "最初に見つかった">
+<!ENTITY removeduplicatesPrefs.unreadmail "未読の">
+<!ENTITY removeduplicatesPrefs.smallmail "unanswered">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages (重複メッセージを削除)">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Casteñor (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "重複メッセージを削除">
+<!ENTITY removeduplicates.description "フォルダーのコンテキストメニューから重複メッセージを削除する">
+<!ENTITY removeduplicatesPrefs.title "オプション">
+<!ENTITY removeduplicatesPrefs.captionsettings "設定">
+<!ENTITY removeduplicatesPrefs.captionchangelog "変更履歴">
+<!ENTITY removeduplicatesPrefs.captionhelp "ヘルプ">
+<!ENTITY removeduplicatesPrefs.captionabout "この拡張について">
+<!ENTITY removeduplicatesPrefs.descsettings "メッセージの比較方法">
+<!ENTITY removeduplicatesPrefs.compmessageid "メッセージIDで比較する">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "日付と時刻で比較する">
+<!ENTITY removeduplicatesPrefs.compsubject "表題で比較する">
+<!ENTITY removeduplicatesPrefs.compauthor "送信者で比較する">
+<!ENTITY removeduplicatesPrefs.complinecount "行数で比較する">
+<!ENTITY removeduplicatesPrefs.compbody "本文で比較する (処理速度:遅い)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Prefer to delete">
+<!ENTITY removeduplicatesPrefs.firstfound "最初に見つかった">
+<!ENTITY removeduplicatesPrefs.unreadmail "未読の">
+<!ENTITY removeduplicatesPrefs.smallmail "unanswered">
+<!ENTITY removeduplicatesPrefs.largemail "IDの小さい">
+<!ENTITY removeduplicatesPrefs.unansweredmail "IDの大きい">
+<!ENTITY removeduplicatesPrefs.email "メッセージを残す">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "サブフォルダーを優先する">
+<!ENTITY removeduplicatesPrefs.autodelete "自動的に削除する">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "ゴミ箱内を検索しない">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "送信メッセージを検索しない">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "デバッグ情報を表示">
+<!ENTITY showduplicatemessages.title "重複メッセージ">
+<!ENTITY showduplicatemessages.caption "削除するメッセージを選択">
+<!ENTITY showduplicatemessages.id "メッセージID">
+<!ENTITY showduplicatemessages.flag "フラグ">
+<!ENTITY showduplicatemessages.subject "表題">
+<!ENTITY showduplicatemessages.sender "送信者">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "フォルダー">
+<!ENTITY showduplicatemessages.date "日付">
+<!ENTITY showduplicatemessages.hint "左クリック: メッセージを表示　右クリック: メッセージの詳細を表示　ダブルクリック: フラグを変更する 'DEL' - 'KEEP'">
+<!ENTITY showduplicatemessages.buttonDefault "デフォルトに戻す">
+<!ENTITY showduplicatemessages.buttonSelDel "すべてに'DEL'マーク">
+<!ENTITY showduplicatemessages.buttonSelNoDel "すべてに'KEEP'マーク">
+<!ENTITY showduplicatemessages.buttonErase "選択したメッセージを削除">
+<!ENTITY showduplicatemessages.buttonDel "選択したメッセージをゴミ箱へ移動">
+<!ENTITY showduplicatemessages.buttonCancel "キャンセル">
+<!ENTITY tooltip.buttonDefault "1つのメッセージに残して、重複した他のメッセージには'DEL'フラグをつける。">
+<!ENTITY tooltip.buttonSelDel "すべてのメッセージに削除フラグをつける (フラグ:DEL)">
+<!ENTITY tooltip.buttonSelKeep "すべてのメッセージに残すフラグをつける (フラグ:KEEP)">
+<!ENTITY tooltip.buttonErase "削除マークのついたものを削除する. 実行すると回復できません。">
+<!ENTITY tooltip.buttonDelete "削除マークのついたものをゴミ箱へ移す。 バックアップのためにメッセージをゴミ箱へ移動します。">
+<!ENTITY tooltip.buttonCancel "キャンセル。どのメッセージも処理されません。">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages (重複メッセージを削除)">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Casteñor (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "重複メッセージを削除">
+<!ENTITY removeduplicates.description "フォルダーのコンテキストメニューから重複メッセージを削除する">
+<!ENTITY removeduplicatesPrefs.title "オプション">
+<!ENTITY removeduplicatesPrefs.captionsettings "設定">
+<!ENTITY removeduplicatesPrefs.captionchangelog "変更履歴">
+<!ENTITY removeduplicatesPrefs.captionhelp "ヘルプ">
+<!ENTITY removeduplicatesPrefs.captionabout "この拡張について">
+<!ENTITY removeduplicatesPrefs.descsettings "メッセージの比較方法">
+<!ENTITY removeduplicatesPrefs.compmessageid "メッセージIDで比較する">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "日付と時刻で比較する">
+<!ENTITY removeduplicatesPrefs.compsubject "表題で比較する">
+<!ENTITY removeduplicatesPrefs.compauthor "送信者で比較する">
+<!ENTITY removeduplicatesPrefs.complinecount "行数で比較する">
+<!ENTITY removeduplicatesPrefs.compbody "本文で比較する (処理速度:遅い)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Prefer to delete">
+<!ENTITY removeduplicatesPrefs.firstfound "最初に見つかった">
+<!ENTITY removeduplicatesPrefs.unreadmail "未読の">
+<!ENTITY removeduplicatesPrefs.smallmail "unanswered">
+<!ENTITY removeduplicatesPrefs.largemail "IDの小さい">
+<!ENTITY removeduplicatesPrefs.unansweredmail "IDの大きい">
+<!ENTITY removeduplicatesPrefs.email "メッセージを残す">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "サブフォルダーを優先する">
+<!ENTITY removeduplicatesPrefs.autodelete "自動的に削除する">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "ゴミ箱内を検索しない">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "送信メッセージを検索しない">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "デバッグ情報を表示">
+<!ENTITY showduplicatemessages.title "重複メッセージ">
+<!ENTITY showduplicatemessages.caption "削除するメッセージを選択">
+<!ENTITY showduplicatemessages.id "メッセージID">
+<!ENTITY showduplicatemessages.flag "フラグ">
+<!ENTITY showduplicatemessages.subject "表題">
+<!ENTITY showduplicatemessages.sender "送信者">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "フォルダー">
+<!ENTITY showduplicatemessages.date "日付">
+<!ENTITY showduplicatemessages.hint "左クリック: メッセージを表示　右クリック: メッセージの詳細を表示　ダブルクリック: フラグを変更する 'DEL' - 'KEEP'">
+<!ENTITY showduplicatemessages.buttonDefault "デフォルトに戻す">
+<!ENTITY showduplicatemessages.buttonSelDel "すべてに'DEL'マーク">
+<!ENTITY showduplicatemessages.buttonSelNoDel "すべてに'KEEP'マーク">
+<!ENTITY showduplicatemessages.buttonErase "選択したメッセージを削除">
+<!ENTITY showduplicatemessages.buttonDel "選択したメッセージをゴミ箱へ移動">
+<!ENTITY showduplicatemessages.buttonCancel "キャンセル">
+<!ENTITY tooltip.buttonDefault "1つのメッセージに残して、重複した他のメッセージには'DEL'フラグをつける。">
+<!ENTITY tooltip.buttonSelDel "すべてのメッセージに削除フラグをつける (フラグ:DEL)">
+<!ENTITY tooltip.buttonSelKeep "すべてのメッセージに残すフラグをつける (フラグ:KEEP)">
+<!ENTITY tooltip.buttonErase "削除マークのついたものを削除する. 実行すると回復できません。">
+<!ENTITY tooltip.buttonDelete "削除マークのついたものをゴミ箱へ移す。 バックアップのためにメッセージをゴミ箱へ移動します。">
+<!ENTITY tooltip.buttonCancel "キャンセル。どのメッセージも処理されません。">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages (重複メッセージを削除)">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Casteñor (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "重複メッセージを削除">
+<!ENTITY removeduplicates.description "フォルダーのコンテキストメニューから重複メッセージを削除する">
+<!ENTITY removeduplicatesPrefs.title "オプション">
+<!ENTITY removeduplicatesPrefs.captionsettings "設定">
+<!ENTITY removeduplicatesPrefs.captionchangelog "変更履歴">
+<!ENTITY removeduplicatesPrefs.captionhelp "ヘルプ">
+<!ENTITY removeduplicatesPrefs.captionabout "この拡張について">
+<!ENTITY removeduplicatesPrefs.descsettings "メッセージの比較方法">
+<!ENTITY removeduplicatesPrefs.compmessageid "メッセージIDで比較する">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "日付と時刻で比較する">
+<!ENTITY removeduplicatesPrefs.compdate "日付">
+<!ENTITY removeduplicatesPrefs.compsubject "表題で比較する">
+<!ENTITY removeduplicatesPrefs.compauthor "送信者で比較する">
+<!ENTITY removeduplicatesPrefs.complinecount "行数で比較する">
+<!ENTITY removeduplicatesPrefs.compbody "本文で比較する (処理速度:遅い)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Prefer to delete">
+<!ENTITY removeduplicatesPrefs.firstfound "最初に見つかった">
+<!ENTITY removeduplicatesPrefs.unreadmail "未読の">
+<!ENTITY removeduplicatesPrefs.smallmail "unanswered">
+<!ENTITY removeduplicatesPrefs.largemail "IDの小さい">
+<!ENTITY removeduplicatesPrefs.unansweredmail "IDの大きい">
+<!ENTITY removeduplicatesPrefs.email "メッセージを残す">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "サブフォルダーを優先する">
+<!ENTITY removeduplicatesPrefs.autodelete "自動的に削除する">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "ゴミ箱内を検索しない">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "送信メッセージを検索しない">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "デバッグ情報を表示">
+<!ENTITY showduplicatemessages.title "重複メッセージ">
+<!ENTITY showduplicatemessages.caption "削除するメッセージを選択">
+<!ENTITY showduplicatemessages.id "メッセージID">
+<!ENTITY showduplicatemessages.flag "フラグ">
+<!ENTITY showduplicatemessages.subject "表題">
+<!ENTITY showduplicatemessages.sender "送信者">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "フォルダー">
+<!ENTITY showduplicatemessages.date "日付">
+<!ENTITY showduplicatemessages.hint "左クリック: メッセージを表示　右クリック: メッセージの詳細を表示　ダブルクリック: フラグを変更する 'DEL' - 'KEEP'">
+<!ENTITY showduplicatemessages.buttonDefault "デフォルトに戻す">
+<!ENTITY showduplicatemessages.buttonSelDel "すべてに'DEL'マーク">
+<!ENTITY showduplicatemessages.buttonSelNoDel "すべてに'KEEP'マーク">
+<!ENTITY showduplicatemessages.buttonErase "選択したメッセージを削除">
+<!ENTITY showduplicatemessages.buttonDel "選択したメッセージをゴミ箱へ移動">
+<!ENTITY showduplicatemessages.buttonCancel "キャンセル">
+<!ENTITY tooltip.buttonDefault "1つのメッセージに残して、重複した他のメッセージには'DEL'フラグをつける。">
+<!ENTITY tooltip.buttonSelDel "すべてのメッセージに削除フラグをつける (フラグ:DEL)">
+<!ENTITY tooltip.buttonSelKeep "すべてのメッセージに残すフラグをつける (フラグ:KEEP)">
+<!ENTITY tooltip.buttonErase "削除マークのついたものを削除する. 実行すると回復できません。">
+<!ENTITY tooltip.buttonDelete "削除マークのついたものをゴミ箱へ移す。 バックアップのためにメッセージをゴミ箱へ移動します。">
+<!ENTITY tooltip.buttonCancel "キャンセル。どのメッセージも処理されません。">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages (重複メッセージを削除)">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Casteñor (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "重複メッセージを削除">
+<!ENTITY removeduplicates.description "フォルダーのコンテキストメニューから重複メッセージを削除する">
+<!ENTITY removeduplicatesPrefs.title "オプション">
+<!ENTITY removeduplicatesPrefs.captionsettings "設定">
+<!ENTITY removeduplicatesPrefs.captionchangelog "変更履歴">
+<!ENTITY removeduplicatesPrefs.captionhelp "ヘルプ">
+<!ENTITY removeduplicatesPrefs.captionabout "この拡張について">
+<!ENTITY removeduplicatesPrefs.descsettings "メッセージの比較方法">
+<!ENTITY removeduplicatesPrefs.compmessageid "メッセージIDで比較する">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "日付と時刻で比較する">
+<!ENTITY removeduplicatesPrefs.compdate "日付">
+<!ENTITY removeduplicatesPrefs.compsubject "表題で比較する">
+<!ENTITY removeduplicatesPrefs.compauthor "送信者で比較する">
+<!ENTITY removeduplicatesPrefs.complinecount "行数で比較する">
+<!ENTITY removeduplicatesPrefs.compbody "本文で比較する (処理速度:遅い)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Prefer to delete">
+<!ENTITY removeduplicatesPrefs.firstfound "最初に見つかった">
+<!ENTITY removeduplicatesPrefs.unreadmail "未読の">
+<!ENTITY removeduplicatesPrefs.smallmail "unanswered">
+<!ENTITY removeduplicatesPrefs.largemail "IDの小さい">
+<!ENTITY removeduplicatesPrefs.unansweredmail "IDの大きい">
+<!ENTITY removeduplicatesPrefs.email "メッセージを残す">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "サブフォルダーを優先する">
+<!ENTITY removeduplicatesPrefs.autodelete "自動的に削除する">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "ゴミ箱内を検索しない">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "送信メッセージを検索しない">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "デバッグ情報を表示">
+<!ENTITY showduplicatemessages.title "重複メッセージ">
+<!ENTITY showduplicatemessages.caption "削除するメッセージを選択">
+<!ENTITY showduplicatemessages.id "メッセージID">
+<!ENTITY showduplicatemessages.flag "フラグ">
+<!ENTITY showduplicatemessages.subject "表題">
+<!ENTITY showduplicatemessages.sender "送信者">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "フォルダー">
+<!ENTITY showduplicatemessages.date "日付">
+<!ENTITY showduplicatemessages.hint "左クリック: メッセージを表示　右クリック: メッセージの詳細を表示　ダブルクリック: フラグを変更する 'DEL' - 'KEEP'">
+<!ENTITY showduplicatemessages.buttonDefault "デフォルトに戻す">
+<!ENTITY showduplicatemessages.buttonSelDel "すべてに'DEL'マーク">
+<!ENTITY showduplicatemessages.buttonSelNoDel "すべてに'KEEP'マーク">
+<!ENTITY showduplicatemessages.buttonErase "選択したメッセージを削除">
+<!ENTITY showduplicatemessages.buttonDel "選択したメッセージをゴミ箱へ移動">
+<!ENTITY showduplicatemessages.buttonCancel "キャンセル">
+<!ENTITY tooltip.buttonDefault "1つのメッセージに残して、重複した他のメッセージには'DEL'フラグをつける。">
+<!ENTITY tooltip.buttonSelDel "すべてのメッセージに削除フラグをつける (フラグ:DEL)">
+<!ENTITY tooltip.buttonSelKeep "すべてのメッセージに残すフラグをつける (フラグ:KEEP)">
+<!ENTITY tooltip.buttonErase "削除マークのついたものを削除する. 実行すると回復できません。">
+<!ENTITY tooltip.buttonDelete "削除マークのついたものをゴミ箱へ移す。 バックアップのためにメッセージをゴミ箱へ移動します。">
+<!ENTITY tooltip.buttonCancel "キャンセル。どのメッセージも処理されません。">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages (重複メッセージを削除)">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Casteñor (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "重複メッセージを削除">
+<!ENTITY removeduplicates.description "フォルダーのコンテキストメニューから重複メッセージを削除する">
+<!ENTITY removeduplicatesPrefs.title "オプション">
+<!ENTITY removeduplicatesPrefs.captionsettings "設定">
+<!ENTITY removeduplicatesPrefs.captionchangelog "変更履歴">
+<!ENTITY removeduplicatesPrefs.captionhelp "ヘルプ">
+<!ENTITY removeduplicatesPrefs.captionabout "この拡張について">
+<!ENTITY removeduplicatesPrefs.descsettings "メッセージの比較方法">
+<!ENTITY removeduplicatesPrefs.compmessageid "メッセージIDで比較する">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "日付と時刻で比較する">
+<!ENTITY removeduplicatesPrefs.compdate "日付">
+<!ENTITY removeduplicatesPrefs.compsubject "表題で比較する">
+<!ENTITY removeduplicatesPrefs.compauthor "送信者で比較する">
+<!ENTITY removeduplicatesPrefs.complinecount "行数で比較する">
+<!ENTITY removeduplicatesPrefs.compbody "本文で比較する (処理速度:遅い)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Prefer to delete">
+<!ENTITY removeduplicatesPrefs.firstfound "最初に見つかった">
+<!ENTITY removeduplicatesPrefs.unreadmail "未読の">
+<!ENTITY removeduplicatesPrefs.smallmail "unanswered">
+<!ENTITY removeduplicatesPrefs.largemail "IDの小さい">
+<!ENTITY removeduplicatesPrefs.unansweredmail "IDの大きい">
+<!ENTITY removeduplicatesPrefs.email "メッセージを残す">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "サブフォルダーを優先する">
+<!ENTITY removeduplicatesPrefs.autodelete "自動的に削除する">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "ゴミ箱内を検索しない">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "送信メッセージを検索しない">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "デバッグ情報を表示">
+<!ENTITY showduplicatemessages.title "重複メッセージ">
+<!ENTITY showduplicatemessages.caption "削除するメッセージを選択">
+<!ENTITY showduplicatemessages.id "メッセージID">
+<!ENTITY showduplicatemessages.flag "フラグ">
+<!ENTITY showduplicatemessages.subject "表題">
+<!ENTITY showduplicatemessages.sender "送信者">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "フォルダー">
+<!ENTITY showduplicatemessages.date "日付">
+<!ENTITY showduplicatemessages.hint "左クリック: メッセージを表示　右クリック: メッセージの詳細を表示　ダブルクリック: フラグを変更する 'DEL' - 'KEEP'">
+<!ENTITY showduplicatemessages.buttonDefault "デフォルトに戻す">
+<!ENTITY showduplicatemessages.buttonSelDel "すべてに'DEL'マーク">
+<!ENTITY showduplicatemessages.buttonSelNoDel "すべてに'KEEP'マーク">
+<!ENTITY showduplicatemessages.buttonErase "選択したメッセージを削除">
+<!ENTITY showduplicatemessages.buttonDel "選択したメッセージをゴミ箱へ移動">
+<!ENTITY showduplicatemessages.buttonCancel "キャンセル">
+<!ENTITY tooltip.buttonDefault "1つのメッセージに残して、重複した他のメッセージには'DEL'フラグをつける。">
+<!ENTITY tooltip.buttonSelDel "すべてのメッセージに削除フラグをつける (フラグ:DEL)">
+<!ENTITY tooltip.buttonSelKeep "すべてのメッセージに残すフラグをつける (フラグ:KEEP)">
+<!ENTITY tooltip.buttonErase "削除マークのついたものを削除する. 実行すると回復できません。">
+<!ENTITY tooltip.buttonDelete "削除マークのついたものをゴミ箱へ移す。 バックアップのためにメッセージをゴミ箱へ移動します。">
+<!ENTITY tooltip.buttonCancel "キャンセル。どのメッセージも処理されません。">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages (重複メッセージを削除)">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Casteñor (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "重複メッセージを削除">
+<!ENTITY removeduplicates.description "フォルダーのコンテキストメニューから重複メッセージを削除する">
+<!ENTITY removeduplicatesPrefs.title "オプション">
+<!ENTITY removeduplicatesPrefs.captionsettings "設定">
+<!ENTITY removeduplicatesPrefs.captionchangelog "変更履歴">
+<!ENTITY removeduplicatesPrefs.captionhelp "ヘルプ">
+<!ENTITY removeduplicatesPrefs.captionabout "この拡張について">
+<!ENTITY removeduplicatesPrefs.descsettings "メッセージの比較方法">
+<!ENTITY removeduplicatesPrefs.compmessageid "メッセージIDで比較する">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "日付と時刻で比較する">
+<!ENTITY removeduplicatesPrefs.compdate "日付">
+<!ENTITY removeduplicatesPrefs.compsubject "表題で比較する">
+<!ENTITY removeduplicatesPrefs.compauthor "送信者で比較する">
+<!ENTITY removeduplicatesPrefs.complinecount "行数で比較する">
+<!ENTITY removeduplicatesPrefs.compbody "本文で比較する (処理速度:遅い)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Prefer to delete">
+<!ENTITY removeduplicatesPrefs.firstfound "最初に見つかった">
+<!ENTITY removeduplicatesPrefs.unreadmail "未読の">
+<!ENTITY removeduplicatesPrefs.smallmail "unanswered">
+<!ENTITY removeduplicatesPrefs.largemail "IDの小さい">
+<!ENTITY removeduplicatesPrefs.unansweredmail "IDの大きい">
+<!ENTITY removeduplicatesPrefs.email "メッセージを残す">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "サブフォルダーを優先する">
+<!ENTITY removeduplicatesPrefs.autodelete "自動的に削除する">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "ゴミ箱内を検索しない">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "送信メッセージを検索しない">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "デバッグ情報を表示">
+<!ENTITY showduplicatemessages.title "重複メッセージ">
+<!ENTITY showduplicatemessages.caption "削除するメッセージを選択">
+<!ENTITY showduplicatemessages.id "メッセージID">
+<!ENTITY showduplicatemessages.flag "フラグ">
+<!ENTITY showduplicatemessages.subject "表題">
+<!ENTITY showduplicatemessages.sender "送信者">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "フォルダー">
+<!ENTITY showduplicatemessages.date "日付">
+<!ENTITY showduplicatemessages.hint "左クリック: メッセージを表示　右クリック: メッセージの詳細を表示　ダブルクリック: フラグを変更する 'DEL' - 'KEEP'">
+<!ENTITY showduplicatemessages.buttonDefault "デフォルトに戻す">
+<!ENTITY showduplicatemessages.buttonSelDel "すべてに'DEL'マーク">
+<!ENTITY showduplicatemessages.buttonSelNoDel "すべてに'KEEP'マーク">
+<!ENTITY showduplicatemessages.buttonErase "選択したメッセージを削除">
+<!ENTITY showduplicatemessages.buttonDel "選択したメッセージをゴミ箱へ移動">
+<!ENTITY showduplicatemessages.buttonCancel "キャンセル">
+<!ENTITY tooltip.buttonDefault "1つのメッセージに残して、重複した他のメッセージには'DEL'フラグをつける。">
+<!ENTITY tooltip.buttonSelDel "すべてのメッセージに削除フラグをつける (フラグ:DEL)">
+<!ENTITY tooltip.buttonSelKeep "すべてのメッセージに残すフラグをつける (フラグ:KEEP)">
+<!ENTITY tooltip.buttonErase "削除マークのついたものを削除する. 実行すると回復できません。">
+<!ENTITY tooltip.buttonDelete "削除マークのついたものをゴミ箱へ移す。 バックアップのためにメッセージをゴミ箱へ移動します。">
+<!ENTITY tooltip.buttonCancel "キャンセル。どのメッセージも処理されません。">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages (重複メッセージを削除)">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Casteñor (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "重複メッセージを削除">
+<!ENTITY removeduplicates.description "フォルダーのコンテキストメニューから重複メッセージを削除する">
+<!ENTITY removeduplicatesPrefs.title "オプション">
+<!ENTITY removeduplicatesPrefs.captionsettings "設定">
+<!ENTITY removeduplicatesPrefs.captionchangelog "変更履歴">
+<!ENTITY removeduplicatesPrefs.captionhelp "ヘルプ">
+<!ENTITY removeduplicatesPrefs.captionabout "この拡張について">
+<!ENTITY removeduplicatesPrefs.descsettings "メッセージの比較方法">
+<!ENTITY removeduplicatesPrefs.compmessageid "メッセージIDで比較する">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "日付と時刻で比較する">
+<!ENTITY removeduplicatesPrefs.compdate "日付">
+<!ENTITY removeduplicatesPrefs.compsubject "表題で比較する">
+<!ENTITY removeduplicatesPrefs.compauthor "送信者で比較する">
+<!ENTITY removeduplicatesPrefs.complinecount "行数で比較する">
+<!ENTITY removeduplicatesPrefs.compbody "本文で比較する (処理速度:遅い)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Prefer to delete">
+<!ENTITY removeduplicatesPrefs.firstfound "最初に見つかった">
+<!ENTITY removeduplicatesPrefs.unreadmail "未読の">
+<!ENTITY removeduplicatesPrefs.smallmail "unanswered">
+<!ENTITY removeduplicatesPrefs.largemail "IDの小さい">
+<!ENTITY removeduplicatesPrefs.unansweredmail "IDの大きい">
+<!ENTITY removeduplicatesPrefs.email "メッセージを残す">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "サブフォルダーを優先する">
+<!ENTITY removeduplicatesPrefs.autodelete "自動的に削除する">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "ゴミ箱内を検索しない">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "送信メッセージを検索しない">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "デバッグ情報を表示">
+<!ENTITY showduplicatemessages.title "重複メッセージ">
+<!ENTITY showduplicatemessages.caption "削除するメッセージを選択">
+<!ENTITY showduplicatemessages.id "メッセージID">
+<!ENTITY showduplicatemessages.flag "フラグ">
+<!ENTITY showduplicatemessages.subject "表題">
+<!ENTITY showduplicatemessages.sender "送信者">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "フォルダー">
+<!ENTITY showduplicatemessages.date "日付">
+<!ENTITY showduplicatemessages.hint "左クリック: メッセージを表示　右クリック: メッセージの詳細を表示　ダブルクリック: フラグを変更する 'DEL' - 'KEEP'">
+<!ENTITY showduplicatemessages.buttonDefault "デフォルトに戻す">
+<!ENTITY showduplicatemessages.buttonSelDel "すべてに'DEL'マーク">
+<!ENTITY showduplicatemessages.buttonSelNoDel "すべてに'KEEP'マーク">
+<!ENTITY showduplicatemessages.buttonErase "選択したメッセージを削除">
+<!ENTITY showduplicatemessages.buttonDel "選択したメッセージをゴミ箱へ移動">
+<!ENTITY showduplicatemessages.buttonCancel "キャンセル">
+<!ENTITY tooltip.buttonDefault "1つのメッセージに残して、重複した他のメッセージには'DEL'フラグをつける。">
+<!ENTITY tooltip.buttonSelDel "すべてのメッセージに削除フラグをつける (フラグ:DEL)">
+<!ENTITY tooltip.buttonSelKeep "すべてのメッセージに残すフラグをつける (フラグ:KEEP)">
+<!ENTITY tooltip.buttonErase "削除マークのついたものを削除する. 実行すると回復できません。">
+<!ENTITY tooltip.buttonDelete "削除マークのついたものをゴミ箱へ移す。 バックアップのためにメッセージをゴミ箱へ移動します。">
+<!ENTITY tooltip.buttonCancel "キャンセル。どのメッセージも処理されません。">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages (重複メッセージを削除)">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Casteñor (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "重複メッセージを削除">
+<!ENTITY removeduplicates.description "フォルダーのコンテキストメニューから重複メッセージを削除する">
+<!ENTITY removeduplicatesPrefs.title "オプション">
+<!ENTITY removeduplicatesPrefs.captionsettings "設定">
+<!ENTITY removeduplicatesPrefs.captionchangelog "変更履歴">
+<!ENTITY removeduplicatesPrefs.captionhelp "ヘルプ">
+<!ENTITY removeduplicatesPrefs.captionabout "この拡張について">
+<!ENTITY removeduplicatesPrefs.descsettings "メッセージの比較方法">
+<!ENTITY removeduplicatesPrefs.compmessageid "メッセージIDで比較する">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "日付と時刻で比較する">
+<!ENTITY removeduplicatesPrefs.compdate "日付">
+<!ENTITY removeduplicatesPrefs.compsubject "表題で比較する">
+<!ENTITY removeduplicatesPrefs.compauthor "送信者で比較する">
+<!ENTITY removeduplicatesPrefs.complinecount "行数で比較する">
+<!ENTITY removeduplicatesPrefs.compbody "本文で比較する (処理速度:遅い)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Prefer to delete">
+<!ENTITY removeduplicatesPrefs.firstfound "最初に見つかった">
+<!ENTITY removeduplicatesPrefs.unreadmail "未読の">
+<!ENTITY removeduplicatesPrefs.smallmail "unanswered">
+<!ENTITY removeduplicatesPrefs.largemail "IDの小さい">
+<!ENTITY removeduplicatesPrefs.unansweredmail "IDの大きい">
+<!ENTITY removeduplicatesPrefs.email "メッセージを残す">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "サブフォルダーを優先する">
+<!ENTITY removeduplicatesPrefs.autodelete "自動的に削除する">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "ゴミ箱内を検索しない">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "送信メッセージを検索しない">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "デバッグ情報を表示">
+<!ENTITY showduplicatemessages.title "重複メッセージ">
+<!ENTITY showduplicatemessages.caption "削除するメッセージを選択">
+<!ENTITY showduplicatemessages.id "メッセージID">
+<!ENTITY showduplicatemessages.flag "フラグ">
+<!ENTITY showduplicatemessages.subject "表題">
+<!ENTITY showduplicatemessages.sender "送信者">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "フォルダー">
+<!ENTITY showduplicatemessages.date "日付">
+<!ENTITY showduplicatemessages.hint "左クリック: メッセージを表示　右クリック: メッセージの詳細を表示　ダブルクリック: フラグを変更する 'DEL' - 'KEEP'">
+<!ENTITY showduplicatemessages.buttonDefault "デフォルトに戻す">
+<!ENTITY showduplicatemessages.buttonSelDel "すべてに'DEL'マーク">
+<!ENTITY showduplicatemessages.buttonSelNoDel "すべてに'KEEP'マーク">
+<!ENTITY showduplicatemessages.buttonErase "選択したメッセージを削除">
+<!ENTITY showduplicatemessages.buttonDel "選択したメッセージをゴミ箱へ移動">
+<!ENTITY showduplicatemessages.buttonCancel "キャンセル">
+<!ENTITY tooltip.buttonDefault "1つのメッセージに残して、重複した他のメッセージには'DEL'フラグをつける。">
+<!ENTITY tooltip.buttonSelDel "すべてのメッセージに削除フラグをつける (フラグ:DEL)">
+<!ENTITY tooltip.buttonSelKeep "すべてのメッセージに残すフラグをつける (フラグ:KEEP)">
+<!ENTITY tooltip.buttonErase "削除マークのついたものを削除する. 実行すると回復できません。">
+<!ENTITY tooltip.buttonDelete "削除マークのついたものをゴミ箱へ移す。 バックアップのためにメッセージをゴミ箱へ移動します。">
+<!ENTITY tooltip.buttonCancel "キャンセル。どのメッセージも処理されません。">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages (重複メッセージを削除)">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Casteñor (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "重複メッセージを削除">
+<!ENTITY removeduplicates.description "フォルダーのコンテキストメニューから重複メッセージを削除する">
+<!ENTITY removeduplicatesPrefs.title "オプション">
+<!ENTITY removeduplicatesPrefs.captionsettings "設定">
+<!ENTITY removeduplicatesPrefs.captionchangelog "変更履歴">
+<!ENTITY removeduplicatesPrefs.captionhelp "ヘルプ">
+<!ENTITY removeduplicatesPrefs.captionabout "この拡張について">
+<!ENTITY removeduplicatesPrefs.descsettings "メッセージの比較方法">
+<!ENTITY removeduplicatesPrefs.compmessageid "メッセージIDで比較する">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "日付と時刻で比較する">
+<!ENTITY removeduplicatesPrefs.compdate "日付">
+<!ENTITY removeduplicatesPrefs.compsubject "表題で比較する">
+<!ENTITY removeduplicatesPrefs.compauthor "送信者で比較する">
+<!ENTITY removeduplicatesPrefs.complinecount "行数で比較する">
+<!ENTITY removeduplicatesPrefs.compbody "本文で比較する (処理速度:遅い)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Prefer to delete">
+<!ENTITY removeduplicatesPrefs.firstfound "最初に見つかった">
+<!ENTITY removeduplicatesPrefs.unreadmail "未読の">
+<!ENTITY removeduplicatesPrefs.smallmail "unanswered">
+<!ENTITY removeduplicatesPrefs.largemail "IDの小さい">
+<!ENTITY removeduplicatesPrefs.unansweredmail "IDの大きい">
+<!ENTITY removeduplicatesPrefs.email "メッセージを残す">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "サブフォルダーを優先する">
+<!ENTITY removeduplicatesPrefs.autodelete "自動的に削除する">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "ゴミ箱内を検索しない">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "送信メッセージを検索しない">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "デバッグ情報を表示">
+<!ENTITY showduplicatemessages.title "重複メッセージ">
+<!ENTITY showduplicatemessages.caption "削除するメッセージを選択">
+<!ENTITY showduplicatemessages.id "メッセージID">
+<!ENTITY showduplicatemessages.flag "フラグ">
+<!ENTITY showduplicatemessages.subject "表題">
+<!ENTITY showduplicatemessages.sender "送信者">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "フォルダー">
+<!ENTITY showduplicatemessages.date "日付">
+<!ENTITY showduplicatemessages.hint "左クリック: メッセージを表示　右クリック: メッセージの詳細を表示　ダブルクリック: フラグを変更する 'DEL' - 'KEEP'">
+<!ENTITY showduplicatemessages.buttonDefault "デフォルトに戻す">
+<!ENTITY showduplicatemessages.buttonSelDel "すべてに'DEL'マーク">
+<!ENTITY showduplicatemessages.buttonSelNoDel "すべてに'KEEP'マーク">
+<!ENTITY showduplicatemessages.buttonErase "選択したメッセージを削除">
+<!ENTITY showduplicatemessages.buttonDel "選択したメッセージをゴミ箱へ移動">
+<!ENTITY showduplicatemessages.buttonCancel "キャンセル">
+<!ENTITY tooltip.buttonDefault "1つのメッセージに残して、重複した他のメッセージには'DEL'フラグをつける。">
+<!ENTITY tooltip.buttonSelDel "すべてのメッセージに削除フラグをつける (フラグ:DEL)">
+<!ENTITY tooltip.buttonSelKeep "すべてのメッセージに残すフラグをつける (フラグ:KEEP)">
+<!ENTITY tooltip.buttonErase "削除マークのついたものを削除する. 実行すると回復できません。">
+<!ENTITY tooltip.buttonDelete "削除マークのついたものをゴミ箱へ移す。 バックアップのためにメッセージをゴミ箱へ移動します。">
+<!ENTITY tooltip.buttonCancel "キャンセル。どのメッセージも処理されません。">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages (重複メッセージを削除)">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Casteñor (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "重複メッセージを削除">
+<!ENTITY removeduplicates.description "フォルダーのコンテキストメニューから重複メッセージを削除する">
+<!ENTITY removeduplicatesPrefs.title "オプション">
+<!ENTITY removeduplicatesPrefs.captionsettings "設定">
+<!ENTITY removeduplicatesPrefs.captionchangelog "変更履歴">
+<!ENTITY removeduplicatesPrefs.captionhelp "ヘルプ">
+<!ENTITY removeduplicatesPrefs.captionabout "この拡張について">
+<!ENTITY removeduplicatesPrefs.descsettings "メッセージの比較方法">
+<!ENTITY removeduplicatesPrefs.compmessageid "メッセージIDで比較する">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "日付と時刻で比較する">
+<!ENTITY removeduplicatesPrefs.compdate "日付">
+<!ENTITY removeduplicatesPrefs.compsubject "表題で比較する">
+<!ENTITY removeduplicatesPrefs.compauthor "送信者で比較する">
+<!ENTITY removeduplicatesPrefs.complinecount "行数で比較する">
+<!ENTITY removeduplicatesPrefs.compbody "本文で比較する (処理速度:遅い)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Prefer to delete">
+<!ENTITY removeduplicatesPrefs.firstfound "最初に見つかった">
+<!ENTITY removeduplicatesPrefs.unreadmail "未読の">
+<!ENTITY removeduplicatesPrefs.smallmail "unanswered">
+<!ENTITY removeduplicatesPrefs.largemail "IDの小さい">
+<!ENTITY removeduplicatesPrefs.unansweredmail "IDの大きい">
+<!ENTITY removeduplicatesPrefs.email "メッセージを残す">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "サブフォルダーを優先する">
+<!ENTITY removeduplicatesPrefs.autodelete "自動的に削除する">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "ゴミ箱内を検索しない">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "送信メッセージを検索しない">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "デバッグ情報を表示">
+<!ENTITY removeduplicatesPrefs.reversesearch "Reverse folder search">
+<!ENTITY showduplicatemessages.title "重複メッセージ">
+<!ENTITY showduplicatemessages.caption "削除するメッセージを選択">
+<!ENTITY showduplicatemessages.id "メッセージID">
+<!ENTITY showduplicatemessages.flag "フラグ">
+<!ENTITY showduplicatemessages.subject "表題">
+<!ENTITY showduplicatemessages.sender "送信者">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "フォルダー">
+<!ENTITY showduplicatemessages.date "日付">
+<!ENTITY showduplicatemessages.hint "左クリック: メッセージを表示　右クリック: メッセージの詳細を表示　ダブルクリック: フラグを変更する 'DEL' - 'KEEP'">
+<!ENTITY showduplicatemessages.buttonDefault "デフォルトに戻す">
+<!ENTITY showduplicatemessages.buttonSelDel "すべてに'DEL'マーク">
+<!ENTITY showduplicatemessages.buttonSelNoDel "すべてに'KEEP'マーク">
+<!ENTITY showduplicatemessages.buttonErase "選択したメッセージを削除">
+<!ENTITY showduplicatemessages.buttonDel "選択したメッセージをゴミ箱へ移動">
+<!ENTITY showduplicatemessages.buttonCancel "キャンセル">
+<!ENTITY tooltip.buttonDefault "1つのメッセージに残して、重複した他のメッセージには'DEL'フラグをつける。">
+<!ENTITY tooltip.buttonSelDel "すべてのメッセージに削除フラグをつける (フラグ:DEL)">
+<!ENTITY tooltip.buttonSelKeep "すべてのメッセージに残すフラグをつける (フラグ:KEEP)">
+<!ENTITY tooltip.buttonErase "削除マークのついたものを削除する. 実行すると回復できません。">
+<!ENTITY tooltip.buttonDelete "削除マークのついたものをゴミ箱へ移す。 バックアップのためにメッセージをゴミ箱へ移動します。">
+<!ENTITY tooltip.buttonCancel "キャンセル。どのメッセージも処理されません。">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages (重複メッセージを削除)">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Credits">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Translated to luxembourgish)">
+<!ENTITY removeduplicates.credits2 "Markus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Translated to italian)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Casteñor (Traducción española)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Translated to french)">
+<!ENTITY removeduplicates.credits6 "David Balder (Translated to dutch)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Translated to japanese)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "重複メッセージを削除">
+<!ENTITY removeduplicates.description "フォルダーのコンテキストメニューから重複メッセージを削除する">
+<!ENTITY removeduplicatesPrefs.title "オプション">
+<!ENTITY removeduplicatesPrefs.captionsettings "設定">
+<!ENTITY removeduplicatesPrefs.captionchangelog "変更履歴">
+<!ENTITY removeduplicatesPrefs.captionhelp "ヘルプ">
+<!ENTITY removeduplicatesPrefs.captionabout "この拡張について">
+<!ENTITY removeduplicatesPrefs.descsettings "メッセージの比較方法">
+<!ENTITY removeduplicatesPrefs.compmessageid "メッセージIDで比較する">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "日付と時刻で比較する">
+<!ENTITY removeduplicatesPrefs.compdate "日付">
+<!ENTITY removeduplicatesPrefs.compsubject "表題で比較する">
+<!ENTITY removeduplicatesPrefs.compauthor "送信者で比較する">
+<!ENTITY removeduplicatesPrefs.complinecount "行数で比較する">
+<!ENTITY removeduplicatesPrefs.compbody "本文で比較する (処理速度:遅い)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Compare recipient list">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Prefer to delete">
+<!ENTITY removeduplicatesPrefs.firstfound "最初に見つかった">
+<!ENTITY removeduplicatesPrefs.unreadmail "未読の">
+<!ENTITY removeduplicatesPrefs.smallmail "unanswered">
+<!ENTITY removeduplicatesPrefs.largemail "IDの小さい">
+<!ENTITY removeduplicatesPrefs.unansweredmail "IDの大きい">
+<!ENTITY removeduplicatesPrefs.email "メッセージを残す">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "サブフォルダーを優先する">
+<!ENTITY removeduplicatesPrefs.autodelete "自動的に削除する">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "ゴミ箱内を検索しない">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "送信メッセージを検索しない">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Always show duplicate messages dialog">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "デバッグ情報を表示">
+<!ENTITY removeduplicatesPrefs.reversesearch "Reverse folder search">
+<!ENTITY showduplicatemessages.title "重複メッセージ">
+<!ENTITY showduplicatemessages.caption "削除するメッセージを選択">
+<!ENTITY showduplicatemessages.id "メッセージID">
+<!ENTITY showduplicatemessages.flag "フラグ">
+<!ENTITY showduplicatemessages.subject "表題">
+<!ENTITY showduplicatemessages.sender "送信者">
+<!ENTITY showduplicatemessages.recipient "Recipient">
+<!ENTITY showduplicatemessages.folder "フォルダー">
+<!ENTITY showduplicatemessages.date "日付">
+<!ENTITY showduplicatemessages.hint "左クリック: メッセージを表示　右クリック: メッセージの詳細を表示　ダブルクリック: フラグを変更する 'DEL' - 'KEEP'">
+<!ENTITY showduplicatemessages.buttonDefault "デフォルトに戻す">
+<!ENTITY showduplicatemessages.buttonSelDel "すべてに'DEL'マーク">
+<!ENTITY showduplicatemessages.buttonSelNoDel "すべてに'KEEP'マーク">
+<!ENTITY showduplicatemessages.buttonErase "選択したメッセージを削除">
+<!ENTITY showduplicatemessages.buttonDel "選択したメッセージをゴミ箱へ移動">
+<!ENTITY showduplicatemessages.buttonCancel "キャンセル">
+<!ENTITY tooltip.buttonDefault "1つのメッセージに残して、重複した他のメッセージには'DEL'フラグをつける。">
+<!ENTITY tooltip.buttonSelDel "すべてのメッセージに削除フラグをつける (フラグ:DEL)">
+<!ENTITY tooltip.buttonSelKeep "すべてのメッセージに残すフラグをつける (フラグ:KEEP)">
+<!ENTITY tooltip.buttonErase "削除マークのついたものを削除する. 実行すると回復できません。">
+<!ENTITY tooltip.buttonDelete "削除マークのついたものをゴミ箱へ移す。 バックアップのためにメッセージをゴミ箱へ移動します。">
+<!ENTITY tooltip.buttonCancel "キャンセル。どのメッセージも処理されません。">

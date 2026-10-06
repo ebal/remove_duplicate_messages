@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://communicator/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://messenger/skin/prefPanels.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://removeduplicates/locale/removeduplicates.dtd">
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        onload="com.twsrdm.ShowDuplicateMessages.Init();"
+        buttons="none"
+        ondialogaccept="return com.twsrdm.ShowDuplicateMessages.doRemoveDuplicateMessages();"
+        ondialogcancel="return com.twsrdm.ShowDuplicateMessages.doCancel();"
+        id="removeduplicatesShowMessagesDialog"
+        title="&showduplicatemessages.title;">
+
+  <script type="application/x-javascript" src="chrome://removeduplicates/content/removeduplicates.js"/>
+  <script type="application/x-javascript" src="chrome://removeduplicates/content/removeduplicatesprefs.js"/>
+  <script type="application/x-javascript" src="chrome://removeduplicates/content/showduplicatemessages.js"/>
+  <script type="application/x-javascript" src="chrome://removeduplicates/content/md5.js"/>
+
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="bundle_removeduplicates" src="chrome://removeduplicates/locale/removeduplicates.properties"/>
+  </stringbundleset>
+
+  <vbox>
+    <groupbox flex="1">
+      <caption label="&showduplicatemessages.caption;"/>
+
+      <vbox flex="1">
+        <description>&showduplicatemessages.hint;</description>
+        <label id="label1" value=""/>
+        <hbox>
+          <label id="label2" value=""/>
+          <spacer flex="1"/>
+          <label id="label3" value=""/>
+        </hbox>
+
+        <tree id="messageList"
+          enableColumnDrag="true"
+          flex="1" width="700" height="350"
+          onclick="com.twsrdm.ShowDuplicateMessages.messageListClick(event)"
+          ondblclick="com.twsrdm.ShowDuplicateMessages.messageListDblClick(event)"
+          oncontextmenu="com.twsrdm.ShowDuplicateMessages.messageListContextmenu(event)">
+
+          <treecols id="messageListCols">
+            <treecol id="messageid"    label="&showduplicatemessages.id;"        width="80" primary="true"/>
+            <splitter class="tree-splitter"/>
+            <treecol id="flagCol"      label="&showduplicatemessages.flag;"      width="50"/>
+            <splitter class="tree-splitter"/>
+            <treecol id="senderCol"    label="&showduplicatemessages.sender;"    flex="5"/>
+            <splitter class="tree-splitter"/>
+            <treecol id="recipientCol" label="&showduplicatemessages.recipient;" flex="5" hidden="true"/>
+            <splitter class="tree-splitter"/>
+            <treecol id="subjectCol"   label="&showduplicatemessages.subject;"   flex="5"/>
+            <splitter class="tree-splitter"/>
+            <treecol id="folderCol"    label="&showduplicatemessages.folder;"    flex="2"/>
+            <splitter class="tree-splitter"/>
+            <treecol id="dateCol"      label="&showduplicatemessages.date;"      width="120"/>
+          </treecols>
+
+          <treechildren id="messageListChildren"/>
+        </tree>
+
+      </vbox>
+    </groupbox>
+    <hbox>
+      <spacer flex="1"/>
+      <tooltip id="tooltip.buttonDefault"><description height="33" flex="1">&tooltip.buttonDefault;</description></tooltip>
+      <tooltip id="tooltip.buttonSelDel"> <description height="33" flex="1">&tooltip.buttonSelDel;</description> </tooltip>
+      <tooltip id="tooltip.buttonSelKeep"><description height="33" flex="1">&tooltip.buttonSelKeep;</description></tooltip>
+      <tooltip id="tooltip.buttonErase">  <description height="33" flex="1">&tooltip.buttonErase;</description>  </tooltip>
+      <tooltip id="tooltip.buttonDelete"> <description height="49" flex="1">&tooltip.buttonDelete;</description> </tooltip>
+      <tooltip id="tooltip.buttonCancel"> <description height="33" flex="1">&tooltip.buttonCancel;</description> </tooltip>
+      <button disabled="true"  id="buttonDefault" tooltip="tooltip.buttonDefault" label="&showduplicatemessages.buttonDefault;"  oncommand="return com.twsrdm.ShowDuplicateMessages.doSelectAllDefault();"/>
+      <button disabled="true"  id="buttonSelDel"  tooltip="tooltip.buttonSelDel"  label="&showduplicatemessages.buttonSelDel;"   oncommand="return com.twsrdm.ShowDuplicateMessages.doSelectAllDelete();"/>
+      <button disabled="true"  id="buttonSelKeep" tooltip="tooltip.buttonSelKeep" label="&showduplicatemessages.buttonSelNoDel;" oncommand="return com.twsrdm.ShowDuplicateMessages.doSelectAllNoDelete();"/>
+      <button disabled="true"  id="buttonErase"   tooltip="tooltip.buttonErase"   label="&showduplicatemessages.buttonErase;"    oncommand="return com.twsrdm.ShowDuplicateMessages.doErase();"/>
+      <button disabled="true"  id="buttonDelete"  tooltip="tooltip.buttonDelete"  label="&showduplicatemessages.buttonDel;"      oncommand="com.twsrdm.ShowDuplicateMessages.doRemoveDuplicateMessages(); close();"/>
+      <button disabled="false" id="buttonCancel"  tooltip="tooltip.buttonCancel"  label="&showduplicatemessages.buttonCancel;"   oncommand="com.twsrdm.ShowDuplicateMessages.doCancel(); close();"/>
+    </hbox>
+  </vbox>
+
+</dialog>

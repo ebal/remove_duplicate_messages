@@ -1,0 +1,1030 @@
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Danksagungen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Luxemburgische Übersetzung)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Italienische Übersetzung)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Spanische Übersetzung)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Französische Übersetzung)">
+<!ENTITY removeduplicates.credits6 "David Balder (Holländische Übersetzung)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Japanische Übersetzung)">
+<!ENTITY removeduplicates.credits8 "">
+<!ENTITY removeduplicates.credits9 "">
+<!ENTITY removeduplicates.popupmenuname "Doppelte Nachrichten entfernen...">
+<!ENTITY removeduplicates.description "Entfernt doppelte Nachrichten durch Vezeichniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optionen um doppelete Nachrichten entfernen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Einstellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Änderungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hilfe">
+<!ENTITY removeduplicatesPrefs.captionabout "Über">
+<!ENTITY removeduplicatesPrefs.descsettings "Auswahl, wie die E-Mails verglichen werden.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergleiche die Nachrichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergleiche das Datum in Sekunden">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergleiche den Betreff">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergleiche den Absender 'Von'">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergleiche die Anzahl der Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Vergleiche den Inhalt der Nachrichten (langsam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Vergleiche die Empfängerliste 'An'">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unbeantwortete">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Durchsuche zuerst Unterverzeichnise">
+<!ENTITY removeduplicatesPrefs.autodelete "Automatisches Löschen">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoriere den Papierkorb bei der Suche">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignoriere die gesendeten Nachrichten bei der Suche">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Gib Debuginformationen aus">
+<!ENTITY showduplicatemessages.title "Doppelte Nachrichten">
+<!ENTITY showduplicatemessages.caption "Nachrichten zum löschen auswählen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Betreff">
+<!ENTITY showduplicatemessages.sender "Von">
+<!ENTITY showduplicatemessages.recipient "An">
+<!ENTITY showduplicatemessages.folder "Verzeichnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Linksklick: Nachricht Anzeigen. Rechtsklick: Erweiterte Informationen. Doppelklick: Wechsel von 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Danksagungen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Luxemburgische Übersetzung)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Italienische Übersetzung)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Spanische Übersetzung)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Französische Übersetzung)">
+<!ENTITY removeduplicates.credits6 "David Balder (Holländische Übersetzung)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Japanische Übersetzung)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Doppelte Nachrichten entfernen...">
+<!ENTITY removeduplicates.description "Entfernt doppelte Nachrichten durch Vezeichniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optionen um doppelete Nachrichten entfernen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Einstellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Änderungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hilfe">
+<!ENTITY removeduplicatesPrefs.captionabout "Über">
+<!ENTITY removeduplicatesPrefs.descsettings "Auswahl, wie die E-Mails verglichen werden.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergleiche die Nachrichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergleiche das Datum in Sekunden">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergleiche den Betreff">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergleiche den Absender 'Von'">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergleiche die Anzahl der Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Vergleiche den Inhalt der Nachrichten (langsam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Vergleiche die Empfängerliste 'An'">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unbeantwortete">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Durchsuche zuerst Unterverzeichnise">
+<!ENTITY removeduplicatesPrefs.autodelete "Automatisches Löschen">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoriere den Papierkorb bei der Suche">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignoriere die gesendeten Nachrichten bei der Suche">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Gib Debuginformationen aus">
+<!ENTITY showduplicatemessages.title "Doppelte Nachrichten">
+<!ENTITY showduplicatemessages.caption "Nachrichten zum löschen auswählen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Betreff">
+<!ENTITY showduplicatemessages.sender "Von">
+<!ENTITY showduplicatemessages.recipient "An">
+<!ENTITY showduplicatemessages.folder "Verzeichnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Linksklick: Nachricht Anzeigen. Rechtsklick: Erweiterte Informationen. Doppelklick: Wechsel von 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Danksagungen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Luxemburgische Übersetzung)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Italienische Übersetzung)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Spanische Übersetzung)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Französische Übersetzung)">
+<!ENTITY removeduplicates.credits6 "David Balder (Holländische Übersetzung)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Japanische Übersetzung)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Doppelte Nachrichten entfernen...">
+<!ENTITY removeduplicates.description "Entfernt doppelte Nachrichten durch Vezeichniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optionen um doppelete Nachrichten entfernen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Einstellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Änderungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hilfe">
+<!ENTITY removeduplicatesPrefs.captionabout "Über">
+<!ENTITY removeduplicatesPrefs.descsettings "Auswahl, wie die E-Mails verglichen werden.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergleiche die Nachrichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergleiche das Datum in Sekunden">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergleiche den Betreff">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergleiche den Absender 'Von'">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergleiche die Anzahl der Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Vergleiche den Inhalt der Nachrichten (langsam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Vergleiche die Empfängerliste 'An'">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unbeantwortete">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Durchsuche zuerst Unterverzeichnise">
+<!ENTITY removeduplicatesPrefs.autodelete "Automatisches Löschen">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoriere den Papierkorb bei der Suche">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignoriere die gesendeten Nachrichten bei der Suche">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Gib Debuginformationen aus">
+<!ENTITY showduplicatemessages.title "Doppelte Nachrichten">
+<!ENTITY showduplicatemessages.caption "Nachrichten zum löschen auswählen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Betreff">
+<!ENTITY showduplicatemessages.sender "Von">
+<!ENTITY showduplicatemessages.recipient "An">
+<!ENTITY showduplicatemessages.folder "Verzeichnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Linksklick: Nachricht Anzeigen. Rechtsklick: Erweiterte Informationen. Doppelklick: Wechsel von 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Danksagungen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Luxemburgische Übersetzung)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Italienische Übersetzung)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Spanische Übersetzung)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Französische Übersetzung)">
+<!ENTITY removeduplicates.credits6 "David Balder (Holländische Übersetzung)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Japanische Übersetzung)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Doppelte Nachrichten entfernen...">
+<!ENTITY removeduplicates.description "Entfernt doppelte Nachrichten durch Vezeichniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optionen um doppelete Nachrichten entfernen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Einstellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Änderungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hilfe">
+<!ENTITY removeduplicatesPrefs.captionabout "Über">
+<!ENTITY removeduplicatesPrefs.descsettings "Auswahl, wie die E-Mails verglichen werden.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergleiche die Nachrichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergleiche das Datum in Sekunden">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergleiche den Betreff">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergleiche den Absender 'Von'">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergleiche die Anzahl der Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Vergleiche den Inhalt der Nachrichten (langsam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Vergleiche die Empfängerliste 'An'">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unbeantwortete">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Durchsuche zuerst Unterverzeichnise">
+<!ENTITY removeduplicatesPrefs.autodelete "Automatisches Löschen">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoriere den Papierkorb bei der Suche">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignoriere die gesendeten Nachrichten bei der Suche">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Gib Debuginformationen aus">
+<!ENTITY showduplicatemessages.title "Doppelte Nachrichten">
+<!ENTITY showduplicatemessages.caption "Nachrichten zum löschen auswählen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Betreff">
+<!ENTITY showduplicatemessages.sender "Von">
+<!ENTITY showduplicatemessages.recipient "An">
+<!ENTITY showduplicatemessages.folder "Verzeichnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Linksklick: Nachricht Anzeigen. Rechtsklick: Erweiterte Informationen. Doppelklick: Wechsel von 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Danksagungen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Luxemburgische Übersetzung)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Italienische Übersetzung)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Spanische Übersetzung)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Französische Übersetzung)">
+<!ENTITY removeduplicates.credits6 "David Balder (Holländische Übersetzung)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Japanische Übersetzung)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Doppelte Nachrichten entfernen...">
+<!ENTITY removeduplicates.description "Entfernt doppelte Nachrichten durch Vezeichniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optionen um doppelete Nachrichten entfernen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Einstellungen">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Danksagungen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Luxemburgische Übersetzung)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Italienische Übersetzung)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Spanische Übersetzung)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Französische Übersetzung)">
+<!ENTITY removeduplicates.credits6 "David Balder (Holländische Übersetzung)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Japanische Übersetzung)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Doppelte Nachrichten entfernen...">
+<!ENTITY removeduplicates.description "Entfernt doppelte Nachrichten durch Vezeichniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optionen um doppelete Nachrichten entfernen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Einstellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Änderungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hilfe">
+<!ENTITY removeduplicatesPrefs.captionabout "Über">
+<!ENTITY removeduplicatesPrefs.descsettings "Auswahl, wie die E-Mails verglichen werden.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergleiche die Nachrichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergleiche das Datum in Sekunden">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergleiche den Betreff">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergleiche den Absender 'Von'">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergleiche die Anzahl der Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Vergleiche den Inhalt der Nachrichten (langsam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Vergleiche die Empfängerliste 'An'">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unbeantwortete">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Durchsuche zuerst Unterverzeichnise">
+<!ENTITY removeduplicatesPrefs.autodelete "Automatisches Löschen">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoriere den Papierkorb bei der Suche">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignoriere die gesendeten Nachrichten bei der Suche">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Gib Debuginformationen aus">
+<!ENTITY showduplicatemessages.title "Doppelte Nachrichten">
+<!ENTITY showduplicatemessages.caption "Nachrichten zum löschen auswählen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Betreff">
+<!ENTITY showduplicatemessages.sender "Von">
+<!ENTITY showduplicatemessages.recipient "An">
+<!ENTITY showduplicatemessages.folder "Verzeichnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Linksklick: Nachricht Anzeigen. Rechtsklick: Erweiterte Informationen. Doppelklick: Wechsel von 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Danksagungen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Luxemburgische Übersetzung)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Italienische Übersetzung)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Spanische Übersetzung)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Französische Übersetzung)">
+<!ENTITY removeduplicates.credits6 "David Balder (Holländische Übersetzung)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Japanische Übersetzung)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Doppelte Nachrichten entfernen...">
+<!ENTITY removeduplicates.description "Entfernt doppelte Nachrichten durch Vezeichniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optionen um doppelete Nachrichten entfernen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Einstellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Änderungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hilfe">
+<!ENTITY removeduplicatesPrefs.captionabout "Über">
+<!ENTITY removeduplicatesPrefs.descsettings "Auswahl, wie die E-Mails verglichen werden.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergleiche die Nachrichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergleiche das Datum in Sekunden">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergleiche den Betreff">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergleiche den Absender 'Von'">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergleiche die Anzahl der Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Vergleiche den Inhalt der Nachrichten (langsam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Vergleiche die Empfängerliste 'An'">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unbeantwortete">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Durchsuche zuerst Unterverzeichnise">
+<!ENTITY removeduplicatesPrefs.autodelete "Automatisches Löschen">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoriere den Papierkorb bei der Suche">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignoriere die gesendeten Nachrichten bei der Suche">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Gib Debuginformationen aus">
+<!ENTITY showduplicatemessages.title "Doppelte Nachrichten">
+<!ENTITY showduplicatemessages.caption "Nachrichten zum löschen auswählen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Betreff">
+<!ENTITY showduplicatemessages.sender "Von">
+<!ENTITY showduplicatemessages.recipient "An">
+<!ENTITY showduplicatemessages.folder "Verzeichnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Linksklick: Nachricht Anzeigen. Rechtsklick: Erweiterte Informationen. Doppelklick: Wechsel von 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Danksagungen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Luxemburgische Übersetzung)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Italienische Übersetzung)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Spanische Übersetzung)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Französische Übersetzung)">
+<!ENTITY removeduplicates.credits6 "David Balder (Holländische Übersetzung)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Japanische Übersetzung)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Doppelte Nachrichten entfernen...">
+<!ENTITY removeduplicates.description "Entfernt doppelte Nachrichten durch Vezeichniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optionen um doppelete Nachrichten entfernen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Einstellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Änderungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hilfe">
+<!ENTITY removeduplicatesPrefs.captionabout "Über">
+<!ENTITY removeduplicatesPrefs.descsettings "Auswahl, wie die E-Mails verglichen werden.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergleiche die Nachrichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergleiche das Datum in Sekunden">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergleiche den Betreff">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergleiche den Absender 'Von'">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergleiche die Anzahl der Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Vergleiche den Inhalt der Nachrichten (langsam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Vergleiche die Empfängerliste 'An'">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unbeantwortete">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Durchsuche zuerst Unterverzeichnise">
+<!ENTITY removeduplicatesPrefs.autodelete "Automatisches Löschen">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoriere den Papierkorb bei der Suche">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignoriere die gesendeten Nachrichten bei der Suche">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Doppelte Nachrichten Dialog immer anzeigen">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Gib Debuginformationen aus">
+<!ENTITY showduplicatemessages.title "Doppelte Nachrichten">
+<!ENTITY showduplicatemessages.caption "Nachrichten zum löschen auswählen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Betreff">
+<!ENTITY showduplicatemessages.sender "Von">
+<!ENTITY showduplicatemessages.recipient "An">
+<!ENTITY showduplicatemessages.folder "Verzeichnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Linksklick: Nachricht Anzeigen. Rechtsklick: Erweiterte Informationen. Doppelklick: Wechsel von 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Danksagungen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Luxemburgische Übersetzung)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Italienische Übersetzung)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Spanische Übersetzung)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Französische Übersetzung)">
+<!ENTITY removeduplicates.credits6 "David Balder (Holländische Übersetzung)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Japanische Übersetzung)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Doppelte Nachrichten entfernen...">
+<!ENTITY removeduplicates.description "Entfernt doppelte Nachrichten durch Vezeichniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optionen um doppelete Nachrichten entfernen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Einstellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Änderungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hilfe">
+<!ENTITY removeduplicatesPrefs.captionabout "Über">
+<!ENTITY removeduplicatesPrefs.descsettings "Auswahl, wie die E-Mails verglichen werden.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergleiche die Nachrichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergleiche das Datum in Sekunden">
+<!ENTITY removeduplicatesPrefs.compdate "Vergleiche das Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergleiche den Betreff">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergleiche den Absender 'Von'">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergleiche die Anzahl der Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Vergleiche den Inhalt der Nachrichten (langsam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Vergleiche die Empfängerliste 'An'">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unbeantwortete">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Durchsuche zuerst Unterverzeichnise">
+<!ENTITY removeduplicatesPrefs.autodelete "Automatisches Löschen">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoriere den Papierkorb bei der Suche">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignoriere die gesendeten Nachrichten bei der Suche">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Doppelte Nachrichten Dialog immer anzeigen">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Gib Debuginformationen aus">
+<!ENTITY showduplicatemessages.title "Doppelte Nachrichten">
+<!ENTITY showduplicatemessages.caption "Nachrichten zum löschen auswählen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Betreff">
+<!ENTITY showduplicatemessages.sender "Von">
+<!ENTITY showduplicatemessages.recipient "An">
+<!ENTITY showduplicatemessages.folder "Verzeichnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Linksklick: Nachricht Anzeigen. Rechtsklick: Erweiterte Informationen. Doppelklick: Wechsel von 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Danksagungen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Luxemburgische Übersetzung)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Italienische Übersetzung)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Spanische Übersetzung)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Französische Übersetzung)">
+<!ENTITY removeduplicates.credits6 "David Balder (Holländische Übersetzung)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Japanische Übersetzung)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Doppelte Nachrichten entfernen...">
+<!ENTITY removeduplicates.description "Entfernt doppelte Nachrichten durch Vezeichniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optionen um doppelete Nachrichten entfernen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Einstellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Änderungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hilfe">
+<!ENTITY removeduplicatesPrefs.captionabout "Über">
+<!ENTITY removeduplicatesPrefs.descsettings "Auswahl, wie die E-Mails verglichen werden.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergleiche die Nachrichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergleiche das Datum in Sekunden">
+<!ENTITY removeduplicatesPrefs.compdate "Vergleiche das Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergleiche den Betreff">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergleiche den Absender 'Von'">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergleiche die Anzahl der Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Vergleiche den Inhalt der Nachrichten (langsam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Vergleiche die Empfängerliste 'An'">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unbeantwortete">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Durchsuche zuerst Unterverzeichnise">
+<!ENTITY removeduplicatesPrefs.autodelete "Automatisches Löschen">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoriere den Papierkorb bei der Suche">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignoriere die gesendeten Nachrichten bei der Suche">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Doppelte Nachrichten Dialog immer anzeigen">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Gib Debuginformationen aus">
+<!ENTITY showduplicatemessages.title "Doppelte Nachrichten">
+<!ENTITY showduplicatemessages.caption "Nachrichten zum löschen auswählen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Betreff">
+<!ENTITY showduplicatemessages.sender "Von">
+<!ENTITY showduplicatemessages.recipient "An">
+<!ENTITY showduplicatemessages.folder "Verzeichnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Linksklick: Nachricht Anzeigen. Rechtsklick: Erweiterte Informationen. Doppelklick: Wechsel von 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Danksagungen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Luxemburgische Übersetzung)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Italienische Übersetzung)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Spanische Übersetzung)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Französische Übersetzung)">
+<!ENTITY removeduplicates.credits6 "David Balder (Holländische Übersetzung)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Japanische Übersetzung)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Doppelte Nachrichten entfernen...">
+<!ENTITY removeduplicates.description "Entfernt doppelte Nachrichten durch Vezeichniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optionen um doppelete Nachrichten entfernen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Einstellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Änderungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hilfe">
+<!ENTITY removeduplicatesPrefs.captionabout "Über">
+<!ENTITY removeduplicatesPrefs.descsettings "Auswahl, wie die E-Mails verglichen werden.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergleiche die Nachrichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergleiche das Datum in Sekunden">
+<!ENTITY removeduplicatesPrefs.compdate "Vergleiche das Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergleiche den Betreff">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergleiche den Absender 'Von'">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergleiche die Anzahl der Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Vergleiche den Inhalt der Nachrichten (langsam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Vergleiche die Empfängerliste 'An'">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unbeantwortete">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Durchsuche zuerst Unterverzeichnise">
+<!ENTITY removeduplicatesPrefs.autodelete "Automatisches Löschen">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoriere den Papierkorb bei der Suche">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignoriere die gesendeten Nachrichten bei der Suche">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Doppelte Nachrichten Dialog immer anzeigen">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Gib Debuginformationen aus">
+<!ENTITY showduplicatemessages.title "Doppelte Nachrichten">
+<!ENTITY showduplicatemessages.caption "Nachrichten zum löschen auswählen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Betreff">
+<!ENTITY showduplicatemessages.sender "Von">
+<!ENTITY showduplicatemessages.recipient "An">
+<!ENTITY showduplicatemessages.folder "Verzeichnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Linksklick: Nachricht Anzeigen. Rechtsklick: Erweiterte Informationen. Doppelklick: Wechsel von 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.14">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Danksagungen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Luxemburgische Übersetzung)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Italienische Übersetzung)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Spanische Übersetzung)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Französische Übersetzung)">
+<!ENTITY removeduplicates.credits6 "David Balder (Holländische Übersetzung)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Japanische Übersetzung)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Doppelte Nachrichten entfernen...">
+<!ENTITY removeduplicates.description "Entfernt doppelte Nachrichten durch Vezeichniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optionen um doppelete Nachrichten entfernen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Einstellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Änderungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hilfe">
+<!ENTITY removeduplicatesPrefs.captionabout "Über">
+<!ENTITY removeduplicatesPrefs.descsettings "Auswahl, wie die E-Mails verglichen werden.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergleiche die Nachrichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergleiche das Datum in Sekunden">
+<!ENTITY removeduplicatesPrefs.compdate "Vergleiche das Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergleiche den Betreff">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergleiche den Absender 'Von'">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergleiche die Anzahl der Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Vergleiche den Inhalt der Nachrichten (langsam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Vergleiche die Empfängerliste 'An'">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unbeantwortete">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Durchsuche zuerst Unterverzeichnise">
+<!ENTITY removeduplicatesPrefs.autodelete "Automatisches Löschen">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoriere den Papierkorb bei der Suche">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignoriere die gesendeten Nachrichten bei der Suche">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Doppelte Nachrichten Dialog immer anzeigen">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Gib Debuginformationen aus">
+<!ENTITY showduplicatemessages.title "Doppelte Nachrichten">
+<!ENTITY showduplicatemessages.caption "Nachrichten zum löschen auswählen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Betreff">
+<!ENTITY showduplicatemessages.sender "Von">
+<!ENTITY showduplicatemessages.recipient "An">
+<!ENTITY showduplicatemessages.folder "Verzeichnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Linksklick: Nachricht Anzeigen. Rechtsklick: Erweiterte Informationen. Doppelklick: Wechsel von 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Danksagungen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Luxemburgische Übersetzung)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Italienische Übersetzung)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Spanische Übersetzung)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Französische Übersetzung)">
+<!ENTITY removeduplicates.credits6 "David Balder (Holländische Übersetzung)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Japanische Übersetzung)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Doppelte Nachrichten entfernen...">
+<!ENTITY removeduplicates.description "Entfernt doppelte Nachrichten durch Vezeichniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optionen um doppelete Nachrichten entfernen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Einstellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Änderungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hilfe">
+<!ENTITY removeduplicatesPrefs.captionabout "Über">
+<!ENTITY removeduplicatesPrefs.descsettings "Auswahl, wie die E-Mails verglichen werden.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergleiche die Nachrichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergleiche das Datum in Sekunden">
+<!ENTITY removeduplicatesPrefs.compdate "Vergleiche das Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergleiche den Betreff">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergleiche den Absender 'Von'">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergleiche die Anzahl der Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Vergleiche den Inhalt der Nachrichten (langsam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Vergleiche die Empfängerliste 'An'">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unbeantwortete">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Durchsuche zuerst Unterverzeichnise">
+<!ENTITY removeduplicatesPrefs.autodelete "Automatisches Löschen">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoriere den Papierkorb bei der Suche">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignoriere die gesendeten Nachrichten bei der Suche">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Doppelte Nachrichten Dialog immer anzeigen">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Gib Debuginformationen aus">
+<!ENTITY showduplicatemessages.title "Doppelte Nachrichten">
+<!ENTITY showduplicatemessages.caption "Nachrichten zum löschen auswählen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Betreff">
+<!ENTITY showduplicatemessages.sender "Von">
+<!ENTITY showduplicatemessages.recipient "An">
+<!ENTITY showduplicatemessages.folder "Verzeichnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Linksklick: Nachricht Anzeigen. Rechtsklick: Erweiterte Informationen. Doppelklick: Wechsel von 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Danksagungen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Luxemburgische Übersetzung)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Italienische Übersetzung)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Spanische Übersetzung)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Französische Übersetzung)">
+<!ENTITY removeduplicates.credits6 "David Balder (Holländische Übersetzung)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Japanische Übersetzung)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Doppelte Nachrichten entfernen...">
+<!ENTITY removeduplicates.description "Entfernt doppelte Nachrichten durch Vezeichniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optionen um doppelete Nachrichten entfernen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Einstellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Änderungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hilfe">
+<!ENTITY removeduplicatesPrefs.captionabout "Über">
+<!ENTITY removeduplicatesPrefs.descsettings "Auswahl, wie die E-Mails verglichen werden.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergleiche die Nachrichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergleiche das Datum in Sekunden">
+<!ENTITY removeduplicatesPrefs.compdate "Vergleiche das Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergleiche den Betreff">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergleiche den Absender 'Von'">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergleiche die Anzahl der Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Vergleiche den Inhalt der Nachrichten (langsam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Vergleiche die Empfängerliste 'An'">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unbeantwortete">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Durchsuche zuerst Unterverzeichnise">
+<!ENTITY removeduplicatesPrefs.autodelete "Automatisches Löschen">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoriere den Papierkorb bei der Suche">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignoriere die gesendeten Nachrichten bei der Suche">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Doppelte Nachrichten Dialog immer anzeigen">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Gib Debuginformationen aus">
+<!ENTITY showduplicatemessages.title "Doppelte Nachrichten">
+<!ENTITY showduplicatemessages.caption "Nachrichten zum löschen auswählen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Betreff">
+<!ENTITY showduplicatemessages.sender "Von">
+<!ENTITY showduplicatemessages.recipient "An">
+<!ENTITY showduplicatemessages.folder "Verzeichnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Linksklick: Nachricht Anzeigen. Rechtsklick: Erweiterte Informationen. Doppelklick: Wechsel von 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Danksagungen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Luxemburgische Übersetzung)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Italienische Übersetzung)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Spanische Übersetzung)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Französische Übersetzung)">
+<!ENTITY removeduplicates.credits6 "David Balder (Holländische Übersetzung)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Japanische Übersetzung)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Doppelte Nachrichten entfernen...">
+<!ENTITY removeduplicates.description "Entfernt doppelte Nachrichten durch Vezeichniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optionen um doppelete Nachrichten entfernen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Einstellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Änderungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hilfe">
+<!ENTITY removeduplicatesPrefs.captionabout "Über">
+<!ENTITY removeduplicatesPrefs.descsettings "Auswahl, wie die E-Mails verglichen werden.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergleiche die Nachrichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergleiche das Datum in Sekunden">
+<!ENTITY removeduplicatesPrefs.compdate "Vergleiche das Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergleiche den Betreff">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergleiche den Absender 'Von'">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergleiche die Anzahl der Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Vergleiche den Inhalt der Nachrichten (langsam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Vergleiche die Empfängerliste 'An'">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unbeantwortete">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Durchsuche zuerst Unterverzeichnise">
+<!ENTITY removeduplicatesPrefs.autodelete "Automatisches Löschen">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoriere den Papierkorb bei der Suche">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignoriere die gesendeten Nachrichten bei der Suche">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Doppelte Nachrichten Dialog immer anzeigen">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Gib Debuginformationen aus">
+<!ENTITY showduplicatemessages.title "Doppelte Nachrichten">
+<!ENTITY showduplicatemessages.caption "Nachrichten zum löschen auswählen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Betreff">
+<!ENTITY showduplicatemessages.sender "Von">
+<!ENTITY showduplicatemessages.recipient "An">
+<!ENTITY showduplicatemessages.folder "Verzeichnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Linksklick: Nachricht Anzeigen. Rechtsklick: Erweiterte Informationen. Doppelklick: Wechsel von 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Danksagungen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Luxemburgische Übersetzung)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Italienische Übersetzung)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Spanische Übersetzung)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Französische Übersetzung)">
+<!ENTITY removeduplicates.credits6 "David Balder (Holländische Übersetzung)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Japanische Übersetzung)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Doppelte Nachrichten entfernen...">
+<!ENTITY removeduplicates.description "Entfernt doppelte Nachrichten durch Vezeichniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optionen um doppelete Nachrichten entfernen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Einstellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Änderungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hilfe">
+<!ENTITY removeduplicatesPrefs.captionabout "Über">
+<!ENTITY removeduplicatesPrefs.descsettings "Auswahl, wie die E-Mails verglichen werden.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergleiche die Nachrichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergleiche das Datum in Sekunden">
+<!ENTITY removeduplicatesPrefs.compdate "Vergleiche das Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergleiche den Betreff">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergleiche den Absender 'Von'">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergleiche die Anzahl der Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Vergleiche den Inhalt der Nachrichten (langsam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Vergleiche die Empfängerliste 'An'">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unbeantwortete">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Durchsuche zuerst Unterverzeichnise">
+<!ENTITY removeduplicatesPrefs.autodelete "Automatisches Löschen">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoriere den Papierkorb bei der Suche">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignoriere die gesendeten Nachrichten bei der Suche">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Doppelte Nachrichten Dialog immer anzeigen">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Gib Debuginformationen aus">
+<!ENTITY removeduplicatesPrefs.reversesearch "Invertiere Verzeichnissuche">
+<!ENTITY showduplicatemessages.title "Doppelte Nachrichten">
+<!ENTITY showduplicatemessages.caption "Nachrichten zum löschen auswählen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Betreff">
+<!ENTITY showduplicatemessages.sender "Von">
+<!ENTITY showduplicatemessages.recipient "An">
+<!ENTITY showduplicatemessages.folder "Verzeichnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Linksklick: Nachricht Anzeigen. Rechtsklick: Erweiterte Informationen. Doppelklick: Wechsel von 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
+<!ENTITY removeduplicates.title "Remove Duplicate Messages">
+<!ENTITY removeduplicates.version "Version 0.1.11">
+<!ENTITY removeduplicates.copyright "(c) 2005, Thorsten W. Schmidt">
+<!ENTITY removeduplicates.creditstitle "Danksagungen">
+<!ENTITY removeduplicates.credits1 "Michel Waringo (Luxemburgische Übersetzung)">
+<!ENTITY removeduplicates.credits2 "Marcus Spiller (Softwaretester)">
+<!ENTITY removeduplicates.credits3 "Andrea Ferraris (Italienische Übersetzung)">
+<!ENTITY removeduplicates.credits4 "Miguel Gonzáles Castaños (Spanische Übersetzung)">
+<!ENTITY removeduplicates.credits5 "Anthony Firka (Französische Übersetzung)">
+<!ENTITY removeduplicates.credits6 "David Balder (Holländische Übersetzung)">
+<!ENTITY removeduplicates.credits7 "ふるやん (Japanische Übersetzung)">
+<!ENTITY removeduplicates.credits8 "Yuri Borovsky (Translated to Russian and Ukrainian)">
+<!ENTITY removeduplicates.credits9 "Lucio B R Fernandes (Tradução para português brasileiro)">
+<!ENTITY removeduplicates.popupmenuname "Doppelte Nachrichten entfernen...">
+<!ENTITY removeduplicates.description "Entfernt doppelte Nachrichten durch Vezeichniskontextmenü.">
+<!ENTITY removeduplicatesPrefs.title "Optionen um doppelete Nachrichten entfernen">
+<!ENTITY removeduplicatesPrefs.captionsettings "Einstellungen">
+<!ENTITY removeduplicatesPrefs.captionchangelog "Änderungen">
+<!ENTITY removeduplicatesPrefs.captionhelp "Hilfe">
+<!ENTITY removeduplicatesPrefs.captionabout "Über">
+<!ENTITY removeduplicatesPrefs.descsettings "Auswahl, wie die E-Mails verglichen werden.">
+<!ENTITY removeduplicatesPrefs.compmessageid "Vergleiche die Nachrichten ID">
+<!ENTITY removeduplicatesPrefs.compdateinseconds "Vergleiche das Datum in Sekunden">
+<!ENTITY removeduplicatesPrefs.compdate "Vergleiche das Datum">
+<!ENTITY removeduplicatesPrefs.compsubject "Vergleiche den Betreff">
+<!ENTITY removeduplicatesPrefs.compauthor "Vergleiche den Absender 'Von'">
+<!ENTITY removeduplicatesPrefs.complinecount "Vergleiche die Anzahl der Zeilen">
+<!ENTITY removeduplicatesPrefs.compbody "Vergleiche den Inhalt der Nachrichten (langsam)">
+<!ENTITY removeduplicatesPrefs.comprecipient "Vergleiche die Empfängerliste 'An'">
+<!ENTITY removeduplicatesPrefs.preferetodelete "Lösche bevorzugt">
+<!ENTITY removeduplicatesPrefs.firstfound "zuerst gefundene">
+<!ENTITY removeduplicatesPrefs.unreadmail "ungelesende">
+<!ENTITY removeduplicatesPrefs.smallmail "kleinere">
+<!ENTITY removeduplicatesPrefs.largemail "größere">
+<!ENTITY removeduplicatesPrefs.unansweredmail "unbeantwortete">
+<!ENTITY removeduplicatesPrefs.email "E-Mail">
+<!ENTITY removeduplicatesPrefs.checksubfolderfirst "Durchsuche zuerst Unterverzeichnise">
+<!ENTITY removeduplicatesPrefs.autodelete "Automatisches Löschen">
+<!ENTITY removeduplicatesPrefs.excludeTrashcan "Ignoriere den Papierkorb bei der Suche">
+<!ENTITY removeduplicatesPrefs.excludeSentfolder "Ignoriere die gesendeten Nachrichten bei der Suche">
+<!ENTITY removeduplicatesPrefs.showDuplicateDialog "Doppelte Nachrichten Dialog immer anzeigen">
+<!ENTITY removeduplicatesPrefs.printdebuginfo "Gib Debuginformationen aus">
+<!ENTITY removeduplicatesPrefs.reversesearch "Invertiere Verzeichnissuche">
+<!ENTITY showduplicatemessages.title "Doppelte Nachrichten">
+<!ENTITY showduplicatemessages.caption "Nachrichten zum löschen auswählen.">
+<!ENTITY showduplicatemessages.id "ID">
+<!ENTITY showduplicatemessages.flag "Del?">
+<!ENTITY showduplicatemessages.subject "Betreff">
+<!ENTITY showduplicatemessages.sender "Von">
+<!ENTITY showduplicatemessages.recipient "An">
+<!ENTITY showduplicatemessages.folder "Verzeichnis">
+<!ENTITY showduplicatemessages.date "Datum">
+<!ENTITY showduplicatemessages.hint "Linksklick: Nachricht Anzeigen. Rechtsklick: Erweiterte Informationen. Doppelklick: Wechsel von 'DEL' - 'KEEP'.">
+<!ENTITY showduplicatemessages.buttonDefault "Alle Standard">
+<!ENTITY showduplicatemessages.buttonSelDel "Alle DEL">
+<!ENTITY showduplicatemessages.buttonSelNoDel "Alle KEEP">
+<!ENTITY showduplicatemessages.buttonErase "Auswahl vernichten">
+<!ENTITY showduplicatemessages.buttonDel "Auswahl löschen">
+<!ENTITY showduplicatemessages.buttonCancel "Abbrechen">
+<!ENTITY tooltip.buttonDefault "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt.">
+<!ENTITY tooltip.buttonSelDel "Setzt den Zustand aller Nachrichten auf löschen (DEL).">
+<!ENTITY tooltip.buttonSelKeep "Setzt den Zustand aller Nachrichten auf behalten (KEEP).">
+<!ENTITY tooltip.buttonErase "Vernichtet alle als DEL markierten Nachrichten unwiederbringlich. Die Nachrichten werden nicht in den Papierkorb geschoben.">
+<!ENTITY tooltip.buttonDelete "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können.">
+<!ENTITY tooltip.buttonCancel "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben.">
