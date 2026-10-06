@@ -1,0 +1,128 @@
+{
+  "buttonCancel": {
+    "message": "Отменить"
+  },
+  "buttonDefault": {
+    "message": "Все по умолчанию"
+  },
+  "buttonDelete": {
+    "message": "Удалить выбранное"
+  },
+  "buttonSelDel": {
+    "message": "Все удалять"
+  },
+  "buttonSelKeep": {
+    "message": "Все не удалять"
+  },
+  "colDate": {
+    "message": "Отправлено"
+  },
+  "colFlag": {
+    "message": "Отметка"
+  },
+  "colFolder": {
+    "message": "Папка"
+  },
+  "colRecipient": {
+    "message": "Кому"
+  },
+  "colSender": {
+    "message": "От"
+  },
+  "colSubject": {
+    "message": "Тема"
+  },
+  "confirmDelete": {
+    "message": "Действительно удалить $1 сообщений?"
+  },
+  "extensionDescription": {
+    "message": "Удаляет повторные сообщения через контекстное меню папки."
+  },
+  "extensionName": {
+    "message": "Удалить Повторяющиеся Сообщения"
+  },
+  "menuLabel": {
+    "message": "Удалить Повторяющиеся Сообщения…"
+  },
+  "optionsCompareLegend": {
+    "message": "Выбрать как сравниваются сообщения"
+  },
+  "optionsSettingsLegend": {
+    "message": "Настройки"
+  },
+  "prefAutodelete": {
+    "message": "Авто удаление"
+  },
+  "prefCheckBody": {
+    "message": "Сравнивать текст сообщений (медленно)"
+  },
+  "prefCheckDate": {
+    "message": "Отправлено"
+  },
+  "prefCheckDateInSeconds": {
+    "message": "Сравнивать время (в секундах)"
+  },
+  "prefCheckMessageId": {
+    "message": "Сравнивать ID сообщений"
+  },
+  "prefCheckSubject": {
+    "message": "Сравнивать тему"
+  },
+  "prefDebugInfo": {
+    "message": "Распечатывать информацию для исправления неполадок (debug)"
+  },
+  "prefExcludeSent": {
+    "message": "При поиске игнорировать отправленные сообщения"
+  },
+  "prefExcludeTrash": {
+    "message": "При поиске игнорировать сообщения уделенные в корзину"
+  },
+  "prefPreferredDelete": {
+    "message": "Предпочтение к удалению"
+  },
+  "prefPreferredDeleteSuffix": {
+    "message": "сообщение"
+  },
+  "prefSubFolderFirst": {
+    "message": "Искать сперва в подпапках"
+  },
+  "preferFirstFound": {
+    "message": "первого найденного"
+  },
+  "preferLarger": {
+    "message": "большего"
+  },
+  "preferSmaller": {
+    "message": "меньшего"
+  },
+  "preferUnread": {
+    "message": "непрочитанного"
+  },
+  "reviewCaption": {
+    "message": "Выбрать сообщения которые нужно удалить"
+  },
+  "reviewTitle": {
+    "message": "Повторяющиеся Сообщения"
+  },
+  "statusNoDuplicates": {
+    "message": "Повторяющиеся сообщения небыли найдены в выбранных папках."
+  },
+  "statusSearching": {
+    "message": "Поиск повторяющихся сообщений: сравнений: $1 / $2"
+  },
+  "statusToDelete": {
+    "message": "Будут удалены: $1"
+  },
+  "tooltipCancel": {
+    "message": "Отменить. Не одно сообщение не будет удалено или перемещено."
+  },
+  "tooltipDefault": {
+    "message": "Восстанавливает все метки по умолчанию. Один дубликат сообщений для хранения, а все остальные копии к удалению."
+  },
+  "tooltipSelDel": {
+    "message": "Отмечает все сообщения меткой для удаления (DEL)"
+  },
+  "tooltipSelKeep": {
+    "message": "Отмечает все сообщения меткой для хранения (KEEP)"
+  }
+}

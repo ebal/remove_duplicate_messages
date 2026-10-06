@@ -1,0 +1,140 @@
+{
+  "buttonCancel": {
+    "message": "Abbrechen"
+  },
+  "buttonDefault": {
+    "message": "Alle Standard"
+  },
+  "buttonDelete": {
+    "message": "Auswahl löschen"
+  },
+  "buttonSelDel": {
+    "message": "Alle DEL"
+  },
+  "buttonSelKeep": {
+    "message": "Alle KEEP"
+  },
+  "colDate": {
+    "message": "Datum"
+  },
+  "colFlag": {
+    "message": "Del?"
+  },
+  "colFolder": {
+    "message": "Verzeichnis"
+  },
+  "colRecipient": {
+    "message": "An"
+  },
+  "colSender": {
+    "message": "Von"
+  },
+  "colSubject": {
+    "message": "Betreff"
+  },
+  "confirmDelete": {
+    "message": "Wirklich $1 Nachrichten löschen?"
+  },
+  "extensionDescription": {
+    "message": "Entfernt doppelte Nachrichten durch Vezeichniskontextmenü."
+  },
+  "extensionName": {
+    "message": "Remove Duplicate Messages"
+  },
+  "menuLabel": {
+    "message": "Doppelte Nachrichten entfernen..."
+  },
+  "optionsCompareLegend": {
+    "message": "Auswahl, wie die E-Mails verglichen werden."
+  },
+  "optionsSettingsLegend": {
+    "message": "Einstellungen"
+  },
+  "optionsTitle": {
+    "message": "Optionen um doppelete Nachrichten entfernen"
+  },
+  "prefAutodelete": {
+    "message": "Automatisches Löschen"
+  },
+  "prefCheckAuthor": {
+    "message": "Vergleiche den Absender 'Von'"
+  },
+  "prefCheckBody": {
+    "message": "Vergleiche den Inhalt der Nachrichten (langsam)"
+  },
+  "prefCheckDate": {
+    "message": "Vergleiche das Datum"
+  },
+  "prefCheckDateInSeconds": {
+    "message": "Vergleiche das Datum in Sekunden"
+  },
+  "prefCheckMessageId": {
+    "message": "Vergleiche die Nachrichten ID"
+  },
+  "prefCheckRecipient": {
+    "message": "Vergleiche die Empfängerliste 'An'"
+  },
+  "prefCheckSubject": {
+    "message": "Vergleiche den Betreff"
+  },
+  "prefDebugInfo": {
+    "message": "Gib Debuginformationen aus"
+  },
+  "prefExcludeSent": {
+    "message": "Ignoriere die gesendeten Nachrichten bei der Suche"
+  },
+  "prefExcludeTrash": {
+    "message": "Ignoriere den Papierkorb bei der Suche"
+  },
+  "prefPreferredDelete": {
+    "message": "Lösche bevorzugt"
+  },
+  "prefReverseSearch": {
+    "message": "Invertiere Verzeichnissuche"
+  },
+  "prefSubFolderFirst": {
+    "message": "Durchsuche zuerst Unterverzeichnise"
+  },
+  "preferFirstFound": {
+    "message": "zuerst gefundene"
+  },
+  "preferLarger": {
+    "message": "größere"
+  },
+  "preferSmaller": {
+    "message": "kleinere"
+  },
+  "preferUnread": {
+    "message": "ungelesende"
+  },
+  "reviewCaption": {
+    "message": "Nachrichten zum löschen auswählen."
+  },
+  "reviewTitle": {
+    "message": "Doppelte Nachrichten"
+  },
+  "statusNoDuplicates": {
+    "message": "In den ausgewählten Ordnern befinden sich keine doppelten Nachrichten."
+  },
+  "statusSearching": {
+    "message": "Suche Duplikate: Vergleiche: $1 / $2"
+  },
+  "statusToDelete": {
+    "message": "Zu löschende Nachrichten: $1"
+  },
+  "tooltipCancel": {
+    "message": "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben."
+  },
+  "tooltipDefault": {
+    "message": "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt."
+  },
+  "tooltipDelete": {
+    "message": "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können."
+  },
+  "tooltipSelDel": {
+    "message": "Setzt den Zustand aller Nachrichten auf löschen (DEL)."
+  },
+  "tooltipSelKeep": {
+    "message": "Setzt den Zustand aller Nachrichten auf behalten (KEEP)."
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "buttonCancel": {
+    "message": "Cancel"
+  },
+  "buttonClose": {
+    "message": "Close"
+  },
+  "buttonConfirmYes": {
+    "message": "Delete"
+  },
+  "buttonDefault": {
+    "message": "All default"
+  },
+  "buttonDelete": {
+    "message": "Delete Selected"
+  },
+  "buttonOptions": {
+    "message": "Options"
+  },
+  "buttonSelDel": {
+    "message": "All delete"
+  },
+  "buttonSelKeep": {
+    "message": "All no delete"
+  },
+  "colDate": {
+    "message": "Date"
+  },
+  "colFlag": {
+    "message": "Flag"
+  },
+  "colFolder": {
+    "message": "Folder"
+  },
+  "colRecipient": {
+    "message": "To"
+  },
+  "colSender": {
+    "message": "From"
+  },
+  "colSize": {
+    "message": "Size"
+  },
+  "colSubject": {
+    "message": "Subject"
+  },
+  "confirmDelete": {
+    "message": "Really delete $1 messages?"
+  },
+  "errorNoCriteria": {
+    "message": "No comparison criterion is enabled. Enable at least one in the add-on options."
+  },
+  "errorNoFolders": {
+    "message": "No folder to search. Select a folder first (trash and sent folders may be excluded in the options)."
+  },
+  "extensionDescription": {
+    "message": "Removes duplicate messages by folder context menu."
+  },
+  "extensionName": {
+    "message": "Remove Duplicate Messages"
+  },
+  "flagDel": {
+    "message": "DEL"
+  },
+  "flagKeep": {
+    "message": "KEEP"
+  },
+  "menuLabel": {
+    "message": "Remove Duplicate Messages..."
+  },
+  "optionsCompareLegend": {
+    "message": "Choose how E-Mails are compared."
+  },
+  "optionsSaved": {
+    "message": "Saved."
+  },
+  "optionsSettingsLegend": {
+    "message": "Settings"
+  },
+  "optionsTitle": {
+    "message": "Remove Duplicate Messages Options"
+  },
+  "prefAutodelete": {
+    "message": "Auto delete"
+  },
+  "prefCheckAuthor": {
+    "message": "Compare 'From'"
+  },
+  "prefCheckBody": {
+    "message": "Compare message body (slow)"
+  },
+  "prefCheckDate": {
+    "message": "Compare date"
+  },
+  "prefCheckDateInSeconds": {
+    "message": "Compare date in seconds"
+  },
+  "prefCheckMessageId": {
+    "message": "Compare message ID"
+  },
+  "prefCheckRecipient": {
+    "message": "Compare 'To'"
+  },
+  "prefCheckSize": {
+    "message": "Compare message size (replaces 'line count')"
+  },
+  "prefCheckSubject": {
+    "message": "Compare subject"
+  },
+  "prefDebugInfo": {
+    "message": "Print debug info"
+  },
+  "prefExcludeAllMail": {
+    "message": "Ignore the Gmail 'All Mail' folder for the message search"
+  },
+  "prefExcludeSent": {
+    "message": "Ignore sent messages in duplicate message search"
+  },
+  "prefExcludeTrash": {
+    "message": "Ignore trash in duplicate message search"
+  },
+  "prefPreferredDelete": {
+    "message": "Prefer to delete"
+  },
+  "prefPreferredDeleteSuffix": {
+    "message": "E-Mail"
+  },
+  "prefReverseSearch": {
+    "message": "Reverse folder search"
+  },
+  "prefSubFolderFirst": {
+    "message": "Search in subfolder first"
+  },
+  "preferFirstFound": {
+    "message": "first found"
+  },
+  "preferLarger": {
+    "message": "larger"
+  },
+  "preferSmaller": {
+    "message": "smaller"
+  },
+  "preferUnread": {
+    "message": "unread"
+  },
+  "reviewCaption": {
+    "message": "Choose the messages that should be deleted."
+  },
+  "reviewHint": {
+    "message": "Click the flag to toggle DEL / KEEP. Click the subject to open the message."
+  },
+  "reviewTitle": {
+    "message": "Duplicate Messages"
+  },
+  "statusCancelled": {
+    "message": "Cancelled. No message was deleted."
+  },
+  "statusCollecting": {
+    "message": "Collecting folders…"
+  },
+  "statusDeleteErrors": {
+    "message": "$1 messages could not be deleted. See the error console for details."
+  },
+  "statusDeleted": {
+    "message": "$1 messages were moved to the trash."
+  },
+  "statusDeleting": {
+    "message": "Deleting: $1 / $2"
+  },
+  "statusFolderErrors": {
+    "message": "$1 folders could not be read and were skipped."
+  },
+  "statusGroups": {
+    "message": "Duplicate groups: $1 — messages in groups: $2"
+  },
+  "statusNoDuplicates": {
+    "message": "Could not find any duplicate messages in the selected folders."
+  },
+  "statusScanningFolder": {
+    "message": "Scanning $1"
+  },
+  "statusSearching": {
+    "message": "Searching duplicates: comparisons: $1 / $2"
+  },
+  "statusToDelete": {
+    "message": "To be deleted: $1"
+  },
+  "tooltipCancel": {
+    "message": "Cancel. No message is being deleted or moved."
+  },
+  "tooltipDefault": {
+    "message": "Restores the original selection. One duplicate of an e-mail is selected for keeping and all other instances are selected for deletion."
+  },
+  "tooltipDelete": {
+    "message": "Deletes all DEL marked messaged. They are moved to the trashcan for backup."
+  },
+  "tooltipSelDel": {
+    "message": "Sets the flag of all messages to delete (DEL)"
+  },
+  "tooltipSelKeep": {
+    "message": "Sets the flag of all messages to keep (KEEP)"
+  }
+}

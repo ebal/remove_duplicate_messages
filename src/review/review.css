@@ -1,0 +1,124 @@
+:root {
+  color-scheme: light dark;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font: message-box;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  flex: none;
+  padding: 0.6em 1em;
+}
+
+h1 {
+  font-size: 1.2em;
+  margin: 0 0 0.3em;
+}
+
+header p {
+  margin: 0.3em 0;
+}
+
+#hint {
+  color: GrayText;
+}
+
+progress {
+  width: 100%;
+}
+
+#toDelete {
+  margin-inline-start: 1.5em;
+}
+
+#warning {
+  color: #c50042;
+}
+
+main {
+  flex: 1;
+  overflow: auto;
+  border-block: 1px solid ThreeDShadow;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  position: sticky;
+  top: 0;
+  background: Canvas;
+  text-align: start;
+  border-bottom: 1px solid ThreeDShadow;
+}
+
+th,
+td {
+  padding: 0.25em 0.6em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 28em;
+}
+
+tbody:nth-of-type(even) {
+  background: color-mix(in srgb, CanvasText 6%, transparent);
+}
+
+tbody tr:first-child td {
+  border-top: 1px solid ThreeDShadow;
+}
+
+tr.del td:not(:first-child) {
+  text-decoration: line-through;
+  color: GrayText;
+}
+
+body:not(.show-recipient) .recipient {
+  display: none;
+}
+
+button.flag {
+  min-width: 4.5em;
+  font-weight: bold;
+}
+
+tr.del button.flag {
+  color: #c50042;
+}
+
+a.subject {
+  color: inherit;
+  cursor: pointer;
+}
+
+a.subject:hover {
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  gap: 0.5em;
+}
+
+.spacer {
+  flex: 1;
+}
+
+dialog .buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5em;
+}

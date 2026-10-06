@@ -1,0 +1,137 @@
+{
+  "buttonCancel": {
+    "message": "Cancelar"
+  },
+  "buttonDefault": {
+    "message": "Todo el estándar"
+  },
+  "buttonDelete": {
+    "message": "Borrar selección"
+  },
+  "buttonSelDel": {
+    "message": "Borrar todos"
+  },
+  "buttonSelKeep": {
+    "message": "Reservados todos los"
+  },
+  "colDate": {
+    "message": "Fecha"
+  },
+  "colFolder": {
+    "message": "Carpeta"
+  },
+  "colRecipient": {
+    "message": "Recipient"
+  },
+  "colSender": {
+    "message": "Emisor"
+  },
+  "colSubject": {
+    "message": "Asunto"
+  },
+  "confirmDelete": {
+    "message": "Desea borrar $1 mensajes?"
+  },
+  "extensionDescription": {
+    "message": "Menu de contexto de Borrar mensajes duplicados por carpeta."
+  },
+  "extensionName": {
+    "message": "Borrador de Mensajes duplicados"
+  },
+  "menuLabel": {
+    "message": "Borrar mensajes duplicados..."
+  },
+  "optionsCompareLegend": {
+    "message": "Elija como los correos electrónicos son comparados."
+  },
+  "optionsSettingsLegend": {
+    "message": "Configuración"
+  },
+  "optionsTitle": {
+    "message": "Opciones del Borrador de Mensajes Duplicados"
+  },
+  "prefAutodelete": {
+    "message": "Cancelación automática"
+  },
+  "prefCheckAuthor": {
+    "message": "Comparar autor"
+  },
+  "prefCheckBody": {
+    "message": "Comparar cuerpo del mensaje (lento)"
+  },
+  "prefCheckDate": {
+    "message": "Fecha"
+  },
+  "prefCheckDateInSeconds": {
+    "message": "Comparar la fecha en segundos"
+  },
+  "prefCheckMessageId": {
+    "message": "Comparar el ID del mensaje"
+  },
+  "prefCheckRecipient": {
+    "message": "Compare recipient list"
+  },
+  "prefCheckSubject": {
+    "message": "Comparar asunto"
+  },
+  "prefDebugInfo": {
+    "message": "Imprimir información de depuración"
+  },
+  "prefExcludeSent": {
+    "message": "Ignorar enviados en la busqueda de mensajes"
+  },
+  "prefExcludeTrash": {
+    "message": "Ignorar papelera en la busqueda de mensajes"
+  },
+  "prefPreferredDelete": {
+    "message": "Eliminar preferido"
+  },
+  "prefPreferredDeleteSuffix": {
+    "message": "e-mail"
+  },
+  "prefSubFolderFirst": {
+    "message": "Buscar primero en subcarpeta"
+  },
+  "preferFirstFound": {
+    "message": "encontró por primera vez"
+  },
+  "preferLarger": {
+    "message": "más"
+  },
+  "preferSmaller": {
+    "message": "pequeño"
+  },
+  "preferUnread": {
+    "message": "no leído"
+  },
+  "reviewCaption": {
+    "message": "Elija los mensajes que deben ser borrados."
+  },
+  "reviewTitle": {
+    "message": "Mensajes Duplicados"
+  },
+  "statusNoDuplicates": {
+    "message": "No se pudo encontrar los mensajes duplicados en las carpetas seleccionadas."
+  },
+  "statusSearching": {
+    "message": "Buscando duplicados: comparaciones: $1 / $2"
+  },
+  "statusToDelete": {
+    "message": "Para borrarse: $1"
+  },
+  "tooltipCancel": {
+    "message": "Cancelar. No hay ningún mensaje está siendo eliminado o movido."
+  },
+  "tooltipDefault": {
+    "message": "Restaura la selección original. Un duplicado de un correo electrónico se ha seleccionado para la conservación y todos los demás casos se seleccionan para su eliminación."
+  },
+  "tooltipDelete": {
+    "message": "Borra todos con mensajes DEL marcados. Ellos se mueven a la papelera de copia de seguridad."
+  },
+  "tooltipSelDel": {
+    "message": "Establece el indicador de todos los mensajes que desea eliminar (DEL)"
+  },
+  "tooltipSelKeep": {
+    "message": "Establece el indicador de todos los mensajes para mantener (KEEP)"
+  }
+}

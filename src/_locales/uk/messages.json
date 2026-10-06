@@ -1,0 +1,128 @@
+{
+  "buttonCancel": {
+    "message": "Відмінити"
+  },
+  "buttonDefault": {
+    "message": "Все за промвчанням"
+  },
+  "buttonDelete": {
+    "message": "Видалити вибране"
+  },
+  "buttonSelDel": {
+    "message": "Все видалити"
+  },
+  "buttonSelKeep": {
+    "message": "Все не видаляти"
+  },
+  "colDate": {
+    "message": "Надіслано"
+  },
+  "colFlag": {
+    "message": "Позначка"
+  },
+  "colFolder": {
+    "message": "Папка"
+  },
+  "colRecipient": {
+    "message": "До"
+  },
+  "colSender": {
+    "message": "Від"
+  },
+  "colSubject": {
+    "message": "Тема"
+  },
+  "confirmDelete": {
+    "message": "Дійсно видалити $1 повідомлень?"
+  },
+  "extensionDescription": {
+    "message": "Видаляє повторні повідомлення через контекстне меню папки."
+  },
+  "extensionName": {
+    "message": "Видалити Повторні Повідомлення"
+  },
+  "menuLabel": {
+    "message": "Видалити Повторні Повідомлення…"
+  },
+  "optionsCompareLegend": {
+    "message": "Вибрати як порівнюються повідомлення"
+  },
+  "optionsSettingsLegend": {
+    "message": "Налаштування"
+  },
+  "prefAutodelete": {
+    "message": "Авто видалення"
+  },
+  "prefCheckBody": {
+    "message": "Порівнювати текст повідомлень (повільно)"
+  },
+  "prefCheckDate": {
+    "message": "Надіслано"
+  },
+  "prefCheckDateInSeconds": {
+    "message": "Порівнювати час (в секундах)"
+  },
+  "prefCheckMessageId": {
+    "message": "Порівнювати ID повідомлень"
+  },
+  "prefCheckSubject": {
+    "message": "Порівнювати тему"
+  },
+  "prefDebugInfo": {
+    "message": "Роздруковувати інформацію для виправлення помилок (debug)"
+  },
+  "prefExcludeSent": {
+    "message": "При пошуку нехтувати відісланими повідомленнями"
+  },
+  "prefExcludeTrash": {
+    "message": "При пошуку нехтувати повідомленнями видаленими в корзину"
+  },
+  "prefPreferredDelete": {
+    "message": "Віддавати перевагу до видалення"
+  },
+  "prefPreferredDeleteSuffix": {
+    "message": "повідомлення"
+  },
+  "prefSubFolderFirst": {
+    "message": "Шукати спершу в під-папках"
+  },
+  "preferFirstFound": {
+    "message": "першого знайденого"
+  },
+  "preferLarger": {
+    "message": "більшого"
+  },
+  "preferSmaller": {
+    "message": "меншого"
+  },
+  "preferUnread": {
+    "message": "непрочитаного"
+  },
+  "reviewCaption": {
+    "message": "Виберіть повідомлення які потрібно видалити."
+  },
+  "reviewTitle": {
+    "message": "Повторні Повідомлення"
+  },
+  "statusNoDuplicates": {
+    "message": "Повторні повідомлення не були знайдені в обраних папках."
+  },
+  "statusSearching": {
+    "message": "Пошук повторних повідомлень: порівнянь: $1 / $2"
+  },
+  "statusToDelete": {
+    "message": "Будуть видалені: $1"
+  },
+  "tooltipCancel": {
+    "message": "Відмінити. Жодне повідомлення не буде видалене чи переміщене."
+  },
+  "tooltipDefault": {
+    "message": "Відновлює всі помітки за промочанням. Один дублікат для збереження, а всі інші копії до видалення."
+  },
+  "tooltipSelDel": {
+    "message": "Відмічає вісі повідомлення поміткою для видалення (DEL)"
+  },
+  "tooltipSelKeep": {
+    "message": "Відмічає вісі повідомлення поміткою для збереження (KEEP)"
+  }
+}

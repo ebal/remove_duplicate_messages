@@ -1,0 +1,131 @@
+{
+  "buttonCancel": {
+    "message": "Annuler"
+  },
+  "buttonDefault": {
+    "message": "Tout par défaut"
+  },
+  "buttonDelete": {
+    "message": "Effacer la sélection"
+  },
+  "buttonSelDel": {
+    "message": "Tout effacer"
+  },
+  "buttonSelKeep": {
+    "message": "Tout conserver"
+  },
+  "colFlag": {
+    "message": "Etat"
+  },
+  "colFolder": {
+    "message": "Dossier"
+  },
+  "colRecipient": {
+    "message": "Recipient"
+  },
+  "colSender": {
+    "message": "Emetteur"
+  },
+  "colSubject": {
+    "message": "Sujet"
+  },
+  "extensionDescription": {
+    "message": "Supprime les messages en double via le menu contextuel des dossiers."
+  },
+  "extensionName": {
+    "message": "Remove Duplicate Messages"
+  },
+  "menuLabel": {
+    "message": "Suppression des messages dupliqués..."
+  },
+  "optionsCompareLegend": {
+    "message": "Choisissez de quelle manière vos messages seront comparés entre eux :"
+  },
+  "optionsSettingsLegend": {
+    "message": "Paramètres"
+  },
+  "optionsTitle": {
+    "message": "Options pour la Suppression des Messages Dupliqués"
+  },
+  "prefAutodelete": {
+    "message": "Effacement automatique"
+  },
+  "prefCheckAuthor": {
+    "message": "Comparaison sur l'auteur"
+  },
+  "prefCheckBody": {
+    "message": "Comparaison entre les corps des messages (lent)"
+  },
+  "prefCheckDate": {
+    "message": "Date"
+  },
+  "prefCheckDateInSeconds": {
+    "message": "Comparaison sur la date à la seconde près"
+  },
+  "prefCheckMessageId": {
+    "message": "Comparaison sur l'ID du message"
+  },
+  "prefCheckRecipient": {
+    "message": "Compare recipient list"
+  },
+  "prefCheckSubject": {
+    "message": "Comparaison sur le sujet"
+  },
+  "prefDebugInfo": {
+    "message": "Afficher les informations de débogage"
+  },
+  "prefExcludeSent": {
+    "message": "Ignorer la envoyés lors des recherches"
+  },
+  "prefExcludeTrash": {
+    "message": "Ignorer la corbeille lors des recherches"
+  },
+  "prefPreferredDelete": {
+    "message": "Effacer de préférence :"
+  },
+  "prefPreferredDeleteSuffix": {
+    "message": "Adresse e-mail"
+  },
+  "prefSubFolderFirst": {
+    "message": "Rechercher dans les sous-dossiers d'abord"
+  },
+  "preferFirstFound": {
+    "message": "le(s) premier(s) trouvé(s)"
+  },
+  "preferLarger": {
+    "message": "le(s) plus volumineux"
+  },
+  "preferSmaller": {
+    "message": "le(s) moins volumineux"
+  },
+  "preferUnread": {
+    "message": "le(s) message(s) non lu(s)"
+  },
+  "reviewCaption": {
+    "message": "Choisissez les messages à effacer :"
+  },
+  "reviewTitle": {
+    "message": "Messages en double"
+  },
+  "statusSearching": {
+    "message": "Recherche des doublons, comparaison : $1 / $2"
+  },
+  "statusToDelete": {
+    "message": "Dont à supprimer : $1"
+  },
+  "tooltipCancel": {
+    "message": "Annulation, aucun message ne sera supprimé ou déplacé."
+  },
+  "tooltipDefault": {
+    "message": "Restaure la sélection originale : pour chaque message, une copie est conservée et ses doublons sont marqués pour l'effacement."
+  },
+  "tooltipDelete": {
+    "message": "Efface tous les messages dont l'état est 'DEL'. Ils seront déplacés vers la corbeille et pourront éventuellement être restaurés, si vous changez d'avis..."
+  },
+  "tooltipSelDel": {
+    "message": "Fixe l'état de tous les messages à 'DEL'."
+  },
+  "tooltipSelKeep": {
+    "message": "Fixe l'état de tous les messages à 'KEEP'."
+  }
+}

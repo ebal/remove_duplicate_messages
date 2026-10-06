@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title data-i18n="optionsTitle"></title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <form id="prefs">
+    <fieldset>
+      <legend data-i18n="optionsCompareLegend"></legend>
+      <label><input type="checkbox" id="checkMessageId"> <span data-i18n="prefCheckMessageId"></span></label>
+      <label><input type="checkbox" id="checkDateInSeconds"> <span data-i18n="prefCheckDateInSeconds"></span></label>
+      <label><input type="checkbox" id="checkDate"> <span data-i18n="prefCheckDate"></span></label>
+      <label><input type="checkbox" id="checkSubject"> <span data-i18n="prefCheckSubject"></span></label>
+      <label><input type="checkbox" id="checkAuthor"> <span data-i18n="prefCheckAuthor"></span></label>
+      <label><input type="checkbox" id="checkSize"> <span data-i18n="prefCheckSize"></span></label>
+      <label><input type="checkbox" id="checkBody"> <span data-i18n="prefCheckBody"></span></label>
+      <label><input type="checkbox" id="checkRecipient"> <span data-i18n="prefCheckRecipient"></span></label>
+    </fieldset>
+
+    <fieldset>
+      <legend data-i18n="optionsSettingsLegend"></legend>
+      <label>
+        <span data-i18n="prefPreferredDelete"></span>
+        <select id="preferredDelete">
+          <option value="0" data-i18n="preferFirstFound"></option>
+          <option value="1" data-i18n="preferUnread"></option>
+          <option value="2" data-i18n="preferSmaller"></option>
+          <option value="3" data-i18n="preferLarger"></option>
+        </select>
+        <span data-i18n="prefPreferredDeleteSuffix"></span>
+      </label>
+      <label><input type="checkbox" id="reverseSearch"> <span data-i18n="prefReverseSearch"></span></label>
+      <label><input type="checkbox" id="subFolderFirst"> <span data-i18n="prefSubFolderFirst"></span></label>
+      <label><input type="checkbox" id="excludeTrash"> <span data-i18n="prefExcludeTrash"></span></label>
+      <label><input type="checkbox" id="excludeSent"> <span data-i18n="prefExcludeSent"></span></label>
+      <label><input type="checkbox" id="excludeAllMail"> <span data-i18n="prefExcludeAllMail"></span></label>
+      <label><input type="checkbox" id="autodelete"> <span data-i18n="prefAutodelete"></span></label>
+      <label><input type="checkbox" id="debugInfo"> <span data-i18n="prefDebugInfo"></span></label>
+    </fieldset>
+    <p id="saved" data-i18n="optionsSaved" hidden></p>
+  </form>
+  <script src="../common/prefs.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

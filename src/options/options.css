@@ -1,0 +1,21 @@
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  font: message-box;
+  margin: 1em;
+}
+
+fieldset {
+  margin-bottom: 1em;
+}
+
+label {
+  display: block;
+  margin: 0.4em 0;
+}
+
+#saved {
+  color: GrayText;
+}

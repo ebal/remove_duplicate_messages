@@ -1,0 +1,134 @@
+{
+  "buttonCancel": {
+    "message": "Annuleren"
+  },
+  "buttonDefault": {
+    "message": "Alles standaard"
+  },
+  "buttonDelete": {
+    "message": "Verwijder selectie"
+  },
+  "buttonSelDel": {
+    "message": "Verwijder alles"
+  },
+  "buttonSelKeep": {
+    "message": "Behoud alles"
+  },
+  "colDate": {
+    "message": "Datum"
+  },
+  "colFlag": {
+    "message": "Optie"
+  },
+  "colFolder": {
+    "message": "Map"
+  },
+  "colRecipient": {
+    "message": "Empfänger"
+  },
+  "colSender": {
+    "message": "Auteur"
+  },
+  "colSubject": {
+    "message": "Onderwerp"
+  },
+  "extensionDescription": {
+    "message": "Verwijdert dubbele berichten via mappen context menu."
+  },
+  "extensionName": {
+    "message": "Remove Duplicate Messages"
+  },
+  "menuLabel": {
+    "message": "Verwijder Dubbele Berichten..."
+  },
+  "optionsCompareLegend": {
+    "message": "Stel in hoe E-mails worden vergeleken."
+  },
+  "optionsSettingsLegend": {
+    "message": "Instellingen"
+  },
+  "optionsTitle": {
+    "message": "Verwijder Dubbele Berichten Opties"
+  },
+  "prefAutodelete": {
+    "message": "Verwijder automatisch"
+  },
+  "prefCheckAuthor": {
+    "message": "Vergelijk auteur"
+  },
+  "prefCheckBody": {
+    "message": "Vergelijk berichtkern (langzaam)"
+  },
+  "prefCheckDate": {
+    "message": "Datum"
+  },
+  "prefCheckDateInSeconds": {
+    "message": "Vergelijk datum in seconden"
+  },
+  "prefCheckMessageId": {
+    "message": "Vergelijk message ID"
+  },
+  "prefCheckRecipient": {
+    "message": "Compare recipient list"
+  },
+  "prefCheckSubject": {
+    "message": "Vergelijk onderwerp"
+  },
+  "prefDebugInfo": {
+    "message": "Laat debug informatie zien"
+  },
+  "prefExcludeSent": {
+    "message": "Negeer berichten in de Verzonden berichten"
+  },
+  "prefExcludeTrash": {
+    "message": "Negeer berichten in de Prullenbak"
+  },
+  "prefPreferredDelete": {
+    "message": "Verwijder de"
+  },
+  "prefPreferredDeleteSuffix": {
+    "message": "E-mail"
+  },
+  "prefSubFolderFirst": {
+    "message": "Zoek eerst in onderliggende mappen"
+  },
+  "preferFirstFound": {
+    "message": "eerst gevonden"
+  },
+  "preferLarger": {
+    "message": "grotere"
+  },
+  "preferSmaller": {
+    "message": "kleinere"
+  },
+  "preferUnread": {
+    "message": "ongelezen"
+  },
+  "reviewCaption": {
+    "message": "Kies de berichten die verwijderd moeten worden."
+  },
+  "reviewTitle": {
+    "message": "Dubbele Berichten"
+  },
+  "statusSearching": {
+    "message": "Opzoeken dubbele berichten: vergelijkingen: $1 / $2"
+  },
+  "statusToDelete": {
+    "message": "Te verwijderen: $1"
+  },
+  "tooltipCancel": {
+    "message": "Annuleren. Er worden geen berichten verwijderd of verplaatst."
+  },
+  "tooltipDefault": {
+    "message": "Ga terug naar de standaard selectie. Een van de berichten wordt behouden, de resterende berichten worden gemarkeerd voor verwijdering."
+  },
+  "tooltipDelete": {
+    "message": "Verwijder alle met DEL gemarkeerde berichten. Ze worden naar de prullenbak verplaatst."
+  },
+  "tooltipSelDel": {
+    "message": "Markeer bij alle berichten de optie verwijderen (DEL)"
+  },
+  "tooltipSelKeep": {
+    "message": "Markeer bij alle berichten de optie behouden (KEEP)"
+  }
+}

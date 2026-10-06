@@ -1,0 +1,131 @@
+{
+  "buttonCancel": {
+    "message": "Annulla"
+  },
+  "buttonDefault": {
+    "message": "Impostazioni predefinite"
+  },
+  "buttonDelete": {
+    "message": "Cancella i selezionati"
+  },
+  "buttonSelDel": {
+    "message": "Cancella tutti"
+  },
+  "buttonSelKeep": {
+    "message": "Non cancellare nessuno"
+  },
+  "colDate": {
+    "message": "Data"
+  },
+  "colFlag": {
+    "message": "Spunta"
+  },
+  "colFolder": {
+    "message": "Cartella"
+  },
+  "colRecipient": {
+    "message": "Recipient"
+  },
+  "colSender": {
+    "message": "Mittente"
+  },
+  "colSubject": {
+    "message": "Oggetto"
+  },
+  "extensionDescription": {
+    "message": "Rimuove i messaggi duplicati dal menu contestuale di cartella."
+  },
+  "extensionName": {
+    "message": "Rimuove Messaggi Duplicati"
+  },
+  "menuLabel": {
+    "message": "Rimuove messaggi duplicati..."
+  },
+  "optionsCompareLegend": {
+    "message": "Scegli la modalità di confronto dei messaggi"
+  },
+  "optionsSettingsLegend": {
+    "message": "Configurazioni"
+  },
+  "optionsTitle": {
+    "message": "Opzioni di Rimozione dei Messaggi Duplicati"
+  },
+  "prefAutodelete": {
+    "message": "Cancellazione automatica"
+  },
+  "prefCheckAuthor": {
+    "message": "Confronta l'autore"
+  },
+  "prefCheckBody": {
+    "message": "Confronta il corpo del messaggio (lento)"
+  },
+  "prefCheckDate": {
+    "message": "Data"
+  },
+  "prefCheckDateInSeconds": {
+    "message": "Confronta la data in secondi"
+  },
+  "prefCheckMessageId": {
+    "message": "Confronta l'IDentificativo dei messagi"
+  },
+  "prefCheckRecipient": {
+    "message": "Compare recipient list"
+  },
+  "prefCheckSubject": {
+    "message": "Confronta l'oggetto"
+  },
+  "prefDebugInfo": {
+    "message": "Stampa le informazioni di debug"
+  },
+  "prefExcludeSent": {
+    "message": "Ignora il Posta inviata nella ricerca dei messaggi"
+  },
+  "prefExcludeTrash": {
+    "message": "Ignora il Cestino nella ricerca dei messaggi"
+  },
+  "prefPreferredDelete": {
+    "message": "Scegli la cancellazione"
+  },
+  "prefSubFolderFirst": {
+    "message": "Cerca prima nelle sottocartelle"
+  },
+  "preferFirstFound": {
+    "message": "Primo trovato"
+  },
+  "preferLarger": {
+    "message": "Più grande"
+  },
+  "preferSmaller": {
+    "message": "Più piccolo"
+  },
+  "preferUnread": {
+    "message": "Non letto"
+  },
+  "reviewCaption": {
+    "message": "Scegli i messaggi che devono essere cancellati"
+  },
+  "reviewTitle": {
+    "message": "Messaggi Duplicati"
+  },
+  "statusSearching": {
+    "message": "Ricerca duplicati: confronti: $1 / $2"
+  },
+  "statusToDelete": {
+    "message": "Da cancellare: $1"
+  },
+  "tooltipCancel": {
+    "message": "Annulla. Nessun messaggio è spostato nel Cestino o cancellato"
+  },
+  "tooltipDefault": {
+    "message": "Ripristina la selezione originaria. Un duplicato del messaggio è selezionato per essere conservato e tutte le altre occorrenze per la cancellazione."
+  },
+  "tooltipDelete": {
+    "message": "Cancella tutti i messaggi contrassegnati con CANCELLA. Sono conservati nel Cestino"
+  },
+  "tooltipSelDel": {
+    "message": "Imposta la spunta di tutti i messaggi per la cancellazione (CANCELLA)"
+  },
+  "tooltipSelKeep": {
+    "message": "Imposta la spunta di tutti i messaggi per la conservazione (CONSERVA)"
+  }
+}

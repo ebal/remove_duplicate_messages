@@ -1,0 +1,128 @@
+{
+  "buttonCancel": {
+    "message": "キャンセル"
+  },
+  "buttonDefault": {
+    "message": "デフォルトに戻す"
+  },
+  "buttonDelete": {
+    "message": "選択したメッセージをゴミ箱へ移動"
+  },
+  "buttonSelDel": {
+    "message": "すべてに'DEL'マーク"
+  },
+  "buttonSelKeep": {
+    "message": "すべてに'KEEP'マーク"
+  },
+  "colDate": {
+    "message": "日付"
+  },
+  "colFlag": {
+    "message": "フラグ"
+  },
+  "colFolder": {
+    "message": "フォルダー"
+  },
+  "colRecipient": {
+    "message": "Recipient"
+  },
+  "colSender": {
+    "message": "送信者"
+  },
+  "colSubject": {
+    "message": "表題"
+  },
+  "extensionDescription": {
+    "message": "フォルダーのコンテキストメニューから重複メッセージを削除する"
+  },
+  "extensionName": {
+    "message": "Remove Duplicate Messages (重複メッセージを削除)"
+  },
+  "menuLabel": {
+    "message": "重複メッセージを削除"
+  },
+  "optionsCompareLegend": {
+    "message": "メッセージの比較方法"
+  },
+  "optionsSettingsLegend": {
+    "message": "設定"
+  },
+  "optionsTitle": {
+    "message": "オプション"
+  },
+  "prefAutodelete": {
+    "message": "自動的に削除する"
+  },
+  "prefCheckAuthor": {
+    "message": "送信者で比較する"
+  },
+  "prefCheckBody": {
+    "message": "本文で比較する (処理速度:遅い)"
+  },
+  "prefCheckDate": {
+    "message": "日付"
+  },
+  "prefCheckDateInSeconds": {
+    "message": "日付と時刻で比較する"
+  },
+  "prefCheckMessageId": {
+    "message": "メッセージIDで比較する"
+  },
+  "prefCheckRecipient": {
+    "message": "Compare recipient list"
+  },
+  "prefCheckSubject": {
+    "message": "表題で比較する"
+  },
+  "prefDebugInfo": {
+    "message": "デバッグ情報を表示"
+  },
+  "prefExcludeSent": {
+    "message": "送信メッセージを検索しない"
+  },
+  "prefExcludeTrash": {
+    "message": "ゴミ箱内を検索しない"
+  },
+  "prefPreferredDeleteSuffix": {
+    "message": "メッセージを残す"
+  },
+  "prefSubFolderFirst": {
+    "message": "サブフォルダーを優先する"
+  },
+  "preferFirstFound": {
+    "message": "最初に見つかった"
+  },
+  "preferLarger": {
+    "message": "IDの小さい"
+  },
+  "preferSmaller": {
+    "message": "unanswered"
+  },
+  "preferUnread": {
+    "message": "未読の"
+  },
+  "reviewCaption": {
+    "message": "削除するメッセージを選択"
+  },
+  "reviewTitle": {
+    "message": "重複メッセージ"
+  },
+  "statusToDelete": {
+    "message": "削除対象数: $1 重複メッセージ削除により、このメールはロックされています。"
+  },
+  "tooltipCancel": {
+    "message": "キャンセル。どのメッセージも処理されません。"
+  },
+  "tooltipDefault": {
+    "message": "1つのメッセージに残して、重複した他のメッセージには'DEL'フラグをつける。"
+  },
+  "tooltipDelete": {
+    "message": "削除マークのついたものをゴミ箱へ移す。 バックアップのためにメッセージをゴミ箱へ移動します。"
+  },
+  "tooltipSelDel": {
+    "message": "すべてのメッセージに削除フラグをつける (フラグ:DEL)"
+  },
+  "tooltipSelKeep": {
+    "message": "すべてのメッセージに残すフラグをつける (フラグ:KEEP)"
+  }
+}

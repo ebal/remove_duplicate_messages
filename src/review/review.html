@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title data-i18n="reviewTitle"></title>
+  <link rel="stylesheet" href="review.css">
+</head>
+<body>
+  <header>
+    <h1 data-i18n="reviewCaption"></h1>
+    <p id="hint" data-i18n="reviewHint"></p>
+    <progress id="progress" max="100" value="0"></progress>
+    <p id="status"></p>
+    <p id="summary">
+      <span id="groupsInfo"></span>
+      <strong id="toDelete"></strong>
+    </p>
+    <p id="warning" hidden></p>
+  </header>
+
+  <main>
+    <table id="messages" hidden>
+      <thead>
+        <tr>
+          <th data-i18n="colFlag"></th>
+          <th data-i18n="colSender"></th>
+          <th class="recipient" data-i18n="colRecipient"></th>
+          <th data-i18n="colSubject"></th>
+          <th data-i18n="colFolder"></th>
+          <th data-i18n="colDate"></th>
+          <th data-i18n="colSize"></th>
+        </tr>
+      </thead>
+    </table>
+  </main>
+
+  <footer>
+    <button id="buttonOptions" data-i18n="buttonOptions"></button>
+    <span class="spacer"></span>
+    <button id="buttonDefault" data-i18n="buttonDefault" data-i18n-title="tooltipDefault" disabled></button>
+    <button id="buttonSelDel" data-i18n="buttonSelDel" data-i18n-title="tooltipSelDel" disabled></button>
+    <button id="buttonSelKeep" data-i18n="buttonSelKeep" data-i18n-title="tooltipSelKeep" disabled></button>
+    <button id="buttonDelete" data-i18n="buttonDelete" data-i18n-title="tooltipDelete" disabled></button>
+    <button id="buttonCancel" data-i18n="buttonCancel" data-i18n-title="tooltipCancel"></button>
+  </footer>
+
+  <dialog id="confirm">
+    <p id="confirmText"></p>
+    <div class="buttons">
+      <button id="confirmNo" data-i18n="buttonCancel"></button>
+      <button id="confirmYes" data-i18n="buttonConfirmYes"></button>
+    </div>
+  </dialog>
+
+  <script src="../common/prefs.js"></script>
+  <script src="../common/dedupe.js"></script>
+  <script src="review.js"></script>
+</body>
+</html>

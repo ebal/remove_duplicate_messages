@@ -1,0 +1,137 @@
+{
+  "buttonCancel": {
+    "message": "Abbrechen"
+  },
+  "buttonDefault": {
+    "message": "Alle Standard"
+  },
+  "buttonDelete": {
+    "message": "Auswahl löschen"
+  },
+  "buttonSelDel": {
+    "message": "Alle DEL"
+  },
+  "buttonSelKeep": {
+    "message": "Alle KEEP"
+  },
+  "colDate": {
+    "message": "Datum"
+  },
+  "colFlag": {
+    "message": "Del?"
+  },
+  "colFolder": {
+    "message": "Verzeechnis"
+  },
+  "colRecipient": {
+    "message": "Empfänger"
+  },
+  "colSender": {
+    "message": "Absender"
+  },
+  "confirmDelete": {
+    "message": "Wirklich $1 Nachrichten löschen?"
+  },
+  "extensionDescription": {
+    "message": "Läscht duebel Noriichten duerch Verzeechniskontextmenü."
+  },
+  "extensionName": {
+    "message": "Remove Duplicate Messages"
+  },
+  "menuLabel": {
+    "message": "Duebel Noriichten läschen..."
+  },
+  "optionsCompareLegend": {
+    "message": "Choix, wéi d'E-Mailen verglach gin."
+  },
+  "optionsSettingsLegend": {
+    "message": "Astellungen"
+  },
+  "optionsTitle": {
+    "message": "Optiounen vir Duebel Noriichte läschen"
+  },
+  "prefAutodelete": {
+    "message": "Ignoréier den Drecksback bei der Sich"
+  },
+  "prefCheckAuthor": {
+    "message": "Verglaich den Absender"
+  },
+  "prefCheckBody": {
+    "message": "Verglaich den Inhalt vun de Noriichten (lues)"
+  },
+  "prefCheckDate": {
+    "message": "Vergleiche das Datum"
+  },
+  "prefCheckDateInSeconds": {
+    "message": "Verglaich den Datum a Sekonnen"
+  },
+  "prefCheckMessageId": {
+    "message": "Verglaich d'Noriichten ID"
+  },
+  "prefCheckRecipient": {
+    "message": "Verglaich die Empfängerliste"
+  },
+  "prefCheckSubject": {
+    "message": "Verglaich de Subject"
+  },
+  "prefDebugInfo": {
+    "message": "Bréng Debuginformatiounen"
+  },
+  "prefExcludeSent": {
+    "message": "Auto läschen"
+  },
+  "prefExcludeTrash": {
+    "message": "Ignoréier den Sentfolder bei der Sich"
+  },
+  "prefPreferredDelete": {
+    "message": "Lösche bevorzugt"
+  },
+  "prefReverseSearch": {
+    "message": "Invertiere Verzeichnissuche"
+  },
+  "prefSubFolderFirst": {
+    "message": "Ënnersich vir d'éischt Ënnerverzeechnisser"
+  },
+  "preferFirstFound": {
+    "message": "zuerst gefundene"
+  },
+  "preferLarger": {
+    "message": "größere"
+  },
+  "preferSmaller": {
+    "message": "kleinere"
+  },
+  "preferUnread": {
+    "message": "ungelesende"
+  },
+  "reviewCaption": {
+    "message": "Noriichten vir ze läschen auswielen."
+  },
+  "reviewTitle": {
+    "message": "Duebel Noriichten"
+  },
+  "statusNoDuplicates": {
+    "message": "In den ausgewählten Ordnern befinden sich keine doppelten Nachrichten."
+  },
+  "statusSearching": {
+    "message": "Sich no Duplikaten: Vergläicher: $1 / $2"
+  },
+  "statusToDelete": {
+    "message": "Noriichten vir ze läschen: $1"
+  },
+  "tooltipCancel": {
+    "message": "Abbruch. Es werden keine Nachrichten gelöscht oder verschoben."
+  },
+  "tooltipDefault": {
+    "message": "Stellt den Originalzustand wieder her. Eine der doppelten Nachrichten wird auf behalten, die restlichen auf löschen gesetzt."
+  },
+  "tooltipDelete": {
+    "message": "Verschiebt alle als DEL markierten Nachrichten in den Papierkorb so dass fälschlicherweise gelöschte Nachrichten wieder aus dem Papierkorb geholt werden können."
+  },
+  "tooltipSelDel": {
+    "message": "Setzt den Zustand aller Nachrichten auf löschen (DEL)."
+  },
+  "tooltipSelKeep": {
+    "message": "Setzt den Zustand aller Nachrichten auf behalten (KEEP)."
+  }
+}

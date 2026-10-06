@@ -1,0 +1,140 @@
+{
+  "buttonCancel": {
+    "message": "Cancelar"
+  },
+  "buttonDefault": {
+    "message": "Tudo padrão"
+  },
+  "buttonDelete": {
+    "message": "Excluir Selecionados"
+  },
+  "buttonSelDel": {
+    "message": "Tudo excluir"
+  },
+  "buttonSelKeep": {
+    "message": "Tudo não excluir"
+  },
+  "colDate": {
+    "message": "Data"
+  },
+  "colFlag": {
+    "message": "Sinalizador (Flag)"
+  },
+  "colFolder": {
+    "message": "Pasta"
+  },
+  "colRecipient": {
+    "message": "Para"
+  },
+  "colSender": {
+    "message": "De"
+  },
+  "colSubject": {
+    "message": "Assunto"
+  },
+  "confirmDelete": {
+    "message": "Excluir mesmo $1 mensagens?"
+  },
+  "extensionDescription": {
+    "message": "Remove as mensagens duplicadas por menu de contexto da pasta."
+  },
+  "extensionName": {
+    "message": "Remove Duplicate Messages"
+  },
+  "menuLabel": {
+    "message": "Remover Mensagens Duplicadas..."
+  },
+  "optionsCompareLegend": {
+    "message": "Escolher como os e-mails são comparados"
+  },
+  "optionsSettingsLegend": {
+    "message": "Configurações"
+  },
+  "optionsTitle": {
+    "message": "Opções de Remover Mensagens Duplicadas"
+  },
+  "prefAutodelete": {
+    "message": "Exclusão automática"
+  },
+  "prefCheckAuthor": {
+    "message": "Comparar 'De'"
+  },
+  "prefCheckBody": {
+    "message": "Comparar corpo da mensagem (lento)"
+  },
+  "prefCheckDate": {
+    "message": "Data"
+  },
+  "prefCheckDateInSeconds": {
+    "message": "Comparar datas em segundos"
+  },
+  "prefCheckMessageId": {
+    "message": "Comparar ID (identificação) das mensagens"
+  },
+  "prefCheckRecipient": {
+    "message": "Comparar 'Para'"
+  },
+  "prefCheckSubject": {
+    "message": "Comparar assunto"
+  },
+  "prefDebugInfo": {
+    "message": "Imprimir informações de depuração"
+  },
+  "prefExcludeSent": {
+    "message": "Ignorar mensagens enviadas na busca de mensagem duplicada"
+  },
+  "prefExcludeTrash": {
+    "message": "Ignorar lixo na busca de mensagem duplicada"
+  },
+  "prefPreferredDelete": {
+    "message": "Preferir excluir"
+  },
+  "prefPreferredDeleteSuffix": {
+    "message": "E-mail"
+  },
+  "prefSubFolderFirst": {
+    "message": "Procurar primeiro em subpasta"
+  },
+  "preferFirstFound": {
+    "message": "primeira encontrada"
+  },
+  "preferLarger": {
+    "message": "maior"
+  },
+  "preferSmaller": {
+    "message": "menor"
+  },
+  "preferUnread": {
+    "message": "não lida"
+  },
+  "reviewCaption": {
+    "message": "Escolher mensagens que devem ser excluídas."
+  },
+  "reviewTitle": {
+    "message": "Mensagens Duplicadas"
+  },
+  "statusNoDuplicates": {
+    "message": "Não há mensagens duplicadas nas pastas selecionadas."
+  },
+  "statusSearching": {
+    "message": "Procurando duplicatas: comparações: $1 / $2"
+  },
+  "statusToDelete": {
+    "message": "A ser excluídas: $1"
+  },
+  "tooltipCancel": {
+    "message": "Cancelar. Nenhuma mensagem é excluída nem movida."
+  },
+  "tooltipDefault": {
+    "message": "Restaura a seleção original. Uma duplicata de um e-mail é selecionada para se conservada e todas as outras ocorrências selecionadas para exclusão."
+  },
+  "tooltipDelete": {
+    "message": "Exclui todas as mensagens marcadas com DEL. Elas são movidas para a lixeira."
+  },
+  "tooltipSelDel": {
+    "message": "Sinaliza todas as mensagens a serem excluídas (DEL)"
+  },
+  "tooltipSelKeep": {
+    "message": "Sinaliza todas as mensagens a serem conservadas (KEEP)"
+  }
+}
