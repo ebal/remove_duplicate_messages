@@ -27,8 +27,10 @@ legacy translations.
 
 ## Install
 
-In Thunderbird: *Add-ons and Themes* → gear icon → *Install Add-on From File…*
-and pick the `.xpi` from `dist/`.
+Download the `.xpi` from the
+[latest release](https://github.com/ebal/remove_duplicate_messages/releases/latest)
+or build it yourself. Then in Thunderbird: *Add-ons and Themes* → gear icon →
+*Install Add-on From File…* and pick the `.xpi`.
 
 ## Usage
 
@@ -78,6 +80,21 @@ The end-to-end test downloads Thunderbird 153.4.0 ESR into a Docker image
 (checksum verified), installs the built `.xpi` into a fresh profile with
 known duplicates and drives the real add-on over Marionette: menu click,
 search, body comparison, deletion and a final search that finds nothing.
+
+## Release
+
+Releases are built by GitHub Actions (`.github/workflows/build.yml`). Bump
+`version` in `src/manifest.json`, commit, then push a matching tag:
+
+```sh
+git tag v0.2.0
+git push origin main v0.2.0
+```
+
+The workflow builds the `.xpi` in Docker, runs the end-to-end test and
+attaches the `.xpi` and `SHA256SUMS` to a new GitHub release. Because the
+build is reproducible, the checksum matches a local `./build.sh` of the same
+commit.
 
 ## Layout
 
